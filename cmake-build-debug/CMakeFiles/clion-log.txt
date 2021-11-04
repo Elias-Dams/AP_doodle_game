@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/legod/CLionProjects/AP_doodle_game
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug

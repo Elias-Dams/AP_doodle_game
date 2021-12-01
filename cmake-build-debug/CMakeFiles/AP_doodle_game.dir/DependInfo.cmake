@@ -4,6 +4,26 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Camera.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Camera.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_BG_Tile.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_Model/Entity_Model.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_View/EV_BG_Tile.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Entity_View/Entity_View.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Game.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Random.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Score.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/Stopwatch.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/World.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

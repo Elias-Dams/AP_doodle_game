@@ -123,6 +123,546 @@ AP_doodle_game/fast:
 	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/build
 .PHONY : AP_doodle_game/fast
 
+Camera.o: Camera.cpp.o
+
+.PHONY : Camera.o
+
+# target to build an object file
+Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Camera.cpp.o
+.PHONY : Camera.cpp.o
+
+Camera.i: Camera.cpp.i
+
+.PHONY : Camera.i
+
+# target to preprocess a source file
+Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Camera.cpp.i
+.PHONY : Camera.cpp.i
+
+Camera.s: Camera.cpp.s
+
+.PHONY : Camera.s
+
+# target to generate assembly for a file
+Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Camera.cpp.s
+.PHONY : Camera.cpp.s
+
+Entity_Model/EM_BG_Tile.o: Entity_Model/EM_BG_Tile.cpp.o
+
+.PHONY : Entity_Model/EM_BG_Tile.o
+
+# target to build an object file
+Entity_Model/EM_BG_Tile.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_BG_Tile.cpp.o
+.PHONY : Entity_Model/EM_BG_Tile.cpp.o
+
+Entity_Model/EM_BG_Tile.i: Entity_Model/EM_BG_Tile.cpp.i
+
+.PHONY : Entity_Model/EM_BG_Tile.i
+
+# target to preprocess a source file
+Entity_Model/EM_BG_Tile.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_BG_Tile.cpp.i
+.PHONY : Entity_Model/EM_BG_Tile.cpp.i
+
+Entity_Model/EM_BG_Tile.s: Entity_Model/EM_BG_Tile.cpp.s
+
+.PHONY : Entity_Model/EM_BG_Tile.s
+
+# target to generate assembly for a file
+Entity_Model/EM_BG_Tile.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_BG_Tile.cpp.s
+.PHONY : Entity_Model/EM_BG_Tile.cpp.s
+
+Entity_Model/EM_Bonus.o: Entity_Model/EM_Bonus.cpp.o
+
+.PHONY : Entity_Model/EM_Bonus.o
+
+# target to build an object file
+Entity_Model/EM_Bonus.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus.cpp.o
+.PHONY : Entity_Model/EM_Bonus.cpp.o
+
+Entity_Model/EM_Bonus.i: Entity_Model/EM_Bonus.cpp.i
+
+.PHONY : Entity_Model/EM_Bonus.i
+
+# target to preprocess a source file
+Entity_Model/EM_Bonus.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus.cpp.i
+.PHONY : Entity_Model/EM_Bonus.cpp.i
+
+Entity_Model/EM_Bonus.s: Entity_Model/EM_Bonus.cpp.s
+
+.PHONY : Entity_Model/EM_Bonus.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Bonus.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus.cpp.s
+.PHONY : Entity_Model/EM_Bonus.cpp.s
+
+Entity_Model/EM_Platform.o: Entity_Model/EM_Platform.cpp.o
+
+.PHONY : Entity_Model/EM_Platform.o
+
+# target to build an object file
+Entity_Model/EM_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o
+.PHONY : Entity_Model/EM_Platform.cpp.o
+
+Entity_Model/EM_Platform.i: Entity_Model/EM_Platform.cpp.i
+
+.PHONY : Entity_Model/EM_Platform.i
+
+# target to preprocess a source file
+Entity_Model/EM_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.i
+.PHONY : Entity_Model/EM_Platform.cpp.i
+
+Entity_Model/EM_Platform.s: Entity_Model/EM_Platform.cpp.s
+
+.PHONY : Entity_Model/EM_Platform.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.s
+.PHONY : Entity_Model/EM_Platform.cpp.s
+
+Entity_Model/EM_Player.o: Entity_Model/EM_Player.cpp.o
+
+.PHONY : Entity_Model/EM_Player.o
+
+# target to build an object file
+Entity_Model/EM_Player.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o
+.PHONY : Entity_Model/EM_Player.cpp.o
+
+Entity_Model/EM_Player.i: Entity_Model/EM_Player.cpp.i
+
+.PHONY : Entity_Model/EM_Player.i
+
+# target to preprocess a source file
+Entity_Model/EM_Player.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.i
+.PHONY : Entity_Model/EM_Player.cpp.i
+
+Entity_Model/EM_Player.s: Entity_Model/EM_Player.cpp.s
+
+.PHONY : Entity_Model/EM_Player.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Player.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.s
+.PHONY : Entity_Model/EM_Player.cpp.s
+
+Entity_Model/Entity_Model.o: Entity_Model/Entity_Model.cpp.o
+
+.PHONY : Entity_Model/Entity_Model.o
+
+# target to build an object file
+Entity_Model/Entity_Model.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/Entity_Model.cpp.o
+.PHONY : Entity_Model/Entity_Model.cpp.o
+
+Entity_Model/Entity_Model.i: Entity_Model/Entity_Model.cpp.i
+
+.PHONY : Entity_Model/Entity_Model.i
+
+# target to preprocess a source file
+Entity_Model/Entity_Model.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/Entity_Model.cpp.i
+.PHONY : Entity_Model/Entity_Model.cpp.i
+
+Entity_Model/Entity_Model.s: Entity_Model/Entity_Model.cpp.s
+
+.PHONY : Entity_Model/Entity_Model.s
+
+# target to generate assembly for a file
+Entity_Model/Entity_Model.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/Entity_Model.cpp.s
+.PHONY : Entity_Model/Entity_Model.cpp.s
+
+Entity_View/EV_BG_Tile.o: Entity_View/EV_BG_Tile.cpp.o
+
+.PHONY : Entity_View/EV_BG_Tile.o
+
+# target to build an object file
+Entity_View/EV_BG_Tile.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_BG_Tile.cpp.o
+.PHONY : Entity_View/EV_BG_Tile.cpp.o
+
+Entity_View/EV_BG_Tile.i: Entity_View/EV_BG_Tile.cpp.i
+
+.PHONY : Entity_View/EV_BG_Tile.i
+
+# target to preprocess a source file
+Entity_View/EV_BG_Tile.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_BG_Tile.cpp.i
+.PHONY : Entity_View/EV_BG_Tile.cpp.i
+
+Entity_View/EV_BG_Tile.s: Entity_View/EV_BG_Tile.cpp.s
+
+.PHONY : Entity_View/EV_BG_Tile.s
+
+# target to generate assembly for a file
+Entity_View/EV_BG_Tile.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_BG_Tile.cpp.s
+.PHONY : Entity_View/EV_BG_Tile.cpp.s
+
+Entity_View/EV_Bonus.o: Entity_View/EV_Bonus.cpp.o
+
+.PHONY : Entity_View/EV_Bonus.o
+
+# target to build an object file
+Entity_View/EV_Bonus.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus.cpp.o
+.PHONY : Entity_View/EV_Bonus.cpp.o
+
+Entity_View/EV_Bonus.i: Entity_View/EV_Bonus.cpp.i
+
+.PHONY : Entity_View/EV_Bonus.i
+
+# target to preprocess a source file
+Entity_View/EV_Bonus.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus.cpp.i
+.PHONY : Entity_View/EV_Bonus.cpp.i
+
+Entity_View/EV_Bonus.s: Entity_View/EV_Bonus.cpp.s
+
+.PHONY : Entity_View/EV_Bonus.s
+
+# target to generate assembly for a file
+Entity_View/EV_Bonus.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus.cpp.s
+.PHONY : Entity_View/EV_Bonus.cpp.s
+
+Entity_View/EV_Platform.o: Entity_View/EV_Platform.cpp.o
+
+.PHONY : Entity_View/EV_Platform.o
+
+# target to build an object file
+Entity_View/EV_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o
+.PHONY : Entity_View/EV_Platform.cpp.o
+
+Entity_View/EV_Platform.i: Entity_View/EV_Platform.cpp.i
+
+.PHONY : Entity_View/EV_Platform.i
+
+# target to preprocess a source file
+Entity_View/EV_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.i
+.PHONY : Entity_View/EV_Platform.cpp.i
+
+Entity_View/EV_Platform.s: Entity_View/EV_Platform.cpp.s
+
+.PHONY : Entity_View/EV_Platform.s
+
+# target to generate assembly for a file
+Entity_View/EV_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.s
+.PHONY : Entity_View/EV_Platform.cpp.s
+
+Entity_View/EV_Player.o: Entity_View/EV_Player.cpp.o
+
+.PHONY : Entity_View/EV_Player.o
+
+# target to build an object file
+Entity_View/EV_Player.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o
+.PHONY : Entity_View/EV_Player.cpp.o
+
+Entity_View/EV_Player.i: Entity_View/EV_Player.cpp.i
+
+.PHONY : Entity_View/EV_Player.i
+
+# target to preprocess a source file
+Entity_View/EV_Player.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.i
+.PHONY : Entity_View/EV_Player.cpp.i
+
+Entity_View/EV_Player.s: Entity_View/EV_Player.cpp.s
+
+.PHONY : Entity_View/EV_Player.s
+
+# target to generate assembly for a file
+Entity_View/EV_Player.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.s
+.PHONY : Entity_View/EV_Player.cpp.s
+
+Entity_View/Entity_View.o: Entity_View/Entity_View.cpp.o
+
+.PHONY : Entity_View/Entity_View.o
+
+# target to build an object file
+Entity_View/Entity_View.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/Entity_View.cpp.o
+.PHONY : Entity_View/Entity_View.cpp.o
+
+Entity_View/Entity_View.i: Entity_View/Entity_View.cpp.i
+
+.PHONY : Entity_View/Entity_View.i
+
+# target to preprocess a source file
+Entity_View/Entity_View.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/Entity_View.cpp.i
+.PHONY : Entity_View/Entity_View.cpp.i
+
+Entity_View/Entity_View.s: Entity_View/Entity_View.cpp.s
+
+.PHONY : Entity_View/Entity_View.s
+
+# target to generate assembly for a file
+Entity_View/Entity_View.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/Entity_View.cpp.s
+.PHONY : Entity_View/Entity_View.cpp.s
+
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Random.o: Random.cpp.o
+
+.PHONY : Random.o
+
+# target to build an object file
+Random.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Random.cpp.o
+.PHONY : Random.cpp.o
+
+Random.i: Random.cpp.i
+
+.PHONY : Random.i
+
+# target to preprocess a source file
+Random.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Random.cpp.i
+.PHONY : Random.cpp.i
+
+Random.s: Random.cpp.s
+
+.PHONY : Random.s
+
+# target to generate assembly for a file
+Random.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Random.cpp.s
+.PHONY : Random.cpp.s
+
+Score.o: Score.cpp.o
+
+.PHONY : Score.o
+
+# target to build an object file
+Score.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Score.cpp.o
+.PHONY : Score.cpp.o
+
+Score.i: Score.cpp.i
+
+.PHONY : Score.i
+
+# target to preprocess a source file
+Score.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Score.cpp.i
+.PHONY : Score.cpp.i
+
+Score.s: Score.cpp.s
+
+.PHONY : Score.s
+
+# target to generate assembly for a file
+Score.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Score.cpp.s
+.PHONY : Score.cpp.s
+
+Stopwatch.o: Stopwatch.cpp.o
+
+.PHONY : Stopwatch.o
+
+# target to build an object file
+Stopwatch.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Stopwatch.cpp.o
+.PHONY : Stopwatch.cpp.o
+
+Stopwatch.i: Stopwatch.cpp.i
+
+.PHONY : Stopwatch.i
+
+# target to preprocess a source file
+Stopwatch.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Stopwatch.cpp.i
+.PHONY : Stopwatch.cpp.i
+
+Stopwatch.s: Stopwatch.cpp.s
+
+.PHONY : Stopwatch.s
+
+# target to generate assembly for a file
+Stopwatch.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Stopwatch.cpp.s
+.PHONY : Stopwatch.cpp.s
+
+World.o: World.cpp.o
+
+.PHONY : World.o
+
+# target to build an object file
+World.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/World.cpp.o
+.PHONY : World.cpp.o
+
+World.i: World.cpp.i
+
+.PHONY : World.i
+
+# target to preprocess a source file
+World.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/World.cpp.i
+.PHONY : World.cpp.i
+
+World.s: World.cpp.s
+
+.PHONY : World.s
+
+# target to generate assembly for a file
+World.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/World.cpp.s
+.PHONY : World.cpp.s
+
+design_patterns/Abstract_Factory.o: design_patterns/Abstract_Factory.cpp.o
+
+.PHONY : design_patterns/Abstract_Factory.o
+
+# target to build an object file
+design_patterns/Abstract_Factory.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o
+.PHONY : design_patterns/Abstract_Factory.cpp.o
+
+design_patterns/Abstract_Factory.i: design_patterns/Abstract_Factory.cpp.i
+
+.PHONY : design_patterns/Abstract_Factory.i
+
+# target to preprocess a source file
+design_patterns/Abstract_Factory.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.i
+.PHONY : design_patterns/Abstract_Factory.cpp.i
+
+design_patterns/Abstract_Factory.s: design_patterns/Abstract_Factory.cpp.s
+
+.PHONY : design_patterns/Abstract_Factory.s
+
+# target to generate assembly for a file
+design_patterns/Abstract_Factory.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.s
+.PHONY : design_patterns/Abstract_Factory.cpp.s
+
+design_patterns/Concrete_Factory.o: design_patterns/Concrete_Factory.cpp.o
+
+.PHONY : design_patterns/Concrete_Factory.o
+
+# target to build an object file
+design_patterns/Concrete_Factory.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o
+.PHONY : design_patterns/Concrete_Factory.cpp.o
+
+design_patterns/Concrete_Factory.i: design_patterns/Concrete_Factory.cpp.i
+
+.PHONY : design_patterns/Concrete_Factory.i
+
+# target to preprocess a source file
+design_patterns/Concrete_Factory.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.i
+.PHONY : design_patterns/Concrete_Factory.cpp.i
+
+design_patterns/Concrete_Factory.s: design_patterns/Concrete_Factory.cpp.s
+
+.PHONY : design_patterns/Concrete_Factory.s
+
+# target to generate assembly for a file
+design_patterns/Concrete_Factory.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.s
+.PHONY : design_patterns/Concrete_Factory.cpp.s
+
+design_patterns/Observer.o: design_patterns/Observer.cpp.o
+
+.PHONY : design_patterns/Observer.o
+
+# target to build an object file
+design_patterns/Observer.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.o
+.PHONY : design_patterns/Observer.cpp.o
+
+design_patterns/Observer.i: design_patterns/Observer.cpp.i
+
+.PHONY : design_patterns/Observer.i
+
+# target to preprocess a source file
+design_patterns/Observer.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.i
+.PHONY : design_patterns/Observer.cpp.i
+
+design_patterns/Observer.s: design_patterns/Observer.cpp.s
+
+.PHONY : design_patterns/Observer.s
+
+# target to generate assembly for a file
+design_patterns/Observer.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.s
+.PHONY : design_patterns/Observer.cpp.s
+
+design_patterns/Subject.o: design_patterns/Subject.cpp.o
+
+.PHONY : design_patterns/Subject.o
+
+# target to build an object file
+design_patterns/Subject.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.o
+.PHONY : design_patterns/Subject.cpp.o
+
+design_patterns/Subject.i: design_patterns/Subject.cpp.i
+
+.PHONY : design_patterns/Subject.i
+
+# target to preprocess a source file
+design_patterns/Subject.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.i
+.PHONY : design_patterns/Subject.cpp.i
+
+design_patterns/Subject.s: design_patterns/Subject.cpp.s
+
+.PHONY : design_patterns/Subject.s
+
+# target to generate assembly for a file
+design_patterns/Subject.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.s
+.PHONY : design_patterns/Subject.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +699,66 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP_doodle_game"
+	@echo "... Camera.o"
+	@echo "... Camera.i"
+	@echo "... Camera.s"
+	@echo "... Entity_Model/EM_BG_Tile.o"
+	@echo "... Entity_Model/EM_BG_Tile.i"
+	@echo "... Entity_Model/EM_BG_Tile.s"
+	@echo "... Entity_Model/EM_Bonus.o"
+	@echo "... Entity_Model/EM_Bonus.i"
+	@echo "... Entity_Model/EM_Bonus.s"
+	@echo "... Entity_Model/EM_Platform.o"
+	@echo "... Entity_Model/EM_Platform.i"
+	@echo "... Entity_Model/EM_Platform.s"
+	@echo "... Entity_Model/EM_Player.o"
+	@echo "... Entity_Model/EM_Player.i"
+	@echo "... Entity_Model/EM_Player.s"
+	@echo "... Entity_Model/Entity_Model.o"
+	@echo "... Entity_Model/Entity_Model.i"
+	@echo "... Entity_Model/Entity_Model.s"
+	@echo "... Entity_View/EV_BG_Tile.o"
+	@echo "... Entity_View/EV_BG_Tile.i"
+	@echo "... Entity_View/EV_BG_Tile.s"
+	@echo "... Entity_View/EV_Bonus.o"
+	@echo "... Entity_View/EV_Bonus.i"
+	@echo "... Entity_View/EV_Bonus.s"
+	@echo "... Entity_View/EV_Platform.o"
+	@echo "... Entity_View/EV_Platform.i"
+	@echo "... Entity_View/EV_Platform.s"
+	@echo "... Entity_View/EV_Player.o"
+	@echo "... Entity_View/EV_Player.i"
+	@echo "... Entity_View/EV_Player.s"
+	@echo "... Entity_View/Entity_View.o"
+	@echo "... Entity_View/Entity_View.i"
+	@echo "... Entity_View/Entity_View.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Random.o"
+	@echo "... Random.i"
+	@echo "... Random.s"
+	@echo "... Score.o"
+	@echo "... Score.i"
+	@echo "... Score.s"
+	@echo "... Stopwatch.o"
+	@echo "... Stopwatch.i"
+	@echo "... Stopwatch.s"
+	@echo "... World.o"
+	@echo "... World.i"
+	@echo "... World.s"
+	@echo "... design_patterns/Abstract_Factory.o"
+	@echo "... design_patterns/Abstract_Factory.i"
+	@echo "... design_patterns/Abstract_Factory.s"
+	@echo "... design_patterns/Concrete_Factory.o"
+	@echo "... design_patterns/Concrete_Factory.i"
+	@echo "... design_patterns/Concrete_Factory.s"
+	@echo "... design_patterns/Observer.o"
+	@echo "... design_patterns/Observer.i"
+	@echo "... design_patterns/Observer.s"
+	@echo "... design_patterns/Subject.o"
+	@echo "... design_patterns/Subject.i"
+	@echo "... design_patterns/Subject.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

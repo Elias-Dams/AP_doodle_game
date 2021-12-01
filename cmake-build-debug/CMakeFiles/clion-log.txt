@@ -1,4 +1,5 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/legod/CLionProjects/AP_doodle_game
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/sh -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/legod/CLionProjects/AP_doodle_game; exitcode=$?; sleep 0.001; (exit $exitcode)"
+-- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug

@@ -7,7 +7,7 @@
 class EM_Platform : public Entity_Model{
 
 public:
-    EM_Platform(float platformWidht, float platformHeight);
+    EM_Platform(float platformWidth, float platformHeight);
 
     const pair<float, float> &getPosition() const;
 
@@ -15,14 +15,14 @@ public:
 
     void update();
 
-    float getPlatformWidht() const;
+    float getPlatformWidth() const;
 
     float getPlatformHeight() const;
 
 
 private:
     pair<float, float> position;
-    float platform_widht;
+    float platform_width;
     float platform_height;
 };
 

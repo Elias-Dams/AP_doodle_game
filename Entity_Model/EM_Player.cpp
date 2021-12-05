@@ -1,7 +1,7 @@
 
 #include "EM_Player.h"
 
-EM_Player::EM_Player(float player_widht_, float player_height_) : player_widht(player_widht_), player_height(player_height_){
+EM_Player::EM_Player(float player_width_, float player_height_) : player_width(player_width_), player_height(player_height_){
     position.first = 150;
     position.second = 299;
     gravity = 0.20f;
@@ -48,8 +48,8 @@ void EM_Player::jump(const float &dt,const bool &hit){
     Notify(position.first, position.second);
 }
 
-float EM_Player::getPlayerWidht() const {
-    return player_widht;
+float EM_Player::getPlayerWidth() const {
+    return player_width;
 }
 
 float EM_Player::getPlayerHeight() const {

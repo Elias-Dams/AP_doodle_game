@@ -41,8 +41,6 @@ private:
     shared_ptr<sf::RenderWindow> window;
     shared_ptr<Concrete_Factory> ConcreteFactory;
     shared_ptr<World> world;
-    shared_ptr<EV_Player> PlayerView;
-    vector<shared_ptr<EV_Platform>> PlatformsView;
     shared_ptr<Stopwatch> clock;
     shared_ptr<sf::View>view;
 

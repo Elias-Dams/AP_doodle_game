@@ -1,7 +1,7 @@
 
 #include "EM_Platform.h"
 
-EM_Platform::EM_Platform(float platformWidht, float platformHeight) : platform_widht(platformWidht), platform_height(platformHeight) {
+EM_Platform::EM_Platform(float platformWidth, float platformHeight) : platform_width(platformWidth), platform_height(platformHeight) {
     position.first = 0;
     position.second = 0;
 }
@@ -19,8 +19,8 @@ void EM_Platform::update(){
     Notify(position.first, position.second);
 }
 
-float EM_Platform::getPlatformWidht() const {
-    return platform_widht;
+float EM_Platform::getPlatformWidth() const {
+    return platform_width;
 }
 
 float EM_Platform::getPlatformHeight() const {

@@ -28,7 +28,6 @@ private:
     float CameraWidth;
     float CameraHeight;
     float height;
-    float prev_height;
 };
 
 

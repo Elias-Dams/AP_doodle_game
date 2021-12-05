@@ -16,8 +16,9 @@ public:
     sf::Sprite getPlayer() const;
 
 private:
-    sf::Sprite *player;
-    sf::Texture *texture;
+    sf::Sprite player;
+    sf::Texture left_texture;
+    sf::Texture right_texture;
 };
 
 

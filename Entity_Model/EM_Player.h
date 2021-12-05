@@ -10,7 +10,7 @@ class EM_Player : public Entity_Model {
 
 public:
 
-    EM_Player(float player_widht, float player_height);
+    EM_Player(float player_width, float player_height);
 
     virtual ~EM_Player();
 
@@ -18,7 +18,7 @@ public:
 
     void jump(const float &dt,const bool &hit);
 
-    float getPlayerWidht() const;
+    float getPlayerWidth() const;
 
     float getPlayerHeight() const;
 
@@ -31,7 +31,7 @@ public:
 private:
     pair<float, float> position;
     float gravity;
-    float player_widht;
+    float player_width;
     float player_height;
     bool falling;
 

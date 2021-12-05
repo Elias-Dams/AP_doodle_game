@@ -6,18 +6,24 @@
 #include <list>
 #include <string>
 #include <memory>
+#include <map>
 #include "Abstract_Factory.h"
-#include "../Entity_View/EV_Player.h"
-#include "../Entity_View/EV_Platform.h"
+
 
 
 class Concrete_Factory : public Abstract_Factory{
+private:
+    map<shared_ptr<EM_Player>, weak_ptr<EV_Player>> Playerviews;
+    map<shared_ptr<EM_Platform>, weak_ptr<EV_Platform>> Platformviews;
+
 public:
     Concrete_Factory();
 
-    shared_ptr<EV_Player>createPlayerView(shared_ptr<EM_Player> subject, float player_width, float player_height);
+    shared_ptr<EM_Player> createPlayer(float player_width, float player_height) override;
+    shared_ptr<EM_Platform> createPlatform(float platform_width, float platform_height) override;
 
-    shared_ptr<EV_Platform> createPlatformView(shared_ptr<EM_Platform> subject, float platform_width, float platform_height);
+    shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) override;
+    shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) override;
 };
 
 

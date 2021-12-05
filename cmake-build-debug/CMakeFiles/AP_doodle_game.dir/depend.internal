@@ -74,6 +74,8 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
@@ -105,6 +107,11 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
@@ -117,6 +124,11 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
@@ -127,6 +139,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
@@ -149,6 +163,8 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h

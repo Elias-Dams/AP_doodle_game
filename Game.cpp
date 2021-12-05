@@ -2,14 +2,10 @@
 #include "Game.h"
 
 Game::Game() {
-    world = make_shared<World>();
-    window = make_shared<sf::RenderWindow>(sf::VideoMode(world->getWidth(), world->getHeight()),"doodle jump");
-    ConcreteFactory = make_shared<Concrete_Factory>();
 
-    PlayerView = ConcreteFactory->createPlayerView(world->getPlayer(), world->getPlayer()->getPlayerWidht(), world->getPlayer()->getPlayerHeight());
-    for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
-        PlatformsView.push_back(ConcreteFactory->createPlatformView(platform, platform->getPlatformWidht(), platform->getPlatformHeight()));
-    }
+    ConcreteFactory = make_shared<Concrete_Factory>();
+    world = make_shared<World>(ConcreteFactory);
+    window = make_shared<sf::RenderWindow>(sf::VideoMode(world->getWidth(), world->getHeight()),"doodle jump");
 
     clock = Stopwatch::GetInstance();
 
@@ -45,10 +41,12 @@ void Game::run(){
 
         window->setView(*view);
         window->clear(sf::Color::White);
-        for(shared_ptr<EV_Platform> platform : PlatformsView){
-            window->draw(platform->getPlatform());
+
+        for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
+            window->draw(ConcreteFactory->get_platform(platform)->getPlatform());
         }
-        window->draw(PlayerView->getPlayer());
+
+        window->draw(ConcreteFactory->get_player(world->getPlayer())->getPlayer());
         window->display();
 
         //cout << "dt: " << dt << "  " << "fps: " << 1 / dt << endl;
@@ -73,15 +71,17 @@ void Game::update(const float& dt){
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
         key = 'D';
     }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
+        key = 'Q';
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+        key = 'D';
+    }
     world->update(dt, key);
     //cout << world->getCamera()->getHeightdiff() << endl;
-    view->move(0.0f, -world->getCamera()->getHeightdiff());
+    //view->move(0.0f, -world->getCamera()->getHeightdiff());
+    view->setCenter(world->getWidth()/2, -world->getCamera()->getHeight()+world->getHeight());
 
-    // update platforms;
-    for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
-        shared_ptr<EV_Platform> platform_ = ConcreteFactory->createPlatformView(platform, platform->getPlatformWidht(), platform->getPlatformHeight());
-        PlatformsView.push_back(platform_);
-    }
 }
 
 Game::~Game() {

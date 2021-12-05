@@ -10,15 +10,21 @@
 #include "../Entity_Model/EM_Platform.h"
 #include "../Entity_Model/EM_BG_Tile.h"
 #include "../Entity_Model/EM_Bonus.h"
+#include "../Entity_View/EV_Player.h"
+#include "../Entity_View/EV_Platform.h"
+#include "../Entity_View/EV_Bonus.h"
+#include "../Entity_View/EV_BG_Tile.h"
 
 
 class Abstract_Factory {
 
 public:
-    Abstract_Factory();
 
-    shared_ptr<EM_Player> createPlayer(float player_widht, float player_height);
-    shared_ptr<EM_Platform> createPlatform(float platform_widht, float platform_height);
+    virtual shared_ptr<EM_Player> createPlayer(float player_width, float player_height) = 0;
+    virtual shared_ptr<EM_Platform> createPlatform(float platform_width, float platform_height) = 0;
+
+    virtual shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) = 0;
+    virtual shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) = 0;
 };
 
 

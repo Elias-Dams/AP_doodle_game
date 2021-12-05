@@ -18,7 +18,8 @@ void Entity_Model::Detach(shared_ptr<Observer> observer) {
 void Entity_Model::Notify(float xpos, float ypos) {
 
     for(const auto& observer : list_observer_){
-        observer.lock()->Update(xpos, ypos);
+        observer->Update(xpos, ypos);
+        //observer.lock()->Update(xpos, ypos);
     }
 
 }

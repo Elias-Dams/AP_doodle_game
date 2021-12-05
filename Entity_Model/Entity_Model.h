@@ -23,7 +23,7 @@ public:
 
 
 private:
-    list<weak_ptr<Observer>> list_observer_;
+    list<shared_ptr<Observer>> list_observer_;
 };
 
 

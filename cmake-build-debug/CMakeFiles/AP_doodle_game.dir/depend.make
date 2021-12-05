@@ -73,6 +73,8 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/Entity_View.h
@@ -104,6 +106,11 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Bonus.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Player.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Random.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../World.cpp
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../World.h
@@ -116,6 +123,11 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Bonus.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Player.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Abstract_Factory.cpp
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Abstract_Factory.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Observer.h
@@ -126,6 +138,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/Entity_View.h
@@ -148,6 +162,8 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/Entity_View.h

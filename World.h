@@ -25,7 +25,8 @@
 
 class World {
 public:
-    World();
+
+    World(const shared_ptr<Abstract_Factory> &factory);
 
     void update(float dt, const char &key);
 
@@ -48,7 +49,7 @@ public:
 
 private:
     shared_ptr<EM_Player> player;
-    Abstract_Factory factory;
+    shared_ptr<Abstract_Factory> factory;
     vector<shared_ptr<EM_Platform>> platforms;
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;

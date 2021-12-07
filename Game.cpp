@@ -92,9 +92,9 @@ void Game::update(const float& dt){
     }
     world->update(dt, key);
 
-    view->setCenter(world->getWidth()/2, -world->getCamera()->getHeight() + world->getHeight());
+    view->setCenter(world->getWidth()/2, world->getCamera()->getConvertedHeight());
 
-    text.setPosition(0, (world->getHeight()/2)-world->getCamera()->getHeight());
+    text.setPosition(0, world->getCamera()->getConvertedHeight()-(world->getHeight()/2));
     text.setString(to_string(ConcreteFactory->get_score()->getscore()));
 
 }

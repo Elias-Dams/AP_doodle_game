@@ -21,7 +21,7 @@ void World::create_platforms(){
         int temp = height_of_last_platform;
         height_of_last_platform += radius_per_platform;
         shared_ptr<EM_Green_Platform> platform = factory->createGreenPlatform(WIDTH/5.5f, HEIGHT/32.0f);
-        platform->setPosition( random->generate_between(0,(float)WIDTH - platform->getPlatformWidth()), random->generate_between((float)temp+platform->getPlatformHeight(), (float)height_of_last_platform));
+        platform->setPosition( random->generate_between(0,(float)WIDTH - platform->getPlatformWidth()), random->generate_between((float)temp+platform->getPlatformHeight(), (float)height_of_last_platform), camera);
         platforms.push_back(platform);
 
     }
@@ -35,7 +35,7 @@ void World::add_platforms(){
     if(platforms_ot_add > 0){
         //cout << camera->getHeight() << "   " << height_of_last_platform << endl;
 
-        int radius_per_platform = camera->getHeight()+HEIGHT/2 - height_of_last_platform / platforms_ot_add;
+        int radius_per_platform = camera->getNomalisedHeight()+HEIGHT/2 - height_of_last_platform / platforms_ot_add;
         //cout << radius_per_platform << endl;
         for(int i = 0; i < platforms_ot_add; i++){
 
@@ -59,7 +59,7 @@ void World::add_platforms(){
                 platform = factory->createGreenPlatform(WIDTH/5.5f, HEIGHT/32.0f);
             }
 
-            platform->setPosition( random->generate_between(0,(float)WIDTH - platform->getPlatformWidth()), random->generate_between((float)temp+platform->getPlatformHeight(), (float)height_of_last_platform));
+            platform->setPosition( random->generate_between(0,(float)WIDTH - platform->getPlatformWidth()), random->generate_between((float)temp+platform->getPlatformHeight(), (float)height_of_last_platform), camera);
             height_of_last_platform = platform->getPosition().second;
             platforms.push_back(platform);
 
@@ -90,20 +90,20 @@ bool World::colisionCheck(shared_ptr<EM_Platform> platform){
 
 void World::update(float dt, const char &key){
     // game over;
-    if(player->getPosition().second < (camera->getHeight()-HEIGHT/2)){
+    if(player->getPosition().second < (camera->getNomalisedHeight()-HEIGHT/2)){
         //cout << "game over" << endl;
     }
 
     // update the camera pos
-    if(player->getPosition().second >= camera->getHeight()){
+    if(player->getPosition().second >= camera->getNomalisedHeight()){
         camera->setHeight(player->getPosition().second);
     }
 
     if(key == 'Q'){
-        player->move(-5.f * dt * 60.f, 0.f  * dt * 60.f);
+        player->move(-5.f * dt * 60.f, 0.f  * dt * 60.f, camera);
     }
     if(key == 'D'){
-        player->move(5.f * dt * 60.f, 0.f  * dt * 60.f);
+        player->move(5.f * dt * 60.f, 0.f  * dt * 60.f, camera);
     }
 
     // if player goes out of the screen to the left it wil go to the right.
@@ -135,14 +135,14 @@ void World::update(float dt, const char &key){
     while (it != platforms.end()){
         bool current_hit = false;
 
-        (*it)->update(dt, WIDTH);
+        (*it)->update(dt, WIDTH, camera);
 
         if(this->colisionCheck(*it)){
             hit = true;
             current_hit = true;
         }
 
-        if ((*it)->getPosition().second < (camera->getHeight()-HEIGHT/2)-(*it)->getPlatformHeight()){
+        if ((*it)->getPosition().second < (camera->getNomalisedHeight()-HEIGHT/2)-(*it)->getPlatformHeight()){
             it = platforms.erase(it);
         }
         else if (current_hit && (*it)->getColor() == "White"){
@@ -157,11 +157,11 @@ void World::update(float dt, const char &key){
     this->add_platforms();
 
     if(jump){
-        player->jump(player->getPosition().second, dt, hit);
+        player->jump(dt, hit, camera);
     }
     else{
         hit = false;
-        player->jump(player->getPosition().second, dt, hit);
+        player->jump(dt, hit, camera);
     }
 
     //cout << player->getPosition().second << endl;

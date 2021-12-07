@@ -8,6 +8,7 @@
 #include "design_patterns/Subject.h"
 #include "Entity_Model/Entity_Model.h"
 
+
 using namespace std;
 
 class Score : public Observer{

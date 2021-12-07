@@ -5,8 +5,12 @@ Camera::Camera(float cameraWidth, float cameraHeight) : CameraWidth(cameraWidth)
     height = cameraHeight/2;
 }
 
-float Camera::getHeight() const {
+float Camera::getNomalisedHeight() const {
     return height;
+}
+
+float Camera::getConvertedHeight() const {
+    return CameraHeight - height;
 }
 
 void Camera::setHeight(float height_) {
@@ -14,8 +18,6 @@ void Camera::setHeight(float height_) {
 }
 
 float Camera::toGameheight(float position, float entity_height){
-    std::cout << "position: " << position << std::endl;
-    std::cout << "new position: " << CameraHeight - position - entity_height << std::endl;
     return CameraHeight - position - entity_height;
 }
 

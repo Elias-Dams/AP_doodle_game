@@ -204,6 +204,60 @@ Entity_Model/EM_Bonus.cpp.s:
 	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus.cpp.s
 .PHONY : Entity_Model/EM_Bonus.cpp.s
 
+Entity_Model/EM_Bonus_Types/EM_Jetpack.o: Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.o
+
+# target to build an object file
+Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
+
+Entity_Model/EM_Bonus_Types/EM_Jetpack.i: Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.i
+
+# target to preprocess a source file
+Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
+
+Entity_Model/EM_Bonus_Types/EM_Jetpack.s: Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
+
+Entity_Model/EM_Bonus_Types/EM_Spring.o: Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.o
+
+# target to build an object file
+Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
+
+Entity_Model/EM_Bonus_Types/EM_Spring.i: Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.i
+
+# target to preprocess a source file
+Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
+
+Entity_Model/EM_Bonus_Types/EM_Spring.s: Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
+
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
+.PHONY : Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
+
 Entity_Model/EM_Platform.o: Entity_Model/EM_Platform.cpp.o
 
 .PHONY : Entity_Model/EM_Platform.o
@@ -446,6 +500,60 @@ Entity_View/EV_Bonus.s: Entity_View/EV_Bonus.cpp.s
 Entity_View/EV_Bonus.cpp.s:
 	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus.cpp.s
 .PHONY : Entity_View/EV_Bonus.cpp.s
+
+Entity_View/EV_Bonus_Types/EV_Jetpack.o: Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.o
+
+# target to build an object file
+Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o
+
+Entity_View/EV_Bonus_Types/EV_Jetpack.i: Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.i
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.i
+
+# target to preprocess a source file
+Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.i
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.i
+
+Entity_View/EV_Bonus_Types/EV_Jetpack.s: Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.s
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.s
+
+# target to generate assembly for a file
+Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.s
+.PHONY : Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.s
+
+Entity_View/EV_Bonus_Types/EV_Spring.o: Entity_View/EV_Bonus_Types/EV_Spring.cpp.o
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.o
+
+# target to build an object file
+Entity_View/EV_Bonus_Types/EV_Spring.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.cpp.o
+
+Entity_View/EV_Bonus_Types/EV_Spring.i: Entity_View/EV_Bonus_Types/EV_Spring.cpp.i
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.i
+
+# target to preprocess a source file
+Entity_View/EV_Bonus_Types/EV_Spring.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Spring.cpp.i
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.cpp.i
+
+Entity_View/EV_Bonus_Types/EV_Spring.s: Entity_View/EV_Bonus_Types/EV_Spring.cpp.s
+
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.s
+
+# target to generate assembly for a file
+Entity_View/EV_Bonus_Types/EV_Spring.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Bonus_Types/EV_Spring.cpp.s
+.PHONY : Entity_View/EV_Bonus_Types/EV_Spring.cpp.s
 
 Entity_View/EV_Platform.o: Entity_View/EV_Platform.cpp.o
 
@@ -924,6 +1032,12 @@ help:
 	@echo "... Entity_Model/EM_Bonus.o"
 	@echo "... Entity_Model/EM_Bonus.i"
 	@echo "... Entity_Model/EM_Bonus.s"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Jetpack.o"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Jetpack.i"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Jetpack.s"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Spring.o"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Spring.i"
+	@echo "... Entity_Model/EM_Bonus_Types/EM_Spring.s"
 	@echo "... Entity_Model/EM_Platform.o"
 	@echo "... Entity_Model/EM_Platform.i"
 	@echo "... Entity_Model/EM_Platform.s"
@@ -951,6 +1065,12 @@ help:
 	@echo "... Entity_View/EV_Bonus.o"
 	@echo "... Entity_View/EV_Bonus.i"
 	@echo "... Entity_View/EV_Bonus.s"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Jetpack.o"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Jetpack.i"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Jetpack.s"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Spring.o"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Spring.i"
+	@echo "... Entity_View/EV_Bonus_Types/EV_Spring.s"
 	@echo "... Entity_View/EV_Platform.o"
 	@echo "... Entity_View/EV_Platform.i"
 	@echo "... Entity_View/EV_Platform.s"

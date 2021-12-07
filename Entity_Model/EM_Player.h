@@ -6,6 +6,7 @@
 #include <cmath>
 #include "Entity_Model.h"
 
+
 class EM_Player : public Entity_Model {
 
 public:
@@ -14,9 +15,9 @@ public:
 
     virtual ~EM_Player();
 
-    void move(const float &xpos, const float &ypos);
+    void move(const float &xpos, const float &ypos, shared_ptr<Camera> camera);
 
-    void jump(float playerheight, const float &dt,const bool &hit);
+    void jump(const float &dt,const bool &hit, shared_ptr<Camera> camera);
 
     float getPlayerWidth() const;
 

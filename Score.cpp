@@ -11,8 +11,9 @@ Score::~Score() {
 }
 
 void Score::Update(float xpos, float ypos) {
-    if(height < ypos){
-        height = ypos;
+
+    if(height < -ypos+300){
+        height = -ypos+300;
     }
 }
 

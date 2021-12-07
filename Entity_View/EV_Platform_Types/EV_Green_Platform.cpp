@@ -27,7 +27,6 @@ EV_Green_Platform::EV_Green_Platform(Entity_Model &subject, float platformWidth,
 
 void EV_Green_Platform::Update(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
-    ypos = 570-ypos;
     platform->setPosition(xpos, ypos);
 }
 

@@ -12,19 +12,19 @@ EM_Player::~EM_Player() {
 
 }
 
-void EM_Player::move(const float &xpos, const float &ypos){
+void EM_Player::move(const float &xpos, const float &ypos, shared_ptr<Camera> camera){
     position.first += xpos;
     position.second += ypos;
 
-    Notify(position.first, position.second);
+    Notify(position.first,  camera->toGameheight(position.second, player_height));
 
 }
 
 
-void EM_Player::jump(float playerheight, const float &dt,const bool &hit){
+void EM_Player::jump(const float &dt,const bool &hit, shared_ptr<Camera> camera){
 
 
-    if(playerheight >= 0){
+    if(position.second >= 0){
 
         // we jump in a range from -11 to 11
         // -10 --------------- 0 --------------- 10 ----------- ( until the player hits a platform )
@@ -32,7 +32,7 @@ void EM_Player::jump(float playerheight, const float &dt,const bool &hit){
 
         gravity += 0.2f * dt * 60.0f;
         //cout << gravity << "\t" << position.second << endl;
-        playerheight -= gravity * dt * 60.0f;
+        position.second -= gravity * dt * 60.0f;
         if(gravity > 0){
             falling = true;
         }
@@ -44,9 +44,8 @@ void EM_Player::jump(float playerheight, const float &dt,const bool &hit){
         }
 
     }
-    position.second = playerheight;
 
-    Notify(position.first, position.second);
+    Notify(position.first, camera->toGameheight(position.second, player_height));
 }
 
 float EM_Player::getPlayerWidth() const {

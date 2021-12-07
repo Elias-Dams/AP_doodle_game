@@ -35,8 +35,6 @@ void EV_Player::Update(float xpos, float ypos){
     }
     //cout << "we are getting updates" << endl;
 
-    ypos = 530-ypos;
-
     player.setPosition(xpos, ypos);
 }
 

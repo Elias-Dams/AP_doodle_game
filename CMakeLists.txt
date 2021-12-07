@@ -46,6 +46,10 @@ add_executable(AP_doodle_game
         Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
         Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
         Entity_Model/EM_Platform_Types/EM_White_Platform.h
+        Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp
+        Entity_Model/EM_Bonus_Types/EM_Jetpack.h
+        Entity_Model/EM_Bonus_Types/EM_Spring.cpp
+        Entity_Model/EM_Bonus_Types/EM_Spring.h
 
         Entity_View/EV_Player.h
         Entity_View/EV_Player.cpp
@@ -64,6 +68,10 @@ add_executable(AP_doodle_game
         Entity_View/EV_Platform_Types/EV_White_Platform.cpp
         Entity_View/EV_Platform_Types/EV_White_Platform.h
         Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
-        Entity_View/EV_Platform_Types/EV_Yellow_Platform.h)
+        Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+        Entity_View/EV_Bonus_Types/EV_Jetpack.cpp
+        Entity_View/EV_Bonus_Types/EV_Jetpack.h
+        Entity_View/EV_Bonus_Types/EV_Spring.cpp
+        Entity_View/EV_Bonus_Types/EV_Spring.h)
 
 target_link_libraries(AP_doodle_game sfml-graphics sfml-window sfml-system)

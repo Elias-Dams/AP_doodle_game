@@ -28,7 +28,6 @@ EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth,
 
 void EV_White_Platform::Update(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
-    ypos = 570-ypos;
     platform->setPosition(xpos, ypos);
 }
 

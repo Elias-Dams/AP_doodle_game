@@ -100,6 +100,18 @@
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus_Types/EM_Jetpack.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus_Types/EM_Spring.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus_Types/EM_Spring.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>
@@ -152,6 +164,18 @@
 			<Option target="AP_doodle_game"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus_Types/EV_Jetpack.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus_Types/EV_Spring.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus_Types/EV_Spring.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.cpp">

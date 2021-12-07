@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include "../design_patterns/Subject.h"
+#include "../Camera.h"
 
 using namespace std;
 

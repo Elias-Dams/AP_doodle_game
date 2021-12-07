@@ -13,12 +13,12 @@ const pair<float, float> &EM_Blue_Platform::getPosition() const {
     return position;
 }
 
-void EM_Blue_Platform::setPosition(const float &x, const float &y) {
+void EM_Blue_Platform::setPosition(const float &x, const float &y, shared_ptr<Camera> camera) {
     EM_Blue_Platform::position = make_pair(x, y);
-    Notify(position.first, position.second);
+    Notify(position.first, camera->toGameheight(position.second, platform_height));
 }
 
-void EM_Blue_Platform::update(float dt, int world_Width){
+void EM_Blue_Platform::update(float dt, int world_Width, shared_ptr<Camera> camera){
     if(left and position.first >= world_Width - platform_width){
         left = false;
     }
@@ -32,7 +32,7 @@ void EM_Blue_Platform::update(float dt, int world_Width){
     else if(!left){
         position.first -= (2.0f * dt * 60.0f);
     }
-    Notify(position.first, position.second);
+    Notify(position.first, camera->toGameheight(position.second, platform_height));
 }
 
 float EM_Blue_Platform::getPlatformWidth() const {

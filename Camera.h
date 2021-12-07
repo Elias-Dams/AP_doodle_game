@@ -18,9 +18,9 @@ class Camera {
 public:
     Camera(float cameraWidth, float cameraHeight);
 
-    float getHeight() const;
+    float getNomalisedHeight() const;
 
-    float getHeightdiff() const;
+    float getConvertedHeight() const;
 
     void setHeight(float height);
 

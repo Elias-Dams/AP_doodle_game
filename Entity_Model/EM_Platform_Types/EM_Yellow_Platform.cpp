@@ -14,12 +14,12 @@ const pair<float, float> &EM_Yellow_Platform::getPosition() const {
     return position;
 }
 
-void EM_Yellow_Platform::setPosition(const float &x, const float &y) {
+void EM_Yellow_Platform::setPosition(const float &x, const float &y, shared_ptr<Camera> camera) {
     EM_Yellow_Platform::position = make_pair(x, y);
-    Notify(position.first, position.second);
+    Notify(position.first,  camera->toGameheight(position.second, platform_height));
 }
 
-void EM_Yellow_Platform::update(float dt, int world_Width){
+void EM_Yellow_Platform::update(float dt, int world_Width, shared_ptr<Camera> camera){
     if(up and virtual_pos >= move_height){
         up = false;
     }
@@ -36,7 +36,7 @@ void EM_Yellow_Platform::update(float dt, int world_Width){
         virtual_pos -= (2.0f * dt * 60.0f);
     }
 
-    Notify(position.first, position.second);
+    Notify(position.first, camera->toGameheight(position.second, platform_height));
 }
 
 float EM_Yellow_Platform::getPlatformWidth() const {

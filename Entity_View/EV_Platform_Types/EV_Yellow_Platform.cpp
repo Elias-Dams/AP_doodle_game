@@ -27,7 +27,6 @@ EV_Yellow_Platform::EV_Yellow_Platform(Entity_Model &subject, float platformWidt
 
 void EV_Yellow_Platform::Update(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
-    ypos = 570-ypos;
     platform->setPosition(xpos, ypos);
 }
 

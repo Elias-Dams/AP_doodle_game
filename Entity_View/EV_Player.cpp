@@ -34,7 +34,7 @@ void EV_Player::Update(float xpos, float ypos){
         player.setTexture(right_texture);
     }
     //cout << "we are getting updates" << endl;
-    ypos = 500-ypos;
+    ypos = 530-ypos;
     player.setPosition(xpos, ypos);
 }
 

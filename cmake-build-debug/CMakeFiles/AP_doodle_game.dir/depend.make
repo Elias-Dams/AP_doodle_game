@@ -22,6 +22,34 @@ CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o: ../Entity_Model/En
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o: ../design_patterns/Observer.h
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o: ../design_patterns/Subject.h
 
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../design_patterns/Subject.h
+
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o: ../Entity_Model/EM_Player.cpp
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o: ../Entity_Model/Entity_Model.h
@@ -54,6 +82,38 @@ CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o: ../Entity_View/Enti
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o: ../design_patterns/Observer.h
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o: ../design_patterns/Subject.h
 
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../design_patterns/Subject.h
+
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../Entity_Model/Entity_Model.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../design_patterns/Observer.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../design_patterns/Subject.h
+
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o: ../Entity_View/EV_Player.cpp
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o: ../Entity_View/EV_Player.h
@@ -71,11 +131,19 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Camera.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Game.cpp
@@ -104,11 +172,19 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Camera.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Random.h
@@ -121,11 +197,19 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../design_patterns/Subject.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Abstract_Factory.cpp
@@ -136,11 +220,19 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../design_patterns/Abstract_Factory.h
@@ -160,11 +252,19 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Camera.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Bonus.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/EM_Player.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_Model/Entity_Model.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_BG_Tile.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Bonus.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform_Types/EV_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Game.h

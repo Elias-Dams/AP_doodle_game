@@ -231,6 +231,114 @@ Entity_Model/EM_Platform.cpp.s:
 	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.s
 .PHONY : Entity_Model/EM_Platform.cpp.s
 
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.o: Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.o
+
+# target to build an object file
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
+
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.i: Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.i
+
+# target to preprocess a source file
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
+
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.s: Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
+.PHONY : Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
+
+Entity_Model/EM_Platform_Types/EM_Green_Platform.o: Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.o
+
+# target to build an object file
+Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
+
+Entity_Model/EM_Platform_Types/EM_Green_Platform.i: Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.i
+
+# target to preprocess a source file
+Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
+
+Entity_Model/EM_Platform_Types/EM_Green_Platform.s: Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
+.PHONY : Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
+
+Entity_Model/EM_Platform_Types/EM_White_Platform.o: Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.o
+
+# target to build an object file
+Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
+
+Entity_Model/EM_Platform_Types/EM_White_Platform.i: Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.i
+
+# target to preprocess a source file
+Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
+
+Entity_Model/EM_Platform_Types/EM_White_Platform.s: Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
+.PHONY : Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
+
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.o: Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.o
+
+# target to build an object file
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
+
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.i: Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.i
+
+# target to preprocess a source file
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
+
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.s: Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
+
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.s
+
+# target to generate assembly for a file
+Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
+.PHONY : Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
+
 Entity_Model/EM_Player.o: Entity_Model/EM_Player.cpp.o
 
 .PHONY : Entity_Model/EM_Player.o
@@ -365,6 +473,114 @@ Entity_View/EV_Platform.s: Entity_View/EV_Platform.cpp.s
 Entity_View/EV_Platform.cpp.s:
 	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.s
 .PHONY : Entity_View/EV_Platform.cpp.s
+
+Entity_View/EV_Platform_Types/EV_Blue_Platform.o: Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.o
+
+# target to build an object file
+Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o
+
+Entity_View/EV_Platform_Types/EV_Blue_Platform.i: Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.i
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.i
+
+# target to preprocess a source file
+Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.i
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.i
+
+Entity_View/EV_Platform_Types/EV_Blue_Platform.s: Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.s
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.s
+
+# target to generate assembly for a file
+Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.s
+.PHONY : Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.s
+
+Entity_View/EV_Platform_Types/EV_Green_Platform.o: Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.o
+
+# target to build an object file
+Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o
+
+Entity_View/EV_Platform_Types/EV_Green_Platform.i: Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.i
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.i
+
+# target to preprocess a source file
+Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.i
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.i
+
+Entity_View/EV_Platform_Types/EV_Green_Platform.s: Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.s
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.s
+
+# target to generate assembly for a file
+Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.s
+.PHONY : Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.s
+
+Entity_View/EV_Platform_Types/EV_White_Platform.o: Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o
+
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.o
+
+# target to build an object file
+Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o
+
+Entity_View/EV_Platform_Types/EV_White_Platform.i: Entity_View/EV_Platform_Types/EV_White_Platform.cpp.i
+
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.i
+
+# target to preprocess a source file
+Entity_View/EV_Platform_Types/EV_White_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.i
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.cpp.i
+
+Entity_View/EV_Platform_Types/EV_White_Platform.s: Entity_View/EV_Platform_Types/EV_White_Platform.cpp.s
+
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.s
+
+# target to generate assembly for a file
+Entity_View/EV_Platform_Types/EV_White_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.s
+.PHONY : Entity_View/EV_Platform_Types/EV_White_Platform.cpp.s
+
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.o: Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.o
+
+# target to build an object file
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o
+
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.i: Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.i
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.i
+
+# target to preprocess a source file
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.i:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.i
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.i
+
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.s: Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.s
+
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.s
+
+# target to generate assembly for a file
+Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.s:
+	$(MAKE) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.s
+.PHONY : Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.s
 
 Entity_View/EV_Player.o: Entity_View/EV_Player.cpp.o
 
@@ -711,6 +927,18 @@ help:
 	@echo "... Entity_Model/EM_Platform.o"
 	@echo "... Entity_Model/EM_Platform.i"
 	@echo "... Entity_Model/EM_Platform.s"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Blue_Platform.o"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Blue_Platform.i"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Blue_Platform.s"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Green_Platform.o"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Green_Platform.i"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Green_Platform.s"
+	@echo "... Entity_Model/EM_Platform_Types/EM_White_Platform.o"
+	@echo "... Entity_Model/EM_Platform_Types/EM_White_Platform.i"
+	@echo "... Entity_Model/EM_Platform_Types/EM_White_Platform.s"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Yellow_Platform.o"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Yellow_Platform.i"
+	@echo "... Entity_Model/EM_Platform_Types/EM_Yellow_Platform.s"
 	@echo "... Entity_Model/EM_Player.o"
 	@echo "... Entity_Model/EM_Player.i"
 	@echo "... Entity_Model/EM_Player.s"
@@ -726,6 +954,18 @@ help:
 	@echo "... Entity_View/EV_Platform.o"
 	@echo "... Entity_View/EV_Platform.i"
 	@echo "... Entity_View/EV_Platform.s"
+	@echo "... Entity_View/EV_Platform_Types/EV_Blue_Platform.o"
+	@echo "... Entity_View/EV_Platform_Types/EV_Blue_Platform.i"
+	@echo "... Entity_View/EV_Platform_Types/EV_Blue_Platform.s"
+	@echo "... Entity_View/EV_Platform_Types/EV_Green_Platform.o"
+	@echo "... Entity_View/EV_Platform_Types/EV_Green_Platform.i"
+	@echo "... Entity_View/EV_Platform_Types/EV_Green_Platform.s"
+	@echo "... Entity_View/EV_Platform_Types/EV_White_Platform.o"
+	@echo "... Entity_View/EV_Platform_Types/EV_White_Platform.i"
+	@echo "... Entity_View/EV_Platform_Types/EV_White_Platform.s"
+	@echo "... Entity_View/EV_Platform_Types/EV_Yellow_Platform.o"
+	@echo "... Entity_View/EV_Platform_Types/EV_Yellow_Platform.i"
+	@echo "... Entity_View/EV_Platform_Types/EV_Yellow_Platform.s"
 	@echo "... Entity_View/EV_Player.o"
 	@echo "... Entity_View/EV_Player.i"
 	@echo "... Entity_View/EV_Player.s"

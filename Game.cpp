@@ -19,7 +19,7 @@ Game::Game() {
             throw error;
         }
         else{
-            // we give the window a icon
+            // we give the window an icon
             window->setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
         }
     }

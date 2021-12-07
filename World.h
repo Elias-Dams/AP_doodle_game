@@ -19,9 +19,11 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include <typeinfo>
 #include "design_patterns/Abstract_Factory.h"
 #include "Random.h"
 #include "Camera.h"
+
 
 class World {
 public:
@@ -45,20 +47,21 @@ public:
 
     shared_ptr<Camera> getCamera() const;
 
+    virtual ~World();
 
 
 private:
-    shared_ptr<EM_Player> player;
+
     shared_ptr<Abstract_Factory> factory;
+    shared_ptr<EM_Player> player;
     vector<shared_ptr<EM_Platform>> platforms;
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;
+    
     int height_of_last_platform;
     int platforms_per_view;
     int WIDTH;
     int HEIGHT;
-
-
 
 };
 

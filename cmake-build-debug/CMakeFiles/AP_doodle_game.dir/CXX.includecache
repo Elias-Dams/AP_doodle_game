@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Camera.cpp
-Camera.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Camera.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Camera.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
@@ -23,6 +19,22 @@ Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
 Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+../EM_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+../EM_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+../EM_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+../EM_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
 vector
@@ -58,6 +70,22 @@ Entity_View.h
 SFML/Graphics.hpp
 -
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+../EV_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+../EV_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+../EV_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+../EV_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
 Entity_View.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
@@ -76,28 +104,6 @@ string
 ../Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.cpp
-Game.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
-iostream
--
-list
--
-string
--
-SFML/Graphics.hpp
--
-algorithm
--
-Stopwatch.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
-World.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
-design_patterns/Concrete_Factory.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
 iostream
 -
@@ -108,18 +114,6 @@ string
 vector
 -
 random
--
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
-iostream
--
-list
--
-string
--
-chrono
--
-memory
 -
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp
@@ -136,6 +130,8 @@ string
 vector
 -
 memory
+-
+typeinfo
 -
 design_patterns/Abstract_Factory.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
@@ -155,34 +151,32 @@ memory
 -
 ../Entity_Model/EM_Player.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
-../Entity_Model/EM_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+../Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+../Entity_Model/EM_Platform_Types/EM_White_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
 ../Entity_Model/EM_BG_Tile.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
 ../Entity_Model/EM_Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
 ../Entity_View/EV_Player.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
-../Entity_View/EV_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+../Entity_View/EV_Platform_Types/EV_Green_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+../Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+../Entity_View/EV_Platform_Types/EV_White_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
 ../Entity_View/EV_Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
 ../Entity_View/EV_BG_Tile.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h
-iostream
--
-list
--
-string
--
-memory
--
-map
--
-Abstract_Factory.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
 iostream
@@ -205,12 +199,4 @@ memory
 -
 Observer.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp
-iostream
--
-string
--
-Game.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
 

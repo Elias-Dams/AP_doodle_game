@@ -23,6 +23,10 @@ public:
 
     void setHeight(float height);
 
+    float toGameheight(float position, float entity_height);
+
+    float toGamewidth(float position, float entity_height);
+
 private:
 
     float CameraWidth;

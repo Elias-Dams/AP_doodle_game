@@ -22,6 +22,34 @@ CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
 CMakeFiles/AP_doodle_game.dir/Entity_Model/EM_Player.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
@@ -54,6 +82,38 @@ CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
 CMakeFiles/AP_doodle_game.dir/Entity_View/EV_Player.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.cpp
@@ -72,11 +132,19 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.cpp
@@ -105,11 +173,19 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
@@ -122,11 +198,19 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.cpp
@@ -137,11 +221,19 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
@@ -161,11 +253,19 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Bonus.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Green_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_White_Platform.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h

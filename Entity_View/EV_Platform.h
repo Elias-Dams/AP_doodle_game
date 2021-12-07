@@ -7,15 +7,13 @@
 
 class EV_Platform : public Entity_View{
 public:
-    EV_Platform(Entity_Model &subject, float platformWidth, float platformHeight);
 
-    void Update(float xpos, float ypos) override;
+    EV_Platform(Entity_Model &subject);
 
-    sf::Sprite getPlatform() const;
+    virtual void Update(float xpos, float ypos) = 0;
 
-private:
-    sf::Sprite *platform;
-    sf::Texture *texture;
+    virtual sf::Sprite getPlatform() const = 0;
+
 };
 
 #endif //AP_DOODLE_GAME_EV_PLATFORM_H

@@ -38,6 +38,14 @@ add_executable(AP_doodle_game
         Entity_Model/EM_Platform.h
         Entity_Model/Entity_Model.h
         Entity_Model/Entity_Model.cpp
+        Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
+        Entity_Model/EM_Platform_Types/EM_Green_Platform.h
+        Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
+        Entity_Model/EM_Platform_Types/EM_Blue_Platform.h
+        Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
+        Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h
+        Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
+        Entity_Model/EM_Platform_Types/EM_White_Platform.h
 
         Entity_View/EV_Player.h
         Entity_View/EV_Player.cpp
@@ -48,6 +56,14 @@ add_executable(AP_doodle_game
         Entity_View/EV_Bonus.h
         Entity_View/EV_Bonus.cpp
         Entity_View/Entity_View.h
-        Entity_View/Entity_View.cpp)
+        Entity_View/Entity_View.cpp
+        Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp
+        Entity_View/EV_Platform_Types/EV_Blue_Platform.h
+        Entity_View/EV_Platform_Types/EV_Green_Platform.cpp
+        Entity_View/EV_Platform_Types/EV_Green_Platform.h
+        Entity_View/EV_Platform_Types/EV_White_Platform.cpp
+        Entity_View/EV_Platform_Types/EV_White_Platform.h
+        Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
+        Entity_View/EV_Platform_Types/EV_Yellow_Platform.h)
 
 target_link_libraries(AP_doodle_game sfml-graphics sfml-window sfml-system)

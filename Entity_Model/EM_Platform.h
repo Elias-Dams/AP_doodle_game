@@ -7,23 +7,17 @@
 class EM_Platform : public Entity_Model{
 
 public:
-    EM_Platform(float platformWidth, float platformHeight);
+    virtual const pair<float, float> &getPosition() const = 0;
 
-    const pair<float, float> &getPosition() const;
+    virtual void update(float dt, int world_Width) = 0;
 
-    void setPosition(const float &x, const float &y);
+    virtual float getPlatformWidth() const = 0;
 
-    void update();
+    virtual float getPlatformHeight() const = 0;
 
-    float getPlatformWidth() const;
+    virtual void setPosition(const float &x, const float &y) = 0;
 
-    float getPlatformHeight() const;
-
-
-private:
-    pair<float, float> position;
-    float platform_width;
-    float platform_height;
+    virtual const string &getColor() const = 0;
 };
 
 

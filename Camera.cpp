@@ -13,3 +13,10 @@ void Camera::setHeight(float height_) {
     Camera::height = height_;
 }
 
+float Camera::toGameheight(float position, float entity_height){
+    return CameraHeight - position - entity_height;
+}
+
+float Camera::toGamewidth(float position, float entity_height){
+    return CameraHeight - position - entity_height;
+}

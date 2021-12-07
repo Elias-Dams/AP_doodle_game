@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Camera.h
+iostream
+-
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_BG_Tile.h
 Entity_Model.h
@@ -104,6 +106,28 @@ string
 ../Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.cpp
+Game.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
+iostream
+-
+list
+-
+string
+-
+SFML/Graphics.hpp
+-
+algorithm
+-
+Stopwatch.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
+World.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
+design_patterns/Concrete_Factory.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
 iostream
 -
@@ -116,9 +140,29 @@ vector
 random
 -
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp
-World.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
+iostream
+-
+list
+-
+string
+-
+design_patterns/Subject.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.h
+Entity_Model/Entity_Model.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/Entity_Model.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
+iostream
+-
+list
+-
+string
+-
+chrono
+-
+memory
+-
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
 iostream
@@ -149,6 +193,8 @@ string
 -
 memory
 -
+../Score.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
 ../Entity_Model/EM_Player.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_Model/EM_Player.h
 ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h
@@ -178,6 +224,20 @@ memory
 ../Entity_View/EV_BG_Tile.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_BG_Tile.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h
+iostream
+-
+list
+-
+string
+-
+memory
+-
+map
+-
+Abstract_Factory.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
 iostream
 -
@@ -199,4 +259,12 @@ memory
 -
 Observer.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp
+iostream
+-
+string
+-
+Game.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
 

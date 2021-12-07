@@ -6,9 +6,10 @@ World::World(const shared_ptr<Abstract_Factory> &factory) : factory(factory) {
     HEIGHT = 600;
     platforms_per_view = 10;
     height_of_last_platform = 0;
-    player = factory->createPlayer(WIDTH/8.0f, HEIGHT/12.0f);
-    random = unique_ptr<Random>(Random::GetInstance());
     camera = make_shared<Camera>(WIDTH, HEIGHT);
+    player = factory->createPlayer(WIDTH/8.0f, HEIGHT/12.0f, camera->toGamewidth(150.0f, WIDTH/8.0f), camera->toGameheight(300.0f, HEIGHT/12.0f));
+    random = unique_ptr<Random>(Random::GetInstance());
+
     this->create_platforms();
 }
 
@@ -90,7 +91,7 @@ bool World::colisionCheck(shared_ptr<EM_Platform> platform){
 void World::update(float dt, const char &key){
     // game over;
     if(player->getPosition().second < (camera->getHeight()-HEIGHT/2)){
-        cout << "game over" << endl;
+        //cout << "game over" << endl;
     }
 
     // update the camera pos
@@ -156,11 +157,11 @@ void World::update(float dt, const char &key){
     this->add_platforms();
 
     if(jump){
-        player->jump(dt, hit);
+        player->jump(player->getPosition().second, dt, hit);
     }
     else{
         hit = false;
-        player->jump(dt, hit);
+        player->jump(player->getPosition().second, dt, hit);
     }
 
     //cout << player->getPosition().second << endl;

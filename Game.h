@@ -43,6 +43,9 @@ private:
     shared_ptr<World> world;
     shared_ptr<Stopwatch> clock;
     shared_ptr<sf::View>view;
+    sf::Font font;
+    sf::Text text;
+
 
 };
 

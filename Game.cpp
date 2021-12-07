@@ -18,6 +18,11 @@ Game::Game() {
             string error = "Loading icon failed";
             throw error;
         }
+        if(!font.loadFromFile("../Textures/AmaticSC-Regular.ttf"))
+        {
+            string error = "Loading font failed";
+            throw error;
+        }
         else{
             // we give the window an icon
             window->setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
@@ -26,6 +31,11 @@ Game::Game() {
     catch(string& a){
         cerr << a << endl;
     }
+
+    text.setFont(font);
+    text.setCharacterSize(50);
+    text.setString(to_string(ConcreteFactory->get_score()->getscore()));
+    text.setFillColor(sf::Color::Black);
 
 }
 
@@ -47,7 +57,9 @@ void Game::run(){
         }
 
         window->draw(ConcreteFactory->get_player(world->getPlayer())->getPlayer());
+        window->draw(text);
         window->display();
+
 
         //cout << "dt: " << dt << "  " << "fps: " << 1 / dt << endl;
     }
@@ -61,6 +73,7 @@ void Game::update(const float& dt){
     while (window->pollEvent(event)){
         if (event.type == sf::Event::Closed)
             window->close();
+
     }
 
     // update
@@ -78,11 +91,14 @@ void Game::update(const float& dt){
         key = 'D';
     }
     world->update(dt, key);
-    //cout << world->getCamera()->getHeightdiff() << endl;
-    //view->move(0.0f, -world->getCamera()->getHeightdiff());
-    view->setCenter(world->getWidth()/2, -world->getCamera()->getHeight()+world->getHeight());
+
+    view->setCenter(world->getWidth()/2, -world->getCamera()->getHeight() + world->getHeight());
+
+    text.setPosition(0, (world->getHeight()/2)-world->getCamera()->getHeight());
+    text.setString(to_string(ConcreteFactory->get_score()->getscore()));
 
 }
 
 Game::~Game() {
+
 }

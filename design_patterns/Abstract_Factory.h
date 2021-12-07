@@ -6,6 +6,7 @@
 #include <list>
 #include <string>
 #include <memory>
+#include "../Score.h"
 #include "../Entity_Model/EM_Player.h"
 #include "../Entity_Model/EM_Platform_Types/EM_Green_Platform.h"
 #include "../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h"
@@ -26,7 +27,7 @@ class Abstract_Factory {
 
 public:
 
-    virtual shared_ptr<EM_Player> createPlayer(float player_width, float player_height) = 0;
+    virtual shared_ptr<EM_Player> createPlayer(float player_width, float player_height, float startposx, float startposy) = 0;
     virtual shared_ptr<EM_Green_Platform> createGreenPlatform(float platform_width, float platform_height) = 0;
     virtual shared_ptr<EM_Blue_Platform> createBluePlatform(float platform_width, float platform_height) = 0;
     virtual shared_ptr<EM_White_Platform> createWhitePlatform(float platform_width, float platform_height) = 0;
@@ -34,6 +35,7 @@ public:
 
     virtual shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) = 0;
     virtual shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) = 0;
+    virtual shared_ptr<Score> get_score() =0;
 };
 
 

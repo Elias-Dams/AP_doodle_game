@@ -2,8 +2,8 @@
 #include "Score.h"
 
 Score::Score(Entity_Model &subject) : subject_(subject) {
-    //this->subject_.Attach(this->getSharedPtr());
 
+    height = 0;
 }
 
 Score::~Score() {
@@ -11,10 +11,16 @@ Score::~Score() {
 }
 
 void Score::Update(float xpos, float ypos) {
-    cout << "i updated" << endl;
+    if(height < ypos){
+        height = ypos;
+    }
 }
 
 void Score::RemoveMeFromTheList() {
-    //subject_.Detach(this->getSharedPtr());
+
     std::cout << "Observer removed from the list.\n";
+}
+
+int Score::getscore() const {
+    return height;
 }

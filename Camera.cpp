@@ -14,9 +14,11 @@ void Camera::setHeight(float height_) {
 }
 
 float Camera::toGameheight(float position, float entity_height){
+    std::cout << "position: " << position << std::endl;
+    std::cout << "new position: " << CameraHeight - position - entity_height << std::endl;
     return CameraHeight - position - entity_height;
 }
 
 float Camera::toGamewidth(float position, float entity_height){
-    return CameraHeight - position - entity_height;
+    return position;
 }

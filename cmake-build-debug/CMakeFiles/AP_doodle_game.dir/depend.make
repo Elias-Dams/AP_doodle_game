@@ -149,6 +149,7 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Game.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Random.h
+CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Score.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../Stopwatch.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../World.h
 CMakeFiles/AP_doodle_game.dir/Game.cpp.o: ../design_patterns/Abstract_Factory.h
@@ -188,6 +189,7 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Platform_Types/EV_Y
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Random.h
+CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../Score.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../World.cpp
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../World.h
 CMakeFiles/AP_doodle_game.dir/World.cpp.o: ../design_patterns/Abstract_Factory.h
@@ -212,6 +214,7 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../Score.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Abstract_Factory.cpp
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Abstract_Factory.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: ../design_patterns/Observer.h
@@ -235,6 +238,7 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Entity_View/Entity_View.h
+CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../Score.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../design_patterns/Abstract_Factory.h
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../design_patterns/Concrete_Factory.cpp
 CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: ../design_patterns/Concrete_Factory.h
@@ -269,6 +273,7 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/EV_Player.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Entity_View/Entity_View.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Game.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Random.h
+CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Score.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../Stopwatch.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../World.h
 CMakeFiles/AP_doodle_game.dir/main.cpp.o: ../design_patterns/Abstract_Factory.h

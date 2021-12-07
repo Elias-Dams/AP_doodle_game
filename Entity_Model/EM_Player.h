@@ -10,13 +10,13 @@ class EM_Player : public Entity_Model {
 
 public:
 
-    EM_Player(float player_width, float player_height);
+    EM_Player(float player_width, float player_height, float startposx, float startposy);
 
     virtual ~EM_Player();
 
     void move(const float &xpos, const float &ypos);
 
-    void jump(const float &dt,const bool &hit);
+    void jump(float playerheight, const float &dt,const bool &hit);
 
     float getPlayerWidth() const;
 

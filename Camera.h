@@ -12,6 +12,7 @@
 #ifndef AP_DOODLE_GAME_CAMERA_H
 #define AP_DOODLE_GAME_CAMERA_H
 
+#include <iostream>
 
 class Camera {
 public:
@@ -25,7 +26,7 @@ public:
 
     float toGameheight(float position, float entity_height);
 
-    float toGamewidth(float position, float entity_height);
+    float toGamewidth(float position, float entity_width);
 
 private:
 

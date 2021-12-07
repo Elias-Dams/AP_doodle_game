@@ -3,14 +3,16 @@
 
 Concrete_Factory::Concrete_Factory() {}
 
-shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float player_height){
-    shared_ptr<EM_Player> player = make_shared<EM_Player>(player_width, player_height);
+shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float player_height, float startposx, float startposy){
+    shared_ptr<EM_Player> player = make_shared<EM_Player>(player_width, player_height, startposx, startposy);
     shared_ptr<EV_Player> playerView = make_shared<EV_Player>(*player, player_width, player_height);
+    score = make_shared<Score>(*player);
 
     Playerviews[player] = playerView;
 
     // attach an observer to the player
     player->Attach(playerView);
+    player->Attach(score);
 
     return player;
 }
@@ -75,6 +77,11 @@ shared_ptr<EV_Player> Concrete_Factory::get_player(const shared_ptr<EM_Player> p
 shared_ptr<EV_Platform> Concrete_Factory::get_platform(const shared_ptr<EM_Platform> platform){
 
     return Platformviews[platform].lock();
+}
+
+shared_ptr<Score> Concrete_Factory::get_score(){
+
+    return score;
 }
 
 Concrete_Factory::~Concrete_Factory() {

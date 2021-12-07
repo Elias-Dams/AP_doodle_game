@@ -150,6 +150,7 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
@@ -189,6 +190,7 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
@@ -213,6 +215,7 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.h
@@ -236,6 +239,7 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Platform_Types/EV_Yellow_Platform.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/EV_Player.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h
@@ -270,6 +274,7 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Entity_View/Entity_View.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Game.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Random.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Score.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/Stopwatch.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.h
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.h

@@ -15,11 +15,12 @@ class Concrete_Factory : public Abstract_Factory{
 private:
     map<shared_ptr<EM_Player>, weak_ptr<EV_Player>> Playerviews;
     map<shared_ptr<EM_Platform>, weak_ptr<EV_Platform>> Platformviews;
+    shared_ptr<Score> score;
 
 public:
     Concrete_Factory();
 
-    shared_ptr<EM_Player> createPlayer(float player_width, float player_height) override;
+    shared_ptr<EM_Player> createPlayer(float player_width, float player_height, float startposx, float startposy) override;
     shared_ptr<EM_Green_Platform> createGreenPlatform(float platform_width, float platform_height) override;
     shared_ptr<EM_Blue_Platform> createBluePlatform(float platform_width, float platform_height) override;
     shared_ptr<EM_White_Platform> createWhitePlatform(float platform_width, float platform_height) override;
@@ -27,6 +28,7 @@ public:
 
     shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) override;
     shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) override;
+    shared_ptr<Score> get_score() override;
 
     virtual ~Concrete_Factory();
 };

@@ -1,9 +1,9 @@
 
 #include "EM_Player.h"
 
-EM_Player::EM_Player(float player_width_, float player_height_) : player_width(player_width_), player_height(player_height_){
-    position.first = 150;
-    position.second = 299;
+EM_Player::EM_Player(float player_width_, float player_height_, float startposx, float startposy) : player_width(player_width_), player_height(player_height_){
+    position.first = startposx;
+    position.second = startposy;
     gravity = 0.20f;
     falling = true;
 }
@@ -21,18 +21,18 @@ void EM_Player::move(const float &xpos, const float &ypos){
 }
 
 
-void EM_Player::jump(const float &dt,const bool &hit){
+void EM_Player::jump(float playerheight, const float &dt,const bool &hit){
 
 
-    if(position.second >= -0){
+    if(playerheight >= 0){
 
         // we jump in a range from -11 to 11
-        // -11 --------------- 0 --------------- 11 ----------- ( until the player hits a platform )
+        // -10 --------------- 0 --------------- 10 ----------- ( until the player hits a platform )
         //           up               down
 
         gravity += 0.2f * dt * 60.0f;
         //cout << gravity << "\t" << position.second << endl;
-        position.second -= gravity * dt * 60.0f;
+        playerheight -= gravity * dt * 60.0f;
         if(gravity > 0){
             falling = true;
         }
@@ -44,6 +44,7 @@ void EM_Player::jump(const float &dt,const bool &hit){
         }
 
     }
+    position.second = playerheight;
 
     Notify(position.first, position.second);
 }

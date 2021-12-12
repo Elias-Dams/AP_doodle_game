@@ -24,3 +24,7 @@ float Camera::toGameheight(float position, float entity_height){
 float Camera::toGamewidth(float position, float entity_height){
     return position;
 }
+
+void Camera::CameraReset(){
+    height = CameraHeight/2;
+}

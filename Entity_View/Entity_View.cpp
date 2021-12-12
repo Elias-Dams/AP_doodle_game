@@ -10,7 +10,7 @@ Entity_View::~Entity_View() {
     cout << "Goodbye.\n";
 }
 
-void Entity_View::Update(float xpos, float ypos) {
+void Entity_View::Update(float xpos, float ypos, bool reset) {
     cout << "i updated" << endl;
 }
 

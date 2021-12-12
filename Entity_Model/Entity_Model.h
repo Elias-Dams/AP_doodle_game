@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 #include "../design_patterns/Subject.h"
-#include "../Camera.h"
+
 
 using namespace std;
 
@@ -20,7 +20,7 @@ public:
      */
     void Attach(shared_ptr<Observer> observer) override;
     void Detach(shared_ptr<Observer> observer) override;
-    void Notify(float xpos, float ypos) override;
+    void Notify(float xpos, float ypos, bool reset) override;
 
 
 private:

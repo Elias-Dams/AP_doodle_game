@@ -16,7 +16,7 @@ public:
     Score(Entity_Model &subject);
     virtual ~Score();
 
-    void Update(float xpos, float ypos) override;
+    void Update(float xpos, float ypos, bool reset) override;
     void RemoveMeFromTheList();
 
     int getscore() const;

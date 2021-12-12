@@ -11,14 +11,14 @@ const pair<float, float> &EM_Green_Platform::getPosition() const {
     return position;
 }
 
-void EM_Green_Platform::setPosition(const float &x, const float &y, shared_ptr<Camera> camera) {
+void EM_Green_Platform::setPosition(const float &x, const float &y) {
     EM_Green_Platform::position = make_pair(x, y);
-    Notify(position.first, camera->toGameheight(position.second, platform_height));
+    Notify(position.first,position.second, false);
 }
 
-void EM_Green_Platform::update(float dt, int world_Width, shared_ptr<Camera> camera){
+void EM_Green_Platform::update(float dt, int world_Width){
     // the platform doesn't move
-    Notify(position.first, camera->toGameheight(position.second, platform_height));
+    Notify(position.first,position.second, false);
 }
 
 float EM_Green_Platform::getPlatformWidth() const {

@@ -10,7 +10,7 @@
 class Observer{
 public:
     virtual ~Observer(){};
-    virtual void Update(float xpos, float ypos) = 0;
+    virtual void Update(float xpos, float ypos, bool reset) = 0;
 };
 
 

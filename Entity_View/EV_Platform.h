@@ -10,7 +10,7 @@ public:
 
     EV_Platform(Entity_Model &subject);
 
-    virtual void Update(float xpos, float ypos) = 0;
+    virtual void Update(float xpos, float ypos, bool reset) = 0;
 
     virtual sf::Sprite getPlatform() const = 0;
 

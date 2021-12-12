@@ -7,6 +7,7 @@
 #include <string>
 #include "../design_patterns/Observer.h"
 #include "../Entity_Model/Entity_Model.h"
+#include "../Camera.h"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ public:
 
     virtual ~Entity_View();
 
-    virtual void Update(float xpos, float ypos ) override;
+    virtual void Update(float xpos, float ypos , bool reset) override;
     void RemoveMeFromTheList();
 
 

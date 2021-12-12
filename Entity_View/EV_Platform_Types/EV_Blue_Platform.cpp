@@ -1,7 +1,7 @@
 
 #include "EV_Blue_Platform.h"
 
-EV_Blue_Platform::EV_Blue_Platform(Entity_Model &subject, float platformWidth, float platformHeight) : EV_Platform(subject) {
+EV_Blue_Platform::EV_Blue_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_){
     // we initiaize a new platform
 
     platform = unique_ptr<sf::Sprite>(new sf::Sprite);
@@ -21,14 +21,14 @@ EV_Blue_Platform::EV_Blue_Platform(Entity_Model &subject, float platformWidth, f
         cerr << a << endl;
     }
 
-    platform->setScale( platformWidth / texture->getSize().x , platformHeight / texture->getSize().y );
+    platform->setScale( platformWidth_ / texture->getSize().x , platformHeight_ / texture->getSize().y );
     platform->setColor(sf::Color(82, 170, 228));
 }
 
-void EV_Blue_Platform::Update(float xpos, float ypos){
+void EV_Blue_Platform::Update(float xpos, float ypos, bool reset){
     //cout << "jeej we get updates" << endl;
 
-    platform->setPosition(xpos, ypos);
+    platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }
 
 sf::Sprite EV_Blue_Platform::getPlatform() const {

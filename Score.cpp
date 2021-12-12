@@ -10,10 +10,15 @@ Score::~Score() {
     std::cout << "Goodbye\n";
 }
 
-void Score::Update(float xpos, float ypos) {
+void Score::Update(float xpos, float ypos, bool reset) {
 
-    if(height < -ypos+300){
-        height = -ypos+300;
+    if(!reset){
+        if(height < ypos){
+            height = ypos;
+        }
+    }
+    else{
+        height = 0;
     }
 }
 

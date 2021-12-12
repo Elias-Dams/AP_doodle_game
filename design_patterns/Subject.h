@@ -15,7 +15,7 @@ public:
     virtual ~Subject(){};
     virtual void Attach(std::shared_ptr<Observer> observer) = 0;
     virtual void Detach(std::shared_ptr<Observer> observer) = 0;
-    virtual void Notify(float xpos, float ypos) = 0;
+    virtual void Notify(float xpos, float ypos, bool reset) = 0;
 };
 
 

@@ -12,9 +12,9 @@ public:
 
     const pair<float, float> &getPosition() const;
 
-    void setPosition(const float &x, const float &y, shared_ptr<Camera> camera);
+    void setPosition(const float &x, const float &y);
 
-    void update(float dt, int world_Width, shared_ptr<Camera> camera);
+    void update(float dt, int world_Width);
 
     float getPlatformWidth() const;
 

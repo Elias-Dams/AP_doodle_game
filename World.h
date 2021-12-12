@@ -49,6 +49,10 @@ public:
 
     virtual ~World();
 
+    bool isGameOver() const;
+
+    void Reset();
+
 
 private:
 
@@ -57,6 +61,8 @@ private:
     vector<shared_ptr<EM_Platform>> platforms;
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;
+
+    bool GameOver;
     
     int height_of_last_platform;
     int platforms_per_view;

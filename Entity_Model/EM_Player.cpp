@@ -12,17 +12,16 @@ EM_Player::~EM_Player() {
 
 }
 
-void EM_Player::move(const float &xpos, const float &ypos, shared_ptr<Camera> camera){
+void EM_Player::move(const float &xpos, const float &ypos){
     position.first += xpos;
     position.second += ypos;
 
-    Notify(position.first,  camera->toGameheight(position.second, player_height));
+    Notify(position.first, position.second, false);
 
 }
 
 
-void EM_Player::jump(const float &dt,const bool &hit, shared_ptr<Camera> camera){
-
+void EM_Player::jump(const float &dt,const bool &hit){
 
     if(position.second >= 0){
 
@@ -45,7 +44,7 @@ void EM_Player::jump(const float &dt,const bool &hit, shared_ptr<Camera> camera)
 
     }
 
-    Notify(position.first, camera->toGameheight(position.second, player_height));
+    Notify(position.first, position.second, false);
 }
 
 float EM_Player::getPlayerWidth() const {
@@ -66,4 +65,12 @@ void EM_Player::setPosition(const float &x, const float &y) {
 
 bool EM_Player::isfalling(){
     return falling;
+}
+
+void EM_Player::PlayerReset(float startposx, float startposy){
+    position.first = startposx;
+    position.second = startposy;
+    gravity = 0.20f;
+    falling = true;
+    Notify(startposx, startposy, true);
 }

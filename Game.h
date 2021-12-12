@@ -35,16 +35,39 @@ public:
     /// this function updates the main game loop
     void update(const float& dt);
 
-    virtual ~Game();
+    /// this function draws the entitys on the screen
+    void drawGame();
+
+    /// resets the world
+    void gameOver();
+
+    /// check if the mouse in on the button
+    bool MouseOnButton(sf::Sprite Button);
+
+    void LoadTextures();
+
+    ~Game();
 
 private:
+    /// game
     shared_ptr<sf::RenderWindow> window;
     shared_ptr<Concrete_Factory> ConcreteFactory;
-    shared_ptr<World> world;
+    unique_ptr<World> world;
     shared_ptr<Stopwatch> clock;
     shared_ptr<sf::View>view;
+
+    int highscore;
+    bool GameOver;
+
+    /// menu
     sf::Font font;
-    sf::Text text;
+    sf::Text score_text;
+    sf::Text highscore_text;
+    sf::Sprite Button;
+    sf::Texture ButtonTexture;
+    sf::Texture ButtonTexture_pressed;
+
+
 
 
 };

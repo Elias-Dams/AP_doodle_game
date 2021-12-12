@@ -15,9 +15,9 @@ public:
 
     virtual ~EM_Player();
 
-    void move(const float &xpos, const float &ypos, shared_ptr<Camera> camera);
+    void move(const float &xpos, const float &ypos);
 
-    void jump(const float &dt,const bool &hit, shared_ptr<Camera> camera);
+    void jump(const float &dt,const bool &hit);
 
     float getPlayerWidth() const;
 
@@ -28,6 +28,8 @@ public:
     void setPosition(const float &x, const float &y);
 
     bool isfalling();
+
+    void PlayerReset(float startposx, float startposy);
 
 private:
     pair<float, float> position;

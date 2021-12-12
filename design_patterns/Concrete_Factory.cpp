@@ -3,9 +3,9 @@
 
 Concrete_Factory::Concrete_Factory() {}
 
-shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float player_height, float startposx, float startposy){
+shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float player_height, float startposx, float startposy, shared_ptr<Camera> camera){
     shared_ptr<EM_Player> player = make_shared<EM_Player>(player_width, player_height, startposx, startposy);
-    shared_ptr<EV_Player> playerView = make_shared<EV_Player>(*player, player_width, player_height);
+    shared_ptr<EV_Player> playerView = make_shared<EV_Player>(*player, player_width, player_height, camera);
     score = make_shared<Score>(*player);
 
     Playerviews[player] = playerView;
@@ -17,10 +17,10 @@ shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float p
     return player;
 }
 
-shared_ptr<EM_Green_Platform> Concrete_Factory::createGreenPlatform(float platform_width, float platform_height){
+shared_ptr<EM_Green_Platform> Concrete_Factory::createGreenPlatform(float platform_width, float platform_height, shared_ptr<Camera> camera){
 
     shared_ptr<EM_Green_Platform> platform = make_shared<EM_Green_Platform>(platform_width, platform_height);
-    shared_ptr<EV_Green_Platform> platformView = make_shared<EV_Green_Platform>(*platform, platform_width, platform_height);
+    shared_ptr<EV_Green_Platform> platformView = make_shared<EV_Green_Platform>(*platform, platform_width, platform_height,camera);
 
     Platformviews[platform] = platformView;
 
@@ -30,10 +30,10 @@ shared_ptr<EM_Green_Platform> Concrete_Factory::createGreenPlatform(float platfo
     return platform;
 }
 
-shared_ptr<EM_Blue_Platform> Concrete_Factory::createBluePlatform(float platform_width, float platform_height){
+shared_ptr<EM_Blue_Platform> Concrete_Factory::createBluePlatform(float platform_width, float platform_height, shared_ptr<Camera> camera){
 
     shared_ptr<EM_Blue_Platform> platform = make_shared<EM_Blue_Platform>(platform_width, platform_height);
-    shared_ptr<EV_Blue_Platform> platformView = make_shared<EV_Blue_Platform>(*platform, platform_width, platform_height);
+    shared_ptr<EV_Blue_Platform> platformView = make_shared<EV_Blue_Platform>(*platform, platform_width, platform_height, camera);
 
     Platformviews[platform] = platformView;
 
@@ -43,10 +43,10 @@ shared_ptr<EM_Blue_Platform> Concrete_Factory::createBluePlatform(float platform
     return platform;
 }
 
-shared_ptr<EM_Yellow_Platform> Concrete_Factory::createYellowPlatform(float platform_width, float platform_height, float move_height){
+shared_ptr<EM_Yellow_Platform> Concrete_Factory::createYellowPlatform(float platform_width, float platform_height, float move_height, shared_ptr<Camera> camera){
 
     shared_ptr<EM_Yellow_Platform> platform = make_shared<EM_Yellow_Platform>(platform_width, platform_height, move_height);
-    shared_ptr<EV_Yellow_Platform> platformView = make_shared<EV_Yellow_Platform>(*platform, platform_width, platform_height);
+    shared_ptr<EV_Yellow_Platform> platformView = make_shared<EV_Yellow_Platform>(*platform, platform_width, platform_height, camera);
 
     Platformviews[platform] = platformView;
 
@@ -56,10 +56,10 @@ shared_ptr<EM_Yellow_Platform> Concrete_Factory::createYellowPlatform(float plat
     return platform;
 }
 
-shared_ptr<EM_White_Platform> Concrete_Factory::createWhitePlatform(float platform_width, float platform_height){
+shared_ptr<EM_White_Platform> Concrete_Factory::createWhitePlatform(float platform_width, float platform_height, shared_ptr<Camera> camera){
 
     shared_ptr<EM_White_Platform> platform = make_shared<EM_White_Platform>(platform_width, platform_height);
-    shared_ptr<EV_White_Platform> platformView = make_shared<EV_White_Platform>(*platform, platform_width, platform_height);
+    shared_ptr<EV_White_Platform> platformView = make_shared<EV_White_Platform>(*platform, platform_width, platform_height, camera);
 
     Platformviews[platform] = platformView;
 

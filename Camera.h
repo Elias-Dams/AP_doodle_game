@@ -28,6 +28,8 @@ public:
 
     float toGamewidth(float position, float entity_width);
 
+    void CameraReset();
+
 private:
 
     float CameraWidth;

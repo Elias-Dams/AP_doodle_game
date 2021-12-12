@@ -15,10 +15,10 @@ void Entity_Model::Detach(shared_ptr<Observer> observer) {
     //list_observer_.remove(observer);
 }
 
-void Entity_Model::Notify(float xpos, float ypos) {
+void Entity_Model::Notify(float xpos, float ypos, bool reset) {
 
     for(const auto& observer : list_observer_){
-        observer->Update(xpos, ypos);
+        observer->Update(xpos, ypos, reset);
         //observer.lock()->Update(xpos, ypos);
     }
 

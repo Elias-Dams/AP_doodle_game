@@ -7,9 +7,9 @@
 
 class EV_Blue_Platform : public EV_Platform{
 public:
-    EV_Blue_Platform(Entity_Model &subject, float platformWidth, float platformHeight);
+    EV_Blue_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
-    void Update(float xpos, float ypos) override;
+    void Update(float xpos, float ypos, bool reset) override;
 
     sf::Sprite getPlatform() const;
 
@@ -18,6 +18,9 @@ public:
 private:
     unique_ptr<sf::Sprite> platform;
     unique_ptr<sf::Texture> texture;
+    shared_ptr<Camera> camera;
+    float platformWidth;
+    float platformHeight;
 };
 
 

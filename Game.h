@@ -21,8 +21,11 @@
 #include "World.h"
 #include "design_patterns/Concrete_Factory.h"
 
-
 using namespace std;
+
+enum gamestates{
+    start, gameloop, gameover
+};
 
 class Game {
 
@@ -38,8 +41,14 @@ public:
     /// this function draws the entitys on the screen
     void drawGame();
 
+    /// making the gamestart
+    void gameStart(const float& dt);
+
+    /// generate the world when playing
+    void gameLoop(const float& dt);
+
     /// resets the world
-    void gameOver();
+    void gameOver(const float& dt);
 
     /// check if the mouse in on the button
     bool MouseOnButton(sf::Sprite Button);
@@ -56,8 +65,9 @@ private:
     shared_ptr<Stopwatch> clock;
     shared_ptr<sf::View>view;
 
+    gamestates GameState;
+    bool can_reset;
     int highscore;
-    bool GameOver;
 
     /// menu
     sf::Font font;

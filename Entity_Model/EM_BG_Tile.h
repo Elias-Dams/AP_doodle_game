@@ -11,7 +11,17 @@
 #include "Entity_Model.h"
 
 class EM_BG_Tile : public Entity_Model {
+public:
+    EM_BG_Tile();
 
+    virtual ~EM_BG_Tile();
+
+    const pair<float, float> &getPosition() const;
+
+    void setPosition(const float &posx,const float &posy);
+
+private:
+    pair<float, float> position;
 };
 
 

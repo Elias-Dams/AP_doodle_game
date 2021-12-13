@@ -6,16 +6,31 @@
 #include <list>
 #include <string>
 #include <memory>
-#include "Observer.h"
+#include "ISubject.h"
 
 
-class Subject {
-
+class Subject : public ISubject{
 public:
-    virtual ~Subject(){};
-    virtual void Attach(std::shared_ptr<Observer> observer) = 0;
-    virtual void Detach(std::shared_ptr<Observer> observer) = 0;
-    virtual void Notify(float xpos, float ypos, bool reset) = 0;
+    virtual ~Subject();
+
+    /**
+     * The subscription management methods.
+     */
+    void Attach(std::shared_ptr<IObserver> observer) override;
+    void Detach(std::shared_ptr<IObserver> observer) override;
+
+    /// notifies all entity's to change their position
+    void NotifyPosition(float xpos, float ypos) override;
+
+    /// notifies the score if a new max height has been reached
+    void NewMaxHeigh(float ypos) override;
+
+    /// notifies the entity's who have to reset
+    void NotifyReset() override;
+
+private:
+    std::list<std::shared_ptr<IObserver>> list_observer_;
+
 };
 
 

@@ -1,5 +1,4 @@
 
-
 #include "EV_White_Platform.h"
 
 EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
@@ -26,7 +25,7 @@ EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_
     platform->setColor(sf::Color::White);
 }
 
-void EV_White_Platform::Update(float xpos, float ypos, bool reset){
+void EV_White_Platform::UpdatePosition(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }

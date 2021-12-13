@@ -5,7 +5,7 @@
 #include <iostream>
 #include <list>
 #include <string>
-#include "design_patterns/Subject.h"
+#include "design_patterns/Observer.h"
 #include "Entity_Model/Entity_Model.h"
 
 
@@ -16,14 +16,15 @@ public:
     Score(Entity_Model &subject);
     virtual ~Score();
 
-    void Update(float xpos, float ypos, bool reset) override;
-    void RemoveMeFromTheList();
+    /// updates the score
+    void NewMaxheightReached(float ypos) override;
+
+    void Resetscore() override;
 
     int getscore() const;
 
 private:
-    Entity_Model &subject_;
-    int height;
+    int score;
 };
 
 

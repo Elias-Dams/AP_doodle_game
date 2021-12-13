@@ -25,7 +25,7 @@ EV_Blue_Platform::EV_Blue_Platform(Entity_Model &subject, float platformWidth_, 
     platform->setColor(sf::Color(82, 170, 228));
 }
 
-void EV_Blue_Platform::Update(float xpos, float ypos, bool reset){
+void EV_Blue_Platform::UpdatePosition(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
 
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));

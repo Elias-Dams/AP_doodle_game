@@ -849,6 +849,54 @@ design_patterns/Concrete_Factory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.s
 .PHONY : design_patterns/Concrete_Factory.cpp.s
 
+design_patterns/IObserver.o: design_patterns/IObserver.cpp.o
+.PHONY : design_patterns/IObserver.o
+
+# target to build an object file
+design_patterns/IObserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/IObserver.cpp.o
+.PHONY : design_patterns/IObserver.cpp.o
+
+design_patterns/IObserver.i: design_patterns/IObserver.cpp.i
+.PHONY : design_patterns/IObserver.i
+
+# target to preprocess a source file
+design_patterns/IObserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/IObserver.cpp.i
+.PHONY : design_patterns/IObserver.cpp.i
+
+design_patterns/IObserver.s: design_patterns/IObserver.cpp.s
+.PHONY : design_patterns/IObserver.s
+
+# target to generate assembly for a file
+design_patterns/IObserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/IObserver.cpp.s
+.PHONY : design_patterns/IObserver.cpp.s
+
+design_patterns/ISubject.o: design_patterns/ISubject.cpp.o
+.PHONY : design_patterns/ISubject.o
+
+# target to build an object file
+design_patterns/ISubject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/ISubject.cpp.o
+.PHONY : design_patterns/ISubject.cpp.o
+
+design_patterns/ISubject.i: design_patterns/ISubject.cpp.i
+.PHONY : design_patterns/ISubject.i
+
+# target to preprocess a source file
+design_patterns/ISubject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/ISubject.cpp.i
+.PHONY : design_patterns/ISubject.cpp.i
+
+design_patterns/ISubject.s: design_patterns/ISubject.cpp.s
+.PHONY : design_patterns/ISubject.s
+
+# target to generate assembly for a file
+design_patterns/ISubject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/design_patterns/ISubject.cpp.s
+.PHONY : design_patterns/ISubject.cpp.s
+
 design_patterns/Observer.o: design_patterns/Observer.cpp.o
 .PHONY : design_patterns/Observer.o
 
@@ -1020,6 +1068,12 @@ help:
 	@echo "... design_patterns/Concrete_Factory.o"
 	@echo "... design_patterns/Concrete_Factory.i"
 	@echo "... design_patterns/Concrete_Factory.s"
+	@echo "... design_patterns/IObserver.o"
+	@echo "... design_patterns/IObserver.i"
+	@echo "... design_patterns/IObserver.s"
+	@echo "... design_patterns/ISubject.o"
+	@echo "... design_patterns/ISubject.i"
+	@echo "... design_patterns/ISubject.s"
 	@echo "... design_patterns/Observer.o"
 	@echo "... design_patterns/Observer.i"
 	@echo "... design_patterns/Observer.s"

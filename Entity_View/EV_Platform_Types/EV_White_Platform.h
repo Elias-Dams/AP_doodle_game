@@ -8,7 +8,8 @@ class EV_White_Platform : public EV_Platform{
 public:
     EV_White_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
-    void Update(float xpos, float ypos, bool reset) override;
+    void UpdatePosition(float xpos, float ypos) override;
+
 
     sf::Sprite getPlatform() const;
 

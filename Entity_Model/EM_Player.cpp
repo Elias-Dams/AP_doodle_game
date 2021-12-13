@@ -1,11 +1,10 @@
 
 #include "EM_Player.h"
 
-EM_Player::EM_Player(float player_width_, float player_height_, float startposx, float startposy) : player_width(player_width_), player_height(player_height_){
-    position.first = startposx;
-    position.second = startposy;
+EM_Player::EM_Player(float player_width_, float player_height_) : player_width(player_width_), player_height(player_height_){
     gravity = 0.20f;
     falling = true;
+    maxheight = 0;
 }
 
 EM_Player::~EM_Player() {
@@ -16,7 +15,7 @@ void EM_Player::move(const float &xpos, const float &ypos){
     position.first += xpos;
     position.second += ypos;
 
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 
 }
 
@@ -43,8 +42,12 @@ void EM_Player::jump(const float &dt,const bool &hit){
         }
 
     }
+    if(position.second >= maxheight){
+        maxheight = position.second;
+        NewMaxHeigh(maxheight);
+    }
 
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 }
 
 float EM_Player::getPlayerWidth() const {
@@ -61,10 +64,16 @@ const pair<float, float> &EM_Player::getPosition() const {
 
 void EM_Player::setPosition(const float &x, const float &y) {
     EM_Player::position = make_pair(x,y);
+    NotifyPosition(x, y);
 }
 
 bool EM_Player::isfalling(){
     return falling;
+}
+
+void EM_Player::resetmaxheight(){
+    maxheight = 0;
+    NotifyReset();
 }
 
 void EM_Player::PlayerReset(float startposx, float startposy){
@@ -72,5 +81,7 @@ void EM_Player::PlayerReset(float startposx, float startposy){
     position.second = startposy;
     gravity = 0.20f;
     falling = true;
-    Notify(startposx, startposy, true);
+    maxheight = 0;
+    NotifyPosition(startposx, startposy);
+    NotifyReset();
 }

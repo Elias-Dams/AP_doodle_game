@@ -23,6 +23,10 @@ add_executable(AP_doodle_game
         design_patterns/Observer.h
         design_patterns/Subject.cpp
         design_patterns/Subject.h
+        design_patterns/IObserver.cpp
+        design_patterns/IObserver.h
+        design_patterns/ISubject.cpp
+        design_patterns/ISubject.h
         design_patterns/Abstract_Factory.h
         design_patterns/Abstract_Factory.cpp
         design_patterns/Concrete_Factory.h

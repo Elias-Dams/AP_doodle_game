@@ -5,25 +5,23 @@
 #include <iostream>
 #include <list>
 #include <string>
+#include <SFML/Graphics.hpp>
 #include "../design_patterns/Observer.h"
 #include "../Entity_Model/Entity_Model.h"
 #include "../Camera.h"
+
 
 using namespace std;
 
 class Entity_View : public Observer{
 public:
 
-    Entity_View(Entity_Model &subject);
+    Entity_View(Subject &subject);
 
     virtual ~Entity_View();
 
-    virtual void Update(float xpos, float ypos , bool reset) override;
-    void RemoveMeFromTheList();
+    virtual void UpdatePosition(float xpos, float ypos) override;
 
-
-private:
-    Entity_Model &subject_;
 };
 
 

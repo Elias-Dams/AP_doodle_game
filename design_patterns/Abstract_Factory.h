@@ -32,9 +32,11 @@ public:
     virtual shared_ptr<EM_Blue_Platform> createBluePlatform(float platform_width, float platform_height,shared_ptr<Camera> camera) = 0;
     virtual shared_ptr<EM_White_Platform> createWhitePlatform(float platform_width, float platform_height,shared_ptr<Camera> camera) = 0;
     virtual shared_ptr<EM_Yellow_Platform> createYellowPlatform(float platform_width, float platform_height, float move_height,shared_ptr<Camera> camera) = 0;
+    virtual shared_ptr<EM_BG_Tile> createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) = 0;
 
     virtual shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) = 0;
     virtual shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) = 0;
+    virtual const vector<shared_ptr<EV_BG_Tile>> &getBackgrounds() const = 0;
     virtual shared_ptr<Score> get_score() =0;
 };
 

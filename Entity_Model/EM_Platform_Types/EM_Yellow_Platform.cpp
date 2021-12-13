@@ -16,7 +16,7 @@ const pair<float, float> &EM_Yellow_Platform::getPosition() const {
 
 void EM_Yellow_Platform::setPosition(const float &x, const float &y) {
     EM_Yellow_Platform::position = make_pair(x, y);
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 }
 
 void EM_Yellow_Platform::update(float dt, int world_Width){
@@ -36,7 +36,7 @@ void EM_Yellow_Platform::update(float dt, int world_Width){
         virtual_pos -= (2.0f * dt * 60.0f);
     }
 
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 }
 
 float EM_Yellow_Platform::getPlatformWidth() const {

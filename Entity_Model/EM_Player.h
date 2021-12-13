@@ -11,7 +11,7 @@ class EM_Player : public Entity_Model {
 
 public:
 
-    EM_Player(float player_width, float player_height, float startposx, float startposy);
+    EM_Player(float player_width, float player_height);
 
     virtual ~EM_Player();
 
@@ -29,9 +29,12 @@ public:
 
     bool isfalling();
 
+    void resetmaxheight();
+
     void PlayerReset(float startposx, float startposy);
 
 private:
+    float maxheight;
     pair<float, float> position;
     float gravity;
     float player_width;

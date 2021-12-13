@@ -11,8 +11,11 @@ Game::Game() {
 
     view = make_shared<sf::View>(sf::FloatRect(0, 0, world->getWidth(), world->getHeight()));
 
-    GameOver = false;
     highscore = 0;
+    
+    /// when the game starts the game state is start
+
+    GameState = start;
 
     /// Load the menu textures
     this->LoadTextures();
@@ -67,7 +70,7 @@ void Game::LoadTextures(){
 
 void Game::run(){
     float dt;
-    window->setFramerateLimit(60);
+    window->setFramerateLimit(120);
 
     while (window->isOpen())
     {
@@ -92,7 +95,7 @@ void Game::update(const float& dt){
         if (event.type == sf::Event::Closed){
             window->close();
         }
-        if(GameOver){
+        if(GameState == gameover || GameState == start){
             if (event.type == sf::Event::MouseMoved && MouseOnButton(Button)){
                 Button.setTexture(ButtonTexture_pressed);
 
@@ -100,55 +103,117 @@ void Game::update(const float& dt){
             else{
                 Button.setTexture(ButtonTexture);
             }
-
+            /// when the restart button is clicked the game starts
             if (event.type == sf::Event::MouseButtonPressed && MouseOnButton(Button)){
-                cout << "true" << endl;
-                GameOver = false;
+                GameState = gameloop;
+                world->getPlayer()->resetmaxheight();
             }
         }
     }
 
+    if(GameState == start){
+
+        this->gameStart(dt);
+
+    }
+
+    else if(GameState == gameloop){
+
+        this->gameLoop(dt);
+
+    }
+
+    else if(GameState == gameover){
+
+        this->gameOver(dt);
+
+    }
+
+}
+
+void Game::gameStart(const float& dt){
+    world->startstate(dt);
+}
+
+void Game::gameLoop(const float& dt){
     /// update the pressed key
     char key = 'X';
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Q)
-        || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
+       || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
         key = 'Q';
     }
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)
-        || sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+       || sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
         key = 'D';
     }
 
-    /// if gameover we don't update the game
-    if(!GameOver){
+    /// update the world
+    world->update(dt, key);
 
-        /// update the world
-        world->update(dt, key);
+    /// update the view according to the player in the world
+    view->setCenter(world->getWidth()/2, world->getCamera()->getConvertedHeight());
 
-        /// check if game is over
-        if(world->isGameOver()){
-            this->gameOver();
-            GameOver = true;
-            return;
+    /// update the position/value of the score
+    score_text.setPosition(0, world->getCamera()->getConvertedHeight()-(world->getHeight()/2));
+    score_text.setString(to_string(ConcreteFactory->get_score()->getscore()));
+
+    /// check if game is over
+    if(world->isGameOver()){
+        GameState = gameover;
+        can_reset = true;
+    }
+}
+
+void Game::gameOver(const float& dt){
+
+    /// resetting the world
+    if(can_reset){
+        /// set the score for the endgame screen;
+        score_text.setString("Score : " + to_string(ConcreteFactory->get_score()->getscore()));
+        score_text.setPosition(world->getWidth()/2 - score_text.getGlobalBounds().width/2,
+                               world->getHeight()/2 - score_text.getGlobalBounds().height/2-70);
+
+        /// update the highscore
+        if (highscore <= ConcreteFactory->get_score()->getscore()){
+            highscore = ConcreteFactory->get_score()->getscore();
         }
 
-        /// update the view according to the player in the world
+        /// set the highscore for the endgame screen;
+        highscore_text.setString("highscore : " + to_string(highscore));
+        highscore_text.setPosition(world->getWidth()/2 - highscore_text.getGlobalBounds().width/2,
+                                   world->getHeight()/2 - highscore_text.getGlobalBounds().height/2-130);
 
-        view->setCenter(world->getWidth()/2, world->getCamera()->getConvertedHeight());
-
-        /// update the position/value of the score
-        score_text.setPosition(0, world->getCamera()->getConvertedHeight()-(world->getHeight()/2));
-        score_text.setString(to_string(ConcreteFactory->get_score()->getscore()));
-
+        world->Reset();
+        can_reset = false;
     }
-
-
+    view->setCenter(world->getWidth()/2, world->getCamera()->getConvertedHeight());
+    world->startstate(dt);
 }
 
 void Game::drawGame(){
     window->clear(sf::Color::White);
 
-    if(!GameOver){
+    /// start draws
+    if (GameState == start){
+        for(shared_ptr<EV_BG_Tile> background : ConcreteFactory->getBackgrounds()){
+            window->draw(background->getBackground());
+        }
+
+        for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
+            window->draw(ConcreteFactory->get_platform(platform)->getPlatform());
+        }
+
+        window->draw(ConcreteFactory->get_player(world->getPlayer())->getPlayer());
+
+        window->draw(Button);
+    }
+        /// game loop draws
+    else if(GameState == gameloop){
+
+        for(shared_ptr<EV_BG_Tile> background : ConcreteFactory->getBackgrounds()){
+            window->draw(background->getBackground());
+        }
+
         for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
             window->draw(ConcreteFactory->get_platform(platform)->getPlatform());
         }
@@ -158,35 +223,23 @@ void Game::drawGame(){
         window->draw(score_text);
 
     }
-    else{
+        /// game over draws
+    else if (GameState == gameover){
+        for(shared_ptr<EV_BG_Tile> background : ConcreteFactory->getBackgrounds()){
+            window->draw(background->getBackground());
+        }
+
+        for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
+            window->draw(ConcreteFactory->get_platform(platform)->getPlatform());
+        }
+
+        window->draw(ConcreteFactory->get_player(world->getPlayer())->getPlayer());
         window->draw(score_text);
         window->draw(highscore_text);
         window->draw(Button);
     }
 
-
     window->display();
-}
-
-void Game::gameOver(){
-    /// set the score for the endgame screen;
-    score_text.setString("Score : " + to_string(ConcreteFactory->get_score()->getscore()));
-    score_text.setPosition(world->getWidth()/2 - score_text.getGlobalBounds().width/2,
-                           world->getHeight()/2 - score_text.getGlobalBounds().height/2-70);
-
-    /// update the highscore
-    if (highscore <= ConcreteFactory->get_score()->getscore()){
-        highscore = ConcreteFactory->get_score()->getscore();
-    }
-
-    /// set the highscore for the endgame screen;
-    highscore_text.setString("highscore : " + to_string(highscore));
-    highscore_text.setPosition(world->getWidth()/2 - highscore_text.getGlobalBounds().width/2,
-                               world->getHeight()/2 - highscore_text.getGlobalBounds().height/2-130);
-
-    /// resetting the world
-    world->Reset();
-    view->setCenter(world->getWidth()/2, world->getCamera()->getConvertedHeight());
 }
 
 bool Game::MouseOnButton(sf::Sprite _button) {

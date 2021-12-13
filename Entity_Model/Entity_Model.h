@@ -8,23 +8,12 @@
 #include <vector>
 #include "../design_patterns/Subject.h"
 
-
 using namespace std;
 
 class Entity_Model : public Subject{
 public:
-    virtual ~Entity_Model();
+    Entity_Model();
 
-    /**
-     * The subscription management methods.
-     */
-    void Attach(shared_ptr<Observer> observer) override;
-    void Detach(shared_ptr<Observer> observer) override;
-    void Notify(float xpos, float ypos, bool reset) override;
-
-
-private:
-    list<shared_ptr<Observer>> list_observer_;
 };
 
 

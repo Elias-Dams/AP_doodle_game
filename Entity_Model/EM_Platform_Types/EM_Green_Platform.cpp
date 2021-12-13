@@ -13,12 +13,12 @@ const pair<float, float> &EM_Green_Platform::getPosition() const {
 
 void EM_Green_Platform::setPosition(const float &x, const float &y) {
     EM_Green_Platform::position = make_pair(x, y);
-    Notify(position.first,position.second, false);
+    NotifyPosition(position.first,position.second);
 }
 
 void EM_Green_Platform::update(float dt, int world_Width){
     // the platform doesn't move
-    Notify(position.first,position.second, false);
+    NotifyPosition(position.first,position.second);
 }
 
 float EM_Green_Platform::getPlatformWidth() const {

@@ -30,37 +30,44 @@ public:
 
     World(const shared_ptr<Abstract_Factory> &factory);
 
+    void startstate(float dt);
+
     void update(float dt, const char &key);
 
+    /// ---important getters---
     shared_ptr<EM_Player>  getPlayer() const;
 
     int getWidth() const;
 
     int getHeight() const;
 
-    void create_platforms();
-    void add_platforms();
-
-    const vector<shared_ptr<EM_Platform>> &getPlatforms() const;
-
-    bool colisionCheck(shared_ptr<EM_Platform> platform);
+    const pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> &getBackground() const;
 
     shared_ptr<Camera> getCamera() const;
 
-    virtual ~World();
-
-    bool isGameOver() const;
+    const vector<shared_ptr<EM_Platform>> &getPlatforms() const;
+    /// ------------------------
 
     void Reset();
 
+    bool isGameOver() const;
+
+    virtual ~World();
+
 
 private:
+
+    void create_start_platform();
+    void create_platforms();
+    void add_platforms();
+    bool colisionCheck(shared_ptr<EM_Platform> platform);
 
     shared_ptr<Abstract_Factory> factory;
     shared_ptr<EM_Player> player;
     vector<shared_ptr<EM_Platform>> platforms;
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;
+    pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> background;
 
     bool GameOver;
     

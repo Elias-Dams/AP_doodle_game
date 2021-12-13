@@ -4,7 +4,7 @@
 Concrete_Factory::Concrete_Factory() {}
 
 shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float player_height, float startposx, float startposy, shared_ptr<Camera> camera){
-    shared_ptr<EM_Player> player = make_shared<EM_Player>(player_width, player_height, startposx, startposy);
+    shared_ptr<EM_Player> player = make_shared<EM_Player>(player_width, player_height);
     shared_ptr<EV_Player> playerView = make_shared<EV_Player>(*player, player_width, player_height, camera);
     score = make_shared<Score>(*player);
 
@@ -13,6 +13,9 @@ shared_ptr<EM_Player> Concrete_Factory::createPlayer(float player_width, float p
     // attach an observer to the player
     player->Attach(playerView);
     player->Attach(score);
+
+    // set the playerposition (after it has an observer)
+    player->setPosition( startposx, startposy);
 
     return player;
 }
@@ -69,6 +72,20 @@ shared_ptr<EM_White_Platform> Concrete_Factory::createWhitePlatform(float platfo
     return platform;
 }
 
+shared_ptr<EM_BG_Tile>  Concrete_Factory::createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) {
+    shared_ptr<EM_BG_Tile> background = make_shared<EM_BG_Tile>();
+    shared_ptr<EV_BG_Tile> backgroundView = make_shared<EV_BG_Tile>(*background, background_width, background_height, camera);
+
+    backgrounds.push_back(backgroundView);
+
+    background->Attach(backgroundView);
+
+    // set the backgroundposition (after it has an observer)
+    background->setPosition(startposx, startposy);
+
+    return background;
+}
+
 shared_ptr<EV_Player> Concrete_Factory::get_player(const shared_ptr<EM_Player> player) {
 
     return Playerviews[player].lock();
@@ -84,6 +101,10 @@ shared_ptr<Score> Concrete_Factory::get_score(){
     return score;
 }
 
+const vector<shared_ptr<EV_BG_Tile>> &Concrete_Factory::getBackgrounds() const {
+    return backgrounds;
+}
+
 Concrete_Factory::~Concrete_Factory() {
     /*
     for (std::map<shared_ptr<EM_Player>, weak_ptr<EV_Player>>::iterator it = Playerviews.begin(); it != Playerviews.end(); it++){
@@ -96,3 +117,4 @@ Concrete_Factory::~Concrete_Factory() {
     Platformviews.clear();
      */
 }
+

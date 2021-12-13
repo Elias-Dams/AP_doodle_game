@@ -38,6 +38,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/World.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/World.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Abstract_Factory.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/IObserver.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/IObserver.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/ISubject.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/ISubject.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Subject.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/AP_doodle_game.dir/main.cpp.o"

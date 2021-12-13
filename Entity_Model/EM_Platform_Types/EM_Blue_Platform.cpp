@@ -15,7 +15,7 @@ const pair<float, float> &EM_Blue_Platform::getPosition() const {
 
 void EM_Blue_Platform::setPosition(const float &x, const float &y) {
     EM_Blue_Platform::position = make_pair(x, y);
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 }
 
 void EM_Blue_Platform::update(float dt, int world_Width){
@@ -32,7 +32,7 @@ void EM_Blue_Platform::update(float dt, int world_Width){
     else if(!left){
         position.first -= (2.0f * dt * 60.0f);
     }
-    Notify(position.first, position.second, false);
+    NotifyPosition(position.first, position.second);
 }
 
 float EM_Blue_Platform::getPlatformWidth() const {

@@ -1,32 +1,24 @@
 
 #include "Score.h"
+#include "Entity_Model/EM_Player.h"
 
-Score::Score(Entity_Model &subject) : subject_(subject) {
+Score::Score(Entity_Model &subject) : Observer(subject) {
 
-    height = 0;
+    score = 0;
 }
 
 Score::~Score() {
     std::cout << "Goodbye\n";
 }
 
-void Score::Update(float xpos, float ypos, bool reset) {
-
-    if(!reset){
-        if(height < ypos){
-            height = ypos;
-        }
-    }
-    else{
-        height = 0;
-    }
+void Score::NewMaxheightReached(float ypos) {
+    score = ypos;
 }
 
-void Score::RemoveMeFromTheList() {
-
-    std::cout << "Observer removed from the list.\n";
+void Score::Resetscore(){
+    score = 0;
 }
 
 int Score::getscore() const {
-    return height;
+    return score;
 }

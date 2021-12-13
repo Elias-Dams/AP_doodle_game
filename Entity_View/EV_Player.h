@@ -3,8 +3,7 @@
 #define AP_DOODLE_GAME_EV_PLAYER_H
 
 #include "Entity_View.h"
-#include <SFML/Graphics.hpp>
-
+#include "../Entity_Model/Entity_Model.h"
 
 class EV_Player : public Entity_View{
 
@@ -12,9 +11,9 @@ public:
 
     EV_Player(Entity_Model &subject, float playerWidth, float playerHeight, shared_ptr<Camera> camera);
 
-    void Update(float xpos, float ypos, bool reset) override;
-
     sf::Sprite getPlayer() const;
+
+    void UpdatePosition(float xpos, float ypos) override;
 
 private:
     sf::Sprite player;

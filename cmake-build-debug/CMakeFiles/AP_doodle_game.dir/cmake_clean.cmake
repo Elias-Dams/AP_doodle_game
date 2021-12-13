@@ -31,6 +31,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/AP_doodle_game.dir/World.cpp.o"
   "CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o"
   "CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o"
+  "CMakeFiles/AP_doodle_game.dir/design_patterns/IObserver.cpp.o"
+  "CMakeFiles/AP_doodle_game.dir/design_patterns/ISubject.cpp.o"
   "CMakeFiles/AP_doodle_game.dir/design_patterns/Observer.cpp.o"
   "CMakeFiles/AP_doodle_game.dir/design_patterns/Subject.cpp.o"
   "CMakeFiles/AP_doodle_game.dir/main.cpp.o"

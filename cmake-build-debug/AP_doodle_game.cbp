@@ -262,6 +262,18 @@
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Concrete_Factory.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/IObserver.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/IObserver.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/ISubject.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/ISubject.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/design_patterns/Observer.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>

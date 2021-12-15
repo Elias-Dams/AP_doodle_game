@@ -16,9 +16,9 @@ public:
 
     void update(float dt, int world_Width);
 
-    float getPlatformWidth() const;
+    float getWidth() const;
 
-    float getPlatformHeight() const;
+    float getHeight() const;
 
     const string &getColor() const;
 
@@ -27,8 +27,9 @@ private:
     pair<float, float> position;
     float platform_width;
     float platform_height;
-    float move_height;
     float virtual_pos;
+    float min;
+    float max;
     bool up;
     string color;
 };

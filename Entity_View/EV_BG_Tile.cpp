@@ -5,7 +5,7 @@ EV_BG_Tile::EV_BG_Tile(Subject &subject, float width, float height, shared_ptr<C
                                                                       height(height) {
 
     try {
-        if (!texture.loadFromFile("../Textures/bg.png")){
+        if (!texture.loadFromFile("../Textures/Doodle/bg.png")){
             string error = "Loading background failed";
             throw error;
         }

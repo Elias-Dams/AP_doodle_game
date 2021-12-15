@@ -46,6 +46,8 @@ public:
     shared_ptr<Camera> getCamera() const;
 
     const vector<shared_ptr<EM_Platform>> &getPlatforms() const;
+
+    const map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>> &getBonusses() const;
     /// ------------------------
 
     void Reset();
@@ -55,23 +57,28 @@ public:
     virtual ~World();
 
 
+
+
 private:
 
     void create_start_platform();
     void create_platforms();
     void add_platforms();
-    bool colisionCheck(shared_ptr<EM_Platform> platform);
+    bool colisionCheck(shared_ptr<Entity_Model> entity);
 
     shared_ptr<Abstract_Factory> factory;
     shared_ptr<EM_Player> player;
-    vector<shared_ptr<EM_Platform>> platforms;
+    vector< shared_ptr<EM_Platform> > platforms;
+    map< shared_ptr<EM_Platform>, shared_ptr<EM_Bonus> > bonusses;
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;
-    pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> background;
+    pair< shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile> > background;
 
     bool GameOver;
+    int constant;
     
-    int height_of_last_platform;
+    int last_max_of_radius;
+    int height_of_the_last_platform;
     int platforms_per_view;
     int WIDTH;
     int HEIGHT;

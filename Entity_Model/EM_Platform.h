@@ -11,9 +11,9 @@ public:
 
     virtual void update(float dt, int world_Width) = 0;
 
-    virtual float getPlatformWidth() const = 0;
+    virtual float getWidth() const = 0;
 
-    virtual float getPlatformHeight() const = 0;
+    virtual float getHeight() const = 0;
 
     virtual void setPosition(const float &x, const float &y) = 0;
 

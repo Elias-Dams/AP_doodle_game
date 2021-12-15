@@ -12,9 +12,13 @@
 
 class EM_BG_Tile : public Entity_Model {
 public:
-    EM_BG_Tile();
+    EM_BG_Tile(float width, float height);
 
     virtual ~EM_BG_Tile();
+
+    float getWidth() const;
+
+    float getHeight() const;
 
     const pair<float, float> &getPosition() const;
 
@@ -22,6 +26,8 @@ public:
 
 private:
     pair<float, float> position;
+    float width;
+    float height;
 };
 
 

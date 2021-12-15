@@ -20,16 +20,17 @@ void EM_Player::move(const float &xpos, const float &ypos){
 }
 
 
-void EM_Player::jump(const float &dt,const bool &hit){
+void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit){
 
     if(position.second >= 0){
 
-        // we jump in a range from -11 to 11
+        // jump in with a gravity constant range from -10 to 10
         // -10 --------------- 0 --------------- 10 ----------- ( until the player hits a platform )
         //           up               down
 
         gravity += 0.2f * dt * 60.0f;
-        //cout << gravity << "\t" << position.second << endl;
+
+        // subtract the gravity from the y pos
         position.second -= gravity * dt * 60.0f;
         if(gravity > 0){
             falling = true;
@@ -37,8 +38,11 @@ void EM_Player::jump(const float &dt,const bool &hit){
         if(gravity < 0){
             falling = false;
         }
-        if (hit or position.second <= 0){
-            gravity = -10.0f;
+        if (hit and !bonus_hit){
+            gravity = -10.0f; // jumpheight = 250
+        }
+        if (bonus_hit and !hit ){
+            gravity = -23.0f; // jumpheight = 1250
         }
 
     }
@@ -50,11 +54,11 @@ void EM_Player::jump(const float &dt,const bool &hit){
     NotifyPosition(position.first, position.second);
 }
 
-float EM_Player::getPlayerWidth() const {
+float EM_Player::getWidth() const {
     return player_width;
 }
 
-float EM_Player::getPlayerHeight() const {
+float EM_Player::getHeight() const {
     return player_height;
 }
 
@@ -84,4 +88,8 @@ void EM_Player::PlayerReset(float startposx, float startposy){
     maxheight = 0;
     NotifyPosition(startposx, startposy);
     NotifyReset();
+}
+
+float EM_Player::getMaxheight() const {
+    return maxheight;
 }

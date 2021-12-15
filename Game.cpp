@@ -42,7 +42,7 @@ void Game::LoadTextures(){
     auto image = sf::Image{};
 
     try {
-        if (!image.loadFromFile("../Textures/Doodle_Jump_icon.png")){
+        if (!image.loadFromFile("../Textures/Doodle/Doodle_Jump_icon.png")){
             string error = "Loading icon failed";
             throw error;
         }
@@ -50,11 +50,11 @@ void Game::LoadTextures(){
             string error = "Loading font failed";
             throw error;
         }
-        if(!ButtonTexture.loadFromFile("../Textures/button_newgame.png")){
+        if(!ButtonTexture.loadFromFile("../Textures/Doodle/button_newgame.png")){
             string error = "Loading buttontexture failed";
             throw error;
         }
-        if(!ButtonTexture_pressed.loadFromFile("../Textures/button_newgame_active.png")){
+        if(!ButtonTexture_pressed.loadFromFile("../Textures/Doodle/button_newgame_active.png")){
             string error = "Loading buttontexture failed";
             throw error;
         }
@@ -216,6 +216,11 @@ void Game::drawGame(){
 
         for(shared_ptr<EM_Platform> platform : world->getPlatforms()){
             window->draw(ConcreteFactory->get_platform(platform)->getPlatform());
+        }
+
+        map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>> bonus = world->getBonusses();
+        for(std::map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>>::iterator it = bonus.begin(); it != bonus.end(); it++){
+            window->draw(ConcreteFactory->get_bonus(it->second)->getBonus());
         }
 
         window->draw(ConcreteFactory->get_player(world->getPlayer())->getPlayer());

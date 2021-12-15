@@ -16,9 +16,9 @@ public:
 
     void update(float dt, int world_Width);
 
-    float getPlatformWidth() const;
+    float getWidth() const;
 
-    float getPlatformHeight() const;
+    float getHeight() const;
 
     const string &getColor() const;
 

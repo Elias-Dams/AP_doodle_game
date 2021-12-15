@@ -205,6 +205,8 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o: \
  ../Camera.h \
  ../Entity_Model/EM_BG_Tile.h \
  ../Entity_Model/EM_Bonus.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Jetpack.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Spring.h \
  ../Entity_Model/EM_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h \
@@ -214,6 +216,8 @@ CMakeFiles/AP_doodle_game.dir/Game.cpp.o: \
  ../Entity_Model/Entity_Model.h \
  ../Entity_View/EV_BG_Tile.h \
  ../Entity_View/EV_Bonus.h \
+ ../Entity_View/EV_Bonus_Types/EV_Jetpack.h \
+ ../Entity_View/EV_Bonus_Types/EV_Spring.h \
  ../Entity_View/EV_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Green_Platform.h \
@@ -252,6 +256,8 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: \
  ../Camera.h \
  ../Entity_Model/EM_BG_Tile.h \
  ../Entity_Model/EM_Bonus.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Jetpack.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Spring.h \
  ../Entity_Model/EM_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h \
@@ -261,6 +267,8 @@ CMakeFiles/AP_doodle_game.dir/World.cpp.o: \
  ../Entity_Model/Entity_Model.h \
  ../Entity_View/EV_BG_Tile.h \
  ../Entity_View/EV_Bonus.h \
+ ../Entity_View/EV_Bonus_Types/EV_Jetpack.h \
+ ../Entity_View/EV_Bonus_Types/EV_Spring.h \
  ../Entity_View/EV_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Green_Platform.h \
@@ -281,6 +289,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: \
  ../Camera.h \
  ../Entity_Model/EM_BG_Tile.h \
  ../Entity_Model/EM_Bonus.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Jetpack.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Spring.h \
  ../Entity_Model/EM_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h \
@@ -290,6 +300,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Abstract_Factory.cpp.o: \
  ../Entity_Model/Entity_Model.h \
  ../Entity_View/EV_BG_Tile.h \
  ../Entity_View/EV_Bonus.h \
+ ../Entity_View/EV_Bonus_Types/EV_Jetpack.h \
+ ../Entity_View/EV_Bonus_Types/EV_Spring.h \
  ../Entity_View/EV_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Green_Platform.h \
@@ -308,6 +320,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: \
  ../Camera.h \
  ../Entity_Model/EM_BG_Tile.h \
  ../Entity_Model/EM_Bonus.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Jetpack.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Spring.h \
  ../Entity_Model/EM_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h \
@@ -317,6 +331,8 @@ CMakeFiles/AP_doodle_game.dir/design_patterns/Concrete_Factory.cpp.o: \
  ../Entity_Model/Entity_Model.h \
  ../Entity_View/EV_BG_Tile.h \
  ../Entity_View/EV_Bonus.h \
+ ../Entity_View/EV_Bonus_Types/EV_Jetpack.h \
+ ../Entity_View/EV_Bonus_Types/EV_Spring.h \
  ../Entity_View/EV_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Green_Platform.h \
@@ -354,6 +370,8 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: \
  ../Camera.h \
  ../Entity_Model/EM_BG_Tile.h \
  ../Entity_Model/EM_Bonus.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Jetpack.h \
+ ../Entity_Model/EM_Bonus_Types/EM_Spring.h \
  ../Entity_Model/EM_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Blue_Platform.h \
  ../Entity_Model/EM_Platform_Types/EM_Green_Platform.h \
@@ -363,6 +381,8 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: \
  ../Entity_Model/Entity_Model.h \
  ../Entity_View/EV_BG_Tile.h \
  ../Entity_View/EV_Bonus.h \
+ ../Entity_View/EV_Bonus_Types/EV_Jetpack.h \
+ ../Entity_View/EV_Bonus_Types/EV_Spring.h \
  ../Entity_View/EV_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Blue_Platform.h \
  ../Entity_View/EV_Platform_Types/EV_Green_Platform.h \

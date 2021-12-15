@@ -22,11 +22,11 @@ void EM_White_Platform::update(float dt, int world_Width){
     NotifyPosition(position.first, position.second);
 }
 
-float EM_White_Platform::getPlatformWidth() const {
+float EM_White_Platform::getWidth() const {
     return platform_width;
 }
 
-float EM_White_Platform::getPlatformHeight() const {
+float EM_White_Platform::getHeight() const {
     return platform_height;
 }
 

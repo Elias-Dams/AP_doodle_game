@@ -13,6 +13,16 @@
 #include "Entity_Model.h"
 
 class EM_Bonus : public Entity_Model{
+public:
+    virtual const pair<float, float> &getPosition() const = 0;
+
+    virtual void update(float x, float y) = 0;
+
+    virtual float getWidth() const = 0;
+
+    virtual float getHeight() const = 0;
+
+    virtual void setPosition(const float &x, const float &y) = 0;
 
 };
 

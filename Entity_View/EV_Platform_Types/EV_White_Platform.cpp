@@ -8,7 +8,7 @@ EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_
     texture = unique_ptr<sf::Texture>(new sf::Texture);
 
     try {
-        if (!texture->loadFromFile("../Textures/1jump_panel.png")){
+        if (!texture->loadFromFile("../Textures/Doodle/1jump_panel.png")){
             string error = "Loading platform failed";
             throw error;
         }

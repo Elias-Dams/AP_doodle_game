@@ -72,8 +72,20 @@ shared_ptr<EM_White_Platform> Concrete_Factory::createWhitePlatform(float platfo
     return platform;
 }
 
+shared_ptr<EM_Spring> Concrete_Factory::createSpring(float spring_width, float spring_height,shared_ptr<Camera> camera) {
+    shared_ptr<EM_Spring> spring = make_shared<EM_Spring>(spring_width, spring_height);
+    shared_ptr<EV_Spring> springView = make_shared<EV_Spring>(*spring, spring_width, spring_height, camera);
+
+    Bonusviews[spring] = springView;
+
+    spring->Attach(springView);
+
+    return spring;
+}
+
+
 shared_ptr<EM_BG_Tile>  Concrete_Factory::createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) {
-    shared_ptr<EM_BG_Tile> background = make_shared<EM_BG_Tile>();
+    shared_ptr<EM_BG_Tile> background = make_shared<EM_BG_Tile>(background_width, background_height);
     shared_ptr<EV_BG_Tile> backgroundView = make_shared<EV_BG_Tile>(*background, background_width, background_height, camera);
 
     backgrounds.push_back(backgroundView);
@@ -94,6 +106,11 @@ shared_ptr<EV_Player> Concrete_Factory::get_player(const shared_ptr<EM_Player> p
 shared_ptr<EV_Platform> Concrete_Factory::get_platform(const shared_ptr<EM_Platform> platform){
 
     return Platformviews[platform].lock();
+}
+
+shared_ptr<EV_Bonus> Concrete_Factory::get_bonus(const shared_ptr<EM_Bonus> bonus){
+
+    return Bonusviews[bonus].lock();
 }
 
 shared_ptr<Score> Concrete_Factory::get_score(){

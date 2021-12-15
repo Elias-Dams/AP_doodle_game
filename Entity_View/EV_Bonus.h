@@ -6,6 +6,10 @@
 
 class EV_Bonus : public Entity_View{
 
+public:
+    EV_Bonus(Subject &subject);
+
+    virtual sf::Sprite getBonus() const = 0;
 };
 
 

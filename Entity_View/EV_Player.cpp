@@ -7,11 +7,11 @@ EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHei
     // we initiaize a new player
 
     try {
-        if (!left_texture.loadFromFile("../Textures/doodle-left.png")){
+        if (!left_texture.loadFromFile("../Textures/Chicken/chicken1-left.png")){
             string error = "Loading player failed";
             throw error;
         }
-        if (!right_texture.loadFromFile("../Textures/doodle-right.png")){
+        if (!right_texture.loadFromFile("../Textures/Chicken/chicken1-right.png")){
             string error = "Loading player failed";
             throw error;
         }

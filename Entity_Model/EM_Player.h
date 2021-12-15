@@ -17,11 +17,11 @@ public:
 
     void move(const float &xpos, const float &ypos);
 
-    void jump(const float &dt,const bool &hit);
+    void jump(const float &dt,const bool &hit, const bool &bonus_hit);
 
-    float getPlayerWidth() const;
+    float getWidth() const;
 
-    float getPlayerHeight() const;
+    float getHeight() const;
 
     const pair<float, float> &getPosition() const;
 
@@ -32,6 +32,8 @@ public:
     void resetmaxheight();
 
     void PlayerReset(float startposx, float startposy);
+
+    float getMaxheight() const;
 
 private:
     float maxheight;

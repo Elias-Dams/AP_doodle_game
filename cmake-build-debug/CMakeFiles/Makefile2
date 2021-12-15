@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-d
 
 # The main recursive "all" target.
 all: CMakeFiles/AP_doodle_game.dir/all
+all: CMakeFiles/logic.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,21 +73,22 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/AP_doodle_game.dir/clean
+clean: CMakeFiles/logic.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/AP_doodle_game.dir
 
 # All Build rule for target.
-CMakeFiles/AP_doodle_game.dir/all:
+CMakeFiles/AP_doodle_game.dir/all: CMakeFiles/logic.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target AP_doodle_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target AP_doodle_game"
 .PHONY : CMakeFiles/AP_doodle_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AP_doodle_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AP_doodle_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/AP_doodle_game.dir/rule
@@ -99,6 +101,32 @@ AP_doodle_game: CMakeFiles/AP_doodle_game.dir/rule
 CMakeFiles/AP_doodle_game.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/clean
 .PHONY : CMakeFiles/AP_doodle_game.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/logic.dir
+
+# All Build rule for target.
+CMakeFiles/logic.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target logic"
+.PHONY : CMakeFiles/logic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/logic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/logic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/logic.dir/rule
+
+# Convenience name for target.
+logic: CMakeFiles/logic.dir/rule
+.PHONY : logic
+
+# clean rule for target.
+CMakeFiles/logic.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/clean
+.PHONY : CMakeFiles/logic.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

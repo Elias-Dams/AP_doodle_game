@@ -5,10 +5,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package(SFML COMPONENTS graphics window system)
 
-add_executable(AP_doodle_game
-        main.cpp
-        src/representation/Game.cpp
-        src/representation/Game.h
+
+
+set(LOGIC
         src/logic/Stopwatch.cpp
         src/logic/Stopwatch.h
         src/logic/Camera.cpp
@@ -29,8 +28,6 @@ add_executable(AP_doodle_game
         src/logic/design_patterns/ISubject.h
         src/logic/design_patterns/Abstract_Factory.h
         src/logic/design_patterns/Abstract_Factory.cpp
-        src/representation/design_patterns/Concrete_Factory.h
-        src/representation/design_patterns/Concrete_Factory.cpp
 
         src/logic/Entity_Model/EM_BG_Tile.cpp
         src/logic/Entity_Model/EM_BG_Tile.h
@@ -55,6 +52,17 @@ add_executable(AP_doodle_game
         src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
         src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.h
 
+        )
+
+set( REPRESENTATION
+
+        main.cpp
+        src/representation/Game.cpp
+        src/representation/Game.h
+
+        src/representation/design_patterns/Concrete_Factory.h
+        src/representation/design_patterns/Concrete_Factory.cpp
+
         src/representation/Entity_View/EV_Player.h
         src/representation/Entity_View/EV_Player.cpp
         src/representation/Entity_View/EV_Platform.h
@@ -78,4 +86,10 @@ add_executable(AP_doodle_game
         src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp
         src/representation/Entity_View/EV_Bonus_Types/EV_Spring.h)
 
-target_link_libraries(AP_doodle_game sfml-graphics sfml-window sfml-system)
+add_executable(AP_doodle_game ${REPRESENTATION})
+
+include_directories(src/logic)
+
+add_library(logic ${LOGIC})
+
+target_link_libraries(AP_doodle_game logic sfml-graphics sfml-window sfml-system)

@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/AP_doodle_game.dir/DependInfo.cmake"
+  "CMakeFiles/logic.dir/DependInfo.cmake"
   )

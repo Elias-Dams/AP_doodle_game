@@ -92,139 +92,9 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Game.cpp -o CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.s
 
-CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o: ../src/logic/Stopwatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Stopwatch.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Stopwatch.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Stopwatch.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o: ../src/logic/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o: ../src/logic/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o: ../src/logic/World.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/World.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/World.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/World.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o: ../src/logic/Score.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o: ../src/logic/design_patterns/Observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o: ../src/logic/design_patterns/Subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o: ../src/logic/design_patterns/IObserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o: ../src/logic/design_patterns/ISubject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o: ../src/logic/design_patterns/Abstract_Factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.s
-
 CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o: ../src/representation/design_patterns/Concrete_Factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/design_patterns/Concrete_Factory.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.i: cmake_force
@@ -235,152 +105,9 @@ CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/design_patterns/Concrete_Factory.cpp -o CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.s
 
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o: ../src/logic/Entity_Model/EM_BG_Tile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o: ../src/logic/Entity_Model/EM_Bonus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o: ../src/logic/Entity_Model/EM_Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o: ../src/logic/Entity_Model/Entity_Model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp > CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
-
-CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp -o CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
-
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o: ../src/representation/Entity_View/EV_Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Player.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.i: cmake_force
@@ -393,7 +120,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.s: cm
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o: ../src/representation/Entity_View/EV_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.i: cmake_force
@@ -406,7 +133,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.s: 
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o: ../src/representation/Entity_View/EV_BG_Tile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_BG_Tile.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.i: cmake_force
@@ -419,7 +146,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.s: c
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.o: ../src/representation/Entity_View/EV_Bonus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.i: cmake_force
@@ -432,7 +159,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus.cpp.s: cma
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o: ../src/representation/Entity_View/Entity_View.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.i: cmake_force
@@ -445,7 +172,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.s: 
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o: ../src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Blue_Platform.cpp.i: cmake_force
@@ -458,7 +185,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/E
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o: ../src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Green_Platform.cpp.i: cmake_force
@@ -471,7 +198,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/E
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o: ../src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_White_Platform.cpp.i: cmake_force
@@ -484,7 +211,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/E
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o: ../src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/EV_Yellow_Platform.cpp.i: cmake_force
@@ -497,7 +224,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/E
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o: ../src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.i: cmake_force
@@ -510,7 +237,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_J
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o: CMakeFiles/AP_doodle_game.dir/flags.make
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o: ../src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp
 
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.i: cmake_force
@@ -525,28 +252,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_S
 AP_doodle_game_OBJECTS = \
 "CMakeFiles/AP_doodle_game.dir/main.cpp.o" \
 "CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o" \
 "CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o" \
-"CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o" \
 "CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o" \
 "CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o" \
 "CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o" \
@@ -564,28 +270,7 @@ AP_doodle_game_EXTERNAL_OBJECTS =
 
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/main.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
-AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Player.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_BG_Tile.cpp.o
@@ -598,11 +283,12 @@ AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp.o
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/build.make
+AP_doodle_game: liblogic.a
 AP_doodle_game: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 AP_doodle_game: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 AP_doodle_game: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 AP_doodle_game: CMakeFiles/AP_doodle_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable AP_doodle_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable AP_doodle_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AP_doodle_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

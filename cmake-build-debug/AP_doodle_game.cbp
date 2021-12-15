@@ -24,6 +24,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -46,6 +47,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -56,6 +58,52 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 AP_doodle_game/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logic">
+				<Option output="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/liblogic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 logic"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="logic/fast">
+				<Option output="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/liblogic.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 logic/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -86,130 +134,130 @@
 			<Option target="AP_doodle_game"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Stopwatch.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Stopwatch.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/World.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/World.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.cpp">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h">
-			<Option target="AP_doodle_game"/>
+			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_BG_Tile.cpp">
 			<Option target="AP_doodle_game"/>

@@ -129,6 +129,19 @@ AP_doodle_game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/build
 .PHONY : AP_doodle_game/fast
 
+#=============================================================================
+# Target rules for targets named logic
+
+# Build rule for target.
+logic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logic
+.PHONY : logic
+
+# fast build rule for target.
+logic/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/build
+.PHONY : logic/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -158,7 +171,7 @@ src/logic/Camera.o: src/logic/Camera.cpp.o
 
 # target to build an object file
 src/logic/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Camera.cpp.o
 .PHONY : src/logic/Camera.cpp.o
 
 src/logic/Camera.i: src/logic/Camera.cpp.i
@@ -166,7 +179,7 @@ src/logic/Camera.i: src/logic/Camera.cpp.i
 
 # target to preprocess a source file
 src/logic/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Camera.cpp.i
 .PHONY : src/logic/Camera.cpp.i
 
 src/logic/Camera.s: src/logic/Camera.cpp.s
@@ -174,7 +187,7 @@ src/logic/Camera.s: src/logic/Camera.cpp.s
 
 # target to generate assembly for a file
 src/logic/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Camera.cpp.s
 .PHONY : src/logic/Camera.cpp.s
 
 src/logic/Entity_Model/EM_BG_Tile.o: src/logic/Entity_Model/EM_BG_Tile.cpp.o
@@ -182,7 +195,7 @@ src/logic/Entity_Model/EM_BG_Tile.o: src/logic/Entity_Model/EM_BG_Tile.cpp.o
 
 # target to build an object file
 src/logic/Entity_Model/EM_BG_Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o
 .PHONY : src/logic/Entity_Model/EM_BG_Tile.cpp.o
 
 src/logic/Entity_Model/EM_BG_Tile.i: src/logic/Entity_Model/EM_BG_Tile.cpp.i
@@ -190,7 +203,7 @@ src/logic/Entity_Model/EM_BG_Tile.i: src/logic/Entity_Model/EM_BG_Tile.cpp.i
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_BG_Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i
 .PHONY : src/logic/Entity_Model/EM_BG_Tile.cpp.i
 
 src/logic/Entity_Model/EM_BG_Tile.s: src/logic/Entity_Model/EM_BG_Tile.cpp.s
@@ -198,7 +211,7 @@ src/logic/Entity_Model/EM_BG_Tile.s: src/logic/Entity_Model/EM_BG_Tile.cpp.s
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_BG_Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s
 .PHONY : src/logic/Entity_Model/EM_BG_Tile.cpp.s
 
 src/logic/Entity_Model/EM_Bonus.o: src/logic/Entity_Model/EM_Bonus.cpp.o
@@ -206,7 +219,7 @@ src/logic/Entity_Model/EM_Bonus.o: src/logic/Entity_Model/EM_Bonus.cpp.o
 
 # target to build an object file
 src/logic/Entity_Model/EM_Bonus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Bonus.cpp.o
 
 src/logic/Entity_Model/EM_Bonus.i: src/logic/Entity_Model/EM_Bonus.cpp.i
@@ -214,7 +227,7 @@ src/logic/Entity_Model/EM_Bonus.i: src/logic/Entity_Model/EM_Bonus.cpp.i
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Bonus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Bonus.cpp.i
 
 src/logic/Entity_Model/EM_Bonus.s: src/logic/Entity_Model/EM_Bonus.cpp.s
@@ -222,7 +235,7 @@ src/logic/Entity_Model/EM_Bonus.s: src/logic/Entity_Model/EM_Bonus.cpp.s
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Bonus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Bonus.cpp.s
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.o: src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
@@ -230,7 +243,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.o: src/logic/Entity_Model/EM_Bo
 
 # target to build an object file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.i: src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
@@ -238,7 +251,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.i: src/logic/Entity_Model/EM_Bo
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.s: src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
@@ -246,7 +259,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.s: src/logic/Entity_Model/EM_Bo
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.o: src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
@@ -254,7 +267,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.o: src/logic/Entity_Model/EM_Bon
 
 # target to build an object file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.i: src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
@@ -262,7 +275,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.i: src/logic/Entity_Model/EM_Bon
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
 
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.s: src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
@@ -270,7 +283,7 @@ src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.s: src/logic/Entity_Model/EM_Bon
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
 
 src/logic/Entity_Model/EM_Platform.o: src/logic/Entity_Model/EM_Platform.cpp.o
@@ -278,7 +291,7 @@ src/logic/Entity_Model/EM_Platform.o: src/logic/Entity_Model/EM_Platform.cpp.o
 
 # target to build an object file
 src/logic/Entity_Model/EM_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Platform.cpp.o
 
 src/logic/Entity_Model/EM_Platform.i: src/logic/Entity_Model/EM_Platform.cpp.i
@@ -286,7 +299,7 @@ src/logic/Entity_Model/EM_Platform.i: src/logic/Entity_Model/EM_Platform.cpp.i
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Platform.cpp.i
 
 src/logic/Entity_Model/EM_Platform.s: src/logic/Entity_Model/EM_Platform.cpp.s
@@ -294,7 +307,7 @@ src/logic/Entity_Model/EM_Platform.s: src/logic/Entity_Model/EM_Platform.cpp.s
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Platform.cpp.s
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.o: src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
@@ -302,7 +315,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.o: src/logic/Entity_Mo
 
 # target to build an object file
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.i: src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
@@ -310,7 +323,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.i: src/logic/Entity_Mo
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.s: src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
@@ -318,7 +331,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.s: src/logic/Entity_Mo
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.o: src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
@@ -326,7 +339,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.o: src/logic/Entity_M
 
 # target to build an object file
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.i: src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
@@ -334,7 +347,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.i: src/logic/Entity_M
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.s: src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
@@ -342,7 +355,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.s: src/logic/Entity_M
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
 
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.o: src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
@@ -350,7 +363,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.o: src/logic/Entity_M
 
 # target to build an object file
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
 
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.i: src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
@@ -358,7 +371,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.i: src/logic/Entity_M
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
 
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.s: src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
@@ -366,7 +379,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.s: src/logic/Entity_M
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.o: src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
@@ -374,7 +387,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.o: src/logic/Entity_
 
 # target to build an object file
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.i: src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
@@ -382,7 +395,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.i: src/logic/Entity_
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
 
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.s: src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
@@ -390,7 +403,7 @@ src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.s: src/logic/Entity_
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
 
 src/logic/Entity_Model/EM_Player.o: src/logic/Entity_Model/EM_Player.cpp.o
@@ -398,7 +411,7 @@ src/logic/Entity_Model/EM_Player.o: src/logic/Entity_Model/EM_Player.cpp.o
 
 # target to build an object file
 src/logic/Entity_Model/EM_Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o
 .PHONY : src/logic/Entity_Model/EM_Player.cpp.o
 
 src/logic/Entity_Model/EM_Player.i: src/logic/Entity_Model/EM_Player.cpp.i
@@ -406,7 +419,7 @@ src/logic/Entity_Model/EM_Player.i: src/logic/Entity_Model/EM_Player.cpp.i
 
 # target to preprocess a source file
 src/logic/Entity_Model/EM_Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.i
 .PHONY : src/logic/Entity_Model/EM_Player.cpp.i
 
 src/logic/Entity_Model/EM_Player.s: src/logic/Entity_Model/EM_Player.cpp.s
@@ -414,7 +427,7 @@ src/logic/Entity_Model/EM_Player.s: src/logic/Entity_Model/EM_Player.cpp.s
 
 # target to generate assembly for a file
 src/logic/Entity_Model/EM_Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/EM_Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.s
 .PHONY : src/logic/Entity_Model/EM_Player.cpp.s
 
 src/logic/Entity_Model/Entity_Model.o: src/logic/Entity_Model/Entity_Model.cpp.o
@@ -422,7 +435,7 @@ src/logic/Entity_Model/Entity_Model.o: src/logic/Entity_Model/Entity_Model.cpp.o
 
 # target to build an object file
 src/logic/Entity_Model/Entity_Model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o
 .PHONY : src/logic/Entity_Model/Entity_Model.cpp.o
 
 src/logic/Entity_Model/Entity_Model.i: src/logic/Entity_Model/Entity_Model.cpp.i
@@ -430,7 +443,7 @@ src/logic/Entity_Model/Entity_Model.i: src/logic/Entity_Model/Entity_Model.cpp.i
 
 # target to preprocess a source file
 src/logic/Entity_Model/Entity_Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.i
 .PHONY : src/logic/Entity_Model/Entity_Model.cpp.i
 
 src/logic/Entity_Model/Entity_Model.s: src/logic/Entity_Model/Entity_Model.cpp.s
@@ -438,7 +451,7 @@ src/logic/Entity_Model/Entity_Model.s: src/logic/Entity_Model/Entity_Model.cpp.s
 
 # target to generate assembly for a file
 src/logic/Entity_Model/Entity_Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Entity_Model/Entity_Model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.s
 .PHONY : src/logic/Entity_Model/Entity_Model.cpp.s
 
 src/logic/Random.o: src/logic/Random.cpp.o
@@ -446,7 +459,7 @@ src/logic/Random.o: src/logic/Random.cpp.o
 
 # target to build an object file
 src/logic/Random.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Random.cpp.o
 .PHONY : src/logic/Random.cpp.o
 
 src/logic/Random.i: src/logic/Random.cpp.i
@@ -454,7 +467,7 @@ src/logic/Random.i: src/logic/Random.cpp.i
 
 # target to preprocess a source file
 src/logic/Random.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Random.cpp.i
 .PHONY : src/logic/Random.cpp.i
 
 src/logic/Random.s: src/logic/Random.cpp.s
@@ -462,7 +475,7 @@ src/logic/Random.s: src/logic/Random.cpp.s
 
 # target to generate assembly for a file
 src/logic/Random.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Random.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Random.cpp.s
 .PHONY : src/logic/Random.cpp.s
 
 src/logic/Score.o: src/logic/Score.cpp.o
@@ -470,7 +483,7 @@ src/logic/Score.o: src/logic/Score.cpp.o
 
 # target to build an object file
 src/logic/Score.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Score.cpp.o
 .PHONY : src/logic/Score.cpp.o
 
 src/logic/Score.i: src/logic/Score.cpp.i
@@ -478,7 +491,7 @@ src/logic/Score.i: src/logic/Score.cpp.i
 
 # target to preprocess a source file
 src/logic/Score.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Score.cpp.i
 .PHONY : src/logic/Score.cpp.i
 
 src/logic/Score.s: src/logic/Score.cpp.s
@@ -486,7 +499,7 @@ src/logic/Score.s: src/logic/Score.cpp.s
 
 # target to generate assembly for a file
 src/logic/Score.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Score.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Score.cpp.s
 .PHONY : src/logic/Score.cpp.s
 
 src/logic/Stopwatch.o: src/logic/Stopwatch.cpp.o
@@ -494,7 +507,7 @@ src/logic/Stopwatch.o: src/logic/Stopwatch.cpp.o
 
 # target to build an object file
 src/logic/Stopwatch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Stopwatch.cpp.o
 .PHONY : src/logic/Stopwatch.cpp.o
 
 src/logic/Stopwatch.i: src/logic/Stopwatch.cpp.i
@@ -502,7 +515,7 @@ src/logic/Stopwatch.i: src/logic/Stopwatch.cpp.i
 
 # target to preprocess a source file
 src/logic/Stopwatch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Stopwatch.cpp.i
 .PHONY : src/logic/Stopwatch.cpp.i
 
 src/logic/Stopwatch.s: src/logic/Stopwatch.cpp.s
@@ -510,7 +523,7 @@ src/logic/Stopwatch.s: src/logic/Stopwatch.cpp.s
 
 # target to generate assembly for a file
 src/logic/Stopwatch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/Stopwatch.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Stopwatch.cpp.s
 .PHONY : src/logic/Stopwatch.cpp.s
 
 src/logic/World.o: src/logic/World.cpp.o
@@ -518,7 +531,7 @@ src/logic/World.o: src/logic/World.cpp.o
 
 # target to build an object file
 src/logic/World.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/World.cpp.o
 .PHONY : src/logic/World.cpp.o
 
 src/logic/World.i: src/logic/World.cpp.i
@@ -526,7 +539,7 @@ src/logic/World.i: src/logic/World.cpp.i
 
 # target to preprocess a source file
 src/logic/World.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/World.cpp.i
 .PHONY : src/logic/World.cpp.i
 
 src/logic/World.s: src/logic/World.cpp.s
@@ -534,7 +547,7 @@ src/logic/World.s: src/logic/World.cpp.s
 
 # target to generate assembly for a file
 src/logic/World.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/World.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/World.cpp.s
 .PHONY : src/logic/World.cpp.s
 
 src/logic/design_patterns/Abstract_Factory.o: src/logic/design_patterns/Abstract_Factory.cpp.o
@@ -542,7 +555,7 @@ src/logic/design_patterns/Abstract_Factory.o: src/logic/design_patterns/Abstract
 
 # target to build an object file
 src/logic/design_patterns/Abstract_Factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.o
 .PHONY : src/logic/design_patterns/Abstract_Factory.cpp.o
 
 src/logic/design_patterns/Abstract_Factory.i: src/logic/design_patterns/Abstract_Factory.cpp.i
@@ -550,7 +563,7 @@ src/logic/design_patterns/Abstract_Factory.i: src/logic/design_patterns/Abstract
 
 # target to preprocess a source file
 src/logic/design_patterns/Abstract_Factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.i
 .PHONY : src/logic/design_patterns/Abstract_Factory.cpp.i
 
 src/logic/design_patterns/Abstract_Factory.s: src/logic/design_patterns/Abstract_Factory.cpp.s
@@ -558,7 +571,7 @@ src/logic/design_patterns/Abstract_Factory.s: src/logic/design_patterns/Abstract
 
 # target to generate assembly for a file
 src/logic/design_patterns/Abstract_Factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Abstract_Factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.s
 .PHONY : src/logic/design_patterns/Abstract_Factory.cpp.s
 
 src/logic/design_patterns/IObserver.o: src/logic/design_patterns/IObserver.cpp.o
@@ -566,7 +579,7 @@ src/logic/design_patterns/IObserver.o: src/logic/design_patterns/IObserver.cpp.o
 
 # target to build an object file
 src/logic/design_patterns/IObserver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/IObserver.cpp.o
 .PHONY : src/logic/design_patterns/IObserver.cpp.o
 
 src/logic/design_patterns/IObserver.i: src/logic/design_patterns/IObserver.cpp.i
@@ -574,7 +587,7 @@ src/logic/design_patterns/IObserver.i: src/logic/design_patterns/IObserver.cpp.i
 
 # target to preprocess a source file
 src/logic/design_patterns/IObserver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/IObserver.cpp.i
 .PHONY : src/logic/design_patterns/IObserver.cpp.i
 
 src/logic/design_patterns/IObserver.s: src/logic/design_patterns/IObserver.cpp.s
@@ -582,7 +595,7 @@ src/logic/design_patterns/IObserver.s: src/logic/design_patterns/IObserver.cpp.s
 
 # target to generate assembly for a file
 src/logic/design_patterns/IObserver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/IObserver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/IObserver.cpp.s
 .PHONY : src/logic/design_patterns/IObserver.cpp.s
 
 src/logic/design_patterns/ISubject.o: src/logic/design_patterns/ISubject.cpp.o
@@ -590,7 +603,7 @@ src/logic/design_patterns/ISubject.o: src/logic/design_patterns/ISubject.cpp.o
 
 # target to build an object file
 src/logic/design_patterns/ISubject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.o
 .PHONY : src/logic/design_patterns/ISubject.cpp.o
 
 src/logic/design_patterns/ISubject.i: src/logic/design_patterns/ISubject.cpp.i
@@ -598,7 +611,7 @@ src/logic/design_patterns/ISubject.i: src/logic/design_patterns/ISubject.cpp.i
 
 # target to preprocess a source file
 src/logic/design_patterns/ISubject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.i
 .PHONY : src/logic/design_patterns/ISubject.cpp.i
 
 src/logic/design_patterns/ISubject.s: src/logic/design_patterns/ISubject.cpp.s
@@ -606,7 +619,7 @@ src/logic/design_patterns/ISubject.s: src/logic/design_patterns/ISubject.cpp.s
 
 # target to generate assembly for a file
 src/logic/design_patterns/ISubject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/ISubject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.s
 .PHONY : src/logic/design_patterns/ISubject.cpp.s
 
 src/logic/design_patterns/Observer.o: src/logic/design_patterns/Observer.cpp.o
@@ -614,7 +627,7 @@ src/logic/design_patterns/Observer.o: src/logic/design_patterns/Observer.cpp.o
 
 # target to build an object file
 src/logic/design_patterns/Observer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Observer.cpp.o
 .PHONY : src/logic/design_patterns/Observer.cpp.o
 
 src/logic/design_patterns/Observer.i: src/logic/design_patterns/Observer.cpp.i
@@ -622,7 +635,7 @@ src/logic/design_patterns/Observer.i: src/logic/design_patterns/Observer.cpp.i
 
 # target to preprocess a source file
 src/logic/design_patterns/Observer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Observer.cpp.i
 .PHONY : src/logic/design_patterns/Observer.cpp.i
 
 src/logic/design_patterns/Observer.s: src/logic/design_patterns/Observer.cpp.s
@@ -630,7 +643,7 @@ src/logic/design_patterns/Observer.s: src/logic/design_patterns/Observer.cpp.s
 
 # target to generate assembly for a file
 src/logic/design_patterns/Observer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Observer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Observer.cpp.s
 .PHONY : src/logic/design_patterns/Observer.cpp.s
 
 src/logic/design_patterns/Subject.o: src/logic/design_patterns/Subject.cpp.o
@@ -638,7 +651,7 @@ src/logic/design_patterns/Subject.o: src/logic/design_patterns/Subject.cpp.o
 
 # target to build an object file
 src/logic/design_patterns/Subject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.o
 .PHONY : src/logic/design_patterns/Subject.cpp.o
 
 src/logic/design_patterns/Subject.i: src/logic/design_patterns/Subject.cpp.i
@@ -646,7 +659,7 @@ src/logic/design_patterns/Subject.i: src/logic/design_patterns/Subject.cpp.i
 
 # target to preprocess a source file
 src/logic/design_patterns/Subject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.i
 .PHONY : src/logic/design_patterns/Subject.cpp.i
 
 src/logic/design_patterns/Subject.s: src/logic/design_patterns/Subject.cpp.s
@@ -654,7 +667,7 @@ src/logic/design_patterns/Subject.s: src/logic/design_patterns/Subject.cpp.s
 
 # target to generate assembly for a file
 src/logic/design_patterns/Subject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/logic/design_patterns/Subject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.s
 .PHONY : src/logic/design_patterns/Subject.cpp.s
 
 src/representation/Entity_View/EV_BG_Tile.o: src/representation/Entity_View/EV_BG_Tile.cpp.o
@@ -978,6 +991,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AP_doodle_game"
+	@echo "... logic"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

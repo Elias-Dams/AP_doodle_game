@@ -17,8 +17,8 @@
 #include <string>
 #include <SFML/Graphics.hpp>
 #include <algorithm>
-#include "Stopwatch.h"
-#include "World.h"
+#include "../logic/Stopwatch.h"
+#include "../logic/World.h"
 #include "design_patterns/Concrete_Factory.h"
 
 using namespace std;

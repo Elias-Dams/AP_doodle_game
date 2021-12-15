@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <list>
+#include <map>
 #include <string>
 #include <vector>
 #include <memory>
@@ -55,8 +56,6 @@ public:
     bool isGameOver() const;
 
     virtual ~World();
-
-
 
 
 private:

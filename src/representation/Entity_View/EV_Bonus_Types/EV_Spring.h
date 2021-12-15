@@ -3,6 +3,7 @@
 #define AP_DOODLE_GAME_EV_SPRING_H
 
 #include "../EV_Bonus.h"
+#include "../../../logic/Entity_Model/Entity_Model.h"
 
 class EV_Spring : public EV_Bonus {
 public:

@@ -7,8 +7,17 @@
 #include <string>
 #include <memory>
 #include <map>
-#include "Abstract_Factory.h"
-
+#include "../../logic/design_patterns/Abstract_Factory.h"
+#include "../Entity_View/EV_Player.h"
+#include "../Entity_View/EV_Platform_Types/EV_Green_Platform.h"
+#include "../Entity_View/EV_Platform_Types/EV_Blue_Platform.h"
+#include "../Entity_View/EV_Platform_Types/EV_Yellow_Platform.h"
+#include "../Entity_View/EV_Platform_Types/EV_White_Platform.h"
+#include "../Entity_View/EV_Bonus_Types/EV_Spring.h"
+#include "../Entity_View/EV_Bonus_Types/EV_Jetpack.h"
+#include "../Entity_View/EV_Player.h"
+#include "../Entity_View/EV_Bonus.h"
+#include "../Entity_View/EV_BG_Tile.h"
 
 
 class Concrete_Factory : public Abstract_Factory{
@@ -37,11 +46,11 @@ public:
     shared_ptr<EM_BG_Tile> createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) override;
 
     /// Entity view getters
-    shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player) override;
-    shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform) override;
-    shared_ptr<EV_Bonus> get_bonus(const shared_ptr<EM_Bonus> bonus) override;
-    shared_ptr<Score> get_score() override;
-    const vector<shared_ptr<EV_BG_Tile>> &getBackgrounds() const override;
+    shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player);
+    shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform);
+    shared_ptr<EV_Bonus> get_bonus(const shared_ptr<EM_Bonus> bonus);
+    shared_ptr<Score> get_score();
+    const vector<shared_ptr<EV_BG_Tile>> &getBackgrounds() const;
 
 
     virtual ~Concrete_Factory();

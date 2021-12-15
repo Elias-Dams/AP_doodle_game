@@ -3,6 +3,7 @@
 #define AP_DOODLE_GAME_EV_JETPACK_H
 
 #include "../EV_Bonus.h"
+#include "../../../logic/Entity_Model/Entity_Model.h"
 
 class EV_Jetpack : public EV_Bonus{
 public:

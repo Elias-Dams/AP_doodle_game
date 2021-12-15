@@ -3,6 +3,7 @@
 #define AP_DOODLE_GAME_EV_GREEN_PLATFORM_H
 
 #include "../EV_Platform.h"
+#include "../../../logic/Entity_Model/Entity_Model.h"
 
 class EV_Green_Platform : public EV_Platform{
 public:

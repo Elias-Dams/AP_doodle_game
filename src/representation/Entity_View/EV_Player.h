@@ -3,7 +3,7 @@
 #define AP_DOODLE_GAME_EV_PLAYER_H
 
 #include "Entity_View.h"
-#include "../Entity_Model/Entity_Model.h"
+#include "../../logic/Entity_Model/Entity_Model.h"
 
 class EV_Player : public Entity_View{
 

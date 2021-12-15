@@ -6,9 +6,8 @@
 #include <list>
 #include <string>
 #include <SFML/Graphics.hpp>
-#include "../design_patterns/Observer.h"
-#include "../Entity_Model/Entity_Model.h"
-#include "../Camera.h"
+#include "../../logic/Camera.h"
+#include "../../logic/design_patterns/Observer.h"
 
 
 using namespace std;

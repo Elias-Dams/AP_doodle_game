@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Game.h"
+#include "src/representation/Game.h"
 
 using namespace std;
 

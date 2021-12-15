@@ -4,6 +4,7 @@
 #define AP_DOODLE_GAME_EV_YELLOW_PLATFORM_H
 
 #include "../EV_Platform.h"
+#include "../../../logic/Entity_Model/Entity_Model.h"
 
 class EV_Yellow_Platform : public EV_Platform{
 public:

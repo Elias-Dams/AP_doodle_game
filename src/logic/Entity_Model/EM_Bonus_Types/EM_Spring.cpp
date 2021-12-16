@@ -32,3 +32,7 @@ float EM_Spring::getHeight() const {
 string EM_Spring::getType() const{
     return "spring";
 }
+
+EM_Spring::~EM_Spring() {
+    cout << "destructor of EM_Spring" << endl;
+}

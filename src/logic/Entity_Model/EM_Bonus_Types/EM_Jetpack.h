@@ -21,6 +21,8 @@ public:
 
     string getType() const override;
 
+    virtual ~EM_Jetpack();
+
 private:
     pair<float, float> position;
     float jetpack_width;

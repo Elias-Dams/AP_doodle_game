@@ -33,6 +33,10 @@ public:
     virtual shared_ptr<EM_Spring> createSpring(float spring_width, float spring_height,shared_ptr<Camera> camera) = 0;
     virtual shared_ptr<EM_Jetpack> createJetpack(float jetpack_width, float jetpack_height,shared_ptr<Camera> camera)= 0;
 
+    virtual void delete_platform(weak_ptr<EM_Platform> platform) = 0;
+    virtual void delete_player(weak_ptr<EM_Player> player) = 0;
+    virtual void delete_bonus(weak_ptr<EM_Bonus> bonus) = 0;
+
 };
 
 

@@ -30,6 +30,8 @@ public:
 
     void CameraReset();
 
+    virtual ~Camera();
+
 private:
 
     float CameraWidth;

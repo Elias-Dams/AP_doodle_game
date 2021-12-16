@@ -20,3 +20,7 @@ float Stopwatch::mark_time(){
     const std::chrono::duration<float> frameTime = now - old_time_point;
     return frameTime.count();
 }
+
+Stopwatch::~Stopwatch() {
+    cout << "destructor of Stopwatch" << endl;
+}

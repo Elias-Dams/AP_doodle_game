@@ -32,3 +32,7 @@ float EM_Jetpack::getHeight() const {
 string EM_Jetpack::getType() const{
     return "jetpack";
 }
+
+EM_Jetpack::~EM_Jetpack() {
+    cout << "destructor of EM_Jetpack" << endl;
+}

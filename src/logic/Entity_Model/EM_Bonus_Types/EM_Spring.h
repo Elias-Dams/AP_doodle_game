@@ -21,6 +21,8 @@ public:
 
     string getType() const override;
 
+    virtual ~EM_Spring();
+
 private:
     pair<float, float> position;
     float spring_width;

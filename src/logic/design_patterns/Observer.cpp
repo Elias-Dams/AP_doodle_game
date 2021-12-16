@@ -8,7 +8,7 @@ Observer::Observer(Subject &subject) : subject_(subject) {
 }
 
 Observer::~Observer() {
-    std::cout << "Goodbye.\n";
+    std::cout << "destructor of Observer" << std::endl;
 }
 
 void Observer::UpdatePosition(float xpos, float ypos) {

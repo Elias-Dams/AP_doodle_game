@@ -44,6 +44,8 @@ public:
 
 
     Stopwatch();
+
+    virtual ~Stopwatch();
 };
 
 

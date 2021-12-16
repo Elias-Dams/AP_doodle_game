@@ -25,7 +25,7 @@ private:
     map<shared_ptr<EM_Player>, weak_ptr<EV_Player>> Playerviews;
     map<shared_ptr<EM_Platform>, weak_ptr<EV_Platform>> Platformviews;
     map<shared_ptr<EM_Bonus>, weak_ptr<EV_Bonus>> Bonusviews;
-    vector<shared_ptr<EV_BG_Tile>> backgrounds;
+    vector<weak_ptr<EV_BG_Tile>> backgrounds;
     shared_ptr<Score> score;
 
 public:
@@ -47,11 +47,16 @@ public:
     shared_ptr<EM_BG_Tile> createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) override;
 
     /// Entity view getters
-    shared_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player);
-    shared_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform);
-    shared_ptr<EV_Bonus> get_bonus(const shared_ptr<EM_Bonus> bonus);
-    shared_ptr<Score> get_score();
-    const vector<shared_ptr<EV_BG_Tile>> &getBackgrounds() const;
+    weak_ptr<EV_Player> get_player(const shared_ptr<EM_Player> player);
+    weak_ptr<EV_Platform> get_platform(const shared_ptr<EM_Platform> platform);
+    weak_ptr<EV_Bonus> get_bonus(const shared_ptr<EM_Bonus> bonus);
+    weak_ptr<Score> get_score();
+    const vector<weak_ptr<EV_BG_Tile>> &getBackgrounds() const;
+
+    /// deleters
+    void delete_platform(weak_ptr<EM_Platform> platform) override;
+    void delete_player(weak_ptr<EM_Player> player) override;
+    void delete_bonus(weak_ptr<EM_Bonus> bonus) override;
 
 
     virtual ~Concrete_Factory();

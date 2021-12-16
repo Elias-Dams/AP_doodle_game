@@ -2,8 +2,14 @@
 #include "Subject.h"
 
 Subject::~Subject() {
+    std::cout << "destructor of Subject" << std::endl;
+
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+        Subject_.reset();
+    }
     list_observer_.clear();
-    std::cout << "Goodbye, I was the Subject.\n";
+
+
 }
 
 void Subject::Attach(std::shared_ptr<IObserver> observer) {
@@ -16,47 +22,47 @@ void Subject::Detach(std::shared_ptr<IObserver> observer) {
 
 void Subject::NotifyPosition(float xpos, float ypos) {
 
-    for(const auto& Subject : list_observer_){
-        Subject->UpdatePosition(xpos, ypos);
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
+        Subject_->UpdatePosition(xpos, ypos);
 
     }
 
 }
 
 void Subject::NotifySpting() {
-    for(const auto& Subject : list_observer_){
-        Subject->UpdateSpringCollected();
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+        Subject_->UpdateSpringCollected();
 
     }
 }
 
 
 void Subject::NotifyJetpack() {
-    for(const auto& Subject : list_observer_){
-        Subject->UpdateJetpackCollected();
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+        Subject_->UpdateJetpackCollected();
 
     }
 }
 
 void Subject::NewMaxHeigh(float ypos) {
-    for(const auto& Subject : list_observer_){
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
 
-        Subject->NewMaxheightReached(ypos);
+        Subject_->NewMaxheightReached(ypos);
     }
 }
 
 void Subject::NotifyNormal(){
-    for(const auto& Subject : list_observer_){
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
 
-        Subject->ResetTexture();
+        Subject_->ResetTexture();
 
     }
 }
 
 void Subject::NotifyReset() {
-    for(const auto& Subject : list_observer_){
+    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
 
-        Subject->Resetscore();
+        Subject_->Resetscore();
 
     }
 }

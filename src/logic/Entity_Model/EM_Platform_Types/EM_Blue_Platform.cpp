@@ -47,3 +47,7 @@ const string &EM_Blue_Platform::getColor() const {
     return color;
 }
 
+EM_Blue_Platform::~EM_Blue_Platform() {
+    cout << "destructor of EM_Blue_Platform" << endl;
+}
+

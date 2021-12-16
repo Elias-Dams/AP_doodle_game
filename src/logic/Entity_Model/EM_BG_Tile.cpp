@@ -25,5 +25,5 @@ float EM_BG_Tile::getHeight() const {
 }
 
 EM_BG_Tile::~EM_BG_Tile() {
-
+    cout << "destructor of EM_BG_Tile" << endl;
 }

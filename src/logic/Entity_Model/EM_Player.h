@@ -13,8 +13,6 @@ public:
 
     EM_Player(float player_width, float player_height);
 
-    virtual ~EM_Player();
-
     void move(const float &xpos, const float &ypos);
 
     void jump(const float &dt,const bool &hit, const bool &bonus_hit, const string& bonustype);
@@ -34,6 +32,8 @@ public:
     void PlayerReset(float startposx, float startposy);
 
     float getMaxheight() const;
+
+    ~EM_Player();
 
 private:
     float maxheight;

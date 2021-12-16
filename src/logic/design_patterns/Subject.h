@@ -38,6 +38,7 @@ public:
     void NotifyJetpack() override;
 
 private:
+    /// shared pointer becouse the Subject gets full controll over the observer
     std::list<std::shared_ptr<IObserver>> list_observer_;
 
 };

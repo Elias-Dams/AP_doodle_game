@@ -53,3 +53,7 @@ const string &EM_Yellow_Platform::getColor() const {
     return color;
 }
 
+EM_Yellow_Platform::~EM_Yellow_Platform() {
+    cout << "destructor of EM_Yellow_Platform" << endl;
+}
+

@@ -8,7 +8,7 @@ Score::Score(Entity_Model &subject) : Observer(subject) {
 }
 
 Score::~Score() {
-    std::cout << "Goodbye\n";
+    cout << "destructor of Score" << endl;
 }
 
 void Score::NewMaxheightReached(float ypos) {

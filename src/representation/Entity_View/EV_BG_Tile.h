@@ -12,7 +12,7 @@ public:
 
     const sf::Sprite &getBackground() const;
 
-    virtual ~EV_BG_Tile();
+    ~EV_BG_Tile();
 
 private:
 

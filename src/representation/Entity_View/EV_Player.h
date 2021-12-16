@@ -24,7 +24,7 @@ public:
     virtual ~EV_Player();
 
 private:
-    void EV_Player::setTexture();
+    void setTexture();
 
     sf::Sprite player;
 

@@ -37,6 +37,8 @@ public:
 
     float generate_between(const float &min, const float &max);
 
+    virtual ~Random();
+
 };
 
 

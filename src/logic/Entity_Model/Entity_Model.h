@@ -21,6 +21,8 @@ public:
     virtual const pair<float, float> &getPosition() const = 0;
 
     virtual void setPosition(const float &x, const float &y) = 0;
+
+    virtual ~Entity_Model();
 };
 
 

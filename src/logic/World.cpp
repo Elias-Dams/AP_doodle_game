@@ -256,7 +256,6 @@ void World::update(float dt, const char &key){
             if(this->colisionCheck(bonusses[(*it)])){
                 bonus_hit = true;
                 current_hit = true;
-                cout << bonusses[(*it)]->getType() << endl;
                 bonustype = bonusses[(*it)]->getType();
             }
         }
@@ -268,18 +267,24 @@ void World::update(float dt, const char &key){
 
         if ((*it)->getPosition().second < (camera->getNomalisedHeight()-HEIGHT/2)-(*it)->getHeight()){
             if(bonusses.count((*it))){
+                factory->delete_bonus(bonusses[(*it)]);
                 bonusses[(*it)].reset();
                 bonusses.erase((*it));
             }
-            it = platforms.erase(it);
+            factory->delete_platform((*it));
+            (*it).reset();
+            platforms.erase(it);
 
         }
         else if (current_hit and (*it)->getColor() == "White"){
-            it = platforms.erase(it);
+            factory->delete_platform((*it));
+            (*it).reset();
+            platforms.erase(it);
         }
 
         else if (current_hit and bonus_hit and bonusses.count((*it))){
             if (bonusses[(*it)]->getType() == "jetpack"){
+                factory->delete_bonus(bonusses[(*it)]);
                 bonusses[(*it)].reset();
                 bonusses.erase((*it));
             }
@@ -350,10 +355,12 @@ void World::Reset(){
     platforms_per_view = 20;
 
     for (auto platform : platforms){
-        if(bonusses.count(platform )){
+        if(bonusses.count(platform)){
+            factory->delete_bonus(bonusses[platform]);
             bonusses[platform].reset();
             bonusses.erase(platform);
         }
+        factory->delete_platform(platform);
         platform.reset();
     }
     platforms.clear();
@@ -364,10 +371,40 @@ void World::Reset(){
     background.second->setPosition(0.0f, (float)HEIGHT + 0.0f);
 
     constant = 1;
+
+    platforms.clear();
+
 }
 
 World::~World() {
+    cout << "-----destructor of World-----" << endl;
+    cout << "factory: "<< factory.use_count() << endl;
+    cout << "player: "<< player.use_count() << endl;
+    for (std::map< shared_ptr<EM_Platform>, shared_ptr<EM_Bonus> >::iterator it = bonusses.begin(); it != bonusses.end(); it++){
+        cout << "bonus: "<< it->second.use_count() << "-->";
+        factory->delete_bonus(it->second);
+        it->second.reset();
+        cout << "bonus: "<< it->second.use_count() << endl;
+    }
+    for(auto platform :platforms){
+        cout << "platform: "<< platform.use_count() << " --> ";
+        bonusses.erase(platform);
+        factory->delete_platform(platform);
+        cout << "platform: "<< platform.use_count() << endl;
+    }
 
+    cout << "background: "<< background.first.use_count() << endl;
+    cout <<  "background: "<< background.second.use_count() << endl;
+    cout << "-----------------------------" << endl;
+
+    factory->delete_player(player);
+
+    platforms.clear();
+
+    factory.reset();
+
+    background.first.reset();
+    background.second.reset();
 }
 
 const pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> &World::getBackground() const {

@@ -33,3 +33,7 @@ float EM_White_Platform::getHeight() const {
 const string &EM_White_Platform::getColor() const {
     return color;
 }
+
+EM_White_Platform::~EM_White_Platform() {
+    cout << "destructor of EM_White_Platform" << endl;
+}

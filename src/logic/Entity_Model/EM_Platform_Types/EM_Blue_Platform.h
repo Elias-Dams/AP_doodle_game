@@ -22,6 +22,8 @@ public:
 
     const string &getColor() const;
 
+    virtual ~EM_Blue_Platform();
+
 
 private:
     pair<float, float> position;

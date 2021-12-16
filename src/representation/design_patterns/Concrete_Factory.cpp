@@ -109,41 +109,57 @@ shared_ptr<EM_BG_Tile>  Concrete_Factory::createBackground(float background_widt
     return background;
 }
 
-shared_ptr<EV_Player> Concrete_Factory::get_player(const shared_ptr<EM_Player> player) {
+weak_ptr<EV_Player> Concrete_Factory::get_player(const shared_ptr<EM_Player> player) {
 
-    return Playerviews[player].lock();
+    return Playerviews[player];
 }
 
-shared_ptr<EV_Platform> Concrete_Factory::get_platform(const shared_ptr<EM_Platform> platform){
+weak_ptr<EV_Platform> Concrete_Factory::get_platform(const shared_ptr<EM_Platform> platform){
 
-    return Platformviews[platform].lock();
+    return Platformviews[platform];
 }
 
-shared_ptr<EV_Bonus> Concrete_Factory::get_bonus(const shared_ptr<EM_Bonus> bonus){
+weak_ptr<EV_Bonus> Concrete_Factory::get_bonus(const shared_ptr<EM_Bonus> bonus){
 
-    return Bonusviews[bonus].lock();
+    return Bonusviews[bonus];
 }
 
-shared_ptr<Score> Concrete_Factory::get_score(){
+weak_ptr<Score> Concrete_Factory::get_score(){
 
     return score;
 }
 
-const vector<shared_ptr<EV_BG_Tile>> &Concrete_Factory::getBackgrounds() const {
+const vector<weak_ptr<EV_BG_Tile>> &Concrete_Factory::getBackgrounds() const {
     return backgrounds;
+}
+
+void Concrete_Factory::delete_platform(weak_ptr<EM_Platform> platform){
+    Platformviews[platform.lock()].reset();
+    Platformviews.erase(platform.lock());
+
+}
+
+void Concrete_Factory::delete_player(weak_ptr<EM_Player> player) {
+    Playerviews[player.lock()].reset();
+    Playerviews.erase(player.lock());
+}
+
+void Concrete_Factory::delete_bonus(weak_ptr<EM_Bonus> bonus) {
+    Bonusviews[bonus.lock()].reset();
+    Bonusviews.erase(bonus.lock());
 }
 
 Concrete_Factory::~Concrete_Factory() {
     cout << "destructor of Concrete_Factory" << endl;
-    /*
-    for (std::map<shared_ptr<EM_Player>, weak_ptr<EV_Player>>::iterator it = Playerviews.begin(); it != Playerviews.end(); it++){
-        it->second.reset();
-    }
-    for (std::map<shared_ptr<EM_Platform>, weak_ptr<EV_Platform>>::iterator it = Platformviews.begin(); it != Platformviews.end(); it++){
-        it->second.reset();
-    }
+
+    cout << "\t clear Playerviews" << endl;
     Playerviews.clear();
+    cout << "\t clear Platformviews" << endl;
     Platformviews.clear();
-     */
+    cout << "\t clear Bonusviews" << endl;
+    Bonusviews.clear();
+    cout << "\t clear backgrounds" << endl;
+    backgrounds.clear();
+
 }
 

@@ -18,6 +18,8 @@ public:
     virtual void setPosition(const float &x, const float &y) = 0;
 
     virtual const string &getColor() const = 0;
+
+    virtual ~EM_Platform();
 };
 
 

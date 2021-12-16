@@ -7,10 +7,6 @@ EM_Player::EM_Player(float player_width_, float player_height_) : player_width(p
     maxheight = 0;
 }
 
-EM_Player::~EM_Player() {
-
-}
-
 void EM_Player::move(const float &xpos, const float &ypos){
     position.first += xpos;
     position.second += ypos;
@@ -100,4 +96,8 @@ void EM_Player::PlayerReset(float startposx, float startposy){
 
 float EM_Player::getMaxheight() const {
     return maxheight;
+}
+
+EM_Player::~EM_Player() {
+    cout << "destructor of EM_Player" << endl;
 }

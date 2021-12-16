@@ -28,3 +28,7 @@ float Camera::toGamewidth(float position, float entity_height){
 void Camera::CameraReset(){
     height = CameraHeight/2;
 }
+
+Camera::~Camera() {
+    std::cout << "destructor of Camera" << std::endl;
+}

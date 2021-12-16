@@ -24,6 +24,7 @@ public:
 
     virtual void setPosition(const float &x, const float &y) = 0;
 
+    virtual string getType() const = 0;
 };
 
 

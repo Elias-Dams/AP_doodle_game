@@ -83,6 +83,17 @@ shared_ptr<EM_Spring> Concrete_Factory::createSpring(float spring_width, float s
     return spring;
 }
 
+shared_ptr<EM_Jetpack> Concrete_Factory::createJetpack(float jetpack_width, float jetpack_height,shared_ptr<Camera> camera){
+    shared_ptr<EM_Jetpack> jetpack = make_shared<EM_Jetpack>(jetpack_width, jetpack_height);
+    shared_ptr<EV_Jetpack> jetpackView = make_shared<EV_Jetpack>(*jetpack, jetpack_width, jetpack_height, camera);
+
+    Bonusviews[jetpack] = jetpackView;
+
+    jetpack->Attach(jetpackView);
+
+    return jetpack;
+}
+
 
 shared_ptr<EM_BG_Tile>  Concrete_Factory::createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) {
     shared_ptr<EM_BG_Tile> background = make_shared<EM_BG_Tile>(background_width, background_height);
@@ -123,6 +134,7 @@ const vector<shared_ptr<EV_BG_Tile>> &Concrete_Factory::getBackgrounds() const {
 }
 
 Concrete_Factory::~Concrete_Factory() {
+    cout << "destructor of Concrete_Factory" << endl;
     /*
     for (std::map<shared_ptr<EM_Player>, weak_ptr<EV_Player>>::iterator it = Playerviews.begin(); it != Playerviews.end(); it++){
         it->second.reset();

@@ -15,9 +15,29 @@ EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHei
             string error = "Loading player failed";
             throw error;
         }
+        if (!left_spring_texture.loadFromFile("../Textures/Chicken/chicken-spring-left.png")){
+            string error = "Loading player failed";
+            throw error;
+        }
+        if (!right_spring_texture.loadFromFile("../Textures/Chicken/chicken-spring-right.png")){
+            string error = "Loading player failed";
+            throw error;
+        }
+        if (!left_jetpack_texture.loadFromFile("../Textures/Chicken/chicken-jetpack-left.png")){
+            string error = "Loading player failed";
+            throw error;
+        }
+        if (!right_jetpack_texture.loadFromFile("../Textures/Chicken/chicken-jetpack-right.png")){
+            string error = "Loading player failed";
+            throw error;
+        }
         else{
             // we give the player a texture
-            player.setTexture(right_texture);
+            current_right_texture = right_texture;
+            current_left_texture = left_texture;
+            left = false;
+            right = true;
+            player.setTexture(current_right_texture);
         }
     }
     catch(string& a){
@@ -30,10 +50,14 @@ EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHei
 void EV_Player::UpdatePosition(float xpos, float ypos){
     sf::Vector2f prev_coordiantes = player.getPosition();
     if(prev_coordiantes.x > xpos){
-        player.setTexture(left_texture);
+        player.setTexture(current_left_texture);
+        left = true;
+        right = false;
     }
     else if(prev_coordiantes.x < xpos){
-        player.setTexture(right_texture);
+        player.setTexture(current_right_texture);
+        left = false;
+        right = true;
     }
     //cout << "we are getting updates" << endl;
 
@@ -45,5 +69,34 @@ sf::Sprite EV_Player::getPlayer() const {
     return player;
 }
 
+void EV_Player::setTexture(){
+    if(left){
+        player.setTexture(current_left_texture);
+    }
+    else if(right){
+        player.setTexture(current_right_texture);
+    }
+}
 
+void  EV_Player::UpdateSpringCollected() {
+    current_right_texture = right_spring_texture;
+    current_left_texture = left_spring_texture;
+    this->setTexture();
+}
 
+void  EV_Player::UpdateJetpackCollected() {
+    current_right_texture = right_jetpack_texture;
+    current_left_texture = left_jetpack_texture;
+    this->setTexture();
+}
+
+void EV_Player::ResetTexture() {
+    current_right_texture = right_texture;
+    current_left_texture = left_texture;
+    this->setTexture();
+
+}
+
+EV_Player::~EV_Player() {
+    cout << "destructor EV_Player" << endl;
+}

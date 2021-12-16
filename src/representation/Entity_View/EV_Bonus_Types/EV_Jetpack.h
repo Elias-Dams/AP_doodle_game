@@ -13,7 +13,7 @@ public:
 
     sf::Sprite getBonus() const;
 
-    virtual ~EV_Jetpack();
+    ~EV_Jetpack();
 
 private:
     unique_ptr<sf::Sprite> jetpack;

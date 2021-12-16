@@ -17,7 +17,7 @@ public:
 
     void move(const float &xpos, const float &ypos);
 
-    void jump(const float &dt,const bool &hit, const bool &bonus_hit);
+    void jump(const float &dt,const bool &hit, const bool &bonus_hit, const string& bonustype);
 
     float getWidth() const;
 

@@ -22,10 +22,34 @@ void Subject::NotifyPosition(float xpos, float ypos) {
     }
 
 }
+
+void Subject::NotifySpting() {
+    for(const auto& Subject : list_observer_){
+        Subject->UpdateSpringCollected();
+
+    }
+}
+
+
+void Subject::NotifyJetpack() {
+    for(const auto& Subject : list_observer_){
+        Subject->UpdateJetpackCollected();
+
+    }
+}
+
 void Subject::NewMaxHeigh(float ypos) {
     for(const auto& Subject : list_observer_){
 
         Subject->NewMaxheightReached(ypos);
+    }
+}
+
+void Subject::NotifyNormal(){
+    for(const auto& Subject : list_observer_){
+
+        Subject->ResetTexture();
+
     }
 }
 

@@ -12,6 +12,8 @@ public:
 
     const sf::Sprite &getBackground() const;
 
+    virtual ~EV_BG_Tile();
+
 private:
 
     float width;

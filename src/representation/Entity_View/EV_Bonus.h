@@ -10,6 +10,8 @@ public:
     EV_Bonus(Subject &subject);
 
     virtual sf::Sprite getBonus() const = 0;
+
+    virtual ~EV_Bonus();
 };
 
 

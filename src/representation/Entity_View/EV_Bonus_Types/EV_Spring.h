@@ -13,7 +13,7 @@ public:
 
     sf::Sprite getBonus() const;
 
-    virtual ~EV_Spring();
+    ~EV_Spring();
 
 private:
     unique_ptr<sf::Sprite> spring;

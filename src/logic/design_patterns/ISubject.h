@@ -16,6 +16,9 @@ public:
     virtual void NotifyPosition(float xpos, float ypos) = 0;
     virtual void NewMaxHeigh(float ypos) = 0;
     virtual void NotifyReset() = 0;
+    virtual void NotifyNormal() = 0;
+    virtual void NotifySpting() = 0;
+    virtual void NotifyJetpack() = 0;
 };
 
 

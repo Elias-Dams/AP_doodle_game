@@ -28,3 +28,7 @@ void EV_BG_Tile::UpdatePosition(float xpos, float ypos){
 const sf::Sprite &EV_BG_Tile::getBackground() const {
     return background;
 }
+
+EV_BG_Tile::~EV_BG_Tile() {
+    cout << "destructor of EV_BG_Tile" << endl;
+}

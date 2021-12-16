@@ -36,5 +36,5 @@ sf::Sprite EV_Blue_Platform::getPlatform() const {
 }
 
 EV_Blue_Platform::~EV_Blue_Platform() {
-
+    cout << "destructor of EV_Blue_Platform" << endl;
 }

@@ -28,3 +28,7 @@ float EM_Spring::getWidth() const {
 float EM_Spring::getHeight() const {
     return spring_height;
 }
+
+string EM_Spring::getType() const{
+    return "spring";
+}

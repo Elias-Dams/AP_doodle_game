@@ -7,7 +7,7 @@ Entity_View::Entity_View(Subject &subject) : Observer(subject) {
 }
 
 Entity_View::~Entity_View() {
-    //cout << "Goodbye.\n";
+    cout << "destructor of EV_BG_Tile" << endl;
 }
 
 void Entity_View::UpdatePosition(float xpos, float ypos) {

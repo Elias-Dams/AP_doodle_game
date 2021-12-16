@@ -28,6 +28,15 @@ public:
     /// notifies the entity's who have to reset
     void NotifyReset() override;
 
+    /// notifies the view of the player to reset it als the normal texture
+    void NotifyNormal() override;
+
+    /// notifies the view of the player if a spring is collected
+    void NotifySpting() override;
+
+    /// notifies the view of the player if a jetpack is collected
+    void NotifyJetpack() override;
+
 private:
     std::list<std::shared_ptr<IObserver>> list_observer_;
 

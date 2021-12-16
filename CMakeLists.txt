@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(SFML COMPONENTS graphics window system)
 
 
-
 set(LOGIC
         src/logic/Stopwatch.cpp
         src/logic/Stopwatch.h

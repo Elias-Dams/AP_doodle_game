@@ -19,7 +19,19 @@ void Observer::Resetscore() {
     // do nothing
 }
 
+void Observer::ResetTexture() {
+    // do nothing
+}
+
 void Observer::NewMaxheightReached(float ypos){
+    // do nothing
+}
+
+void Observer::UpdateSpringCollected() {
+    // do nothing
+}
+
+void Observer::UpdateJetpackCollected() {
     // do nothing
 }
 

@@ -20,7 +20,7 @@ void EM_Player::move(const float &xpos, const float &ypos){
 }
 
 
-void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit){
+void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit, const string& bonustype){
 
     if(position.second >= 0){
 
@@ -31,18 +31,26 @@ void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit){
         gravity += 0.2f * dt * 60.0f;
 
         // subtract the gravity from the y pos
+
         position.second -= gravity * dt * 60.0f;
         if(gravity > 0){
             falling = true;
+            NotifyNormal();
         }
-        if(gravity < 0){
+        else if(gravity < 0){
             falling = false;
         }
+
         if (hit and !bonus_hit){
             gravity = -10.0f; // jumpheight = 250
         }
-        if (bonus_hit and !hit ){
+        else if (bonus_hit and !hit and bonustype == "spring" ){
             gravity = -23.0f; // jumpheight = 1250
+            NotifySpting();
+        }
+        else if (bonus_hit and !hit and bonustype == "jetpack" ){
+            gravity = -34.6f; // jumpheight = 3000
+            NotifyJetpack();
         }
 
     }

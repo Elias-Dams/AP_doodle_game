@@ -19,6 +19,8 @@ public:
 
     float getHeight() const;
 
+    string getType() const override;
+
 private:
     pair<float, float> position;
     float jetpack_width;

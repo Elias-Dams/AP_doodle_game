@@ -13,7 +13,7 @@ public:
 
     sf::Sprite getPlatform() const;
 
-    virtual ~EV_Green_Platform();
+    ~EV_Green_Platform();
 
 private:
     unique_ptr<sf::Sprite> platform;

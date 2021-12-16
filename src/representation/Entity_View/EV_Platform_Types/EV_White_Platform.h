@@ -14,7 +14,7 @@ public:
 
     sf::Sprite getPlatform() const;
 
-    virtual ~EV_White_Platform();
+    ~EV_White_Platform();
 
 private:
     unique_ptr<sf::Sprite> platform;

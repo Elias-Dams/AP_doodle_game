@@ -25,7 +25,18 @@ public:
     /// resets the score
     virtual void Resetscore() override;
 
+    /// resets te texture of the player
+    virtual void ResetTexture() override;
+
+    /// updates te texture of the player if a spring is collected
+    virtual void UpdateSpringCollected() override;
+
+    /// updates te texture of the player if a jetpack is collected
+    virtual void UpdateJetpackCollected() override;
+
     void RemoveMeFromTheList();
+
+
 
 
 private:

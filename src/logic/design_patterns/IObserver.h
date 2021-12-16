@@ -13,6 +13,9 @@ public:
     virtual void UpdatePosition(float xpos, float ypos) = 0;
     virtual void NewMaxheightReached(float ypos) = 0;
     virtual void Resetscore() = 0;
+    virtual void ResetTexture() = 0;
+    virtual void UpdateSpringCollected() = 0;
+    virtual void UpdateJetpackCollected() = 0;
 };
 
 

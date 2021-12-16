@@ -36,5 +36,5 @@ sf::Sprite EV_Jetpack::getBonus() const {
 }
 
 EV_Jetpack::~EV_Jetpack() {
-
+    cout << "destructor of EV_Jetpack" << endl;
 }

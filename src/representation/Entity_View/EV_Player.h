@@ -15,11 +15,35 @@ public:
 
     void UpdatePosition(float xpos, float ypos) override;
 
+    void UpdateSpringCollected() override;
+
+    void UpdateJetpackCollected() override;
+
+    void ResetTexture() override;
+
+    virtual ~EV_Player();
+
 private:
+    void EV_Player::setTexture();
+
     sf::Sprite player;
+
     sf::Texture left_texture;
     sf::Texture right_texture;
+
+    sf::Texture left_spring_texture;
+    sf::Texture right_spring_texture;
+
+    sf::Texture left_jetpack_texture;
+    sf::Texture right_jetpack_texture;
+
+    sf::Texture current_right_texture;
+    sf::Texture current_left_texture;
+
     shared_ptr<Camera> camera;
+
+    bool left;
+    bool right;
     float playerWidth;
     float playerHeight;
 };

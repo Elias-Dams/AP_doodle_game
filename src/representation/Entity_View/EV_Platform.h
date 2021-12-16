@@ -13,6 +13,8 @@ public:
 
     virtual sf::Sprite getPlatform() const = 0;
 
+    virtual ~EV_Platform();
+
 };
 
 #endif //AP_DOODLE_GAME_EV_PLATFORM_H

@@ -75,6 +75,10 @@ void World::add_platforms(){
                     bonus = factory->createSpring((float)WIDTH/21.5f, (float)HEIGHT/32.0f, camera);
                     has_bonus = true;
                 }
+                else if(bonus_chance >= 9.5f){
+                    bonus = factory->createJetpack((float)WIDTH/14.0f, (float)HEIGHT/14.0f, camera);
+                    has_bonus = true;
+                }
             }
             /// white platform
             // the constant is used to reduce the platform_chances of a green platform at a big height
@@ -92,6 +96,11 @@ void World::add_platforms(){
                     bonus = factory->createSpring((float)WIDTH/21.5f, (float)HEIGHT/32.0f, camera);
                     has_bonus = true;
                 }
+                else if(bonus_chance >= 9.5f){
+                    bonus = factory->createJetpack((float)WIDTH/14.0f, (float)HEIGHT/14.0f, camera);
+                    has_bonus = true;
+                }
+
             }
             /// blue platform
             // the constant is used to reduce the platform_chances of a green platform at a big height
@@ -103,12 +112,16 @@ void World::add_platforms(){
                     bonus = factory->createSpring((float)WIDTH/21.5f, (float)HEIGHT/32.0f, camera);
                     has_bonus = true;
                 }
+                else if(bonus_chance >= 9.5f){
+                    bonus = factory->createJetpack((float)WIDTH/14.0f, (float)HEIGHT/14.0f, camera);
+                    has_bonus = true;
+                }
             }
 
             platform->setPosition( random->generate_between(0,(float)WIDTH - platform->getWidth()), random->generate_between((float)from+platform->getHeight(), (float)to));
 
             if((int)height_of_the_last_platform + 200.0f < platform->getPosition().second){
-                // we have to correct the height of the platform so it is reachable
+                // we have to correct the height of the platform, so it is reachable
 
                 platform->setPosition(platform->getPosition().first, (int)height_of_the_last_platform + 200.0f);
 
@@ -116,7 +129,7 @@ void World::add_platforms(){
                 height_of_the_last_platform = (int)platform->getPosition().second;
                 platforms.push_back(platform);
                 if(has_bonus){
-                    bonus->setPosition(platform->getPosition().first+platform->getWidth()/2-bonus->getWidth()/2,platform->getPosition().second + bonus->getHeight());
+                    bonus->setPosition(platform->getPosition().first+platform->getWidth()/2-bonus->getWidth()/2,platform->getPosition().second + platform->getHeight());
                     bonusses[platform] = bonus;
                 }
 
@@ -126,7 +139,7 @@ void World::add_platforms(){
                 height_of_the_last_platform = (int)platform->getPosition().second;
                 platforms.push_back(platform);
                 if(has_bonus){
-                    bonus->setPosition(platform->getPosition().first+platform->getWidth()/2-bonus->getWidth()/2,platform->getPosition().second + bonus->getHeight());
+                    bonus->setPosition(platform->getPosition().first+platform->getWidth()/2-bonus->getWidth()/2,platform->getPosition().second + platform->getHeight());
                     bonusses[platform] = bonus;
                 }
             }
@@ -185,7 +198,7 @@ void World::startstate(float dt){
 
     }
 
-    player->jump(dt, hit, false);
+    player->jump(dt, hit, false, "");
 }
 
 void World::update(float dt, const char &key){
@@ -194,7 +207,6 @@ void World::update(float dt, const char &key){
     }
     /// game over;
     if(player->getPosition().second < (camera->getNomalisedHeight()-HEIGHT/2)){
-        //cout << "game over" << endl;
         GameOver = true;
     }
 
@@ -231,6 +243,7 @@ void World::update(float dt, const char &key){
 
     /// check colision
     bool bonus_hit = false;
+    string bonustype = "";
     bool hit = false;
     auto it = platforms.begin();
     while (it != platforms.end()){
@@ -239,14 +252,15 @@ void World::update(float dt, const char &key){
         (*it)->update(dt, WIDTH);
 
         if(bonusses.count((*it))) {
-            bonusses[(*it)]->update((*it)->getPosition().first+(*it)->getWidth()/2-bonusses[(*it)]->getWidth()/2, (*it)->getPosition().second + bonusses[(*it)]->getHeight());
-        }
-        if(bonusses.count((*it))) {
+            bonusses[(*it)]->update((*it)->getPosition().first+(*it)->getWidth()/2-bonusses[(*it)]->getWidth()/2, (*it)->getPosition().second + (*it)->getHeight());
             if(this->colisionCheck(bonusses[(*it)])){
                 bonus_hit = true;
                 current_hit = true;
+                cout << bonusses[(*it)]->getType() << endl;
+                bonustype = bonusses[(*it)]->getType();
             }
         }
+
         if(this->colisionCheck(*it) and !bonus_hit){
             hit = true;
             current_hit = true;
@@ -260,9 +274,20 @@ void World::update(float dt, const char &key){
             it = platforms.erase(it);
 
         }
-        else if (current_hit && (*it)->getColor() == "White"){
+        else if (current_hit and (*it)->getColor() == "White"){
             it = platforms.erase(it);
         }
+
+        else if (current_hit and bonus_hit and bonusses.count((*it))){
+            if (bonusses[(*it)]->getType() == "jetpack"){
+                bonusses[(*it)].reset();
+                bonusses.erase((*it));
+            }
+            else{
+                ++it;
+            }
+        }
+
         else {
             ++it;
         }
@@ -288,7 +313,7 @@ void World::update(float dt, const char &key){
     /// add platforms
     this->add_platforms();
 
-    player->jump(dt, hit, bonus_hit);
+    player->jump(dt, hit, bonus_hit, bonustype);
 
     //cout << player->getPosition().second << endl;
 }
@@ -322,6 +347,7 @@ void World::Reset(){
     camera->CameraReset();
     last_max_of_radius = 0;
     height_of_the_last_platform = 0;
+    platforms_per_view = 20;
 
     for (auto platform : platforms){
         if(bonusses.count(platform )){

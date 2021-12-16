@@ -38,6 +38,6 @@ sf::Sprite EV_Spring::getBonus() const {
 }
 
 EV_Spring::~EV_Spring() {
-
+    cout << "destructor of EV_Spring" << endl;
 }
 

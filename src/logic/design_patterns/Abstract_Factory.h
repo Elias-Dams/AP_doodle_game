@@ -31,6 +31,7 @@ public:
     virtual shared_ptr<EM_Yellow_Platform> createYellowPlatform(float platform_width, float platform_height, float move_height,shared_ptr<Camera> camera) = 0;
     virtual shared_ptr<EM_BG_Tile> createBackground(float background_width, float background_height, float startposx, float startposy,shared_ptr<Camera> camera) = 0;
     virtual shared_ptr<EM_Spring> createSpring(float spring_width, float spring_height,shared_ptr<Camera> camera) = 0;
+    virtual shared_ptr<EM_Jetpack> createJetpack(float jetpack_width, float jetpack_height,shared_ptr<Camera> camera)= 0;
 
 };
 

@@ -28,3 +28,7 @@ float EM_Jetpack::getWidth() const {
 float EM_Jetpack::getHeight() const {
     return jetpack_height;
 }
+
+string EM_Jetpack::getType() const{
+    return "jetpack";
+}

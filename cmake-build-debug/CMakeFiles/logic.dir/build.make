@@ -196,57 +196,57 @@ CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp -o CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o: ../src/logic/Entity_Model/EM_BG_Tile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o: ../src/logic/Entity_Model/BG_Tile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_BG_Tile.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o: ../src/logic/Entity_Model/EM_Bonus.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o: ../src/logic/Entity_Model/Bonus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o: ../src/logic/Entity_Model/EM_Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o: ../src/logic/Entity_Model/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Player.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o: ../src/logic/Entity_Model/Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.s
 
 CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o: CMakeFiles/logic.dir/flags.make
 CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o: ../src/logic/Entity_Model/Entity_Model.cpp
@@ -261,96 +261,96 @@ CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o: ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o: ../src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.i
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp > CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i
 
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
+CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s
 
-CMakeFiles/logic.dir/src/logic/namespaces.cpp.o: CMakeFiles/logic.dir/flags.make
-CMakeFiles/logic.dir/src/logic/namespaces.cpp.o: ../src/logic/namespaces.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/namespaces.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp
+CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o: ../src/logic/Namespaces.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp
 
-CMakeFiles/logic.dir/src/logic/namespaces.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/namespaces.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp > CMakeFiles/logic.dir/src/logic/namespaces.cpp.i
+CMakeFiles/logic.dir/src/logic/Namespaces.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/Namespaces.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp > CMakeFiles/logic.dir/src/logic/Namespaces.cpp.i
 
-CMakeFiles/logic.dir/src/logic/namespaces.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/namespaces.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp -o CMakeFiles/logic.dir/src/logic/namespaces.cpp.s
+CMakeFiles/logic.dir/src/logic/Namespaces.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Namespaces.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp -o CMakeFiles/logic.dir/src/logic/Namespaces.cpp.s
 
 # Object files for target logic
 logic_OBJECTS = \
@@ -364,18 +364,18 @@ logic_OBJECTS = \
 "CMakeFiles/logic.dir/src/logic/design_patterns/IObserver.cpp.o" \
 "CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.o" \
 "CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o" \
 "CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o"
 
 # External object files for target logic
 logic_EXTERNAL_OBJECTS =
@@ -390,18 +390,18 @@ liblogic.a: CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/design_patterns/IObserver.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_BG_Tile.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Player.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Green_Platform.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Blue_Platform.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
-liblogic.a: CMakeFiles/logic.dir/src/logic/namespaces.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/Namespaces.cpp.o
 liblogic.a: CMakeFiles/logic.dir/build.make
 liblogic.a: CMakeFiles/logic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library liblogic.a"

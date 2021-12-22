@@ -14,7 +14,7 @@ Game::Game() {
 
     highscore = 0;
 
-    for (shared_ptr<EM_Platform> platform: world->getPlatforms()) {
+    for (shared_ptr<Platform> platform: world->getPlatforms()) {
         window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
     }
 
@@ -200,11 +200,11 @@ void Game::drawGame() {
 
     /// start draws
     if (GameState == start) {
-        for (weak_ptr<View::EV_BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<EM_Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform: world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
@@ -215,16 +215,16 @@ void Game::drawGame() {
         /// game loop draws
     else if (GameState == gameloop) {
 
-        for (weak_ptr<View::EV_BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<EM_Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform: world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
-        map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>> bonus = world->getBonusses();
-        for (std::map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>>::iterator it = bonus.begin();
+        map<shared_ptr<Platform>, shared_ptr<Bonus>> bonus = world->getBonusses();
+        for (std::map<shared_ptr<Platform>, shared_ptr<Bonus>>::iterator it = bonus.begin();
              it != bonus.end(); it++) {
             window->draw(ConcreteFactory->get_bonus(it->second).lock()->getBonus());
         }
@@ -236,11 +236,11 @@ void Game::drawGame() {
     }
         /// game over draws
     else if (GameState == gameover) {
-        for (weak_ptr<View::EV_BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<EM_Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform: world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 

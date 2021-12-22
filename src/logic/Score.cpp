@@ -1,6 +1,6 @@
 
 #include "Score.h"
-#include "Entity_Model/EM_Player.h"
+#include "Entity_Model/Player.h"
 
 Score::Score(Entity_Model &subject) : Observer(subject) {
 

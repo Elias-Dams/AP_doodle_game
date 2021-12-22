@@ -25,19 +25,19 @@ public:
     void update(float dt, const char &key);
 
     /// ---important getters---
-    shared_ptr<EM_Player> getPlayer() const;
+    shared_ptr<Player> getPlayer() const;
 
     int getWidth() const;
 
     int getHeight() const;
 
-    const pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> &getBackground() const;
+    const pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> &getBackground() const;
 
     shared_ptr<Camera> getCamera() const;
 
-    const vector<shared_ptr<EM_Platform>> &getPlatforms() const;
+    const vector<shared_ptr<Platform>> &getPlatforms() const;
 
-    const map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>> &getBonusses() const;
+    const map<shared_ptr<Platform>, shared_ptr<Bonus>> &getBonusses() const;
     /// ------------------------
 
     void Reset();
@@ -59,10 +59,10 @@ private:
 
     shared_ptr<Abstract_Factory> factory;
 
-    shared_ptr< EM_Player > player;
-    vector< shared_ptr< EM_Platform > > platforms;
-    map< shared_ptr< EM_Platform >, shared_ptr< EM_Bonus>  > bonusses;
-    pair< shared_ptr< EM_BG_Tile >, shared_ptr < EM_BG_Tile> > background;
+    shared_ptr< Player > player;
+    vector< shared_ptr< Platform > > platforms;
+    map< shared_ptr< Platform >, shared_ptr< Bonus>  > bonusses;
+    pair< shared_ptr< BG_Tile >, shared_ptr < BG_Tile> > background;
 
     unique_ptr<Random> random;
     shared_ptr<Camera> camera;

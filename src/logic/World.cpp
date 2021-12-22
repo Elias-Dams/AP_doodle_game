@@ -18,7 +18,7 @@ World::World(const shared_ptr<Abstract_Factory> &factory) : factory(factory) {
 
 void World::create_start_platform() {
 
-    shared_ptr<EM_Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
+    shared_ptr<Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
     platform->setPosition(45.0f, 100.0f);
     platforms.push_back(platform);
 
@@ -31,7 +31,7 @@ void World::create_platforms() {
 
         int from = last_max_of_radius;
         int to = last_max_of_radius + radius_per_platform;
-        shared_ptr<EM_Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
+        shared_ptr<Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
         platform->setPosition(random->generate_between(0, (float) WIDTH - platform->getWidth()),
                               random->generate_between((float) from + platform->getHeight(), (float) to));
         platforms.push_back(platform);
@@ -57,8 +57,8 @@ void World::add_platforms() {
             int to = last_max_of_radius + radius_per_platform;
 
 
-            shared_ptr<EM_Platform> platform;
-            shared_ptr<EM_Bonus> bonus;
+            shared_ptr<Platform> platform;
+            shared_ptr<Bonus> bonus;
             bool has_bonus = false;
             // randomly choose a type of platform
             float platform_chance = random->generate_between(0.0f, 10.0f);
@@ -324,7 +324,7 @@ void World::update(float dt, const char &key) {
     //cout << player->getPosition().second << endl;
 }
 
-shared_ptr<EM_Player> World::getPlayer() const {
+shared_ptr<Player> World::getPlayer() const {
     return player;
 }
 
@@ -336,7 +336,7 @@ int World::getHeight() const {
     return HEIGHT;
 }
 
-const vector<shared_ptr<EM_Platform>> &World::getPlatforms() const {
+const vector<shared_ptr<Platform>> &World::getPlatforms() const {
     return platforms;
 }
 
@@ -382,7 +382,7 @@ World::~World() {
     cout << "-----destructor of World-----" << endl;
     cout << "factory: " << factory.use_count() << endl;
     cout << "player: " << player.use_count() << endl;
-    for (std::map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus> >::iterator it = bonusses.begin();
+    for (std::map<shared_ptr<Platform>, shared_ptr<Bonus> >::iterator it = bonusses.begin();
          it != bonusses.end(); it++) {
         cout << "bonus: " << it->second.use_count() << "-->";
         factory->delete_bonus(it->second);
@@ -412,11 +412,11 @@ World::~World() {
 
 }
 
-const pair<shared_ptr<EM_BG_Tile>, shared_ptr<EM_BG_Tile>> &World::getBackground() const {
+const pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> &World::getBackground() const {
     return background;
 }
 
-const map<shared_ptr<EM_Platform>, shared_ptr<EM_Bonus>> &World::getBonusses() const {
+const map<shared_ptr<Platform>, shared_ptr<Bonus>> &World::getBonusses() const {
     return bonusses;
 }
 

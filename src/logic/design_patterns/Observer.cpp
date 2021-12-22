@@ -3,8 +3,6 @@
 
 Observer::Observer(Subject &subject) : subject_(subject) {
 
-    //this->subject_.Attach(this);
-
 }
 
 Observer::~Observer() {

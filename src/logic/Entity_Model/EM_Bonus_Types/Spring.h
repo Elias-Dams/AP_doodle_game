@@ -4,9 +4,20 @@
 
 #include "../Bonus.h"
 
-class Model::Spring : public Model::Bonus{
+/**
+ * @class Spring
+ *
+ * @brief Spring is a Bonus
+ *
+ * the Spring is a bonus in the game.
+ * When this bonus is collected the player jumps/flies 5 times higher.
+ */
+class Model::Spring : public Model::Bonus {
 public:
-
+    /**
+     * Spring constructor.
+     * constructs a Spring whit a certain width and height
+     */
     Spring(float Width, float Height);
 
     const pair<float, float> &getPosition() const override;
@@ -24,10 +35,11 @@ public:
     ~Spring();
 
 private:
-    pair<float, float> position;
-    float spring_width;
-    float spring_height;
+    pair<float, float> position ; ///< position of the Spring
+
+    float spring_width; ///< the width of the Spring
+    float spring_height; ///< the height of the Spring
 };
 
 
-#endif //AP_DOODLE_GAME_SPRING_H
+#endif//AP_DOODLE_GAME_SPRING_H

@@ -1,7 +1,8 @@
 
 #include "Spring.h"
 
-Model::Spring::Spring(float Width, float Height) : spring_width(Width), spring_height(Height) {
+Model::Spring::Spring(float Width, float Height) :
+    spring_width(Width), spring_height(Height) {
     position.first = 0;
     position.second = 0;
 }
@@ -15,7 +16,7 @@ void Model::Spring::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Spring::update(float x, float y){
+void Model::Spring::update(float x, float y) {
     position.first = x;
     position.second = y;
     NotifyPosition(position.first, position.second);
@@ -29,7 +30,7 @@ float Model::Spring::getHeight() const {
     return spring_height;
 }
 
-string Model::Spring::getType() const{
+string Model::Spring::getType() const {
     return "spring";
 }
 

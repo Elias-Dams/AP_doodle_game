@@ -5,7 +5,12 @@
 #include "Entity_Model.h"
 #include "Namespaces.cpp"
 
-class Model::Bonus : public Entity_Model{
+/**
+ * @class Bonus
+ *
+ * A bonus (temporarily) modifies the state or behaviour of an Entity
+ */
+class Model::Bonus : public Entity_Model {
 public:
     virtual const pair<float, float> &getPosition() const = 0;
 
@@ -23,4 +28,4 @@ public:
 };
 
 
-#endif //AP_DOODLE_GAME_BONUS_H
+#endif//AP_DOODLE_GAME_BONUS_H

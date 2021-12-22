@@ -2,8 +2,8 @@
 #ifndef AP_DOODLE_GAME_V_SPRING_H
 #define AP_DOODLE_GAME_V_SPRING_H
 
-#include "../Bonus.h"
 #include "../../../logic/Entity_Model/Entity_Model.h"
+#include "../Bonus.h"
 
 class View::Spring : public View::Bonus {
 public:
@@ -24,4 +24,4 @@ private:
 };
 
 
-#endif //AP_DOODLE_GAME_SPRING_H
+#endif//AP_DOODLE_GAME_SPRING_H

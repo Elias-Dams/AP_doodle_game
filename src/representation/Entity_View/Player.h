@@ -2,14 +2,13 @@
 #ifndef AP_DOODLE_GAME_V_PLAYER_H
 #define AP_DOODLE_GAME_V_PLAYER_H
 
-#include "Entity_View.h"
 #include "../../logic/Entity_Model/Entity_Model.h"
 #include "../../logic/Namespaces.cpp"
+#include "Entity_View.h"
 
-class View::Player : public Entity_View{
+class View::Player : public Entity_View {
 
 public:
-
     Player(Entity_Model &subject, float playerWidth, float playerHeight, shared_ptr<Camera> camera);
 
     sf::Sprite getPlayer() const;
@@ -50,4 +49,4 @@ private:
 };
 
 
-#endif //AP_DOODLE_GAME_PLAYER_H
+#endif//AP_DOODLE_GAME_PLAYER_H

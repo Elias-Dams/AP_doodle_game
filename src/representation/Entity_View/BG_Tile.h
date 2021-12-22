@@ -2,8 +2,8 @@
 #ifndef AP_DOODLE_GAME_V_BG_TILE_H
 #define AP_DOODLE_GAME_V_BG_TILE_H
 
-#include "Entity_View.h"
 #include "../../logic/Namespaces.cpp"
+#include "Entity_View.h"
 
 class View::BG_Tile : public Entity_View {
 public:
@@ -16,7 +16,6 @@ public:
     ~BG_Tile() override;
 
 private:
-
     float width;
     float height;
     sf::Texture texture;
@@ -25,4 +24,4 @@ private:
 };
 
 
-#endif //AP_DOODLE_GAME_BG_TILE_H
+#endif//AP_DOODLE_GAME_BG_TILE_H

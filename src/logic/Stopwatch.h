@@ -1,21 +1,12 @@
-/*
- * Deze klasse bewaart het verschil in tijd tussen de huidige update stap (tick) en de vorige.
- * Dit wordt gebruikt om ervoor te zorgen dat de logica van het spel op dezelfde snelheid draait, ongeacht de snelheid
- * van het apparaat waarop het draait. Het is niet toegestaan om "busy waiting" te gebruiken om apparaten te vertragen
- * die te snel draaien, de framerate moet dynamisch zijn. De enige uitzondering hierop is dat je de framerate kunt
- * beperken op een bepaalde maximale waarde (bijvoorbeeld 60 FPS), om overeen te komen met de maximale
- * verversingsfrequentie van je beeldscherm. Om deze klasse te implementeren moet u gebruik maken van C++
- * functionaliteit, niet van de SFML Klok klasse.
- */
 
 #ifndef AP_DOODLE_GAME_STOPWATCH_H
 #define AP_DOODLE_GAME_STOPWATCH_H
 
+#include <chrono>
 #include <iostream>
 #include <list>
-#include <string>
-#include <chrono>
 #include <memory>
+#include <string>
 
 using namespace std;
 
@@ -24,24 +15,37 @@ using namespace std;
 class Stopwatch {
 
 private:
+    static shared_ptr<Stopwatch> singleton_; ///< pointer to the Stopwatch
 
-    static shared_ptr<Stopwatch> singleton_;
-
-    std::chrono::steady_clock::time_point now;
+    std::chrono::steady_clock::time_point now; ///< current time
 
 
 public:
-
     //Singletons should not be cloneable.
     Stopwatch(Stopwatch &other) = delete;
 
     //Singletons should not be assignable.
     void operator=(const Stopwatch &) = delete;
 
+    /**
+    * @brief creates unique instance of Stopwatch
+    *
+    * This function creates unique instance of Stopwatch
+    *
+    * @return pointer to the stopwatch
+    */
     static shared_ptr<Stopwatch> GetInstance();
 
+    /**
+    * @brief creates unique instance of Stopwatch
+    *
+    * This function marks the time
+    * It also calculates the differance between the prev mark ant now
+    * It is returned under the name delta time
+    *
+    * @return delta time
+    */
     float mark_time();
-
 
     Stopwatch();
 
@@ -49,5 +53,4 @@ public:
 };
 
 
-
-#endif //AP_DOODLE_GAME_STOPWATCH_H
+#endif//AP_DOODLE_GAME_STOPWATCH_H

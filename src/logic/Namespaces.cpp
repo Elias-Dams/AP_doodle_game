@@ -1,5 +1,6 @@
 
-/// I used the namespace Model to devide it from the viuw
+/// clear devision between Models and Views
+
 namespace Model {
     class Player;
 

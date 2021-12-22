@@ -1,8 +1,9 @@
 
 #include "White_Platform.h"
 
-Model::White_Platform::White_Platform(float platformWidth, float platformHeight) : platform_width(platformWidth),
-                                                                                         platform_height(platformHeight) {
+Model::White_Platform::White_Platform(float platformWidth, float platformHeight) :
+    platform_width(platformWidth),
+    platform_height(platformHeight) {
     position.first = 0;
     position.second = 0;
     color = "White";
@@ -17,7 +18,7 @@ void Model::White_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::White_Platform::update(float dt, int world_Width){
+void Model::White_Platform::update(float dt) {
     // the platform doesn't move
     NotifyPosition(position.first, position.second);
 }

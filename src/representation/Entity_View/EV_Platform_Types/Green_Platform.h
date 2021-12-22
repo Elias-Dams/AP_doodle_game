@@ -2,10 +2,10 @@
 #ifndef AP_DOODLE_GAME_V_GREEN_PLATFORM_H
 #define AP_DOODLE_GAME_V_GREEN_PLATFORM_H
 
-#include "../Platform.h"
 #include "../../../logic/Entity_Model/Entity_Model.h"
+#include "../Platform.h"
 
-class View::Green_Platform : public View::Platform{
+class View::Green_Platform : public View::Platform {
 public:
     Green_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
@@ -24,4 +24,4 @@ private:
 };
 
 
-#endif //AP_DOODLE_GAME_GREEN_PLATFORM_H
+#endif//AP_DOODLE_GAME_GREEN_PLATFORM_H

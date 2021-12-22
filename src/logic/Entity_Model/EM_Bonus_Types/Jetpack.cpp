@@ -15,7 +15,7 @@ void Model::Jetpack::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Jetpack::update(float x, float y){
+void Model::Jetpack::update(float x, float y) {
     position.first = x;
     position.second = y;
     NotifyPosition(position.first, position.second);
@@ -29,7 +29,7 @@ float Model::Jetpack::getHeight() const {
     return jetpack_height;
 }
 
-string Model::Jetpack::getType() const{
+string Model::Jetpack::getType() const {
     return "jetpack";
 }
 

@@ -3,7 +3,7 @@
 
 Game::Game() {
 
-    /// make the game
+    // make the game
     ConcreteFactory = make_shared<Concrete_Factory>();
     world = std::make_unique<World>(ConcreteFactory);
     window = make_unique<sf::RenderWindow>(sf::VideoMode(world->getWidth(), world->getHeight()), "doodle jump");
@@ -14,35 +14,34 @@ Game::Game() {
 
     highscore = 0;
 
-    for (shared_ptr<Platform> platform: world->getPlatforms()) {
+    for (shared_ptr<Platform> platform : world->getPlatforms()) {
         window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
     }
 
 
-    /// when the game starts the game state is start
+    // when the game starts the game state is start
 
     GameState = start;
 
-    /// Load the menu textures
+    // Load the menu textures
     this->LoadTextures();
 
-    /// make score_text
+    // make score_text
     score_text.setFont(font);
     score_text.setCharacterSize(50);
     score_text.setString(to_string(ConcreteFactory->get_score().lock()->getscore()));
     score_text.setFillColor(sf::Color::Black);
 
-    /// make highscore
+    // make highscore
     highscore_text.setFont(font);
     highscore_text.setCharacterSize(50);
     highscore_text.setFillColor(sf::Color::Black);
 
-    /// make button
+    // make button
 
     Button.setTexture(ButtonTexture);
     Button.setPosition(world->getWidth() / 2 - Button.getLocalBounds().width / 2,
                        world->getHeight() / 2 - Button.getLocalBounds().height / 2);
-
 }
 
 void Game::LoadTextures() {
@@ -68,8 +67,7 @@ void Game::LoadTextures() {
             // we give the window an icon
             window->setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
         }
-    }
-    catch (string &a) {
+    } catch (string &a) {
         cerr << a << endl;
     }
 }
@@ -89,9 +87,7 @@ void Game::run() {
 
         //cout << "dt: " << dt << "  " << "fps: " << 1 / dt << endl;
     }
-
 }
-
 
 
 void Game::update(const float &dt) {
@@ -112,7 +108,7 @@ void Game::update(const float &dt) {
             } else {
                 Button.setTexture(ButtonTexture);
             }
-            /// when the restart button is clicked the game starts
+            // when the restart button is clicked the game starts
             if (event.type == sf::Event::MouseButtonPressed && MouseOnButton(Button)) {
                 GameState = gameloop;
                 world->getPlayer()->resetmaxheight();
@@ -131,9 +127,7 @@ void Game::update(const float &dt) {
     } else if (GameState == gameover) {
 
         this->gameOver(dt);
-
     }
-
 }
 
 void Game::gameStart(const float &dt) {
@@ -141,28 +135,26 @@ void Game::gameStart(const float &dt) {
 }
 
 void Game::gameLoop(const float &dt) {
-    /// update the pressed key
+    // update the pressed key
     char key = 'X';
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)
-        || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         key = 'Q';
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)
-        || sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
         key = 'D';
     }
 
-    /// update the world
+    // update the world
     world->update(dt, key);
 
-    /// update the view according to the player in the world
+    // update the view according to the player in the world
     view->setCenter(world->getWidth() / 2, world->getCamera()->getConvertedHeight());
 
-    /// update the position/value of the score
+    // update the position/value of the score
     score_text.setPosition(0, world->getCamera()->getConvertedHeight() - (world->getHeight() / 2));
     score_text.setString(to_string(ConcreteFactory->get_score().lock()->getscore()));
 
-    /// check if game is over
+    // check if game is over
     if (world->isGameOver()) {
         GameState = gameover;
         can_reset = true;
@@ -171,19 +163,19 @@ void Game::gameLoop(const float &dt) {
 
 void Game::gameOver(const float &dt) {
 
-    /// resetting the world
+    // resetting the world
     if (can_reset) {
-        /// set the score for the endgame screen;
+        // set the score for the endgame screen;
         score_text.setString("Score : " + to_string(ConcreteFactory->get_score().lock()->getscore()));
         score_text.setPosition(world->getWidth() / 2 - score_text.getGlobalBounds().width / 2,
                                world->getHeight() / 2 - score_text.getGlobalBounds().height / 2 - 70);
 
-        /// update the highscore
+        // update the highscore
         if (highscore <= ConcreteFactory->get_score().lock()->getscore()) {
             highscore = ConcreteFactory->get_score().lock()->getscore();
         }
 
-        /// set the highscore for the endgame screen;
+        // set the highscore for the endgame screen;
         highscore_text.setString("highscore : " + to_string(highscore));
         highscore_text.setPosition(world->getWidth() / 2 - highscore_text.getGlobalBounds().width / 2,
                                    world->getHeight() / 2 - highscore_text.getGlobalBounds().height / 2 - 130);
@@ -198,13 +190,13 @@ void Game::gameOver(const float &dt) {
 void Game::drawGame() {
     window->clear(sf::Color::White);
 
-    /// start draws
+    // start draws
     if (GameState == start) {
-        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background : ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform : world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
@@ -212,18 +204,18 @@ void Game::drawGame() {
 
         window->draw(Button);
     }
-        /// game loop draws
+    // game loop draws
     else if (GameState == gameloop) {
 
-        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background : ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform : world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
-        map<shared_ptr<Platform>, shared_ptr<Bonus>> bonus = world->getBonusses();
+        map<shared_ptr<Platform>, shared_ptr<Bonus>> bonus = world->getBonuses();
         for (std::map<shared_ptr<Platform>, shared_ptr<Bonus>>::iterator it = bonus.begin();
              it != bonus.end(); it++) {
             window->draw(ConcreteFactory->get_bonus(it->second).lock()->getBonus());
@@ -234,13 +226,13 @@ void Game::drawGame() {
         window->draw(score_text);
 
     }
-        /// game over draws
+    // game over draws
     else if (GameState == gameover) {
-        for (weak_ptr<View::BG_Tile> background: ConcreteFactory->getBackgrounds()) {
+        for (weak_ptr<View::BG_Tile> background : ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<Platform> platform: world->getPlatforms()) {
+        for (shared_ptr<Platform> platform : world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
@@ -257,10 +249,7 @@ bool Game::MouseOnButton(sf::Sprite _button) {
 
     sf::Vector2i mousePosition = sf::Mouse::getPosition(*window);
 
-    bool mouseInButton = mousePosition.x >= _button.getPosition().x
-                         && mousePosition.x <= _button.getPosition().x + _button.getGlobalBounds().width
-                         && mousePosition.y >= _button.getPosition().y
-                         && mousePosition.y <= _button.getPosition().y + _button.getGlobalBounds().height;
+    bool mouseInButton = mousePosition.x >= _button.getPosition().x && mousePosition.x <= _button.getPosition().x + _button.getGlobalBounds().width && mousePosition.y >= _button.getPosition().y && mousePosition.y <= _button.getPosition().y + _button.getGlobalBounds().height;
     return mouseInButton;
 }
 

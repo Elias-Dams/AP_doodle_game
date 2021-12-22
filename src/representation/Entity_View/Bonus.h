@@ -2,10 +2,10 @@
 #ifndef AP_DOODLE_GAME_V_BONUS_H
 #define AP_DOODLE_GAME_V_BONUS_H
 
-#include "Entity_View.h"
 #include "../../logic/Namespaces.cpp"
+#include "Entity_View.h"
 
-class View::Bonus : public Entity_View{
+class View::Bonus : public Entity_View {
 
 public:
     Bonus(Subject &subject);
@@ -16,4 +16,4 @@ public:
 };
 
 
-#endif //AP_DOODLE_GAME_BONUS_H
+#endif//AP_DOODLE_GAME_BONUS_H

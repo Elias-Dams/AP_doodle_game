@@ -1,23 +1,19 @@
-//
-// Created by legod on 15/11/2021.
-//
 
 #include "Random.h"
 
-Random::Random(){
-
+Random::Random() {
 }
 
-Random* Random::singleton_= nullptr;
+shared_ptr<Random> Random::singleton_ = nullptr;
 
-Random *Random::GetInstance() {
-    if(singleton_ == nullptr){
-        singleton_ = new Random();
+shared_ptr<Random> Random::GetInstance() {
+    if (singleton_ == nullptr) {
+        singleton_ = make_shared<Random>();
     }
     return singleton_;
 }
 
-float Random::generate_between(const float &min, const float &max){
+float Random::generate_between(const float &min, const float &max) {
 
     std::uniform_real_distribution<double> distribution(min, max);
     std::random_device rd;
@@ -29,4 +25,3 @@ float Random::generate_between(const float &min, const float &max){
 Random::~Random() {
     std::cout << "destructor of Random" << std::endl;
 }
-

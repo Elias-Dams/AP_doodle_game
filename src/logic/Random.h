@@ -1,17 +1,13 @@
-/*
- * Deze klasse wordt gebruikt om alle willekeurige getallen te genereren die je in het spel nodig hebt. Je wereld
- * generatie moet gebruik maken van deze willekeurige getallen om ervoor te zorgen dat de platforms niet altijd op
- * dezelfde posities liggen, en om een compleet andere wereld te genereren elke keer dat je spel wordt uitgevoerd.
- */
 
 #ifndef AP_DOODLE_GAME_RANDOM_H
 #define AP_DOODLE_GAME_RANDOM_H
 
 #include <iostream>
 #include <list>
+#include <random>
 #include <string>
 #include <vector>
-#include <random>
+#include <memory>
 
 // i used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern
 
@@ -20,26 +16,41 @@ using namespace std;
 class Random {
 
 private:
-    Random();
 
-    static Random* singleton_;
+    static shared_ptr<Random> singleton_;  ///< pointer to Random
 
 
 public:
-
     //Singletons should not be cloneable.
     Random(Random &other) = delete;
 
     //Singletons should not be assignable.
     void operator=(const Random &) = delete;
 
-    static Random *GetInstance();
+    /**
+    * @brief creates unique instance of Random
+    *
+    * This function creates unique instance of Random
+    *
+    * @return pointer to the Random
+    */
+    static shared_ptr<Random> GetInstance();
 
+    /**
+    * @brief generates a float number between a given range
+    *
+    * This function generates a float number between a given range
+    *
+    * @param min minimum of the range
+    * @param mxx mqximum of the range
+    * @return random float number
+    */
     float generate_between(const float &min, const float &max);
 
-    virtual ~Random();
+    Random();
 
+    virtual ~Random();
 };
 
 
-#endif //AP_DOODLE_GAME_RANDOM_H
+#endif//AP_DOODLE_GAME_RANDOM_H

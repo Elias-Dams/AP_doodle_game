@@ -3,10 +3,10 @@
 #ifndef AP_DOODLE_GAME_V_YELLOW_PLATFORM_H
 #define AP_DOODLE_GAME_V_YELLOW_PLATFORM_H
 
-#include "../Platform.h"
 #include "../../../logic/Entity_Model/Entity_Model.h"
+#include "../Platform.h"
 
-class View::Yellow_Platform : public View::Platform{
+class View::Yellow_Platform : public View::Platform {
 public:
     Yellow_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
@@ -24,4 +24,4 @@ private:
     float platformHeight;
 };
 
-#endif //AP_DOODLE_GAME_YELLOW_PLATFORM_H
+#endif//AP_DOODLE_GAME_YELLOW_PLATFORM_H

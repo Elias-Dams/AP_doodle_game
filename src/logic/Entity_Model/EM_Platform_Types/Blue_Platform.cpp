@@ -1,10 +1,13 @@
 
 #include "Blue_Platform.h"
 
-Model::Blue_Platform::Blue_Platform(float platformWidth, float platformHeight) : platform_width(platformWidth),
-                                                                                       platform_height(platformHeight) {
+Model::Blue_Platform::Blue_Platform(float platformWidth, float platformHeight, int world_Width) :
+    platform_width(platformWidth),
+    platform_height(platformHeight) {
     position.first = 0;
     position.second = 0;
+    min = 0;
+    max = world_Width;
     left = true;
     color = "Blue";
 }
@@ -18,19 +21,17 @@ void Model::Blue_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Blue_Platform::update(float dt, int world_Width){
-    if(left and position.first >= world_Width - platform_width){
+void Model::Blue_Platform::update(float dt) {
+    if (!left and position.first >= max - platform_width) {
+        left = true;
+    } else if (left and position.first <= min) {
         left = false;
     }
-    else if(!left and position.first <= 0){
-        left = true;
-    }
 
-    if(left){
-        position.first += (2.0f * dt * 60.0f);
-    }
-    else if(!left){
+    if (left) {
         position.first -= (2.0f * dt * 60.0f);
+    } else if (!left) {
+        position.first += (2.0f * dt * 60.0f);
     }
     NotifyPosition(position.first, position.second);
 }
@@ -50,4 +51,3 @@ const string &Model::Blue_Platform::getColor() const {
 Model::Blue_Platform::~Blue_Platform() {
     cout << "destructor of Blue_Platform" << endl;
 }
-

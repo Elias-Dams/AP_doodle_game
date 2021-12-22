@@ -2,10 +2,10 @@
 #ifndef AP_DOODLE_GAME_V_JETPACK_H
 #define AP_DOODLE_GAME_V_JETPACK_H
 
-#include "../Bonus.h"
 #include "../../../logic/Entity_Model/Entity_Model.h"
+#include "../Bonus.h"
 
-class View::Jetpack : public View::Bonus{
+class View::Jetpack : public View::Bonus {
 public:
     Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera);
 
@@ -24,5 +24,4 @@ private:
 };
 
 
-
-#endif //AP_DOODLE_GAME_JETPACK_H
+#endif//AP_DOODLE_GAME_JETPACK_H

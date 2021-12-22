@@ -4,9 +4,21 @@
 
 #include "../Bonus.h"
 
-class Model::Jetpack : public Model::Bonus{
-public:
 
+/**
+ * @class Jetpack
+ *
+ * @brief jetpack is a Bonus
+ *
+ * the jetpack is a bonus in the game.
+ * When this bonus is collected the player jumps/flies 12 times higher.
+ */
+class Model::Jetpack : public Model::Bonus {
+public:
+    /**
+     * Jetpack constructor.
+     * constructs a Jetpack whit a certain width and height
+     */
     Jetpack(float Width, float Height);
 
     const pair<float, float> &getPosition() const override;
@@ -24,10 +36,11 @@ public:
     ~Jetpack();
 
 private:
-    pair<float, float> position;
-    float jetpack_width;
-    float jetpack_height;
+    pair<float, float> position; ///< position of the jetpack
+
+    float jetpack_width; ///< the width of the jetpack
+    float jetpack_height; ///< the height of the jetpack
 };
 
 
-#endif //AP_DOODLE_GAME_JETPACK_H
+#endif//AP_DOODLE_GAME_JETPACK_H

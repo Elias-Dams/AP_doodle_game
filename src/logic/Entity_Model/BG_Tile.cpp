@@ -1,7 +1,8 @@
 
 #include "BG_Tile.h"
 
-Model::BG_Tile::BG_Tile(float width, float height) : width(width), height(height) {
+Model::BG_Tile::BG_Tile(float width, float height) :
+    width(width), height(height) {
     position.first = 0;
     position.second = 0;
 }

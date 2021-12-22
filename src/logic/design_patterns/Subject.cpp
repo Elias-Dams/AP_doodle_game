@@ -9,7 +9,6 @@ Subject::~Subject() {
     }
     list_observer_.clear();
 
-
 }
 
 void Subject::Attach(std::shared_ptr<IObserver> observer) {
@@ -17,7 +16,7 @@ void Subject::Attach(std::shared_ptr<IObserver> observer) {
 }
 
 void Subject::Detach(std::shared_ptr<IObserver> observer) {
-    //list_Subject_.remove(Observer);
+    list_observer_.remove(observer);
 }
 
 void Subject::NotifyPosition(float xpos, float ypos) {

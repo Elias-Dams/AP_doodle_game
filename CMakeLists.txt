@@ -51,6 +51,7 @@ set(LOGIC
         src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp
         src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.h
 
+        src/logic/namespaces.cpp
         )
 
 set( REPRESENTATION
@@ -83,7 +84,8 @@ set( REPRESENTATION
         src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.cpp
         src/representation/Entity_View/EV_Bonus_Types/EV_Jetpack.h
         src/representation/Entity_View/EV_Bonus_Types/EV_Spring.cpp
-        src/representation/Entity_View/EV_Bonus_Types/EV_Spring.h)
+        src/representation/Entity_View/EV_Bonus_Types/EV_Spring.h
+        )
 
 add_executable(AP_doodle_game ${REPRESENTATION})
 

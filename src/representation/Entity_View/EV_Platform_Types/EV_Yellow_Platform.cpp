@@ -1,7 +1,7 @@
 
 #include "EV_Yellow_Platform.h"
 
-EV_Yellow_Platform::EV_Yellow_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
+View::EV_Yellow_Platform::EV_Yellow_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
     // we initiaize a new platform
 
     platform = unique_ptr<sf::Sprite>(new sf::Sprite);
@@ -25,15 +25,15 @@ EV_Yellow_Platform::EV_Yellow_Platform(Entity_Model &subject, float platformWidt
     platform->setColor(sf::Color::Yellow);
 }
 
-void EV_Yellow_Platform::UpdatePosition(float xpos, float ypos){
+void View::EV_Yellow_Platform::UpdatePosition(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }
 
-sf::Sprite EV_Yellow_Platform::getPlatform() const {
+sf::Sprite View::EV_Yellow_Platform::getPlatform() const {
     return *platform;
 }
 
-EV_Yellow_Platform::~EV_Yellow_Platform() {
+View::EV_Yellow_Platform::~EV_Yellow_Platform() {
     cout << "destructor of EV_Yellow_Platform" << endl;
 }

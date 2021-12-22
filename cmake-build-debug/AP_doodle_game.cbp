@@ -259,6 +259,9 @@
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h">
 			<Option target="logic"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp">
+			<Option target="logic"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_BG_Tile.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>

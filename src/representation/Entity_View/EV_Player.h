@@ -4,8 +4,9 @@
 
 #include "Entity_View.h"
 #include "../../logic/Entity_Model/Entity_Model.h"
+#include "../../logic/namespaces.cpp"
 
-class EV_Player : public Entity_View{
+class View::EV_Player : public Entity_View{
 
 public:
 
@@ -21,7 +22,7 @@ public:
 
     void ResetTexture() override;
 
-    virtual ~EV_Player();
+    virtual ~EV_Player() override;
 
 private:
     void setTexture();

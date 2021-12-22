@@ -4,25 +4,25 @@
 
 #include "../EM_Platform.h"
 
-class EM_Yellow_Platform : public EM_Platform{
+class Model::EM_Yellow_Platform : public Model::EM_Platform{
 
 public:
 
     EM_Yellow_Platform(float platformWidth, float platformHeight, float moveheight);
 
-    const pair<float, float> &getPosition() const;
+    const pair<float, float> &getPosition() const override;
 
-    void setPosition(const float &x, const float &y);
+    void setPosition(const float &x, const float &y) override;
 
-    void update(float dt, int world_Width);
+    void update(float dt, int world_Width) override;
 
-    float getWidth() const;
+    float getWidth() const override;
 
-    float getHeight() const;
+    float getHeight() const override;
 
-    const string &getColor() const;
+    const string &getColor() const override;
 
-    virtual ~EM_Yellow_Platform();
+    ~EM_Yellow_Platform() override;
 
 
 private:

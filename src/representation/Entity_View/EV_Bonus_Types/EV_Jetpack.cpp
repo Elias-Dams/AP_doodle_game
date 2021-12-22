@@ -1,7 +1,7 @@
 
 #include "EV_Jetpack.h"
 
-EV_Jetpack::EV_Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) : EV_Bonus(subject), camera(camera_), jetpack_Width(Width), jetpack_Height(Height){
+View::EV_Jetpack::EV_Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) : EV_Bonus(subject), camera(camera_), jetpack_Width(Width), jetpack_Height(Height){
     // we initiaize a new platform
 
     jetpack = unique_ptr<sf::Sprite>(new sf::Sprite);
@@ -25,16 +25,16 @@ EV_Jetpack::EV_Jetpack(Entity_Model &subject, float Width, float Height, shared_
     jetpack->setColor(sf::Color(82, 170, 228));
 }
 
-void EV_Jetpack::UpdatePosition(float xpos, float ypos){
+void View::EV_Jetpack::UpdatePosition(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
 
     jetpack->setPosition(camera->toGamewidth(xpos, jetpack_Width), camera->toGameheight(ypos, jetpack_Height));
 }
 
-sf::Sprite EV_Jetpack::getBonus() const {
+sf::Sprite View::EV_Jetpack::getBonus() const {
     return *jetpack;
 }
 
-EV_Jetpack::~EV_Jetpack() {
+View::EV_Jetpack::~EV_Jetpack() {
     cout << "destructor of EV_Jetpack" << endl;
 }

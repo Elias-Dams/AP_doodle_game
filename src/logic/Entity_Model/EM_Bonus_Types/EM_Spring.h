@@ -4,7 +4,7 @@
 
 #include "../EM_Bonus.h"
 
-class EM_Spring : public EM_Bonus{
+class Model::EM_Spring : public Model::EM_Bonus{
 public:
 
     EM_Spring(float Width, float Height);
@@ -21,7 +21,7 @@ public:
 
     string getType() const override;
 
-    virtual ~EM_Spring();
+    ~EM_Spring();
 
 private:
     pair<float, float> position;

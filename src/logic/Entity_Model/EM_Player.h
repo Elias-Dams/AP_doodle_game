@@ -5,9 +5,10 @@
 #include <vector>
 #include <cmath>
 #include "Entity_Model.h"
+#include "namespaces.cpp"
 
 
-class EM_Player : public Entity_Model {
+class Model::EM_Player : public Entity_Model {
 
 public:
 
@@ -17,13 +18,13 @@ public:
 
     void jump(const float &dt,const bool &hit, const bool &bonus_hit, const string& bonustype);
 
-    float getWidth() const;
+    float getWidth() const override;
 
-    float getHeight() const;
+    float getHeight() const override;
 
-    const pair<float, float> &getPosition() const;
+    const pair<float, float> &getPosition() const override;
 
-    void setPosition(const float &x, const float &y);
+    void setPosition(const float &x, const float &y) override;
 
     bool isfalling();
 

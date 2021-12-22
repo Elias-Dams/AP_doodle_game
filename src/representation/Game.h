@@ -23,7 +23,7 @@
 
 using namespace std;
 
-enum gamestates{
+enum gamestates {
     start, gameloop, gameover
 };
 
@@ -36,19 +36,19 @@ public:
     void run();
 
     /// this function updates the main game loop
-    void update(const float& dt);
+    void update(const float &dt);
 
     /// this function draws the entitys on the screen
     void drawGame();
 
     /// making the gamestart
-    void gameStart(const float& dt);
+    void gameStart(const float &dt);
 
     /// generate the world when playing
-    void gameLoop(const float& dt);
+    void gameLoop(const float &dt);
 
     /// resets the world
-    void gameOver(const float& dt);
+    void gameOver(const float &dt);
 
     /// check if the mouse in on the button
     bool MouseOnButton(sf::Sprite Button);
@@ -59,11 +59,11 @@ public:
 
 private:
     /// game
-    shared_ptr<sf::RenderWindow> window;
+    unique_ptr<sf::RenderWindow> window;
     shared_ptr<Concrete_Factory> ConcreteFactory;
     unique_ptr<World> world;
     shared_ptr<Stopwatch> clock;
-    shared_ptr<sf::View>view;
+    shared_ptr<sf::View> view;
 
     gamestates GameState;
     bool can_reset;
@@ -76,8 +76,6 @@ private:
     sf::Sprite Button;
     sf::Texture ButtonTexture;
     sf::Texture ButtonTexture_pressed;
-
-
 
 
 };

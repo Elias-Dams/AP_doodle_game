@@ -6,15 +6,15 @@
 #include "../EV_Platform.h"
 #include "../../../logic/Entity_Model/Entity_Model.h"
 
-class EV_Blue_Platform : public EV_Platform{
+class View::EV_Blue_Platform : public View::EV_Platform{
 public:
     EV_Blue_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 
-    sf::Sprite getPlatform() const;
+    sf::Sprite getPlatform() const override;
 
-    ~EV_Blue_Platform();
+    ~EV_Blue_Platform() override;
 
 private:
     unique_ptr<sf::Sprite> platform;

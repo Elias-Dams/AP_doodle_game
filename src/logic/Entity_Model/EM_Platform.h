@@ -3,8 +3,9 @@
 #define AP_DOODLE_GAME_EM_PLATFORM_H
 
 #include "Entity_Model.h"
+#include "namespaces.cpp"
 
-class EM_Platform : public Entity_Model{
+class Model::EM_Platform : public Entity_Model{
 
 public:
     virtual const pair<float, float> &getPosition() const = 0;

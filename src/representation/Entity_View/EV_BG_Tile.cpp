@@ -1,7 +1,7 @@
 
 #include "EV_BG_Tile.h"
 
-EV_BG_Tile::EV_BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_) : Entity_View(subject), camera(camera_), width(width),
+View::EV_BG_Tile::EV_BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_) : Entity_View(subject), camera(camera_), width(width),
                                                                       height(height) {
 
     try {
@@ -21,14 +21,14 @@ EV_BG_Tile::EV_BG_Tile(Subject &subject, float width, float height, shared_ptr<C
     background.setScale( width / texture.getSize().x , height / texture.getSize().y );
 }
 
-void EV_BG_Tile::UpdatePosition(float xpos, float ypos){
+void View::EV_BG_Tile::UpdatePosition(float xpos, float ypos){
     background.setPosition(camera->toGamewidth(xpos, width),camera->toGameheight(ypos, height));
 }
 
-const sf::Sprite &EV_BG_Tile::getBackground() const {
+const sf::Sprite &View::EV_BG_Tile::getBackground() const {
     return background;
 }
 
-EV_BG_Tile::~EV_BG_Tile() {
+View::EV_BG_Tile::~EV_BG_Tile() {
     cout << "destructor of EV_BG_Tile" << endl;
 }

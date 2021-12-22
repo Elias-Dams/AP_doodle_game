@@ -1,7 +1,7 @@
 
 #include "EV_Spring.h"
 
-EV_Spring::EV_Spring(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) : EV_Bonus(subject), camera(camera_), spring_Width(Width), spring_Height(Height){
+View::EV_Spring::EV_Spring(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) : EV_Bonus(subject), camera(camera_), spring_Width(Width), spring_Height(Height){
     // we initiaize a new platform
 
     spring = unique_ptr<sf::Sprite>(new sf::Sprite);
@@ -25,7 +25,7 @@ EV_Spring::EV_Spring(Entity_Model &subject, float Width, float Height, shared_pt
     spring->setColor(sf::Color(82, 170, 228));
 }
 
-void EV_Spring::UpdatePosition(float xpos, float ypos){
+void View::EV_Spring::UpdatePosition(float xpos, float ypos){
 
     //cout << "jeej we get updates" << endl;
 
@@ -33,11 +33,11 @@ void EV_Spring::UpdatePosition(float xpos, float ypos){
 
 }
 
-sf::Sprite EV_Spring::getBonus() const {
+sf::Sprite View::EV_Spring::getBonus() const {
     return *spring;
 }
 
-EV_Spring::~EV_Spring() {
+View::EV_Spring::~EV_Spring() {
     cout << "destructor of EV_Spring" << endl;
 }
 

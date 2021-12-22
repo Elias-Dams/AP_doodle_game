@@ -670,6 +670,30 @@ src/logic/design_patterns/Subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.s
 .PHONY : src/logic/design_patterns/Subject.cpp.s
 
+src/logic/namespaces.o: src/logic/namespaces.cpp.o
+.PHONY : src/logic/namespaces.o
+
+# target to build an object file
+src/logic/namespaces.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/namespaces.cpp.o
+.PHONY : src/logic/namespaces.cpp.o
+
+src/logic/namespaces.i: src/logic/namespaces.cpp.i
+.PHONY : src/logic/namespaces.i
+
+# target to preprocess a source file
+src/logic/namespaces.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/namespaces.cpp.i
+.PHONY : src/logic/namespaces.cpp.i
+
+src/logic/namespaces.s: src/logic/namespaces.cpp.s
+.PHONY : src/logic/namespaces.s
+
+# target to generate assembly for a file
+src/logic/namespaces.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/namespaces.cpp.s
+.PHONY : src/logic/namespaces.cpp.s
+
 src/representation/Entity_View/EV_BG_Tile.o: src/representation/Entity_View/EV_BG_Tile.cpp.o
 .PHONY : src/representation/Entity_View/EV_BG_Tile.o
 
@@ -1058,6 +1082,9 @@ help:
 	@echo "... src/logic/design_patterns/Subject.o"
 	@echo "... src/logic/design_patterns/Subject.i"
 	@echo "... src/logic/design_patterns/Subject.s"
+	@echo "... src/logic/namespaces.o"
+	@echo "... src/logic/namespaces.i"
+	@echo "... src/logic/namespaces.s"
 	@echo "... src/representation/Entity_View/EV_BG_Tile.o"
 	@echo "... src/representation/Entity_View/EV_BG_Tile.i"
 	@echo "... src/representation/Entity_View/EV_BG_Tile.s"

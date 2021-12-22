@@ -1,7 +1,7 @@
 
 #include "EV_White_Platform.h"
 
-EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
+View::EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) : EV_Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
     // we initiaize a new platform
 
     platform = unique_ptr<sf::Sprite>(new sf::Sprite);
@@ -25,15 +25,15 @@ EV_White_Platform::EV_White_Platform(Entity_Model &subject, float platformWidth_
     platform->setColor(sf::Color::White);
 }
 
-void EV_White_Platform::UpdatePosition(float xpos, float ypos){
+void View::EV_White_Platform::UpdatePosition(float xpos, float ypos){
     //cout << "jeej we get updates" << endl;
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }
 
-sf::Sprite EV_White_Platform::getPlatform() const {
+sf::Sprite View::EV_White_Platform::getPlatform() const {
     return *platform;
 }
 
-EV_White_Platform::~EV_White_Platform() {
+View::EV_White_Platform::~EV_White_Platform() {
     cout << "destructor of EV_White_Platform" << endl;
 }

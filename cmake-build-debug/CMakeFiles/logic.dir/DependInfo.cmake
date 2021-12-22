@@ -29,6 +29,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Observer.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/logic.dir/src/logic/design_patterns/Observer.cpp.o"
   "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.o"
+  "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp" "/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

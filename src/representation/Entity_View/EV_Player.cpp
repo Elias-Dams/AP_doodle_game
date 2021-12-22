@@ -3,7 +3,7 @@
 
 #include <utility>
 
-EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHeight_ , shared_ptr<Camera> camera_) : Entity_View(subject), camera(camera_), playerWidth(playerWidth_), playerHeight(playerHeight_){
+View::EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHeight_ , shared_ptr<Camera> camera_) : Entity_View(subject), camera(camera_), playerWidth(playerWidth_), playerHeight(playerHeight_){
     // we initiaize a new player
 
     try {
@@ -47,7 +47,7 @@ EV_Player::EV_Player(Entity_Model &subject, float playerWidth_ , float playerHei
     player.setScale( playerWidth / right_texture.getSize().x , playerHeight / right_texture.getSize().y );
 }
 
-void EV_Player::UpdatePosition(float xpos, float ypos){
+void View::EV_Player::UpdatePosition(float xpos, float ypos){
     sf::Vector2f prev_coordiantes = player.getPosition();
     if(prev_coordiantes.x > xpos){
         player.setTexture(current_left_texture);
@@ -65,11 +65,11 @@ void EV_Player::UpdatePosition(float xpos, float ypos){
 }
 
 
-sf::Sprite EV_Player::getPlayer() const {
+sf::Sprite View::EV_Player::getPlayer() const {
     return player;
 }
 
-void EV_Player::setTexture(){
+void View::EV_Player::setTexture(){
     if(left){
         player.setTexture(current_left_texture);
     }
@@ -78,25 +78,25 @@ void EV_Player::setTexture(){
     }
 }
 
-void  EV_Player::UpdateSpringCollected() {
+void View::EV_Player::UpdateSpringCollected() {
     current_right_texture = right_spring_texture;
     current_left_texture = left_spring_texture;
     this->setTexture();
 }
 
-void  EV_Player::UpdateJetpackCollected() {
+void View::EV_Player::UpdateJetpackCollected() {
     current_right_texture = right_jetpack_texture;
     current_left_texture = left_jetpack_texture;
     this->setTexture();
 }
 
-void EV_Player::ResetTexture() {
+void View::EV_Player::ResetTexture() {
     current_right_texture = right_texture;
     current_left_texture = left_texture;
     this->setTexture();
 
 }
 
-EV_Player::~EV_Player() {
+View::EV_Player::~EV_Player() {
     cout << "destructor EV_Player" << endl;
 }

@@ -9,12 +9,13 @@
 #define AP_DOODLE_GAME_EM_BG_TILE_H
 
 #include "Entity_Model.h"
+#include "namespaces.cpp"
 
-class EM_BG_Tile : public Entity_Model {
+class Model::EM_BG_Tile : public Entity_Model {
 public:
     EM_BG_Tile(float width, float height);
 
-    virtual ~EM_BG_Tile();
+    ~EM_BG_Tile();
 
     float getWidth() const;
 

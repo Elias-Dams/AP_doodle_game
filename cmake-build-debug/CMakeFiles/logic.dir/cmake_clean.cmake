@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/logic.dir/src/logic/design_patterns/ISubject.cpp.o"
   "CMakeFiles/logic.dir/src/logic/design_patterns/Observer.cpp.o"
   "CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.o"
+  "CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
   "liblogic.a"
   "liblogic.pdb"
 )

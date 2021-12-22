@@ -3,8 +3,9 @@
 #define AP_DOODLE_GAME_EV_BG_TILE_H
 
 #include "Entity_View.h"
+#include "../../logic/namespaces.cpp"
 
-class EV_BG_Tile : public Entity_View {
+class View::EV_BG_Tile : public Entity_View {
 public:
     EV_BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_);
 
@@ -12,7 +13,7 @@ public:
 
     const sf::Sprite &getBackground() const;
 
-    ~EV_BG_Tile();
+    ~EV_BG_Tile() override;
 
 private:
 

@@ -339,6 +339,19 @@ CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp -o CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.s
 
+CMakeFiles/logic.dir/src/logic/namespaces.cpp.o: CMakeFiles/logic.dir/flags.make
+CMakeFiles/logic.dir/src/logic/namespaces.cpp.o: ../src/logic/namespaces.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/logic.dir/src/logic/namespaces.cpp.o -c /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp
+
+CMakeFiles/logic.dir/src/logic/namespaces.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/logic.dir/src/logic/namespaces.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp > CMakeFiles/logic.dir/src/logic/namespaces.cpp.i
+
+CMakeFiles/logic.dir/src/logic/namespaces.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/logic.dir/src/logic/namespaces.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/namespaces.cpp -o CMakeFiles/logic.dir/src/logic/namespaces.cpp.s
+
 # Object files for target logic
 logic_OBJECTS = \
 "CMakeFiles/logic.dir/src/logic/Stopwatch.cpp.o" \
@@ -361,7 +374,8 @@ logic_OBJECTS = \
 "CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yellow_Platform.cpp.o" \
 "CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o" \
 "CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o" \
-"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o"
+"CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o" \
+"CMakeFiles/logic.dir/src/logic/namespaces.cpp.o"
 
 # External object files for target logic
 logic_EXTERNAL_OBJECTS =
@@ -387,9 +401,10 @@ liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_Yel
 liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/EM_White_Platform.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Jetpack.cpp.o
 liblogic.a: CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/EM_Spring.cpp.o
+liblogic.a: CMakeFiles/logic.dir/src/logic/namespaces.cpp.o
 liblogic.a: CMakeFiles/logic.dir/build.make
 liblogic.a: CMakeFiles/logic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX static library liblogic.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/legod/CLionProjects/AP_doodle_game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library liblogic.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/logic.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logic.dir/link.txt --verbose=$(VERBOSE)
 

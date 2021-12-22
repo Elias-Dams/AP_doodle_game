@@ -1,13 +1,13 @@
 
 #include "EM_Player.h"
 
-EM_Player::EM_Player(float player_width_, float player_height_) : player_width(player_width_), player_height(player_height_){
+Model::EM_Player::EM_Player(float player_width_, float player_height_) : player_width(player_width_), player_height(player_height_){
     gravity = 0.20f;
     falling = true;
     maxheight = 0;
 }
 
-void EM_Player::move(const float &xpos, const float &ypos){
+void Model::EM_Player::move(const float &xpos, const float &ypos){
     position.first += xpos;
     position.second += ypos;
 
@@ -16,7 +16,7 @@ void EM_Player::move(const float &xpos, const float &ypos){
 }
 
 
-void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit, const string& bonustype){
+void Model::EM_Player::jump(const float &dt, const bool &hit, const bool &bonus_hit, const string& bonustype){
 
     if(position.second >= 0){
 
@@ -58,33 +58,33 @@ void EM_Player::jump(const float &dt,const bool &hit, const bool &bonus_hit, con
     NotifyPosition(position.first, position.second);
 }
 
-float EM_Player::getWidth() const {
+float Model::EM_Player::getWidth() const {
     return player_width;
 }
 
-float EM_Player::getHeight() const {
+float Model::EM_Player::getHeight() const {
     return player_height;
 }
 
-const pair<float, float> &EM_Player::getPosition() const {
+const pair<float, float> &Model::EM_Player::getPosition() const {
     return position;
 }
 
-void EM_Player::setPosition(const float &x, const float &y) {
+void Model::EM_Player::setPosition(const float &x, const float &y) {
     EM_Player::position = make_pair(x,y);
     NotifyPosition(x, y);
 }
 
-bool EM_Player::isfalling(){
+bool Model::EM_Player::isfalling(){
     return falling;
 }
 
-void EM_Player::resetmaxheight(){
+void Model::EM_Player::resetmaxheight(){
     maxheight = 0;
     NotifyReset();
 }
 
-void EM_Player::PlayerReset(float startposx, float startposy){
+void Model::EM_Player::PlayerReset(float startposx, float startposy){
     position.first = startposx;
     position.second = startposy;
     gravity = 0.20f;
@@ -94,10 +94,10 @@ void EM_Player::PlayerReset(float startposx, float startposy){
     NotifyReset();
 }
 
-float EM_Player::getMaxheight() const {
+float Model::EM_Player::getMaxheight() const {
     return maxheight;
 }
 
-EM_Player::~EM_Player() {
+Model::EM_Player::~EM_Player() {
     cout << "destructor of EM_Player" << endl;
 }

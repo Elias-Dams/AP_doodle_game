@@ -6,6 +6,7 @@ Model::Player::Player(float player_width_, float player_height_) :
     gravity = 0.20f;
     falling = true;
     maxheight = 0;
+    jumpheigt = 250.0f;
 }
 
 void Model::Player::move(const float &x, const float &y) {
@@ -16,7 +17,7 @@ void Model::Player::move(const float &x, const float &y) {
 }
 
 
-void Model::Player::jump(const float &dt, const bool &hit, const bool &bonus_hit, const string &bonustype) {
+void Model::Player::jump(const float &dt, const bool &hit, int height_modifier) {
 
     if (position.second >= 0) {
 
@@ -36,14 +37,19 @@ void Model::Player::jump(const float &dt, const bool &hit, const bool &bonus_hit
             falling = false;
         }
 
-        if (hit and !bonus_hit) {
-            gravity = -10.0f;// jumpheight = 250
-        } else if (bonus_hit and !hit and bonustype == "spring") {
-            gravity = -23.0f;// jumpheight = 1250
-            NotifySpting();
-        } else if (bonus_hit and !hit and bonustype == "jetpack") {
-            gravity = -34.6f;// jumpheight = 3000
-            NotifyJetpack();
+        if (hit) {
+            float height = jumpheigt * (float)height_modifier;
+            float temp = sqrtf((2.0f/5.0f)*height);
+            if(height < 500){
+                // normal
+            }
+            else if(height < 1500){
+                NotifySpting();
+            }
+            else {
+                NotifyJetpack();
+            }
+            gravity = -temp;
         }
     }
     if (position.second >= maxheight) {
@@ -51,6 +57,7 @@ void Model::Player::jump(const float &dt, const bool &hit, const bool &bonus_hit
         NewMaxHeigh(maxheight);
     }
 
+    //cout << "(" << position.first << ", " << position.second << ")" << endl;
     NotifyPosition(position.first, position.second);
 }
 

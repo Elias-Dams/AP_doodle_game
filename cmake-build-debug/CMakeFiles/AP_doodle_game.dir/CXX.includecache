@@ -220,19 +220,11 @@ memory
 ISubject.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.cpp
-BG_Tile.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.h
 ../../logic/Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp
 Entity_View.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.cpp
-Bonus.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
 ../../logic/Namespaces.cpp
@@ -240,19 +232,11 @@ Bonus.h
 Entity_View.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp
-Jetpack.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Jetpack.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Jetpack.h
 ../../../logic/Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 ../Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp
-Spring.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Spring.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Spring.h
 ../../../logic/Entity_Model/Entity_Model.h
@@ -260,23 +244,11 @@ Spring.h
 ../Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp
-Blue_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h
-memory
--
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h
 ../../../logic/Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp
-Green_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Green_Platform.h
-memory
--
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Green_Platform.h
 ../../../logic/Entity_Model/Entity_Model.h
@@ -284,33 +256,17 @@ memory
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp
-White_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/White_Platform.h
-memory
--
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/White_Platform.h
 ../../../logic/Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp
-Yellow_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h
-memory
--
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h
 ../../../logic/Entity_Model/Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.cpp
-Entity_View.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
 ../../logic/Camera.h
@@ -326,21 +282,11 @@ list
 string
 -
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.cpp
-Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 ../../logic/Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp
 Entity_View.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Player.cpp
-Player.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Player.h
-utility
--
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Player.h
 ../../logic/Entity_Model/Entity_Model.h

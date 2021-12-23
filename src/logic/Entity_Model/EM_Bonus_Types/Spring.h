@@ -30,7 +30,7 @@ public:
 
     float getHeight() const override;
 
-    string getType() const override;
+    int getBonuspower() const override;
 
     ~Spring();
 

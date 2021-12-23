@@ -30,8 +30,8 @@ float Model::Spring::getHeight() const {
     return spring_height;
 }
 
-string Model::Spring::getType() const {
-    return "spring";
+int Model::Spring::getBonuspower() const {
+    return 5; // jump x5 times higher
 }
 
 Model::Spring::~Spring() {

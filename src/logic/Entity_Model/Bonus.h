@@ -32,13 +32,14 @@ public:
     virtual void update(float x, float y) = 0;
 
     /**
-    * @brief get the bonustype
+    * @brief get the bonuspower
     *
-    * This function gets the type of a certain bonus
+    * This function gets the power of a certain bonus.
+    * e.g. the spring makes the player jump x5 higher
     *
     * @return gets the type of the bonus
     */
-    virtual string getType() const = 0;
+    virtual int getBonuspower() const = 0;
 
     virtual ~Bonus();
 };

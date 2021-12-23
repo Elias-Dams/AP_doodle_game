@@ -74,7 +74,7 @@ void Game::LoadTextures() {
 
 void Game::run() {
     float dt;
-    window->setFramerateLimit(120);
+    window->setFramerateLimit(60);
 
     while (window->isOpen()) {
         dt = clock->mark_time();

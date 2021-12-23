@@ -196,7 +196,7 @@ void World::startstate(float dt) {
         ++it;
     }
 
-    player->jump(dt, hit, false, "");
+    player->jump(dt, hit, 1);
 }
 
 void World::update(float dt, const char &key) {
@@ -241,9 +241,11 @@ void World::update(float dt, const char &key) {
     }
 
     // check collision
-    bool bonus_hit = false;
-    string bonustype = "";
+    int height_modification = 1;
+
     bool hit = false;
+    bool bonus_hit = false;
+
     auto it = platforms.begin();
     while (it != platforms.end()) {
         bool current_hit = false;
@@ -255,13 +257,14 @@ void World::update(float dt, const char &key) {
                     (*it)->getPosition().first + (*it)->getWidth() / 2 - bonusses[(*it)]->getWidth() / 2,
                     (*it)->getPosition().second + (*it)->getHeight());
             if (this->colisionCheck(bonusses[(*it)])) {
+                hit = true;
                 bonus_hit = true;
                 current_hit = true;
-                bonustype = bonusses[(*it)]->getType();
+                height_modification = bonusses[(*it)]->getBonuspower();
             }
         }
 
-        if (this->colisionCheck(*it) and !bonus_hit) {
+        if (this->colisionCheck(*it) and !hit) {
             hit = true;
             current_hit = true;
         }
@@ -281,7 +284,8 @@ void World::update(float dt, const char &key) {
             (*it).reset();
             platforms.erase(it);
         } else if (current_hit and bonus_hit and bonusses.count((*it))) {
-            if (bonusses[(*it)]->getType() == "jetpack") {
+            // make the jetpack disappear
+            if (bonusses[(*it)]->getBonuspower() == 12) {
                 factory->delete_bonus(bonusses[(*it)]);
                 bonusses[(*it)].reset();
                 bonusses.erase((*it));
@@ -313,7 +317,7 @@ void World::update(float dt, const char &key) {
     // add platforms
     this->add_platforms();
 
-    player->jump(dt, hit, bonus_hit, bonustype);
+    player->jump(dt, hit, height_modification);
 
     //cout << player->getPosition().second << endl;
 }

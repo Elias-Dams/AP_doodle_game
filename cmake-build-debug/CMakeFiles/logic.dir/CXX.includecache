@@ -8,27 +8,15 @@
 
 ../src/logic/Namespaces.cpp
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp
-Camera.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
 iostream
 -
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp
-BG_Tile.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h
 Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Namespaces.cpp
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.cpp
-Bonus.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h
 Entity_Model.h
@@ -36,57 +24,29 @@ Entity_Model.h
 Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Namespaces.cpp
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp
-Jetpack.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h
 ../Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp
-Spring.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.h
 ../Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp
-Blue_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp
-Green_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp
-White_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp
-Yellow_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp
-Entity_Model.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 ../design_patterns/Subject.h
@@ -99,10 +59,6 @@ string
 -
 vector
 -
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.cpp
-Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h
 Entity_Model.h
@@ -123,10 +79,6 @@ cmath
 -
 vector
 -
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.cpp
-Random.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Random.h
 iostream

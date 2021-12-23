@@ -29,8 +29,8 @@ float Model::Jetpack::getHeight() const {
     return jetpack_height;
 }
 
-string Model::Jetpack::getType() const {
-    return "jetpack";
+int Model::Jetpack::getBonuspower() const {
+    return 12; // jump 12 times higher
 }
 
 Model::Jetpack::~Jetpack() {

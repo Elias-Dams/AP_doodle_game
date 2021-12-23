@@ -41,8 +41,9 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     * @param hit: indication that a platform has been hit.
+    * @param height_modifier: the height modification of the bonus;
     */
-    void jump(const float &dt, const bool &hit, const bool &bonus_hit, const string &bonustype);
+    void jump(const float &dt, const bool &hit, int height_modifier);
 
     /**
     * @brief checks if the player is falling.
@@ -101,6 +102,7 @@ private:
     float gravity; ///< constant to calculate the jump
     float player_width; ///< the width of the player
     float player_height; ///< the height of the player
+    float jumpheigt; ///< jumpheight of the player
 
     bool falling; ///< keep track of whether the player falls
 };

@@ -8,6 +8,11 @@
 
 class View::Yellow_Platform : public View::Platform {
 public:
+    /**
+     * Yellow_Platform constructor.
+     * constructs the yellow_Platform  whit given Entity model (this wil act as the subject whereby this yellow_Platform will observere)
+     * a given width and height and the camera to convert the coordinates to sfml coordinates
+     */
     Yellow_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
@@ -17,11 +22,11 @@ public:
     ~Yellow_Platform() override;
 
 private:
-    unique_ptr<sf::Sprite> platform;
-    unique_ptr<sf::Texture> texture;
-    shared_ptr<Camera> camera;
-    float platformWidth;
-    float platformHeight;
+    unique_ptr<sf::Sprite> platform; ///< sfml sprite of the platform
+    unique_ptr<sf::Texture> texture; ///< sfml texture of the platform
+    shared_ptr<Camera> camera; ///< the camera to convert the coordinates to sfml coordinates
+    float platformWidth;  ///< width of the platform
+    float platformHeight; ///< height of the platform
 };
 
 #endif//AP_DOODLE_GAME_YELLOW_PLATFORM_H

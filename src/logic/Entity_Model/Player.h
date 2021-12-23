@@ -28,8 +28,8 @@ public:
     * This function updates the position of the player bye adding.
     * the the distance travelled on the x axis and the y axis to the current position.
     *
-    * @param x the distance travelled on the x axis.
-    * @param y the distance travelled on the y axis.
+    * @param x: the distance travelled on the x axis.
+    * @param y: the distance travelled on the y axis.
     */
     void move(const float &x, const float &y);
 
@@ -39,8 +39,8 @@ public:
     * This function makes the player jump bye adding a certain gravity to player.
     * If a platorm is hit this gravity constant is reset and the player jumps up.
     *
-    * @param dt delta time (time it takes to render a frame)
-    * @param hit indication that a platform has been hit.
+    * @param dt: delta time (time it takes to render a frame)
+    * @param hit: indication that a platform has been hit.
     */
     void jump(const float &dt, const bool &hit, const bool &bonus_hit, const string &bonustype);
 

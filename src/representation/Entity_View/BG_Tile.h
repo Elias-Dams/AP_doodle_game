@@ -7,11 +7,23 @@
 
 class View::BG_Tile : public Entity_View {
 public:
+    /**
+     * Background tile constructor.
+     * constructs the background tile whit given Entity model (this wil act as the subject whereby this background tile will observere)
+     * a given width and height and the camera to convert the coordinates to sfml coordinates
+     */
     BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_);
 
-    void UpdatePosition(float xpos, float ypos) override;
-
+    /**
+    * @brief gets the sfml sprite
+    *
+    * This function gets the sfml sprite of the background tile
+    *
+    * @return the sfml sprite of the background tile
+    */
     const sf::Sprite &getBackground() const;
+
+    void UpdatePosition(float xpos, float ypos) override;
 
     ~BG_Tile() override;
 

@@ -14,14 +14,30 @@ class Model::Bonus : public Entity_Model {
 public:
     virtual const pair<float, float> &getPosition() const = 0;
 
-    virtual void update(float x, float y) = 0;
-
     virtual float getWidth() const = 0;
 
     virtual float getHeight() const = 0;
 
     virtual void setPosition(const float &x, const float &y) = 0;
 
+    /**
+    * @brief updates the position of the bonus if it can move.
+    *
+    * This function updates the position of the bonus if it can move.
+    * This is the case if it is on a moving platform
+    *
+    * @param x: position of the platform the bonus is on
+    * @param y: position of the platform the bonus is on
+    */
+    virtual void update(float x, float y) = 0;
+
+    /**
+    * @brief get the bonustype
+    *
+    * This function gets the type of a certain bonus
+    *
+    * @return gets the type of the bonus
+    */
     virtual string getType() const = 0;
 
     virtual ~Bonus();

@@ -41,8 +41,8 @@ public:
     *
     * This function generates a float number between a given range
     *
-    * @param min minimum of the range
-    * @param mxx mqximum of the range
+    * @param min: minimum of the range
+    * @param max: mqximum of the range
     * @return random float number
     */
     float generate_between(const float &min, const float &max);

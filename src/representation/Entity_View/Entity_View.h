@@ -14,10 +14,22 @@ using namespace std;
 
 class Entity_View : public Observer {
 public:
+    /**
+     * Entity_View constructor.
+     * constructs the entity_view whit given Entity model (this wil act as the subject whereby this entity model will observere)
+     */
     Entity_View(Subject &subject);
 
     virtual ~Entity_View();
 
+    /**
+    * @brief updates the position of the entity views
+    *
+    * This function updates the position of the view when the player has moved
+    *
+    * @param x: position of the entity in the game
+    * @param y: position of the entity in the game
+    */
     virtual void UpdatePosition(float xpos, float ypos) override;
 };
 

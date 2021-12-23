@@ -24,7 +24,7 @@ public:
     *
     * This function updates the score if a new maximum height is reached
     *
-    * @param y position on the y axis
+    * @param y: position on the y axis
     */
     void NewMaxheightReached(float y) override;
 

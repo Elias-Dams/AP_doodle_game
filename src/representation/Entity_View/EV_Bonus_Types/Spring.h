@@ -7,6 +7,11 @@
 
 class View::Spring : public View::Bonus {
 public:
+    /**
+     * Spring constructor.
+     * constructs the spring whit given Entity model (this wil act as the subject whereby this spring will observere)
+     * a given width and height and the camera to convert the coordinates to sfml coordinates
+     */
     Spring(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
@@ -16,11 +21,11 @@ public:
     ~Spring() override;
 
 private:
-    unique_ptr<sf::Sprite> spring;
-    unique_ptr<sf::Texture> texture;
-    shared_ptr<Camera> camera;
-    float spring_Width;
-    float spring_Height;
+    unique_ptr<sf::Sprite> spring; ///< sfml sprite of the spring
+    unique_ptr<sf::Texture> texture; ///< sfml texture of the spring
+    shared_ptr<Camera> camera; ///< the camera to convert the coordinates to sfml coordinates
+    float spring_Width; ///< width of the Spring
+    float spring_Height; ///< height of the Spring
 };
 
 

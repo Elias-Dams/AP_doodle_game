@@ -22,34 +22,73 @@ enum gamestates {
 class Game {
 
 public:
+    /**
+     * Game constructor.
+     * constructs the game
+     */
     Game();
 
-    /// this function contains the main game loop
+    /**
+    * @brief main game loop
+    *
+    * this function contains the main game loop
+    */
     void run();
 
-    /// this function updates the main game loop
+    /**
+    * @brief updates the main game loop
+    *
+    * this function updates the main game loop
+    *
+    * @param dt: delta time (time it takes to render a frame)
+    */
     void update(const float &dt);
 
-    /// this function draws the entitys on the screen
+    /**
+    * @brief draws the entities
+    *
+    * this function draws the entities on the screen
+    */
     void drawGame();
 
-    /// making the gamestart
+    /**
+    * @brief game start
+    *
+    * this function handles the game start state
+    *
+    * @param dt: delta time (time it takes to render a frame)
+    */
     void gameStart(const float &dt);
 
-    /// generate the world when playing
+    /**
+    * @brief game loop
+    *
+    * this function handles the game loop
+    *
+    * @param dt: delta time (time it takes to render a frame)
+    */
     void gameLoop(const float &dt);
 
-    /// resets the world
+    /**
+    * @brief game over
+    *
+    * this function handles the game over state
+    * This function resets the game to the state it was in when it was first initialized
+    *
+    * @param dt: delta time (time it takes to render a frame)
+    */
     void gameOver(const float &dt);
-
-    /// check if the mouse in on the button
-    bool MouseOnButton(sf::Sprite Button);
-
-    void LoadTextures();
 
     ~Game();
 
 private:
+
+    /// check if the mouse in on the button
+    bool MouseOnButton(sf::Sprite Button);
+
+    /// loads the textures
+    void LoadTextures();
+
     /// game
     unique_ptr<sf::RenderWindow> window; ///< winsow
     shared_ptr<Concrete_Factory> ConcreteFactory; ///< ConcreteFactory

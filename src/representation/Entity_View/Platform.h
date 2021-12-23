@@ -5,13 +5,30 @@
 #include "../../logic/Namespaces.cpp"
 #include "Entity_View.h"
 
+/**
+ * @class Platform
+ *
+ * This is the view part of the Platform.
+ * It handles the textures.
+ */
 class View::Platform : public Entity_View {
 public:
+    /**
+     * Platform constructor.
+     * constructs the platform whit given Entity model (this wil act as the subject whereby this platform will observere)
+     */
     Platform(Subject &subject);
 
-    virtual void UpdatePosition(float xpos, float ypos) = 0;
-
+    /**
+    * @brief gets the sfml sprite
+    *
+    * This function gets the sfml sprite of the platform
+    *
+    * @return the sfml sprite of the platform
+    */
     virtual sf::Sprite getPlatform() const = 0;
+
+    virtual void UpdatePosition(float xpos, float ypos) = 0;
 
     virtual ~Platform();
 };

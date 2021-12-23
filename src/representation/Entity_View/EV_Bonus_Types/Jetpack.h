@@ -7,6 +7,11 @@
 
 class View::Jetpack : public View::Bonus {
 public:
+    /**
+     * Jetpack constructor.
+     * constructs the jetpack whit given Entity model (this wil act as the subject whereby this jetpack will observere)
+     * a given width and height and the camera to convert the coordinates to sfml coordinates
+     */
     Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
@@ -16,11 +21,11 @@ public:
     ~Jetpack() override;
 
 private:
-    unique_ptr<sf::Sprite> jetpack;
-    unique_ptr<sf::Texture> texture;
-    shared_ptr<Camera> camera;
-    float jetpack_Width;
-    float jetpack_Height;
+    unique_ptr<sf::Sprite> jetpack; ///< sfml sprite of the jetpack
+    unique_ptr<sf::Texture> texture; ///< sfml texture of jetpack
+    shared_ptr<Camera> camera; ///< the camera to convert the coordinates to sfml coordinates
+    float jetpack_Width; ///< width of the jetpack
+    float jetpack_Height; ///< height of the jetpack
 };
 
 

@@ -19,7 +19,7 @@ public:
     *
     * This function makes the platform move.
     *
-    * @param dt delta time (time it takes to render a frame)
+    * @param dt: delta time (time it takes to render a frame)
     */
     virtual void update(float dt) = 0;
 

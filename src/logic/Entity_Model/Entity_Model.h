@@ -55,8 +55,8 @@ public:
     *
     * This function updates the position of the entity with the given coordinates.
     *
-    * @param x a position on the x axis
-    * @param y a position on the y axis
+    * @param x: a position on the x axis
+    * @param y: a position on the y axis
     */
     virtual void setPosition(const float &x, const float &y) = 0;
 

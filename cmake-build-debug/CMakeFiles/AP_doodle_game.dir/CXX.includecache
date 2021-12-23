@@ -141,36 +141,36 @@ vector
 -
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.h
-iostream
--
-list
--
-string
--
-memory
--
-../Score.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
 ../Camera.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
-../Entity_Model/Player.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h
-../Entity_Model/EM_Platform_Types/Green_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h
-../Entity_Model/EM_Platform_Types/Blue_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h
-../Entity_Model/EM_Platform_Types/Yellow_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h
-../Entity_Model/EM_Platform_Types/White_Platform.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.h
 ../Entity_Model/BG_Tile.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h
 ../Entity_Model/Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h
-../Entity_Model/EM_Bonus_Types/Spring.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.h
 ../Entity_Model/EM_Bonus_Types/Jetpack.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h
+../Entity_Model/EM_Bonus_Types/Spring.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.h
+../Entity_Model/EM_Platform_Types/Blue_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h
+../Entity_Model/EM_Platform_Types/Green_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h
+../Entity_Model/EM_Platform_Types/White_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.h
+../Entity_Model/EM_Platform_Types/Yellow_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h
+../Entity_Model/Player.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h
+../Score.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
+iostream
+-
+list
+-
+memory
+-
+string
+-
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.h
 iostream
@@ -220,11 +220,19 @@ memory
 ISubject.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.cpp
+BG_Tile.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.h
 ../../logic/Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp
 Entity_View.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.cpp
+Bonus.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h
 ../../logic/Namespaces.cpp
@@ -300,6 +308,10 @@ memory
 ../Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.cpp
+Entity_View.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h
 ../../logic/Camera.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
@@ -313,6 +325,10 @@ list
 -
 string
 -
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.cpp
+Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h
 ../../logic/Namespaces.cpp

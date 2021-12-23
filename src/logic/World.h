@@ -30,7 +30,7 @@ public:
     * It makes a platform and lets the player jump in place
     * The player can't move in this state so there is no need for a key variable
     *
-    * @param dt delta time (time it takes to render a frame)
+    * @param dt: delta time (time it takes to render a frame)
     */
     void startstate(float dt);
 
@@ -44,8 +44,8 @@ public:
     * - check collision
     * - destroys and adds platforms
     *
-    * @param dt delta time (time it takes to render a frame)
-    * @param key key that is pressed
+    * @param dt: delta time (time it takes to render a frame)
+    * @param key: key that is pressed
     */
     void update(float dt, const char &key);
 

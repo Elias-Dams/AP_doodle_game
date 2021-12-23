@@ -36,7 +36,7 @@ public:
     *
     * This function sets the height of the camera
     *
-    * @param height the hight the camera needt to be on
+    * @param height: the hight the camera needt to be on
     */
     void setHeight(float height);
 
@@ -46,8 +46,8 @@ public:
     * This function converts the height to game height
     * it is the height in the normalised coordinate stelsel
     *
-    * @param position the position of the entity
-    * @param entity_height the height of the entity
+    * @param position: the position of the entity
+    * @param entity_height: the height of the entity
     */
     float toGameheight(float position, float entity_height);
 
@@ -57,8 +57,8 @@ public:
     * This function converts the width to game width
     * it is the width in the normalised coordinate stelsel
     *
-    * @param position the position of the entity
-    * @param entity_height the width of the entity
+    * @param position: the position of the entity
+    * @param entity_height: the width of the entity
     */
     float toGamewidth(float position, float entity_width);
 

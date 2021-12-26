@@ -6,7 +6,7 @@ Observer::Observer(Subject &subject) : subject_(subject) {
 }
 
 Observer::~Observer() {
-    std::cout << "destructor of Observer" << std::endl;
+
 }
 
 void Observer::UpdatePosition(float xpos, float ypos) {
@@ -25,11 +25,11 @@ void Observer::NewMaxheightReached(float ypos){
     // do nothing
 }
 
-void Observer::UpdateSpringCollected() {
+void Observer::UpdateMediumJump() {
     // do nothing
 }
 
-void Observer::UpdateJetpackCollected() {
+void Observer::UpdateHighJump() {
     // do nothing
 }
 

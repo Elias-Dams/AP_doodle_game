@@ -149,14 +149,9 @@ void Concrete_Factory::delete_bonus(weak_ptr<Model::Bonus> bonus) {
 }
 
 Concrete_Factory::~Concrete_Factory() {
-    cout << "destructor of Concrete_Factory" << endl;
-
-    cout << "\t clear Playerviews" << endl;
+    
     Playerviews.clear();
-    cout << "\t clear Platformviews" << endl;
     Platformviews.clear();
-    cout << "\t clear Bonusviews" << endl;
     Bonusviews.clear();
-    cout << "\t clear backgrounds" << endl;
     backgrounds.clear();
 }

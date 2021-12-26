@@ -22,5 +22,5 @@ float Stopwatch::mark_time() {
 }
 
 Stopwatch::~Stopwatch() {
-    cout << "destructor of Stopwatch" << endl;
+
 }

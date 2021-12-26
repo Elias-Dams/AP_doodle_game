@@ -34,5 +34,5 @@ int Model::Jetpack::getBonuspower() const {
 }
 
 Model::Jetpack::~Jetpack() {
-    cout << "destructor of Jetpack" << endl;
+
 }

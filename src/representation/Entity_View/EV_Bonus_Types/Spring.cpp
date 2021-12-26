@@ -36,5 +36,5 @@ sf::Sprite View::Spring::getBonus() const {
 }
 
 View::Spring::~Spring() {
-    cout << "destructor of Spring" << endl;
+
 }

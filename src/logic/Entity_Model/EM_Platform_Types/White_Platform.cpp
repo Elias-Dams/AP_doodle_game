@@ -36,5 +36,5 @@ const string &Model::White_Platform::getColor() const {
 }
 
 Model::White_Platform::~White_Platform() {
-    cout << "destructor of White_Platform" << endl;
+
 }

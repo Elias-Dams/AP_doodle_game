@@ -192,11 +192,12 @@ void Game::drawGame() {
 
     // start draws
     if (GameState == start) {
+
         for (weak_ptr<View::BG_Tile> background : ConcreteFactory->getBackgrounds()) {
             window->draw(background.lock()->getBackground());
         }
 
-        for (shared_ptr<Platform> platform : world->getPlatforms()) {
+        for (const shared_ptr<Platform>& platform : world->getPlatforms()) {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
@@ -254,22 +255,9 @@ bool Game::MouseOnButton(sf::Sprite _button) {
 }
 
 Game::~Game() {
-    cout << "---destructor of game---" << endl;
-    cout << "--WORLD--" << endl;
     world.reset();
-    cout << "-----------" << endl;
-    cout << "--FACTORY--" << endl;
     ConcreteFactory.reset();
-    cout << "-----------" << endl;
-    cout << "--CLOCK--" << endl;
     clock.reset();
-    cout << "-----------" << endl;
-    cout << "--VIEW--" << endl;
     view.reset();
-    cout << "-----------" << endl;
-    cout << "--WINDOW--" << endl;
     window.reset();
-    cout << "-----------" << endl;
-
-    cout << "-------end-game---------" << endl;
 }

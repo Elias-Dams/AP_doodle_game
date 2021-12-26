@@ -2,7 +2,6 @@
 #include "Subject.h"
 
 Subject::~Subject() {
-    std::cout << "destructor of Subject" << std::endl;
 
     for(std::shared_ptr<IObserver> Subject_ : list_observer_){
         Subject_.reset();
@@ -28,17 +27,17 @@ void Subject::NotifyPosition(float xpos, float ypos) {
 
 }
 
-void Subject::NotifySpting() {
+void Subject::NotifyMedium() {
     for(std::shared_ptr<IObserver> Subject_ : list_observer_){
-        Subject_->UpdateSpringCollected();
+        Subject_->UpdateMediumJump();
 
     }
 }
 
 
-void Subject::NotifyJetpack() {
+void Subject::NotifyHigh() {
     for(std::shared_ptr<IObserver> Subject_ : list_observer_){
-        Subject_->UpdateJetpackCollected();
+        Subject_->UpdateHighJump();
 
     }
 }
@@ -64,4 +63,7 @@ void Subject::NotifyReset() {
         Subject_->Resetscore();
 
     }
+}
+const std::list<std::shared_ptr<IObserver>> Subject::getListObserver() const {
+    return list_observer_;
 }

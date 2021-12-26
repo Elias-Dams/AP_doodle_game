@@ -66,10 +66,6 @@ Entity_Model.h
 Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Namespaces.cpp
 
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.cpp
-Player.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h
-
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h
 Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
@@ -93,12 +89,6 @@ vector
 -
 memory
 -
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp
-Score.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
-Entity_Model/Player.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
 Entity_Model/Entity_Model.h
@@ -137,10 +127,6 @@ typeinfo
 -
 vector
 -
-
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.cpp
-Abstract_Factory.h
-/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Abstract_Factory.h
 ../Camera.h

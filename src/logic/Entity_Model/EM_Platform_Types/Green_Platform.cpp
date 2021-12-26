@@ -35,5 +35,5 @@ const string &Model::Green_Platform::getColor() const {
 }
 
 Model::Green_Platform::~Green_Platform() {
-    cout << "destructor of Green_Platform" << endl;
+
 }

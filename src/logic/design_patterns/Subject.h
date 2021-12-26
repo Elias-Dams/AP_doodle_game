@@ -32,10 +32,13 @@ public:
     void NotifyNormal() override;
 
     /// notifies the view of the player if a spring is collected
-    void NotifySpting() override;
+    void NotifyMedium() override;
 
     /// notifies the view of the player if a jetpack is collected
-    void NotifyJetpack() override;
+    void NotifyHigh() override;
+
+
+    const std::list<std::shared_ptr<IObserver>> getListObserver() const;
 
 private:
     /// shared pointer becouse the Subject gets full controll over the observer

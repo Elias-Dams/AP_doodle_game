@@ -29,10 +29,10 @@ public:
     virtual void ResetTexture() override;
 
     /// updates te texture of the player if a spring is collected
-    virtual void UpdateSpringCollected() override;
+    virtual void UpdateMediumJump() override;
 
     /// updates te texture of the player if a jetpack is collected
-    virtual void UpdateJetpackCollected() override;
+    virtual void UpdateHighJump() override;
 
     void RemoveMeFromTheList();
 

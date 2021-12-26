@@ -29,5 +29,5 @@ const sf::Sprite &View::BG_Tile::getBackground() const {
 }
 
 View::BG_Tile::~BG_Tile() {
-    cout << "destructor of BG_Tile" << endl;
+
 }

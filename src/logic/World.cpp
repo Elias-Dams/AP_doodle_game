@@ -185,7 +185,7 @@ void World::startstate(float dt) {
     }
 
     bool hit = false;
-    auto it = platforms.begin();
+    vector<shared_ptr<Platform>>::iterator it = platforms.begin();
     while (it != platforms.end()) {
 
         (*it)->update(dt);
@@ -218,7 +218,7 @@ void World::update(float dt, const char &key) {
         background.first->setPosition(background.second->getPosition().first,
                                       background.second->getPosition().second + HEIGHT);
 
-        auto temp = background.second;
+        shared_ptr<BG_Tile> temp = background.second;
         background.second = background.first;
         background.first = temp;
     }
@@ -246,7 +246,7 @@ void World::update(float dt, const char &key) {
     bool hit = false;
     bool bonus_hit = false;
 
-    auto it = platforms.begin();
+    vector<shared_ptr<Platform>>::iterator it = platforms.begin();
     while (it != platforms.end()) {
         bool current_hit = false;
 
@@ -353,7 +353,7 @@ void World::Reset() {
     height_of_the_last_platform = 0;
     platforms_per_view = 20;
 
-    for (auto platform : platforms) {
+    for (shared_ptr<Platform> platform : platforms) {
         if (bonusses.count(platform)) {
             factory->delete_bonus(bonusses[platform]);
             bonusses[platform].reset();
@@ -376,26 +376,16 @@ void World::Reset() {
 }
 
 World::~World() {
-    cout << "-----destructor of World-----" << endl;
-    cout << "factory: " << factory.use_count() << endl;
-    cout << "player: " << player.use_count() << endl;
-    for (std::map<shared_ptr<Platform>, shared_ptr<Bonus>>::iterator it = bonusses.begin();
-         it != bonusses.end(); it++) {
-        cout << "bonus: " << it->second.use_count() << "-->";
+
+    for (std::map<shared_ptr<Platform>, shared_ptr<Bonus>>::iterator it = bonusses.begin(); it != bonusses.end(); it++) {
         factory->delete_bonus(it->second);
         it->second.reset();
-        cout << "bonus: " << it->second.use_count() << endl;
-    }
-    for (auto platform : platforms) {
-        cout << "platform: " << platform.use_count() << " --> ";
-        bonusses.erase(platform);
-        factory->delete_platform(platform);
-        cout << "platform: " << platform.use_count() << endl;
     }
 
-    cout << "background: " << background.first.use_count() << endl;
-    cout << "background: " << background.second.use_count() << endl;
-    cout << "-----------------------------" << endl;
+    for (shared_ptr<Platform> platform : platforms) {
+        bonusses.erase(platform);
+        factory->delete_platform(platform);
+    }
 
     factory->delete_player(player);
 

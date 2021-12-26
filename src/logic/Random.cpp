@@ -23,5 +23,5 @@ float Random::generate_between(const float &min, const float &max) {
 }
 
 Random::~Random() {
-    std::cout << "destructor of Random" << std::endl;
+
 }

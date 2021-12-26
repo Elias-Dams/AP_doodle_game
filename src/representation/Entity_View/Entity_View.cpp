@@ -5,7 +5,7 @@ Entity_View::Entity_View(Subject &subject) :
 }
 
 Entity_View::~Entity_View() {
-    cout << "destructor of Entity_View" << endl;
+
 }
 
 void Entity_View::UpdatePosition(float xpos, float ypos) {

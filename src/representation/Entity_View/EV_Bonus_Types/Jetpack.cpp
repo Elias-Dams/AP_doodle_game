@@ -35,5 +35,5 @@ sf::Sprite View::Jetpack::getBonus() const {
 }
 
 View::Jetpack::~Jetpack() {
-    cout << "destructor of Jetpack" << endl;
+
 }

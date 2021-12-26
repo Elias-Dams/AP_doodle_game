@@ -36,5 +36,5 @@ sf::Sprite View::Yellow_Platform::getPlatform() const {
 }
 
 View::Yellow_Platform::~Yellow_Platform() {
-    cout << "destructor of Yellow_Platform" << endl;
+
 }

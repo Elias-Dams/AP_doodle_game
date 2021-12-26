@@ -31,5 +31,5 @@ void Camera::CameraReset() {
 }
 
 Camera::~Camera() {
-    std::cout << "destructor of Camera" << std::endl;
+
 }

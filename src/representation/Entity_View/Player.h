@@ -32,9 +32,9 @@ public:
 
     void UpdatePosition(float xpos, float ypos) override;
 
-    void UpdateSpringCollected() override;
+    void UpdateMediumJump() override;
 
-    void UpdateJetpackCollected() override;
+    void UpdateHighJump() override;
 
     void ResetTexture() override;
 

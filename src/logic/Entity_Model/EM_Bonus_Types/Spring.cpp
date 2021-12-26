@@ -35,5 +35,5 @@ int Model::Spring::getBonuspower() const {
 }
 
 Model::Spring::~Spring() {
-    cout << "destructor of Spring" << endl;
+
 }

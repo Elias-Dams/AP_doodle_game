@@ -9,7 +9,7 @@ Score::Score(Entity_Model &subject) :
 }
 
 Score::~Score() {
-    cout << "destructor of Score" << endl;
+
 }
 
 void Score::NewMaxheightReached(float y) {

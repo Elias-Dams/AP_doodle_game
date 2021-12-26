@@ -26,5 +26,5 @@ float Model::BG_Tile::getHeight() const {
 }
 
 Model::BG_Tile::~BG_Tile() {
-    cout << "destructor of BG_Tile" << endl;
+
 }

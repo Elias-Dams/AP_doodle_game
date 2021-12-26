@@ -36,5 +36,5 @@ sf::Sprite View::White_Platform::getPlatform() const {
 }
 
 View::White_Platform::~White_Platform() {
-    cout << "destructor of White_Platform" << endl;
+
 }

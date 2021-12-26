@@ -44,10 +44,10 @@ void Model::Player::jump(const float &dt, const bool &hit, int height_modifier) 
                 // normal
             }
             else if(height < 1500){
-                NotifySpting();
+                NotifyMedium();
             }
             else {
-                NotifyJetpack();
+                NotifyHigh();
             }
             gravity = -temp;
         }
@@ -102,5 +102,5 @@ float Model::Player::getMaxheight() const {
 }
 
 Model::Player::~Player() {
-    cout << "destructor of Player" << endl;
+
 }

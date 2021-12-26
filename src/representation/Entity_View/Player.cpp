@@ -75,13 +75,13 @@ void View::Player::setTexture() {
     }
 }
 
-void View::Player::UpdateSpringCollected() {
+void View::Player::UpdateMediumJump() {
     current_right_texture = right_spring_texture;
     current_left_texture = left_spring_texture;
     this->setTexture();
 }
 
-void View::Player::UpdateJetpackCollected() {
+void View::Player::UpdateHighJump() {
     current_right_texture = right_jetpack_texture;
     current_left_texture = left_jetpack_texture;
     this->setTexture();
@@ -94,5 +94,5 @@ void View::Player::ResetTexture() {
 }
 
 View::Player::~Player() {
-    cout << "destructor Player" << endl;
+
 }

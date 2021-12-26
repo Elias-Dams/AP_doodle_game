@@ -6,9 +6,12 @@ Concrete_Factory::Concrete_Factory() {}
 shared_ptr<Camera> Concrete_Factory::createCamera(float camera_width, float camera_height) {
     shared_ptr<Camera> camera = make_shared<Camera>(camera_width, camera_height);
 
-    score = make_shared<Score>();
+    // temporarily make an owner of the score;
+    shared_ptr<Score> score_ = make_shared<Score>();
 
-    camera->Attach(score);
+    score = score_;
+
+    camera->Attach(score_);
 
     return camera;
 }
@@ -18,11 +21,11 @@ shared_ptr<Model::Player> Concrete_Factory::createPlayer(float player_width, flo
     shared_ptr<View::Player> playerView = make_shared<View::Player>(player_width, player_height, camera);
 
 
-    Playerviews[player] = playerView;
+    Playerview = playerView;
 
     // attach an observer to the player
     player->Attach(playerView);
-    player->Attach(score);
+    player->Attach(score.lock());
 
     // set the playerposition (after it has an observer)
     player->setPosition(startposx, startposy);
@@ -119,9 +122,9 @@ shared_ptr<Model::BG_Tile> Concrete_Factory::createBackground(float background_w
     return background;
 }
 
-weak_ptr<View::Player> Concrete_Factory::get_player(const shared_ptr<Model::Player> &player) {
+weak_ptr<View::Player> Concrete_Factory::get_player() {
 
-    return Playerviews[player];
+    return Playerview;
 }
 
 weak_ptr<View::Platform> Concrete_Factory::get_platform(const shared_ptr<Model::Platform> &platform) {
@@ -148,11 +151,6 @@ void Concrete_Factory::delete_platform(weak_ptr<Model::Platform> platform) {
     Platformviews.erase(platform.lock());
 }
 
-void Concrete_Factory::delete_player(weak_ptr<Model::Player> player) {
-    Playerviews[player.lock()].reset();
-    Playerviews.erase(player.lock());
-}
-
 void Concrete_Factory::delete_bonus(weak_ptr<Model::Bonus> bonus) {
     Bonusviews[bonus.lock()].reset();
     Bonusviews.erase(bonus.lock());
@@ -160,7 +158,6 @@ void Concrete_Factory::delete_bonus(weak_ptr<Model::Bonus> bonus) {
 
 Concrete_Factory::~Concrete_Factory() {
 
-    Playerviews.clear();
     Platformviews.clear();
     Bonusviews.clear();
     backgrounds.clear();

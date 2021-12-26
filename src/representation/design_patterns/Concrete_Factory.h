@@ -52,10 +52,9 @@ public:
     *
     * This function returns the view of the player
     *
-    * @param player the player whose view we want to get
     * @return the view of the player
     */
-    weak_ptr<View::Player> get_player(const shared_ptr<Model::Player> &player);
+    weak_ptr<View::Player> get_player();
 
     /**
     * @brief returns the view of the platform
@@ -97,18 +96,17 @@ public:
 
     // deleters
     void delete_platform(weak_ptr<Model::Platform> platform) override;
-    void delete_player(weak_ptr<Model::Player> player) override;
     void delete_bonus(weak_ptr<Model::Bonus> bonus) override;
 
 
     virtual ~Concrete_Factory();
 
 private:
-    map<shared_ptr<Model::Player>, weak_ptr<View::Player>> Playerviews; ///< Player views
+    weak_ptr<View::Player> Playerview; ///< Player view
     map<shared_ptr<Model::Platform>, weak_ptr<View::Platform>> Platformviews; ///< Platform views
     map<shared_ptr<Model::Bonus>, weak_ptr<View::Bonus>> Bonusviews; ///< Bonus views
     vector<weak_ptr<View::BG_Tile>> backgrounds; ///< Background views
-    shared_ptr<Score> score; ///< score
+    weak_ptr<Score> score; ///< score
 
 };
 

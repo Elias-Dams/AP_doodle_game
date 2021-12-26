@@ -21,6 +21,7 @@ void Subject::Detach(std::shared_ptr<IObserver> observer) {
 void Subject::NotifyPosition(float xpos, float ypos) {
 
     for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
+
         Subject_->UpdatePosition(xpos, ypos);
 
     }

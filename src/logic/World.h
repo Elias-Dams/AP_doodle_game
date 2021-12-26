@@ -156,8 +156,6 @@ private:
     vector<shared_ptr<Platform>> platforms; ///< the platforms
     map<shared_ptr<Platform>, shared_ptr<Bonus>> bonusses; ///< the bonusses
     pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> background; ///< the backgrounds
-
-    shared_ptr<Random> random;  ///< the random generator
     shared_ptr<Camera> camera; ///< the camera
 
     bool GameOver; ///< game over check

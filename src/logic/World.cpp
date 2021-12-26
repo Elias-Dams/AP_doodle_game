@@ -12,7 +12,7 @@ World::World(const shared_ptr<Abstract_Factory> &factory) :
     player = factory->createPlayer((float) WIDTH / 8.0f, (float) HEIGHT / 12.0f, 150.0f, 300.0f, camera);
     background.first = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, 0.0f, camera);
     background.second = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, (float) HEIGHT + 0.0f, camera);
-    random = Random::GetInstance();
+    weak_ptr<Random> random = Random::GetInstance(); // initialize the singleton
     GameOver = false;
     constant = 1;
 }
@@ -26,14 +26,15 @@ void World::create_start_platform() {
 
 void World::create_platforms() {
     int radius_per_platform = (HEIGHT * 2) / platforms_per_view;
+    weak_ptr<Random> random = Random::GetInstance();
 
     for (int i = 0; i < platforms_per_view; i++) {
 
         int from = last_max_of_radius;
         int to = last_max_of_radius + radius_per_platform;
         shared_ptr<Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
-        platform->setPosition(random->generate_between(0, (float) WIDTH - platform->getWidth()),
-                              random->generate_between((float) from + platform->getHeight(), (float) to));
+        platform->setPosition(random.lock()->generate_between(0, (float) WIDTH - platform->getWidth()),
+                              random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
         platforms.push_back(platform);
         last_max_of_radius = last_max_of_radius + radius_per_platform;
         height_of_the_last_platform = platform->getPosition().second;
@@ -45,6 +46,8 @@ void World::add_platforms() {
     int platforms_to_add = platforms_per_view - (int) platforms.size();
 
     if (platforms_to_add > 0) {
+
+        weak_ptr<Random> random = Random::GetInstance();
 
         int radius_per_platform = (float) 2 * HEIGHT / platforms_per_view;
 
@@ -58,8 +61,8 @@ void World::add_platforms() {
             shared_ptr<Bonus> bonus;
             bool has_bonus = false;
             // randomly choose a type of platform
-            float platform_chance = random->generate_between(0.0f, 10.0f);
-            float bonus_chance = random->generate_between(0.0f, 10.0f);
+            float platform_chance = random.lock()->generate_between(0.0f, 10.0f);
+            float bonus_chance = random.lock()->generate_between(0.0f, 10.0f);
 
             // green platform
             // the constant is used to reduce the platform_chances of a green platform at a big height
@@ -111,13 +114,13 @@ void World::add_platforms() {
                 }
             }
 
-            platform->setPosition(random->generate_between(0, (float) WIDTH - platform->getWidth()),
-                                  random->generate_between((float) from + platform->getHeight(), (float) to));
+            platform->setPosition(random.lock()->generate_between(0, (float) WIDTH - platform->getWidth()),
+                                  random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
 
-            if ((int) height_of_the_last_platform + 200.0f < platform->getPosition().second) {
+            if (height_of_the_last_platform + 200.0f < platform->getPosition().second) {
                 // we have to correct the height of the platform, so it is reachable
 
-                platform->setPosition(platform->getPosition().first, (int) height_of_the_last_platform + 200.0f);
+                platform->setPosition(platform->getPosition().first, height_of_the_last_platform + 200.0f);
 
                 last_max_of_radius = last_max_of_radius + radius_per_platform;
                 height_of_the_last_platform = (int) platform->getPosition().second;
@@ -393,8 +396,6 @@ World::~World() {
         bonusses.erase(platform);
         factory->delete_platform(platform);
     }
-
-    factory->delete_player(player);
 
     platforms.clear();
     bonusses.clear();

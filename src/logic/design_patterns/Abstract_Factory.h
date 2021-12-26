@@ -114,16 +114,6 @@ public:
     virtual void delete_platform(weak_ptr<Model::Platform> platform) = 0;
 
     /**
-     * @brief deletes the player
-     *
-     * This function deletes the player from the map of players.
-     * In this map the view are being saved.
-     *
-     * @param platform weak pointer to the player that must be deleted
-     */
-    virtual void delete_player(weak_ptr<Model::Player> player) = 0;
-
-    /**
      * @brief deletes a bonus
      *
      * This function deletes a bonus from the map of bonuses.

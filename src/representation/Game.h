@@ -93,20 +93,20 @@ private:
     unique_ptr<sf::RenderWindow> window; ///< winsow
     shared_ptr<Concrete_Factory> ConcreteFactory; ///< ConcreteFactory
     unique_ptr<World> world; ///< world
-    shared_ptr<Stopwatch> clock; ///< clock
-    shared_ptr<sf::View> view; /// view
 
-    gamestates GameState; /// gamestate enum
-    bool can_reset{}; /// check if game can reset
-    int highscore; /// highscore of the player
+    shared_ptr<sf::View> view; ///< view
+
+    gamestates GameState; ///< gamestate enum
+    bool can_reset{}; ///< check if game can reset
+    int highscore; ///< highscore of the player
 
     /// menu
-    sf::Font font; /// sfml font
-    sf::Text score_text; /// text to show the score on screen
-    sf::Text highscore_text; /// text to show the highscorescore on screen
-    sf::Sprite Button; /// sfml startbutton
-    sf::Texture ButtonTexture; /// sfml texture of startbutton
-    sf::Texture ButtonTexture_pressed; /// sfml texture of startbutton pressed
+    sf::Font font; ///< sfml font
+    sf::Text score_text; ///< text to show the score on screen
+    sf::Text highscore_text; ///< text to show the highscorescore on screen
+    sf::Sprite Button; ///< sfml startbutton
+    sf::Texture ButtonTexture; ///< sfml texture of startbutton
+    sf::Texture ButtonTexture_pressed; ///< sfml texture of startbutton pressed
 };
 
 

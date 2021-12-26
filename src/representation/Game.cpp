@@ -8,16 +8,11 @@ Game::Game() {
     world = std::make_unique<World>(ConcreteFactory);
     window = make_unique<sf::RenderWindow>(sf::VideoMode(world->getWidth(), world->getHeight()), "doodle jump");
 
-    clock = Stopwatch::GetInstance();
+    weak_ptr<Stopwatch>clock = Stopwatch::GetInstance(); // initialise the singleton
 
     view = make_shared<sf::View>(sf::FloatRect(0, 0, world->getWidth(), world->getHeight()));
 
     highscore = 0;
-
-    for (const shared_ptr<Platform> &platform : world->getPlatforms()) {
-        window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
-    }
-
 
     // when the game starts the game state is start
 
@@ -76,10 +71,11 @@ void Game::LoadTextures() {
 
 void Game::run() {
     float dt;
-    window->setFramerateLimit(60);
+    window->setFramerateLimit(120);
+    weak_ptr<Stopwatch> clock = Stopwatch::GetInstance();
 
     while (window->isOpen()) {
-        dt = clock->mark_time();
+        dt = clock.lock()->mark_time();
 
         this->update(dt);
 
@@ -202,7 +198,7 @@ void Game::drawGame() {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
-        window->draw(ConcreteFactory->get_player(world->getPlayer()).lock()->getPlayer());
+        window->draw(ConcreteFactory->get_player().lock()->getPlayer());
 
         window->draw(Button);
     }
@@ -223,7 +219,7 @@ void Game::drawGame() {
             window->draw(ConcreteFactory->get_bonus(it->second).lock()->getBonus());
         }
 
-        window->draw(ConcreteFactory->get_player(world->getPlayer()).lock()->getPlayer());
+        window->draw(ConcreteFactory->get_player().lock()->getPlayer());
 
         window->draw(score_text);
 
@@ -238,7 +234,7 @@ void Game::drawGame() {
             window->draw(ConcreteFactory->get_platform(platform).lock()->getPlatform());
         }
 
-        window->draw(ConcreteFactory->get_player(world->getPlayer()).lock()->getPlayer());
+        window->draw(ConcreteFactory->get_player().lock()->getPlayer());
         window->draw(score_text);
         window->draw(highscore_text);
         window->draw(Button);
@@ -261,7 +257,6 @@ bool Game::MouseOnButton(const sf::Sprite &_button) {
 Game::~Game() {
     world.reset();
     ConcreteFactory.reset();
-    clock.reset();
     view.reset();
     window.reset();
 }

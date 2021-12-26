@@ -16,9 +16,9 @@ class Entity_View : public Observer {
 public:
     /**
      * Entity_View constructor.
-     * constructs the entity_view whit given Entity model (this wil act as the subject whereby this entity model will observere)
+     * constructs the entity_view
      */
-    Entity_View(Subject &subject);
+    Entity_View();
 
     virtual ~Entity_View();
 
@@ -30,7 +30,7 @@ public:
     * @param x: position of the entity in the game
     * @param y: position of the entity in the game
     */
-    virtual void UpdatePosition(float xpos, float ypos) override;
+    virtual void UpdatePosition(float xpos, float ypos);
 };
 
 

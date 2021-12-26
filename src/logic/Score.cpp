@@ -2,9 +2,7 @@
 #include "Score.h"
 #include "Entity_Model/Player.h"
 
-Score::Score(Entity_Model &subject) :
-    Observer(subject) {
-
+Score::Score() {
     score = 0;
 }
 
@@ -12,8 +10,16 @@ Score::~Score() {
 
 }
 
-void Score::NewMaxheightReached(float y) {
-    score = y;
+void Score::NewMaxheightReached(const float &y) {
+    score += (int)y;
+}
+
+void Score::UpdateBonusScore(const int &points) {
+    score += points;
+}
+
+void Score::UpdateReduceScore(const int &points) {
+    score -= points;
 }
 
 void Score::Resetscore() {
@@ -23,3 +29,4 @@ void Score::Resetscore() {
 int Score::getscore() const {
     return score;
 }
+

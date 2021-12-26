@@ -97,6 +97,24 @@ public:
     */
     virtual void NotifyHigh() = 0;
 
+    /**
+    * @brief notifies the observers to increase the score
+    *
+    * This function notifies the observers to increase the score
+    *
+    * @param points: that need to be added from the score
+    */
+    virtual void NotifyIncreaseScore(const int &points) = 0;
+
+    /**
+    * @brief notifies the observers to decrease the score
+    *
+    * This function notifies the observers to decrease the score
+    *
+    * @param points: that need to be subtracted from the score
+    */
+    virtual void NotifyDecreaseScore(const int &points) = 0;
+
     virtual ~ISubject(){};
 };
 

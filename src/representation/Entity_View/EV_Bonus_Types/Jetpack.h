@@ -9,10 +9,10 @@ class View::Jetpack : public View::Bonus {
 public:
     /**
      * Jetpack constructor.
-     * constructs the jetpack whit given Entity model (this wil act as the subject whereby this jetpack will observere)
+     * constructs the jetpack whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera);
+    Jetpack(float Width, float Height, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

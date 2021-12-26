@@ -28,7 +28,7 @@ void Subject::NotifyPosition(float xpos, float ypos) {
 }
 
 void Subject::NotifyMedium() {
-    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
         Subject_->UpdateMediumJump();
 
     }
@@ -36,21 +36,21 @@ void Subject::NotifyMedium() {
 
 
 void Subject::NotifyHigh() {
-    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
         Subject_->UpdateHighJump();
 
     }
 }
 
 void Subject::NewMaxHeigh(float ypos) {
-    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
 
         Subject_->NewMaxheightReached(ypos);
     }
 }
 
 void Subject::NotifyNormal(){
-    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
 
         Subject_->ResetTexture();
 
@@ -58,12 +58,30 @@ void Subject::NotifyNormal(){
 }
 
 void Subject::NotifyReset() {
-    for(std::shared_ptr<IObserver> Subject_ : list_observer_){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
 
         Subject_->Resetscore();
 
     }
 }
+
+void Subject::NotifyIncreaseScore(const int &points){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
+
+        Subject_->UpdateBonusScore(points);
+
+    }
+}
+
+void Subject::NotifyDecreaseScore(const int &points){
+    for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
+
+        Subject_->UpdateReduceScore(points);
+
+    }
+}
+
+
 const std::list<std::shared_ptr<IObserver>> Subject::getListObserver() const {
     return list_observer_;
 }

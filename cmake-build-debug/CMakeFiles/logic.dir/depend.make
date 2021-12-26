@@ -3,7 +3,10 @@
 
 CMakeFiles/logic.dir/src/logic/Camera.cpp.o: \
  ../src/logic/Camera.cpp \
- ../src/logic/Camera.h
+ ../src/logic/Camera.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
 CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Entity_Model/BG_Tile.cpp \

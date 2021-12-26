@@ -1,7 +1,7 @@
 
 #include "Observer.h"
 
-Observer::Observer(Subject &subject) : subject_(subject) {
+Observer::Observer()  {
 
 }
 
@@ -21,7 +21,15 @@ void Observer::ResetTexture() {
     // do nothing
 }
 
-void Observer::NewMaxheightReached(float ypos){
+void Observer::NewMaxheightReached(const float &ypos){
+    // do nothing
+}
+
+void Observer::UpdateBonusScore(const int &points) {
+    // do nothing
+}
+
+void Observer::UpdateReduceScore(const int &points) {
     // do nothing
 }
 

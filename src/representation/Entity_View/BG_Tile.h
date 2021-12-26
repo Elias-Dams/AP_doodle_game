@@ -9,10 +9,10 @@ class View::BG_Tile : public Entity_View {
 public:
     /**
      * Background tile constructor.
-     * constructs the background tile whit given Entity model (this wil act as the subject whereby this background tile will observere)
+     * constructs the background whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_);
+    BG_Tile(float width, float height, shared_ptr<Camera> camera_);
 
     /**
     * @brief gets the sfml sprite

@@ -43,6 +43,8 @@ public:
     // create background
     shared_ptr<Model::BG_Tile> createBackground(float background_width, float background_height, float startposx, float startposy, shared_ptr<Camera> camera) override;
 
+    shared_ptr<Camera> createCamera(float camera_width, float camera_height) override;
+
     // Model view getters
 
     /**

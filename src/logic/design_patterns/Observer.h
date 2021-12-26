@@ -12,7 +12,7 @@
 class Observer: public IObserver{
 public:
 
-    Observer(Subject &subject);
+    Observer();
 
     virtual ~Observer();
 
@@ -20,7 +20,13 @@ public:
     virtual void UpdatePosition(float xpos, float ypos) override;
 
     /// updates the score if a new max height is reached
-    virtual void NewMaxheightReached(float ypos) override;
+    virtual void NewMaxheightReached(const float &ypos) override;
+
+    /// updates te score when a bonus is collected
+    virtual void UpdateBonusScore(const int &points) override;
+
+    /// reduces the score
+    virtual void UpdateReduceScore(const int &points) override;
 
     /// resets the score
     virtual void Resetscore() override;
@@ -36,11 +42,6 @@ public:
 
     void RemoveMeFromTheList();
 
-
-
-
-private:
-    Subject &subject_;
 
 };
 

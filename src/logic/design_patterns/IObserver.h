@@ -29,7 +29,7 @@ public:
     *
     * @param ypos: new height of the subject.
     */
-    virtual void NewMaxheightReached(float ypos) = 0;
+    virtual void NewMaxheightReached(const float &ypos) = 0;
 
     /**
     * @brief updates the observers to reset
@@ -66,6 +66,24 @@ public:
     *
     */
     virtual void UpdateHighJump() = 0;
+
+    /**
+    * @brief updates te score when a bonus is collected
+    *
+    * This function updates te score when a bonus is collected
+    *
+    * @param points: that need to be added to the score
+    */
+    virtual void UpdateBonusScore(const int &points) = 0;
+
+    /**
+    * @brief reduces the score
+    *
+    * This function reduces the score when jumped on the same platform
+    *
+    * @param points: that need to be subtracted from the score
+    */
+    virtual void UpdateReduceScore(const int &points) = 0;
 
     virtual ~IObserver(){};
 };

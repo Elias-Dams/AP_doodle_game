@@ -15,9 +15,9 @@ class View::Platform : public Entity_View {
 public:
     /**
      * Platform constructor.
-     * constructs the platform whit given Entity model (this wil act as the subject whereby this platform will observere)
+     * constructs the platform
      */
-    Platform(Subject &subject);
+    Platform();
 
     /**
     * @brief gets the sfml sprite

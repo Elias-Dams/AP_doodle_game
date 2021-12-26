@@ -148,7 +148,7 @@ private:
 
     void add_platforms();
 
-    bool colisionCheck(shared_ptr<Entity_Model> entity);
+    bool colisionCheck(shared_ptr<Entity_Model> entity, bool can_update_score);
 
     shared_ptr<Abstract_Factory> factory; ///< abstract factory
 

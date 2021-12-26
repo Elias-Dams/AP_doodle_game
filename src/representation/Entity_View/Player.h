@@ -17,9 +17,9 @@ class View::Player : public Entity_View {
 public:
     /**
      * Player constructor.
-     * constructs the Player whit given Entity model (this wil act as the subject whereby this player will observere)
+     * constructs the Player
      */
-    Player(Entity_Model &subject, float playerWidth, float playerHeight, shared_ptr<Camera> camera);
+    Player(float playerWidth, float playerHeight, shared_ptr<Camera> camera);
 
     /**
     * @brief gets the sfml sprite

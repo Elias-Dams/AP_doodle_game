@@ -98,6 +98,12 @@ public:
     virtual shared_ptr<Model::Jetpack> createJetpack(float jetpack_width, float jetpack_height, shared_ptr<Camera> camera) = 0;
 
     /**
+     * Camera constructor.
+     * constructs the Camera
+     */
+    virtual shared_ptr<Camera> createCamera(float camera_width, float camera_height) = 0;
+
+    /**
      * @brief deletes a platform
      *
      * This function deletes a platform from the map of platforms.

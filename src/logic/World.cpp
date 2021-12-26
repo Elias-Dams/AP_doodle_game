@@ -8,7 +8,7 @@ World::World(const shared_ptr<Abstract_Factory> &factory) :
     platforms_per_view = 20;
     last_max_of_radius = 0;
     height_of_the_last_platform = 0;
-    camera = make_shared<Camera>(WIDTH, HEIGHT);
+    camera = factory->createCamera(WIDTH, HEIGHT);
     player = factory->createPlayer((float) WIDTH / 8.0f, (float) HEIGHT / 12.0f, 150.0f, 300.0f, camera);
     background.first = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, 0.0f, camera);
     background.second = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, (float) HEIGHT + 0.0f, camera);
@@ -143,13 +143,17 @@ void World::add_platforms() {
 }
 
 
-bool World::colisionCheck(shared_ptr<Entity_Model> entity) {
+bool World::colisionCheck(shared_ptr<Entity_Model> entity, bool can_update_score) {
     // the left side of the player
     if (entity->getPosition().first <= player->getPosition().first and
         player->getPosition().first <= entity->getPosition().first + entity->getWidth()) {
 
         if (player->getPosition().second - (entity->getPosition().second + entity->getHeight()) <= 0 and
             player->getPosition().second - entity->getPosition().second >= 0 and player->isfalling()) {
+
+            if(can_update_score){
+                player->setPlatfomTouched(entity);
+            }
 
             return true;
         }
@@ -161,6 +165,10 @@ bool World::colisionCheck(shared_ptr<Entity_Model> entity) {
         if (player->getPosition().second - (entity->getPosition().second + entity->getHeight()) <= 0 and
             player->getPosition().second - entity->getPosition().second >= 0 and player->isfalling()) {
 
+            if(can_update_score){
+                player->setPlatfomTouched(entity);
+            }
+
             return true;
         }
     }
@@ -171,6 +179,10 @@ bool World::colisionCheck(shared_ptr<Entity_Model> entity) {
 
         if (player->getPosition().second - (entity->getPosition().second + entity->getHeight()) <= 0 and
             player->getPosition().second - entity->getPosition().second >= 0 and player->isfalling()) {
+
+            if(can_update_score){
+                player->setPlatfomTouched(entity);
+            }
 
             return true;
         }
@@ -190,7 +202,8 @@ void World::startstate(float dt) {
 
         (*it)->update(dt);
 
-        if (this->colisionCheck(*it)) {
+        // false because we can't alter the score
+        if (this->colisionCheck(*it, false)) {
             hit = true;
         }
         ++it;
@@ -256,15 +269,16 @@ void World::update(float dt, const char &key) {
             bonusses[(*it)]->update(
                     (*it)->getPosition().first + (*it)->getWidth() / 2 - bonusses[(*it)]->getWidth() / 2,
                     (*it)->getPosition().second + (*it)->getHeight());
-            if (this->colisionCheck(bonusses[(*it)])) {
+            // true because we can alter the score
+            if (this->colisionCheck(bonusses[(*it)], true)) {
                 hit = true;
                 bonus_hit = true;
                 current_hit = true;
                 height_modification = bonusses[(*it)]->getBonuspower();
             }
         }
-
-        if (this->colisionCheck(*it) and !hit) {
+        // true because we can alter the score
+        if (this->colisionCheck(*it, true) and !hit) {
             hit = true;
             current_hit = true;
         }
@@ -302,16 +316,9 @@ void World::update(float dt, const char &key) {
     // the height if the world * 2 /100 <= platforms per 2 views - constant
     // |---------600 * 2 / 100--------| <= |--------20 - constant------------| ==> 12 <= 20 - constant
     // if the constant becomes more than it is almost impossible to draw platforms that are reachable bij the player
-    if ((int) player->getMaxheight() >= 3000 * constant && constant <= 16) {
+    if ((int) camera->getNomalisedHeight() >= 3000 * constant && constant <= 16) {
         constant += 1;
         platforms_per_view -= 1;
-        /*
-        cout << "green: " << 0 << "-----" <<  (7.0f -(0.4375f)*(constant-1)) << endl;
-        cout << "white: " << (7.0f -(0.4375f)*(constant-1)) << "-----" <<(9.00f -(0.5f)*(constant-1)) << endl;
-        cout << "blue: " << (9.00f -(0.5f)*(constant-1)) << "-----" <<(9.50f-(0.25f)*(constant-1)) << endl;
-        cout << "yellow: " << (9.50f-(0.25f)*(constant-1)) << "-----" <<10 << endl;
-        cout << "----------------------------" << endl;
-        */
     }
 
     // add platforms

@@ -9,10 +9,10 @@ class View::Blue_Platform : public View::Platform {
 public:
     /**
      * Blue_Platform constructor.
-     * constructs the blue_Platform  whit given Entity model (this wil act as the subject whereby this blue_Platform will observere)
+     * constructs the blue_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Blue_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    Blue_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

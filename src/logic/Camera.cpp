@@ -15,7 +15,9 @@ float Camera::getConvertedHeight() const {
 }
 
 void Camera::setHeight(float height_) {
+    float temp = height_ - height;
     Camera::height = height_;
+    NewMaxHeigh(temp);
 }
 
 float Camera::toGameheight(float position, float entity_height) {

@@ -11,6 +11,8 @@
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
 iostream
 -
+design_patterns/Subject.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h
 Entity_Model.h

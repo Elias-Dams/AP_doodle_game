@@ -37,6 +37,12 @@ public:
     /// notifies the view of the player if a jetpack is collected
     void NotifyHigh() override;
 
+    ///  notifies the observers to increase the score
+    void NotifyIncreaseScore(const int &points) override;
+
+    ///  notifies the observers to decrease the score
+    void NotifyDecreaseScore(const int &points) override;
+
 
     const std::list<std::shared_ptr<IObserver>> getListObserver() const;
 

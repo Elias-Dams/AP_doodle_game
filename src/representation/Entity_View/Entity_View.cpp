@@ -1,7 +1,6 @@
 
 #include "Entity_View.h"
-Entity_View::Entity_View(Subject &subject) :
-    Observer(subject) {
+Entity_View::Entity_View() {
 }
 
 Entity_View::~Entity_View() {

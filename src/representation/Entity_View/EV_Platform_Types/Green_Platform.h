@@ -9,10 +9,10 @@ class View::Green_Platform : public View::Platform {
 public:
     /**
      * Green_Platform constructor.
-     * constructs the green_Platform  whit given Entity model (this wil act as the subject whereby this green_Platform will observere)
+     * constructs the green_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Green_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    Green_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

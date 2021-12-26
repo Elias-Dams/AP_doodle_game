@@ -1,8 +1,7 @@
 
 #include "BG_Tile.h"
 
-View::BG_Tile::BG_Tile(Subject &subject, float width, float height, shared_ptr<Camera> camera_) :
-    Entity_View(subject), camera(camera_), width(width),
+View::BG_Tile::BG_Tile(float width, float height, shared_ptr<Camera> camera_) : camera(camera_), width(width),
     height(height) {
 
     try {

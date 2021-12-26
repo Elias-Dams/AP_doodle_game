@@ -3,8 +3,9 @@
 #define AP_DOODLE_GAME_CAMERA_H
 
 #include <iostream>
+#include "design_patterns/Subject.h"
 
-class Camera {
+class Camera : public Subject{
 public:
     /**
      * camera constructor.

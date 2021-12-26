@@ -10,10 +10,10 @@ class View::Yellow_Platform : public View::Platform {
 public:
     /**
      * Yellow_Platform constructor.
-     * constructs the yellow_Platform  whit given Entity model (this wil act as the subject whereby this yellow_Platform will observere)
+     * constructs the yellow_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Yellow_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    Yellow_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

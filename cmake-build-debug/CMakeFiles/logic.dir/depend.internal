@@ -4,6 +4,9 @@
 CMakeFiles/logic.dir/src/logic/Camera.cpp.o
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/IObserver.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/ISubject.h
+ /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h
 CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o
  ../src/logic/Namespaces.cpp
  /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp

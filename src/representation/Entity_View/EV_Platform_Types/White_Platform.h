@@ -9,10 +9,10 @@ class View::White_Platform : public View::Platform {
 public:
     /**
      * White_Platform constructor.
-     * constructs the white_Platform  whit given Entity model (this wil act as the subject whereby this white_Platform will observere)
+     * constructs the white_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    White_Platform(Entity_Model &subject, float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    White_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

@@ -9,10 +9,10 @@ class View::Spring : public View::Bonus {
 public:
     /**
      * Spring constructor.
-     * constructs the spring whit given Entity model (this wil act as the subject whereby this spring will observere)
+     * constructs the spring whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Spring(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera);
+    Spring(float Width, float Height, shared_ptr<Camera> camera);
 
     void UpdatePosition(float xpos, float ypos) override;
 

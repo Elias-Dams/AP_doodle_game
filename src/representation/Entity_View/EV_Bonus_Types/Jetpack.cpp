@@ -1,8 +1,8 @@
 
 #include "Jetpack.h"
 
-View::Jetpack::Jetpack(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) :
-    Bonus(subject), camera(camera_), jetpack_Width(Width), jetpack_Height(Height) {
+View::Jetpack::Jetpack(float Width, float Height, shared_ptr<Camera> camera_) :
+    camera(camera_), jetpack_Width(Width), jetpack_Height(Height) {
     // we initiaize a new platform
 
     jetpack = unique_ptr<sf::Sprite>(new sf::Sprite);

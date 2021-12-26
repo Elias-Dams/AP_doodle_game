@@ -3,8 +3,8 @@
 
 #include <utility>
 
-View::Player::Player(Entity_Model &subject, float playerWidth_, float playerHeight_, shared_ptr<Camera> camera_) :
-    Entity_View(subject), camera(camera_), playerWidth(playerWidth_), playerHeight(playerHeight_) {
+View::Player::Player(float playerWidth_, float playerHeight_, shared_ptr<Camera> camera_) :
+    camera(camera_), playerWidth(playerWidth_), playerHeight(playerHeight_) {
     // we initiaize a new player
 
     try {
@@ -57,7 +57,6 @@ void View::Player::UpdatePosition(float xpos, float ypos) {
         left = false;
         right = true;
     }
-    //cout << "we are getting updates" << endl;
 
     player.setPosition(camera->toGamewidth(xpos, playerWidth), camera->toGameheight(ypos, playerHeight));
 }

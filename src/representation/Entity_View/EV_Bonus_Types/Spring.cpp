@@ -1,8 +1,8 @@
 
 #include "Spring.h"
 
-View::Spring::Spring(Entity_Model &subject, float Width, float Height, shared_ptr<Camera> camera_) :
-    Bonus(subject), camera(camera_), spring_Width(Width), spring_Height(Height) {
+View::Spring::Spring(float Width, float Height, shared_ptr<Camera> camera_) :
+    camera(camera_), spring_Width(Width), spring_Height(Height) {
     // we initiaize a new platform
 
     spring = unique_ptr<sf::Sprite>(new sf::Sprite);

@@ -5,7 +5,6 @@ Model::Player::Player(float player_width_, float player_height_) :
     player_width(player_width_), player_height(player_height_) {
     gravity = 0.20f;
     falling = true;
-    maxheight = 0;
     jumpheigt = 250.0f;
 }
 
@@ -21,6 +20,25 @@ void Model::Player::jump(const float &dt, const bool &hit, int height_modifier) 
 
     if (position.second >= 0) {
 
+        if (hit) {
+            float height = jumpheigt * (float)height_modifier;
+            float temp = sqrtf((2.0f/5.0f)*height);
+            if(height < 500){
+                // normal
+            }
+            else if(height < 1500){
+                NotifyMedium();
+                // increase the score when bonus is collected
+                NotifyIncreaseScore(100);
+            }
+            else {
+                NotifyHigh();
+                // increase the score when bonus is collected
+                NotifyIncreaseScore(300);
+            }
+            gravity = -temp;
+        }
+
         // jump in with a gravity constant range from -10 to 10
         // -10 --------------- 0 --------------- 10 ----------- ( until the player hits a platform )
         //           up               down
@@ -30,31 +48,15 @@ void Model::Player::jump(const float &dt, const bool &hit, int height_modifier) 
         // subtract the gravity from the y pos
 
         position.second -= gravity * dt * 60.0f;
+
         if (gravity > 0) {
             falling = true;
             NotifyNormal();
-        } else if (gravity < 0) {
+        } else if (gravity <= 0) {
             falling = false;
         }
 
-        if (hit) {
-            float height = jumpheigt * (float)height_modifier;
-            float temp = sqrtf((2.0f/5.0f)*height);
-            if(height < 500){
-                // normal
-            }
-            else if(height < 1500){
-                NotifyMedium();
-            }
-            else {
-                NotifyHigh();
-            }
-            gravity = -temp;
-        }
-    }
-    if (position.second >= maxheight) {
-        maxheight = position.second;
-        NewMaxHeigh(maxheight);
+
     }
 
     //cout << "(" << position.first << ", " << position.second << ")" << endl;
@@ -78,13 +80,8 @@ void Model::Player::setPosition(const float &x, const float &y) {
     NotifyPosition(x, y);
 }
 
-bool Model::Player::isfalling() {
+bool Model::Player::isfalling() const {
     return falling;
-}
-
-void Model::Player::resetmaxheight() {
-    maxheight = 0;
-    NotifyReset();
 }
 
 void Model::Player::PlayerReset(float startposx, float startposy) {
@@ -92,15 +89,19 @@ void Model::Player::PlayerReset(float startposx, float startposy) {
     position.second = startposy;
     gravity = 0.20f;
     falling = true;
-    maxheight = 0;
+    platfom_touched.reset();
     NotifyPosition(startposx, startposy);
     NotifyReset();
 }
 
-float Model::Player::getMaxheight() const {
-    return maxheight;
-}
-
 Model::Player::~Player() {
 
+}
+void Model::Player::setPlatfomTouched(const shared_ptr<Entity_Model> &platfomTouched) {
+
+    if(platfomTouched.get() == platfom_touched.get()){
+        // if the same platform is hit decrease the score bij 100
+        NotifyDecreaseScore(100);
+    }
+    platfom_touched = platfomTouched;
 }

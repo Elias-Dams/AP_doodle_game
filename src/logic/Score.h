@@ -15,9 +15,9 @@ class Score : public Observer {
 public:
     /**
      * Score constructor.
-     * constructs the Score whit a given Entity model (the subject)
+     * constructs the Score
      */
-    Score(Entity_Model &subject);
+    Score();
 
     /**
     * @brief updates the score
@@ -26,7 +26,25 @@ public:
     *
     * @param y: position on the y axis
     */
-    void NewMaxheightReached(float y) override;
+    void NewMaxheightReached(const float &y) override;
+
+    /**
+    * @brief updates the score
+    *
+    * This function updates the score if a certain bonus is collected
+    *
+    * @param points: that need to be added to the score
+    */
+    void UpdateBonusScore(const int &points) override;
+
+    /**
+    * @brief reduces the score
+    *
+    * This function reduces the score when jumped on the same platform
+    *
+    * @param points: that need to be subtracted from the score
+    */
+    void UpdateReduceScore(const int &points) override;
 
     /**
     * @brief fully resets the score

@@ -3,8 +3,8 @@
 
 #include <memory>
 
-View::Green_Platform::Green_Platform(Entity_Model &subject, float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) :
-    Platform(subject), camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
+View::Green_Platform::Green_Platform(float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) :
+    camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
     // we initiaize a new platform
 
     platform = std::make_unique<sf::Sprite>();

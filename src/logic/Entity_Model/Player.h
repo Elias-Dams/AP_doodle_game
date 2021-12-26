@@ -52,34 +52,26 @@ public:
     *
     * @return true if the player is falling. False if the player is going up.
     */
-    bool isfalling();
-
-    /**
-    * @brief resets the max height.
-    *
-    * this function resets max height reached bye the player.
-    *
-    */
-    void resetmaxheight();
+    bool isfalling() const;
 
     /**
     * @brief fully resets the player
     *
     * This function resets the player to the state it was in when it was first initialized
     *
-    * @param startposx startposition of the player on the x axis.
-    * @param startposy startposition of the player on the y axis.
+    * @param startposx: startposition of the player on the x axis.
+    * @param startposy: startposition of the player on the y axis.
     */
     void PlayerReset(float startposx, float startposy);
 
     /**
-    * @brief get the maxheight.
+    * @brief sets the platform last touched by the player
     *
-    * This function is used to check the maxheight of the player.
+    * This function sets the platform last touched by the player
     *
-    * @return the maxheight of the player.
+    * @param platfomTouched:  platform last touched by the player
     */
-    float getMaxheight() const;
+    void setPlatfomTouched(const shared_ptr<Entity_Model> &platfomTouched);
 
     // documentation in Enntity_model
     float getWidth() const override;
@@ -95,14 +87,16 @@ public:
 
     ~Player();
 
+
 private:
     pair<float, float> position; ///< position of the player
 
-    float maxheight; ///< maxheight of the player
     float gravity; ///< constant to calculate the jump
     float player_width; ///< the width of the player
     float player_height; ///< the height of the player
     float jumpheigt; ///< jumpheight of the player
+
+    shared_ptr<Entity_Model> platfom_touched; ///< the platform last touched by the player
 
     bool falling; ///< keep track of whether the player falls
 };

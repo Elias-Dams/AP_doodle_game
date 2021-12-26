@@ -10,9 +10,9 @@ class View::Bonus : public Entity_View {
 public:
     /**
      * Bonus constructor.
-     * constructs the bonus whit given Entity model (this wil act as the subject whereby this bonus will observere)
+     * constructs the bonus
      */
-    Bonus(Subject &subject);
+    Bonus();
 
     /**
     * @brief gets the sfml sprite

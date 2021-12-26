@@ -8,9 +8,19 @@
 
 ../src/logic/Namespaces.cpp
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp
+src/representation/Game.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Game.h
+iostream
+-
+string
+-
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
 iostream
 -
+design_patterns/Subject.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h
 Entity_Model.h

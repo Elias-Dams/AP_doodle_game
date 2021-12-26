@@ -84,7 +84,7 @@ public:
 private:
 
     /// check if the mouse in on the button
-    bool MouseOnButton(sf::Sprite Button);
+    bool MouseOnButton(const sf::Sprite& Button);
 
     /// loads the textures
     void LoadTextures();
@@ -97,7 +97,7 @@ private:
     shared_ptr<sf::View> view; /// view
 
     gamestates GameState; /// gamestate enum
-    bool can_reset; /// check if game can reset
+    bool can_reset{}; /// check if game can reset
     int highscore; /// highscore of the player
 
     /// menu

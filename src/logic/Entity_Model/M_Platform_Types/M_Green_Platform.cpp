@@ -17,7 +17,7 @@ void Model::Green_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Green_Platform::update(float dt) {
+void Model::Green_Platform::update(const float &dt) {
     // the platform doesn't move
     NotifyPosition(position.first, position.second);
 }

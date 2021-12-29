@@ -18,7 +18,7 @@ void Model::White_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::White_Platform::update(float dt) {
+void Model::White_Platform::update(const float &dt) {
     // the platform doesn't move
     NotifyPosition(position.first, position.second);
 }

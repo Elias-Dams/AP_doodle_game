@@ -12,13 +12,13 @@ public:
      * constructs the white_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    White_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    White_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);
 
-    void UpdatePosition(float xpos, float ypos) override;
+    void UpdatePosition(const float &xpos, const float &ypos) override;
 
     sf::Sprite getPlatform() const override;
 
-    ~White_Platform() override;
+    virtual ~White_Platform();
 
 private:
     unique_ptr<sf::Sprite> platform; ///< sfml sprite of the platform

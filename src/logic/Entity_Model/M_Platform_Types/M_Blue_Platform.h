@@ -23,7 +23,7 @@ public:
 
     void setPosition(const float &x, const float &y) override;
 
-    void update(float dt) override;
+    void update(const float &dt) override;
 
     float getWidth() const override;
 
@@ -31,7 +31,7 @@ public:
 
     const string &getColor() const override;
 
-    ~Blue_Platform() override;
+    virtual ~Blue_Platform() override;
 
 
 private:

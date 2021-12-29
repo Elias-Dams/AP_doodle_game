@@ -29,7 +29,7 @@ public:
     * @param x: position of the platform the bonus is on.
     * @param y: position of the platform the bonus is on.
     */
-    virtual void update(float x, float y) = 0;
+    virtual void update(const float &x, const float &y) = 0;
 
     /**
     * @brief get the bonuspower.

@@ -71,15 +71,27 @@ void Game::LoadTextures() {
 
 void Game::run() {
     float dt;
+    double accumulator = 0.0;
     window->setFramerateLimit(120);
     weak_ptr<Stopwatch> clock = Stopwatch::GetInstance();
 
     while (window->isOpen()) {
         dt = clock.lock()->mark_time();
 
-        this->update(dt);
+        if ( dt > 0.25 )
+            dt = 0.25;
 
-        window->setView(*view);
+        accumulator += dt;
+
+        while ( accumulator >= 0.01 )
+        {
+            this->update(dt);
+
+            window->setView(*view);
+
+            accumulator -= dt;
+
+        }
 
         this->drawGame();
 
@@ -93,9 +105,17 @@ void Game::update(const float &dt) {
     sf::Event event;
 
     while (window->pollEvent(event)) {
-        if (event.type == sf::Event::Closed) {
-            window->close();
+        switch (event.type) {
+            case sf::Event::Closed:
+                window->close();
+                break;
+
+            case sf::Event::Resized:
+                sf::Vector2<float> visibleArea(((float)event.size.width/(float)event.size.height) * (float)world->getHeight(), world->getHeight());
+                view->setSize(visibleArea);
+                break;
         }
+        
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
             window->close();
         }
@@ -185,7 +205,7 @@ void Game::gameOver(const float &dt) {
 }
 
 void Game::drawGame() {
-    window->clear(sf::Color::White);
+    window->clear(sf::Color::Black);
 
     // start draws
     if (GameState == start) {
@@ -243,7 +263,7 @@ void Game::drawGame() {
     window->display();
 }
 
-bool Game::MouseOnButton(const sf::Sprite &_button) {
+bool Game::MouseOnButton(const sf::Sprite &_button) const{
 
     sf::Vector2i mousePosition = sf::Mouse::getPosition(*window);
 

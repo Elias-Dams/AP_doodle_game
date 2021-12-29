@@ -23,7 +23,7 @@ public:
     */
     virtual sf::Sprite getBonus() const = 0;
 
-    virtual ~Bonus() override;
+    virtual ~Bonus();
 };
 
 

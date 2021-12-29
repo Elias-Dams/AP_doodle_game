@@ -12,7 +12,7 @@ public:
      * constructs the background whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    BG_Tile(float width, float height, shared_ptr<Camera> camera_);
+    BG_Tile(const float &width, const float &height, const shared_ptr<Camera> &camera_);
 
     /**
     * @brief gets the sfml sprite
@@ -23,7 +23,7 @@ public:
     */
     const sf::Sprite &getBackground() const;
 
-    void UpdatePosition(float xpos, float ypos) override;
+    void UpdatePosition(const float &xpos, const float &ypos) override;
 
     ~BG_Tile() override;
 

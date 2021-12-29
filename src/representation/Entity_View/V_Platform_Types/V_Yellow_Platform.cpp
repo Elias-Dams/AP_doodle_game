@@ -3,7 +3,7 @@
 
 #include <memory>
 
-View::Yellow_Platform::Yellow_Platform(float platformWidth_, float platformHeight_, shared_ptr<Camera> camera_) :
+View::Yellow_Platform::Yellow_Platform(const float &platformWidth_, const float &platformHeight_, const shared_ptr<Camera> &camera_) :
     camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
     // we initiaize a new platform
 
@@ -26,8 +26,7 @@ View::Yellow_Platform::Yellow_Platform(float platformWidth_, float platformHeigh
     platform->setColor(sf::Color::Yellow);
 }
 
-void View::Yellow_Platform::UpdatePosition(float xpos, float ypos) {
-    //cout << "jeej we get updates" << endl;
+void View::Yellow_Platform::UpdatePosition(const float &xpos, const float &ypos) {
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }
 

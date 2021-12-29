@@ -89,7 +89,7 @@ public:
 private:
 
     /// check if the mouse in on the button
-    bool MouseOnButton(const sf::Sprite& Button);
+    bool MouseOnButton(const sf::Sprite& Button) const;
 
     /// loads the textures
     void LoadTextures();

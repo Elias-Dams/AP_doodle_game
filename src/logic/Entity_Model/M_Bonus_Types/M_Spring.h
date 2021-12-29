@@ -22,7 +22,7 @@ public:
 
     void setPosition(const float &x, const float &y) override;
 
-    void update(float x, float y) override;
+    void update(const float &x, const float &y) override;
 
     float getWidth() const override;
 
@@ -30,7 +30,7 @@ public:
 
     int getBonuspower() const override;
 
-    ~Spring();
+    virtual ~Spring();
 
 private:
     pair<float, float> position ; ///< position of the Spring

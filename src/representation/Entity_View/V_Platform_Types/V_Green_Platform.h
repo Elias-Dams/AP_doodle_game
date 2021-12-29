@@ -12,13 +12,13 @@ public:
      * constructs the green_Platform whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Green_Platform(float platformWidth, float platformHeight, shared_ptr<Camera> camera);
+    Green_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);
 
-    void UpdatePosition(float xpos, float ypos) override;
+    void UpdatePosition(const float &xpos, const float &ypos) override;
 
     sf::Sprite getPlatform() const override;
 
-    ~Green_Platform() override;
+    virtual ~Green_Platform();
 
 private:
     unique_ptr<sf::Sprite> platform; ///< sfml sprite of the platform

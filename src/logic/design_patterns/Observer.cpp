@@ -9,7 +9,7 @@ Observer::~Observer() {
 
 }
 
-void Observer::UpdatePosition(float xpos, float ypos) {
+void Observer::UpdatePosition(const float &xpos, const float &ypos) {
     // do nothing
 }
 

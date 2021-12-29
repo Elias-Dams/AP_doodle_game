@@ -12,13 +12,13 @@ public:
      * constructs the jetpack whit
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Jetpack(float Width, float Height, shared_ptr<Camera> camera);
+    Jetpack(const float &Width, const float &Height, const shared_ptr<Camera> &camera);
 
-    void UpdatePosition(float xpos, float ypos) override;
+    void UpdatePosition(const float &xpos, const float &ypos) override;
 
     sf::Sprite getBonus() const override;
 
-    ~Jetpack() override;
+    virtual ~Jetpack();
 
 private:
     unique_ptr<sf::Sprite> jetpack; ///< sfml sprite of the jetpack

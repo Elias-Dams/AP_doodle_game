@@ -16,7 +16,7 @@ void Model::Spring::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Spring::update(float x, float y) {
+void Model::Spring::update(const float &x, const float &y) {
     position.first = x;
     position.second = y;
     NotifyPosition(position.first, position.second);

@@ -21,7 +21,7 @@ void Model::Blue_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Blue_Platform::update(float dt) {
+void Model::Blue_Platform::update(const float &dt) {
     if (!left and position.first >= max - platform_width) {
         left = true;
     } else if (left and position.first <= min) {

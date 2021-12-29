@@ -19,7 +19,7 @@ public:
      * Player constructor.
      * constructs the Player
      */
-    Player(float playerWidth, float playerHeight, shared_ptr<Camera> camera);
+    Player(const float &playerWidth,const float &playerHeight, const shared_ptr<Camera> &camera);
 
     /**
     * @brief gets the sfml sprite
@@ -30,7 +30,7 @@ public:
     */
     sf::Sprite getPlayer() const;
 
-    void UpdatePosition(float xpos, float ypos) override;
+    void UpdatePosition(const float &xpos, const float &ypos) override;
 
     void UpdateMediumJump() override;
 
@@ -38,7 +38,7 @@ public:
 
     void ResetTexture() override;
 
-    ~Player() override;
+    virtual ~Player();
 
 private:
     void setTexture();

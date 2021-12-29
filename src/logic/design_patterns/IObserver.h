@@ -20,7 +20,7 @@ public:
     * @param xpos: position of the subject.
     * @param ypos: position of the subject.
     */
-    virtual void UpdatePosition(float xpos, float ypos) = 0;
+    virtual void UpdatePosition(const float &xpos, const float &ypos) = 0;
 
     /**
     * @brief updates the observers because a new maxheight is reached.

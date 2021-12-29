@@ -21,7 +21,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    virtual void update(float dt) = 0;
+    virtual void update(const float &d) = 0;
 
     /**
     * @brief gives the color of the platform.

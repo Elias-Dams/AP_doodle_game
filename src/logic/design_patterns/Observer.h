@@ -17,7 +17,7 @@ public:
     virtual ~Observer();
 
     /// updates the position of every entity
-    virtual void UpdatePosition(float xpos, float ypos) override;
+    virtual void UpdatePosition(const float &xpos, const float &ypos) override;
 
     /// updates the score if a new max height is reached
     virtual void NewMaxheightReached(const float &ypos) override;

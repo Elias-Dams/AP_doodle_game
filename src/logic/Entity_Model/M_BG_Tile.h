@@ -20,7 +20,7 @@ public:
      */
     BG_Tile(float width, float height);
 
-    ~BG_Tile();
+    virtual ~BG_Tile();
 
     // documentation in Enntity_model
     float getWidth() const;

@@ -3,7 +3,7 @@
 
 #include <utility>
 
-View::Player::Player(float playerWidth_, float playerHeight_, shared_ptr<Camera> camera_) :
+View::Player::Player(const float &playerWidth_, const float &playerHeight_, const shared_ptr<Camera> &camera_) :
     camera(camera_), playerWidth(playerWidth_), playerHeight(playerHeight_) {
     // we initiaize a new player
 
@@ -46,7 +46,7 @@ View::Player::Player(float playerWidth_, float playerHeight_, shared_ptr<Camera>
     player.setScale(playerWidth / right_texture.getSize().x, playerHeight / right_texture.getSize().y);
 }
 
-void View::Player::UpdatePosition(float xpos, float ypos) {
+void View::Player::UpdatePosition(const float &xpos, const float &ypos) {
     sf::Vector2f prev_coordiantes = player.getPosition();
     if (prev_coordiantes.x > xpos) {
         player.setTexture(current_left_texture);

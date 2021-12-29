@@ -15,7 +15,7 @@ void Model::Jetpack::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Jetpack::update(float x, float y) {
+void Model::Jetpack::update(const float &x, const float &y) {
     position.first = x;
     position.second = y;
     NotifyPosition(position.first, position.second);

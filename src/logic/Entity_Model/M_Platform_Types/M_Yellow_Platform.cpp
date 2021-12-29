@@ -22,7 +22,7 @@ void Model::Yellow_Platform::setPosition(const float &x, const float &y) {
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Yellow_Platform::update(float dt) {
+void Model::Yellow_Platform::update(const float &dt) {
     if (up and virtual_pos >= max) {
         up = false;
     } else if (!up and virtual_pos <= min) {

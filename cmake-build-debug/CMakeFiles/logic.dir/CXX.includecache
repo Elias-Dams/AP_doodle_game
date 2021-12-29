@@ -46,27 +46,51 @@ Namespaces.cpp
 ../M_Bonus.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.cpp
+M_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
 Entity_Model.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h
 Namespaces.cpp
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Namespaces.cpp
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp
+M_Blue_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h
 ../M_Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp
+M_Green_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h
 ../M_Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp
+M_White_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h
 ../M_Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp
+M_Yellow_Platform.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h
 ../M_Platform.h
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.cpp
+M_Player.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.h
 Entity_Model.h
@@ -91,6 +115,12 @@ vector
 -
 memory
 -
+
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.cpp
+Score.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
+Entity_Model/M_Player.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.h
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Score.h
 Entity_Model/Entity_Model.h

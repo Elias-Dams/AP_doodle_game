@@ -1,0 +1,47 @@
+\hypertarget{Observer_8h_source}{}\doxysection{Observer.\+h}
+\label{Observer_8h_source}\index{src/logic/design\_patterns/Observer.h@{src/logic/design\_patterns/Observer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_OBSERVER\_H}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_OBSERVER\_H}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}IObserver.h"{}}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}Subject.h"{}}}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00012}\mbox{\hyperlink{classObserver}{00012}} \textcolor{keyword}{class }\mbox{\hyperlink{classObserver}{Observer}}: \textcolor{keyword}{public} \mbox{\hyperlink{classIObserver}{IObserver}}\{}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00013}00013 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00015}00015     \mbox{\hyperlink{classObserver}{Observer}}();}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00017}00017     \textcolor{keyword}{virtual} \mbox{\hyperlink{classObserver}{\string~Observer}}();}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00020}00020     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}{UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00023}00023     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_a735a63bea519460306f1f7e517262c88}{NewMaxheightReached}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&ypos) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00026}00026     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_acea9e3d7751b775e395f53dc4292e359}{UpdateBonusScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00029}00029     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_ac70e701beca3f587d8188f558bc2b835}{UpdateReduceScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00032}00032     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_a39770cb7bbfe046845d669473f9912db}{Resetscore}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00035}00035     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_ab3cc8a82861a46aef4e09c092864af46}{ResetTexture}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00038}00038     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_add3f66baf416ac09661e375b05d5484e}{UpdateMediumJump}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00041}00041     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classObserver_a370e898c6e07923062e32e2fbf8fbf85}{UpdateHighJump}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00043}00043     \textcolor{keywordtype}{void} RemoveMeFromTheList();}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00046}00046 \};}
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{Observer_8h_source_l00049}00049 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AP\_DOODLE\_GAME\_OBSERVER\_H}}
+
+\end{DoxyCode}

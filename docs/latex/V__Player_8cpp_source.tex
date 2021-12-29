@@ -1,0 +1,103 @@
+\hypertarget{V__Player_8cpp_source}{}\doxysection{V\+\_\+\+Player.\+cpp}
+\label{V__Player_8cpp_source}\index{src/representation/Entity\_View/V\_Player.cpp@{src/representation/Entity\_View/V\_Player.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}V\_Player.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00006}\mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{00006}} \mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{View::Player::Player}}(\textcolor{keywordtype}{float} playerWidth\_, \textcolor{keywordtype}{float} playerHeight\_, shared\_ptr<Camera> camera\_) :}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00007}00007     camera(camera\_), playerWidth(playerWidth\_), playerHeight(playerHeight\_) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00008}00008     \textcolor{comment}{// we initiaize a new player}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00010}00010     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00011}00011         \textcolor{keywordflow}{if} (!left\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken1-\/left.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00012}00012             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00013}00013             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00014}00014         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00015}00015         \textcolor{keywordflow}{if} (!right\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken1-\/right.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00016}00016             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00017}00017             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00019}00019         \textcolor{keywordflow}{if} (!left\_spring\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken-\/spring-\/left.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00020}00020             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00021}00021             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00022}00022         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00023}00023         \textcolor{keywordflow}{if} (!right\_spring\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken-\/spring-\/right.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00024}00024             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00025}00025             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00026}00026         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00027}00027         \textcolor{keywordflow}{if} (!left\_jetpack\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken-\/jetpack-\/left.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00028}00028             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00029}00029             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00031}00031         \textcolor{keywordflow}{if} (!right\_jetpack\_texture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Chicken/chicken-\/jetpack-\/right.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00032}00032             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading player failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00033}00033             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00034}00034         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00035}00035             \textcolor{comment}{// we give the player a texture}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00036}00036             current\_right\_texture = right\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00037}00037             current\_left\_texture = left\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00038}00038             left = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00039}00039             right = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00040}00040             player.setTexture(current\_right\_texture);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00042}00042     \} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{string} \&a) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00043}00043         cerr << a << endl;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00046}00046     player.setScale(playerWidth / right\_texture.getSize().x, playerHeight / right\_texture.getSize().y);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00049}\mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{View::Player::UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00050}00050     sf::Vector2f prev\_coordiantes = player.getPosition();}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00051}00051     \textcolor{keywordflow}{if} (prev\_coordiantes.x > xpos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00052}00052         player.setTexture(current\_left\_texture);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00053}00053         left = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00054}00054         right = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00055}00055     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (prev\_coordiantes.x < xpos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00056}00056         player.setTexture(current\_right\_texture);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00057}00057         left = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00058}00058         right = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00061}00061     player.setPosition(camera-\/>toGamewidth(xpos, playerWidth), camera-\/>toGameheight(ypos, playerHeight));}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00065}\mbox{\hyperlink{classView_1_1Player_a0be85261d62c37271d871e0f871b992f}{00065}} sf::Sprite \mbox{\hyperlink{classView_1_1Player_a0be85261d62c37271d871e0f871b992f}{View::Player::getPlayer}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00066}00066     \textcolor{keywordflow}{return} player;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00069}00069 \textcolor{keywordtype}{void} View::Player::setTexture() \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00070}00070     \textcolor{keywordflow}{if} (left) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00071}00071         player.setTexture(current\_left\_texture);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00072}00072     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (right) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00073}00073         player.setTexture(current\_right\_texture);}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00074}00074     \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00077}\mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{00077}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{View::Player::UpdateMediumJump}}() \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00078}00078     current\_right\_texture = right\_spring\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00079}00079     current\_left\_texture = left\_spring\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00080}00080     this-\/>setTexture();}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00083}\mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{00083}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{View::Player::UpdateHighJump}}() \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00084}00084     current\_right\_texture = right\_jetpack\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00085}00085     current\_left\_texture = left\_jetpack\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00086}00086     this-\/>setTexture();}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00087}00087 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00089}\mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{00089}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{View::Player::ResetTexture}}() \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00090}00090     current\_right\_texture = right\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00091}00091     current\_left\_texture = left\_texture;}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00092}00092     this-\/>setTexture();}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00093}00093 \}}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00095}00095 View::Player::\string~Player() \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00097}00097 \}}
+
+\end{DoxyCode}

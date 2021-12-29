@@ -13,6 +13,11 @@
 
 using namespace std;
 
+/**
+ * @class Random
+ *
+ * @brief generates random numbers.
+ */
 class Random {
 
 private:
@@ -28,22 +33,22 @@ public:
     void operator=(const Random &) = delete;
 
     /**
-    * @brief creates unique instance of Random
+    * @brief creates unique instance of Random.
     *
-    * This function creates unique instance of Random
+    * This function creates unique instance of Random.
     *
-    * @return pointer to the Random
+    * @return pointer to the Random.
     */
     static shared_ptr<Random> GetInstance();
 
     /**
-    * @brief generates a float number between a given range
+    * @brief generates a float number between a given range.
     *
-    * This function generates a float number between a given range
+    * This function generates a float number between a given range.
     *
-    * @param min: minimum of the range
-    * @param max: mqximum of the range
-    * @return random float number
+    * @param min: minimum of the range.
+    * @param max: mqximum of the range.
+    * @return random float number.
     */
     float generate_between(const float &min, const float &max);
 

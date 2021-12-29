@@ -1,0 +1,32 @@
+\hypertarget{Stopwatch_8cpp_source}{}\doxysection{Stopwatch.\+cpp}
+\label{Stopwatch_8cpp_source}\index{src/logic/Stopwatch.cpp@{src/logic/Stopwatch.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Stopwatch.h"{}}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00004}00004 Stopwatch::Stopwatch() \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00005}00005     now = std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00008}00008 shared\_ptr<Stopwatch> Stopwatch::singleton\_ = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00010}\mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{00010}} shared\_ptr<Stopwatch> \mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{Stopwatch::GetInstance}}() \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00011}00011     \textcolor{keywordflow}{if} (singleton\_ == \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00012}00012         singleton\_ = make\_shared<Stopwatch>();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} singleton\_;}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00017}\mbox{\hyperlink{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}{00017}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}{Stopwatch::mark\_time}}() \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00018}00018     std::chrono::steady\_clock::time\_point old\_time\_point = now;}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00019}00019     now = std::chrono::steady\_clock::now();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00020}00020     \textcolor{keyword}{const} std::chrono::duration<float> frameTime = now -\/ old\_time\_point;}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00021}00021     \textcolor{keywordflow}{return} frameTime.count();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00024}00024 Stopwatch::\string~Stopwatch() \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8cpp_source_l00026}00026 \}}
+
+\end{DoxyCode}

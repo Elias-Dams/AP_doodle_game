@@ -1,0 +1,235 @@
+\hypertarget{classAbstract__Factory}{}\doxysection{Abstract\+\_\+\+Factory Class Reference}
+\label{classAbstract__Factory}\index{Abstract\_Factory@{Abstract\_Factory}}
+
+
+Creates the entity\textquotesingle{}s used in the \mbox{\hyperlink{classWorld}{World}}.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+\_\+\+Factory.\+h$>$}
+
+Inheritance diagram for Abstract\+\_\+\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAbstract__Factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Model\+::\+Player}} $>$ \mbox{\hyperlink{classAbstract__Factory_a1a4e5f271c020c31d86a1382336f2f3e}{create\+Player}} (float player\+\_\+width, float player\+\_\+height, float startposx, float startposy, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{Model\+::\+BG\+\_\+\+Tile}} $>$ \mbox{\hyperlink{classAbstract__Factory_a0f5fff44f4d1e087a9c55ebf59a8a232}{create\+Background}} (float background\+\_\+width, float background\+\_\+height, float startposx, float startposy, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Green__Platform}{Model\+::\+Green\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classAbstract__Factory_a345a887eb672d8c56c1201fdd740f89e}{create\+Green\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Blue__Platform}{Model\+::\+Blue\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classAbstract__Factory_a2701200cb9e49e24dabfbbc3df6ae044}{create\+Blue\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, float move\+\_\+width, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1White__Platform}{Model\+::\+White\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classAbstract__Factory_a3382feccb3577905f3d2d34f49415c0e}{create\+White\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Yellow__Platform}{Model\+::\+Yellow\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classAbstract__Factory_a257cda46dc99e2ea18fc5216a4aea133}{create\+Yellow\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, float move\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Spring}{Model\+::\+Spring}} $>$ \mbox{\hyperlink{classAbstract__Factory_a7fcb29c04c5e1c43ab027582f4123c2e}{create\+Spring}} (float spring\+\_\+width, float spring\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Jetpack}{Model\+::\+Jetpack}} $>$ \mbox{\hyperlink{classAbstract__Factory_ac5834d8f98011d6200b908a5cccaff9f}{create\+Jetpack}} (float jetpack\+\_\+width, float jetpack\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)=0
+\item 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \mbox{\hyperlink{classAbstract__Factory_aac9beef9805345f0129cdf3b70dc973f}{create\+Camera}} (float camera\+\_\+width, float camera\+\_\+height)=0
+\item 
+virtual void \mbox{\hyperlink{classAbstract__Factory_a1d9b69bdae3da5993350f8e04f9556b6}{delete\+\_\+platform}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$ platform)=0
+\begin{DoxyCompactList}\small\item\em deletes a platform \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classAbstract__Factory_a7a7cc4422b18163025702950e0dc0b3b}{delete\+\_\+bonus}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$ bonus)=0
+\begin{DoxyCompactList}\small\item\em deletes a bonus \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates the entity\textquotesingle{}s used in the \mbox{\hyperlink{classWorld}{World}}. 
+
+Creates the views used in the \mbox{\hyperlink{classGame}{Game}}. 
+
+Definition at line \mbox{\hyperlink{Abstract__Factory_8h_source_l00026}{26}} of file \mbox{\hyperlink{Abstract__Factory_8h_source}{Abstract\+\_\+\+Factory.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAbstract__Factory_a0f5fff44f4d1e087a9c55ebf59a8a232}\label{classAbstract__Factory_a0f5fff44f4d1e087a9c55ebf59a8a232}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createBackground@{createBackground}}
+\index{createBackground@{createBackground}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createBackground()}{createBackground()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{Model\+::\+BG\+\_\+\+Tile}} $>$ Abstract\+\_\+\+Factory\+::create\+Background (\begin{DoxyParamCaption}\item[{float}]{background\+\_\+width,  }\item[{float}]{background\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} constructor. constructs a \mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item startposition
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a123388fc1fd74e1bd6ba55f7886fb9c2}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a2701200cb9e49e24dabfbbc3df6ae044}\label{classAbstract__Factory_a2701200cb9e49e24dabfbbc3df6ae044}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createBluePlatform@{createBluePlatform}}
+\index{createBluePlatform@{createBluePlatform}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createBluePlatform()}{createBluePlatform()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Blue__Platform}{Model\+::\+Blue\+\_\+\+Platform}} $>$ Abstract\+\_\+\+Factory\+::create\+Blue\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+width,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item move width
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_aec7195547845dab3a0cca813abe8fc2f}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_aac9beef9805345f0129cdf3b70dc973f}\label{classAbstract__Factory_aac9beef9805345f0129cdf3b70dc973f}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ Abstract\+\_\+\+Factory\+::create\+Camera (\begin{DoxyParamCaption}\item[{float}]{camera\+\_\+width,  }\item[{float}]{camera\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classCamera}{Camera}} constructor. constructs the \mbox{\hyperlink{classCamera}{Camera}} 
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a436083d80061c9b276839c86f196ee47}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a345a887eb672d8c56c1201fdd740f89e}\label{classAbstract__Factory_a345a887eb672d8c56c1201fdd740f89e}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createGreenPlatform@{createGreenPlatform}}
+\index{createGreenPlatform@{createGreenPlatform}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createGreenPlatform()}{createGreenPlatform()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Green__Platform}{Model\+::\+Green\+\_\+\+Platform}} $>$ Abstract\+\_\+\+Factory\+::create\+Green\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Green\+\_\+\+Platform constructor. constructs a Green\+\_\+\+Platform whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a19b8e642221281310589451fe4951b1d}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_ac5834d8f98011d6200b908a5cccaff9f}\label{classAbstract__Factory_ac5834d8f98011d6200b908a5cccaff9f}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createJetpack@{createJetpack}}
+\index{createJetpack@{createJetpack}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createJetpack()}{createJetpack()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Jetpack}{Model\+::\+Jetpack}} $>$ Abstract\+\_\+\+Factory\+::create\+Jetpack (\begin{DoxyParamCaption}\item[{float}]{jetpack\+\_\+width,  }\item[{float}]{jetpack\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classJetpack}{Jetpack}} constructor. constructs the \mbox{\hyperlink{classJetpack}{Jetpack}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_afe4cb53cd7296da886fbe23550631202}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a1a4e5f271c020c31d86a1382336f2f3e}\label{classAbstract__Factory_a1a4e5f271c020c31d86a1382336f2f3e}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createPlayer@{createPlayer}}
+\index{createPlayer@{createPlayer}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Model\+::\+Player}} $>$ Abstract\+\_\+\+Factory\+::create\+Player (\begin{DoxyParamCaption}\item[{float}]{player\+\_\+width,  }\item[{float}]{player\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classPlayer}{Player}} constructor. constructs the \mbox{\hyperlink{classPlayer}{Player}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item startposition
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_af5cde1527aa69224cdb13653de685f95}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a7fcb29c04c5e1c43ab027582f4123c2e}\label{classAbstract__Factory_a7fcb29c04c5e1c43ab027582f4123c2e}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createSpring@{createSpring}}
+\index{createSpring@{createSpring}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createSpring()}{createSpring()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Spring}{Model\+::\+Spring}} $>$ Abstract\+\_\+\+Factory\+::create\+Spring (\begin{DoxyParamCaption}\item[{float}]{spring\+\_\+width,  }\item[{float}]{spring\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classSpring}{Spring}} constructor. constructs the \mbox{\hyperlink{classSpring}{Spring}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a82a874ec09f44c08c259bc87928710e9}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a3382feccb3577905f3d2d34f49415c0e}\label{classAbstract__Factory_a3382feccb3577905f3d2d34f49415c0e}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createWhitePlatform@{createWhitePlatform}}
+\index{createWhitePlatform@{createWhitePlatform}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createWhitePlatform()}{createWhitePlatform()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1White__Platform}{Model\+::\+White\+\_\+\+Platform}} $>$ Abstract\+\_\+\+Factory\+::create\+White\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a33624ef79db1a11d56c64f89aedaa6fc}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a257cda46dc99e2ea18fc5216a4aea133}\label{classAbstract__Factory_a257cda46dc99e2ea18fc5216a4aea133}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!createYellowPlatform@{createYellowPlatform}}
+\index{createYellowPlatform@{createYellowPlatform}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{createYellowPlatform()}{createYellowPlatform()}}
+{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Yellow__Platform}{Model\+::\+Yellow\+\_\+\+Platform}} $>$ Abstract\+\_\+\+Factory\+::create\+Yellow\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item move height
+\item camera 
+\end{DoxyItemize}
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_ada39ced5f3e60f5fb4f9011076ceda7a}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a7a7cc4422b18163025702950e0dc0b3b}\label{classAbstract__Factory_a7a7cc4422b18163025702950e0dc0b3b}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!delete\_bonus@{delete\_bonus}}
+\index{delete\_bonus@{delete\_bonus}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{delete\_bonus()}{delete\_bonus()}}
+{\footnotesize\ttfamily virtual void Abstract\+\_\+\+Factory\+::delete\+\_\+bonus (\begin{DoxyParamCaption}\item[{weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$}]{bonus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+deletes a bonus 
+
+This function deletes a bonus from the map of bonuses. In this map the view are being saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform} & weak pointer to the bonus that must be deleted \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}{Concrete\+\_\+\+Factory}}.
+
+\mbox{\Hypertarget{classAbstract__Factory_a1d9b69bdae3da5993350f8e04f9556b6}\label{classAbstract__Factory_a1d9b69bdae3da5993350f8e04f9556b6}} 
+\index{Abstract\_Factory@{Abstract\_Factory}!delete\_platform@{delete\_platform}}
+\index{delete\_platform@{delete\_platform}!Abstract\_Factory@{Abstract\_Factory}}
+\doxysubsubsection{\texorpdfstring{delete\_platform()}{delete\_platform()}}
+{\footnotesize\ttfamily virtual void Abstract\+\_\+\+Factory\+::delete\+\_\+platform (\begin{DoxyParamCaption}\item[{weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$}]{platform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+deletes a platform 
+
+This function deletes a platform from the map of platforms. In this map the view are being saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform} & weak pointer to the platform that must be deleted \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}{Concrete\+\_\+\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/design\+\_\+patterns/Abstract\+\_\+\+Factory.\+h\end{DoxyCompactItemize}

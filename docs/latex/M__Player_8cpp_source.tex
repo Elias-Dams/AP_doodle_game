@@ -1,0 +1,113 @@
+\hypertarget{M__Player_8cpp_source}{}\doxysection{M\+\_\+\+Player.\+cpp}
+\label{M__Player_8cpp_source}\index{src/logic/Entity\_Model/M\_Player.cpp@{src/logic/Entity\_Model/M\_Player.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}M\_Player.h"{}}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00004}\mbox{\hyperlink{classModel_1_1Player_a9c412e8a0966db7914f99dbfa698cf33}{00004}} \mbox{\hyperlink{classModel_1_1Player_a9c412e8a0966db7914f99dbfa698cf33}{Model::Player::Player}}(\textcolor{keywordtype}{float} player\_width\_, \textcolor{keywordtype}{float} player\_height\_) :}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00005}00005     player\_width(player\_width\_), player\_height(player\_height\_) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00006}00006     gravity = 0.20f;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00007}00007     falling = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00008}00008     jumpheigt = 250.0f;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00009}00009 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00011}\mbox{\hyperlink{classModel_1_1Player_aa1e5cb75b10f73bd865cc4df144b74fb}{00011}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Player_aa1e5cb75b10f73bd865cc4df144b74fb}{Model::Player::move}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} \&y) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00012}00012     position.first += x;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00013}00013     position.second += y;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00015}00015     NotifyPosition(position.first, position.second);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00019}\mbox{\hyperlink{classModel_1_1Player_aa510a9fca552108468d8f76de7ab8052}{00019}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Player_aa510a9fca552108468d8f76de7ab8052}{Model::Player::jump}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \&hit, \textcolor{keywordtype}{int} height\_modifier) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00021}00021     \textcolor{keywordflow}{if} (position.second >= 0) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00023}00023         \textcolor{keywordflow}{if} (hit) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00024}00024             \textcolor{keywordtype}{float} height = jumpheigt * (float)height\_modifier;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00025}00025             \textcolor{keywordtype}{float} temp = sqrtf((2.0f/5.0f)*height);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00026}00026             \textcolor{keywordflow}{if}(height < 500)\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00027}00027                 \textcolor{comment}{// normal}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00028}00028             \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00029}00029             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(height < 1500)\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00030}00030                 NotifyMedium();}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00031}00031                 \textcolor{comment}{// increase the score when bonus is collected}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00032}00032                 NotifyIncreaseScore(100);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00033}00033             \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00034}00034             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00035}00035                 NotifyHigh();}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00036}00036                 \textcolor{comment}{// increase the score when bonus is collected}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00037}00037                 NotifyIncreaseScore(300);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00038}00038             \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00039}00039             gravity = -\/temp;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00042}00042         \textcolor{comment}{// jump in with a gravity constant range from -\/10 to 10}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00043}00043         \textcolor{comment}{// -\/10 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 0 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 10 -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ ( until the player hits a platform )}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00044}00044         \textcolor{comment}{//           up               down}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00046}00046         gravity += 0.2f * dt * 60.0f;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00048}00048         \textcolor{comment}{// subtract the gravity from the y pos}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00050}00050         position.second -\/= gravity * dt * 60.0f;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00052}00052         \textcolor{keywordflow}{if} (gravity > 0) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00053}00053             falling = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00054}00054             NotifyNormal();}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00055}00055         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (gravity <= 0) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00056}00056             falling = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00057}00057         \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00060}00060     \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00062}00062     \textcolor{comment}{//cout << "{}("{} << position.first << "{}, "{} << position.second << "{})"{} << endl;}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00063}00063     NotifyPosition(position.first, position.second);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00064}00064 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00066}\mbox{\hyperlink{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}{00066}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}{Model::Player::getWidth}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00067}00067     \textcolor{keywordflow}{return} player\_width;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00070}\mbox{\hyperlink{classModel_1_1Player_a8dfdf805e8248f27975b652e2bda1496}{00070}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classModel_1_1Player_a8dfdf805e8248f27975b652e2bda1496}{Model::Player::getHeight}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00071}00071     \textcolor{keywordflow}{return} player\_height;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00072}00072 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00074}\mbox{\hyperlink{classModel_1_1Player_acd4590b160e3877e66c643f34328d9ed}{00074}} \textcolor{keyword}{const} pair<float, float> \&\mbox{\hyperlink{classModel_1_1Player_acd4590b160e3877e66c643f34328d9ed}{Model::Player::getPosition}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00075}00075     \textcolor{keywordflow}{return} position;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00076}00076 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00078}\mbox{\hyperlink{classModel_1_1Player_adee8e610c0354aad29613843274219fd}{00078}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Player_adee8e610c0354aad29613843274219fd}{Model::Player::setPosition}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} \&y) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00079}00079     Player::position = make\_pair(x, y);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00080}00080     NotifyPosition(x, y);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00083}\mbox{\hyperlink{classModel_1_1Player_ab0c0dd9143b06190f339eda39820faca}{00083}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classModel_1_1Player_ab0c0dd9143b06190f339eda39820faca}{Model::Player::isfalling}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00084}00084     \textcolor{keywordflow}{return} falling;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00085}00085 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00087}\mbox{\hyperlink{classModel_1_1Player_a346d8bae19e2b9de44884cdeb5c39676}{00087}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Player_a346d8bae19e2b9de44884cdeb5c39676}{Model::Player::PlayerReset}}(\textcolor{keywordtype}{float} startposx, \textcolor{keywordtype}{float} startposy) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00088}00088     position.first = startposx;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00089}00089     position.second = startposy;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00090}00090     gravity = 0.20f;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00091}00091     falling = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00092}00092     platfom\_touched.reset();}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00093}00093     NotifyPosition(startposx, startposy);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00094}00094     NotifyReset();}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00095}00095 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00097}00097 Model::Player::\string~Player() \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00099}00099 \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00100}\mbox{\hyperlink{classModel_1_1Player_a0b5b4fe68b9923132f3bc144ee6df000}{00100}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Player_a0b5b4fe68b9923132f3bc144ee6df000}{Model::Player::setPlatfomTouched}}(\textcolor{keyword}{const} shared\_ptr<Entity\_Model> \&platfomTouched) \{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00102}00102     \textcolor{keywordflow}{if}(platfomTouched.get() == platfom\_touched.get())\{}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00103}00103         \textcolor{comment}{// if the same platform is hit decrease the score bij 100}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00104}00104         NotifyDecreaseScore(100);}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00106}00106     platfom\_touched = platfomTouched;}
+\DoxyCodeLine{\Hypertarget{M__Player_8cpp_source_l00107}00107 \}}
+
+\end{DoxyCode}

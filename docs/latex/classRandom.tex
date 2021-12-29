@@ -1,0 +1,111 @@
+\hypertarget{classRandom}{}\doxysection{Random Class Reference}
+\label{classRandom}\index{Random@{Random}}
+
+
+generates random numbers.  
+
+
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRandom_a93e284435d58824b66a4025b85bfcea3}\label{classRandom_a93e284435d58824b66a4025b85bfcea3}} 
+{\bfseries Random} (\mbox{\hyperlink{classRandom}{Random}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classRandom_a9b02aa846156b5ab239c3cac0012d4e3}\label{classRandom_a9b02aa846156b5ab239c3cac0012d4e3}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classRandom}{Random}} \&)=delete
+\item 
+float \mbox{\hyperlink{classRandom_af6ecf678ff659916787cc33bab141eae}{generate\+\_\+between}} (const float \&min, const float \&max)
+\begin{DoxyCompactList}\small\item\em generates a float number between a given range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static shared\+\_\+ptr$<$ \mbox{\hyperlink{classRandom}{Random}} $>$ \mbox{\hyperlink{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em creates unique instance of \mbox{\hyperlink{classRandom}{Random}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+generates random numbers. 
+
+Definition at line \mbox{\hyperlink{Random_8h_source_l00021}{21}} of file \mbox{\hyperlink{Random_8h_source}{Random.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRandom_acb76b49c3903a3c4fb67fd216341f08d}\label{classRandom_acb76b49c3903a3c4fb67fd216341f08d}} 
+\index{Random@{Random}!Random@{Random}}
+\index{Random@{Random}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{Random()}{Random()}}
+{\footnotesize\ttfamily Random\+::\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Random_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Random_8cpp_source}{Random.\+cpp}}.
+
+\mbox{\Hypertarget{classRandom_ac0d4eaf1f32df4600eb321cb8dbc0c55}\label{classRandom_ac0d4eaf1f32df4600eb321cb8dbc0c55}} 
+\index{Random@{Random}!````~Random@{$\sim$Random}}
+\index{````~Random@{$\sim$Random}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{$\sim$Random()}{~Random()}}
+{\footnotesize\ttfamily Random\+::$\sim$\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Random_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Random_8cpp_source}{Random.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRandom_af6ecf678ff659916787cc33bab141eae}\label{classRandom_af6ecf678ff659916787cc33bab141eae}} 
+\index{Random@{Random}!generate\_between@{generate\_between}}
+\index{generate\_between@{generate\_between}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{generate\_between()}{generate\_between()}}
+{\footnotesize\ttfamily float Random\+::generate\+\_\+between (\begin{DoxyParamCaption}\item[{const float \&}]{min,  }\item[{const float \&}]{max }\end{DoxyParamCaption})}
+
+
+
+generates a float number between a given range. 
+
+This function generates a float number between a given range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & minimum of the range. \\
+\hline
+{\em max} & mqximum of the range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+random float number. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Random_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Random_8cpp_source}{Random.\+cpp}}.
+
+\mbox{\Hypertarget{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}\label{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}} 
+\index{Random@{Random}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Random@{Random}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classRandom}{Random}} $>$ Random\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+creates unique instance of \mbox{\hyperlink{classRandom}{Random}}. 
+
+This function creates unique instance of \mbox{\hyperlink{classRandom}{Random}}.
+
+\begin{DoxyReturn}{Returns}
+pointer to the \mbox{\hyperlink{classRandom}{Random}}. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Random_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Random_8cpp_source}{Random.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/Random.\+h\item 
+src/logic/Random.\+cpp\end{DoxyCompactItemize}

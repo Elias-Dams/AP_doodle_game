@@ -1,0 +1,95 @@
+\hypertarget{classStopwatch}{}\doxysection{Stopwatch Class Reference}
+\label{classStopwatch}\index{Stopwatch@{Stopwatch}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStopwatch_ab9f33b55664ef1358df1909b8696bb74}\label{classStopwatch_ab9f33b55664ef1358df1909b8696bb74}} 
+{\bfseries Stopwatch} (\mbox{\hyperlink{classStopwatch}{Stopwatch}} \&other)=delete
+\item 
+\mbox{\Hypertarget{classStopwatch_aadd43373c5401100e59a9dd5c97110dc}\label{classStopwatch_aadd43373c5401100e59a9dd5c97110dc}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classStopwatch}{Stopwatch}} \&)=delete
+\item 
+float \mbox{\hyperlink{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}{mark\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em creates unique instance of \mbox{\hyperlink{classStopwatch}{Stopwatch}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static shared\+\_\+ptr$<$ \mbox{\hyperlink{classStopwatch}{Stopwatch}} $>$ \mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em creates unique instance of \mbox{\hyperlink{classStopwatch}{Stopwatch}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Stopwatch_8h_source_l00015}{15}} of file \mbox{\hyperlink{Stopwatch_8h_source}{Stopwatch.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStopwatch_a628b5ebeed5df065dd847e68fb6336cf}\label{classStopwatch_a628b5ebeed5df065dd847e68fb6336cf}} 
+\index{Stopwatch@{Stopwatch}!Stopwatch@{Stopwatch}}
+\index{Stopwatch@{Stopwatch}!Stopwatch@{Stopwatch}}
+\doxysubsubsection{\texorpdfstring{Stopwatch()}{Stopwatch()}}
+{\footnotesize\ttfamily Stopwatch\+::\+Stopwatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Stopwatch_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Stopwatch_8cpp_source}{Stopwatch.\+cpp}}.
+
+\mbox{\Hypertarget{classStopwatch_a534c433482f8fe8144c91c0fe37aac20}\label{classStopwatch_a534c433482f8fe8144c91c0fe37aac20}} 
+\index{Stopwatch@{Stopwatch}!````~Stopwatch@{$\sim$Stopwatch}}
+\index{````~Stopwatch@{$\sim$Stopwatch}!Stopwatch@{Stopwatch}}
+\doxysubsubsection{\texorpdfstring{$\sim$Stopwatch()}{~Stopwatch()}}
+{\footnotesize\ttfamily Stopwatch\+::$\sim$\+Stopwatch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Stopwatch_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{Stopwatch_8cpp_source}{Stopwatch.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStopwatch_afee88c02b434db0656371a0d2ee73446}\label{classStopwatch_afee88c02b434db0656371a0d2ee73446}} 
+\index{Stopwatch@{Stopwatch}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!Stopwatch@{Stopwatch}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classStopwatch}{Stopwatch}} $>$ Stopwatch\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+creates unique instance of \mbox{\hyperlink{classStopwatch}{Stopwatch}}. 
+
+This function creates unique instance of \mbox{\hyperlink{classStopwatch}{Stopwatch}}.
+
+\begin{DoxyReturn}{Returns}
+pointer to the stopwatch. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Stopwatch_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{Stopwatch_8cpp_source}{Stopwatch.\+cpp}}.
+
+\mbox{\Hypertarget{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}\label{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}} 
+\index{Stopwatch@{Stopwatch}!mark\_time@{mark\_time}}
+\index{mark\_time@{mark\_time}!Stopwatch@{Stopwatch}}
+\doxysubsubsection{\texorpdfstring{mark\_time()}{mark\_time()}}
+{\footnotesize\ttfamily float Stopwatch\+::mark\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+creates unique instance of \mbox{\hyperlink{classStopwatch}{Stopwatch}}. 
+
+This function marks the time. It also calculates the differance between the prev mark ant now. It is returned under the name delta time.
+
+\begin{DoxyReturn}{Returns}
+delta time 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Stopwatch_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Stopwatch_8cpp_source}{Stopwatch.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/Stopwatch.\+h\item 
+src/logic/Stopwatch.\+cpp\end{DoxyCompactItemize}

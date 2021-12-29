@@ -139,70 +139,70 @@
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/BG_Tile.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Bonus.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Bonus_Types/Spring.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/White_Platform.h">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp">
-			<Option target="logic"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h">
-			<Option target="logic"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.cpp">
 			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Entity_Model.h">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.cpp">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_BG_Tile.cpp">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Platform.h">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_BG_Tile.h">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.cpp">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus.cpp">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/Player.h">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Bonus_Types/M_Spring.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.cpp">
+			<Option target="logic"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Entity_Model/M_Player.h">
 			<Option target="logic"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Namespaces.cpp">
@@ -262,70 +262,70 @@
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/design_patterns/Subject.h">
 			<Option target="logic"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/BG_Tile.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Bonus.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Jetpack.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Bonus_Types/Spring.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Green_Platform.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/White_Platform.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp">
-			<Option target="AP_doodle_game"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h">
-			<Option target="AP_doodle_game"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Entity_View.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.cpp">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_BG_Tile.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Platform.h">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_BG_Tile.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Player.cpp">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus.cpp">
 			<Option target="AP_doodle_game"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/Player.h">
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Bonus_Types/V_Spring.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_White_Platform.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Player.cpp">
+			<Option target="AP_doodle_game"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Entity_View/V_Player.h">
 			<Option target="AP_doodle_game"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Game.cpp">

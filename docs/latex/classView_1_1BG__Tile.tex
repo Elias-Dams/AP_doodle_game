@@ -1,0 +1,102 @@
+\hypertarget{classView_1_1BG__Tile}{}\doxysection{View\+::BG\+\_\+\+Tile Class Reference}
+\label{classView_1_1BG__Tile}\index{View::BG\_Tile@{View::BG\_Tile}}
+Inheritance diagram for View\+::BG\+\_\+\+Tile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classView_1_1BG__Tile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classView_1_1BG__Tile_a20dc6d189284a04877cf8ef342ff0ef4}{BG\+\_\+\+Tile}} (float width, float height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera\+\_\+)
+\item 
+const sf\+::\+Sprite \& \mbox{\hyperlink{classView_1_1BG__Tile_a80f82e8730d5d41a4617b1013bfa931a}{get\+Background}} () const
+\begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}{Update\+Position}} (float xpos, float ypos) override
+\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{V__BG__Tile_8h_source_l00008}{8}} of file \mbox{\hyperlink{V__BG__Tile_8h_source}{V\+\_\+\+BG\+\_\+\+Tile.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classView_1_1BG__Tile_a20dc6d189284a04877cf8ef342ff0ef4}\label{classView_1_1BG__Tile_a20dc6d189284a04877cf8ef342ff0ef4}} 
+\index{View::BG\_Tile@{View::BG\_Tile}!BG\_Tile@{BG\_Tile}}
+\index{BG\_Tile@{BG\_Tile}!View::BG\_Tile@{View::BG\_Tile}}
+\doxysubsubsection{\texorpdfstring{BG\_Tile()}{BG\_Tile()}}
+{\footnotesize\ttfamily View\+::\+BG\+\_\+\+Tile\+::\+BG\+\_\+\+Tile (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera\+\_\+ }\end{DoxyParamCaption})}
+
+Background tile constructor. constructs the background whit a given width and height and the camera to convert the coordinates to sfml coordinates 
+
+Definition at line \mbox{\hyperlink{V__BG__Tile_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{V__BG__Tile_8cpp_source}{V\+\_\+\+BG\+\_\+\+Tile.\+cpp}}.
+
+\mbox{\Hypertarget{classView_1_1BG__Tile_a6ac3a47e7d1e2a06bfd301f74e1eebf8}\label{classView_1_1BG__Tile_a6ac3a47e7d1e2a06bfd301f74e1eebf8}} 
+\index{View::BG\_Tile@{View::BG\_Tile}!````~BG\_Tile@{$\sim$BG\_Tile}}
+\index{````~BG\_Tile@{$\sim$BG\_Tile}!View::BG\_Tile@{View::BG\_Tile}}
+\doxysubsubsection{\texorpdfstring{$\sim$BG\_Tile()}{~BG\_Tile()}}
+{\footnotesize\ttfamily View\+::\+BG\+\_\+\+Tile\+::$\sim$\+BG\+\_\+\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line \mbox{\hyperlink{V__BG__Tile_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{V__BG__Tile_8cpp_source}{V\+\_\+\+BG\+\_\+\+Tile.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classView_1_1BG__Tile_a80f82e8730d5d41a4617b1013bfa931a}\label{classView_1_1BG__Tile_a80f82e8730d5d41a4617b1013bfa931a}} 
+\index{View::BG\_Tile@{View::BG\_Tile}!getBackground@{getBackground}}
+\index{getBackground@{getBackground}!View::BG\_Tile@{View::BG\_Tile}}
+\doxysubsubsection{\texorpdfstring{getBackground()}{getBackground()}}
+{\footnotesize\ttfamily const sf\+::\+Sprite \& View\+::\+BG\+\_\+\+Tile\+::get\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+gets the sfml sprite 
+
+This function gets the sfml sprite of the background tile
+
+\begin{DoxyReturn}{Returns}
+the sfml sprite of the background tile 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{V__BG__Tile_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{V__BG__Tile_8cpp_source}{V\+\_\+\+BG\+\_\+\+Tile.\+cpp}}.
+
+\mbox{\Hypertarget{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}\label{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}} 
+\index{View::BG\_Tile@{View::BG\_Tile}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!View::BG\_Tile@{View::BG\_Tile}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily void View\+::\+BG\+\_\+\+Tile\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the position of the entity views 
+
+This function updates the position of the view when the player has moved
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position of the entity in the game \\
+\hline
+{\em y} & position of the entity in the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}.
+
+
+
+Definition at line \mbox{\hyperlink{V__BG__Tile_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{V__BG__Tile_8cpp_source}{V\+\_\+\+BG\+\_\+\+Tile.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/representation/\+Entity\+\_\+\+View/V\+\_\+\+BG\+\_\+\+Tile.\+h\item 
+src/representation/\+Entity\+\_\+\+View/V\+\_\+\+BG\+\_\+\+Tile.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+Runs main game loop.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+void \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}} ()
+\begin{DoxyCompactList}\small\item\em main game loop \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_acc5022f7f8abcbab013f7f3195583a1e}{update}} (const float \&dt)
+\begin{DoxyCompactList}\small\item\em updates the main game loop \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{draw\+Game}} ()
+\begin{DoxyCompactList}\small\item\em draws the entities \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a8cc8cf130eecb22147462e9a1523fb25}{game\+Start}} (const float \&dt)
+\begin{DoxyCompactList}\small\item\em game start \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ab34f52913b751b1157e6a23b7483395a}{game\+Loop}} (const float \&dt)
+\begin{DoxyCompactList}\small\item\em game loop \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a42349972c6f10087fcc56ed045725e05}{game\+Over}} (const float \&dt)
+\begin{DoxyCompactList}\small\item\em game over \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs main game loop. 
+
+Definition at line \mbox{\hyperlink{Game_8h_source_l00027}{27}} of file \mbox{\hyperlink{Game_8h_source}{Game.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classGame}{Game}} constructor. constructs the game 
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00257}{257}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}\label{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}} 
+\index{Game@{Game}!drawGame@{drawGame}}
+\index{drawGame@{drawGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawGame()}{drawGame()}}
+{\footnotesize\ttfamily void Game\+::draw\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws the entities 
+
+this function draws the entities on the screen 
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00187}{187}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_ab34f52913b751b1157e6a23b7483395a}\label{classGame_ab34f52913b751b1157e6a23b7483395a}} 
+\index{Game@{Game}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily void Game\+::game\+Loop (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+
+
+game loop 
+
+this function handles the game loop
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00134}{134}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_a42349972c6f10087fcc56ed045725e05}\label{classGame_a42349972c6f10087fcc56ed045725e05}} 
+\index{Game@{Game}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameOver()}{gameOver()}}
+{\footnotesize\ttfamily void Game\+::game\+Over (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+
+
+game over 
+
+this function handles the game over state This function resets the game to the state it was in when it was first initialized
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00161}{161}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_a8cc8cf130eecb22147462e9a1523fb25}\label{classGame_a8cc8cf130eecb22147462e9a1523fb25}} 
+\index{Game@{Game}!gameStart@{gameStart}}
+\index{gameStart@{gameStart}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameStart()}{gameStart()}}
+{\footnotesize\ttfamily void Game\+::game\+Start (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+
+
+game start 
+
+this function handles the game start state
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main game loop 
+
+this function contains the main game loop 
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+\mbox{\Hypertarget{classGame_acc5022f7f8abcbab013f7f3195583a1e}\label{classGame_acc5022f7f8abcbab013f7f3195583a1e}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+
+
+updates the main game loop 
+
+this function updates the main game loop
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Game_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{Game_8cpp_source}{Game.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/representation/Game.\+h\item 
+src/representation/Game.\+cpp\end{DoxyCompactItemize}

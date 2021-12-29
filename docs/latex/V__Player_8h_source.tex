@@ -1,0 +1,58 @@
+\hypertarget{V__Player_8h_source}{}\doxysection{V\+\_\+\+Player.\+h}
+\label{V__Player_8h_source}\index{src/representation/Entity\_View/V\_Player.h@{src/representation/Entity\_View/V\_Player.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_V\_PLAYER\_H}}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_V\_PLAYER\_H}}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}../../logic/Entity\_Model/Entity\_Model.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}../../logic/Namespaces.cpp"{}}}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}Entity\_View.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00015}\mbox{\hyperlink{classView_1_1Player}{00015}} \textcolor{keyword}{class }\mbox{\hyperlink{classView_1_1Player}{View::Player}} : \textcolor{keyword}{public} \mbox{\hyperlink{classEntity__View}{Entity\_View}} \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00017}00017 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00022}00022     \mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{Player}}(\textcolor{keywordtype}{float} playerWidth, \textcolor{keywordtype}{float} playerHeight, shared\_ptr<Camera> camera);}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00031}00031     sf::Sprite \mbox{\hyperlink{classView_1_1Player_a0be85261d62c37271d871e0f871b992f}{getPlayer}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00033}00033     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00035}00035     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{UpdateMediumJump}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00037}00037     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{UpdateHighJump}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00039}00039     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{ResetTexture}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00041}00041     \mbox{\hyperlink{classView_1_1Player}{\string~Player}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00043}00043 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00044}00044     \textcolor{keywordtype}{void} setTexture();}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00046}00046     sf::Sprite player; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00048}00048     sf::Texture left\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00049}00049     sf::Texture right\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00051}00051     sf::Texture left\_spring\_texture;  }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00052}00052     sf::Texture right\_spring\_texture;  }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00054}00054     sf::Texture left\_jetpack\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00055}00055     sf::Texture right\_jetpack\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00057}00057     sf::Texture current\_right\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00058}00058     sf::Texture current\_left\_texture; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00060}00060     shared\_ptr<Camera> camera; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00062}00062     \textcolor{keywordtype}{bool} left; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00063}00063     \textcolor{keywordtype}{bool} right; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00064}00064     \textcolor{keywordtype}{float} playerWidth; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00065}00065     \textcolor{keywordtype}{float} playerHeight; }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00066}00066 \};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00069}00069 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_PLAYER\_H}}
+
+\end{DoxyCode}

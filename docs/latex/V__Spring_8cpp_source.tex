@@ -1,0 +1,46 @@
+\hypertarget{V__Spring_8cpp_source}{}\doxysection{V\+\_\+\+Spring.\+cpp}
+\label{V__Spring_8cpp_source}\index{src/representation/Entity\_View/V\_Bonus\_Types/V\_Spring.cpp@{src/representation/Entity\_View/V\_Bonus\_Types/V\_Spring.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}V\_Spring.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00004}\mbox{\hyperlink{classView_1_1Spring_abac7c4841223c3e01e73ce6fcd7219d8}{00004}} \mbox{\hyperlink{classView_1_1Spring_abac7c4841223c3e01e73ce6fcd7219d8}{View::Spring::Spring}}(\textcolor{keywordtype}{float} Width, \textcolor{keywordtype}{float} Height, shared\_ptr<Camera> camera\_) :}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00005}00005     camera(camera\_), spring\_Width(Width), spring\_Height(Height) \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00006}00006     \textcolor{comment}{// we initiaize a new platform}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00008}00008     spring = unique\_ptr<sf::Sprite>(\textcolor{keyword}{new} sf::Sprite);}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00009}00009     texture = unique\_ptr<sf::Texture>(\textcolor{keyword}{new} sf::Texture);}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00011}00011     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00012}00012         \textcolor{keywordflow}{if} (!texture-\/>loadFromFile(\textcolor{stringliteral}{"{}../Textures/Doodle/spring.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00013}00013             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading spring failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00014}00014             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00015}00015         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00016}00016             \textcolor{comment}{// we give the spring a texture}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00017}00017             spring-\/>setTexture(*texture);}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00019}00019     \} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{string} \&a) \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00020}00020         cerr << a << endl;}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00023}00023     spring-\/>setScale(Width / texture-\/>getSize().x, Height / texture-\/>getSize().y);}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00024}00024     spring-\/>setColor(sf::Color(82, 170, 228));}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00027}\mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{00027}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{View::Spring::UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00029}00029     \textcolor{comment}{//cout << "{}jeej we get updates"{} << endl;}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00031}00031     spring-\/>setPosition(camera-\/>toGamewidth(xpos, spring\_Width), camera-\/>toGameheight(ypos, spring\_Height));}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00032}00032 \}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00034}\mbox{\hyperlink{classView_1_1Spring_aa238412ff89f29df77649dd0011986fd}{00034}} sf::Sprite \mbox{\hyperlink{classView_1_1Spring_aa238412ff89f29df77649dd0011986fd}{View::Spring::getBonus}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00035}00035     \textcolor{keywordflow}{return} *spring;}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00036}00036 \}}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00038}00038 View::Spring::\string~Spring() \{}
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{V__Spring_8cpp_source_l00040}00040 \}}
+
+\end{DoxyCode}

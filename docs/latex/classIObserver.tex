@@ -1,0 +1,197 @@
+\hypertarget{classIObserver}{}\doxysection{IObserver Class Reference}
+\label{classIObserver}\index{IObserver@{IObserver}}
+Inheritance diagram for IObserver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.758621cm]{classIObserver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}{Update\+Position}} (float xpos, float ypos)=0
+\begin{DoxyCompactList}\small\item\em updates the position o the observers. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}{New\+Maxheight\+Reached}} (const float \&ypos)=0
+\begin{DoxyCompactList}\small\item\em updates the observers because a new maxheight is reached. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}{Resetscore}} ()=0
+\begin{DoxyCompactList}\small\item\em updates the observers to reset \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}{Reset\+Texture}} ()=0
+\begin{DoxyCompactList}\small\item\em resets the observers texture to normal \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}{Update\+Medium\+Jump}} ()=0
+\begin{DoxyCompactList}\small\item\em updates the observers texture to medium \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a2af1f25bfbd006422aa79770fb966977}{Update\+High\+Jump}} ()=0
+\begin{DoxyCompactList}\small\item\em updates the observers texture to high \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}{Update\+Bonus\+Score}} (const int \&points)=0
+\begin{DoxyCompactList}\small\item\em updates te score when a bonus is collected \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}{Update\+Reduce\+Score}} (const int \&points)=0
+\begin{DoxyCompactList}\small\item\em reduces the score \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{IObserver_8h_source_l00012}{12}} of file \mbox{\hyperlink{IObserver_8h_source}{IObserver.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIObserver_afdfe9e2ebd9aa794142968de574daa9a}\label{classIObserver_afdfe9e2ebd9aa794142968de574daa9a}} 
+\index{IObserver@{IObserver}!````~IObserver@{$\sim$IObserver}}
+\index{````~IObserver@{$\sim$IObserver}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{$\sim$IObserver()}{~IObserver()}}
+{\footnotesize\ttfamily virtual IObserver\+::$\sim$\+IObserver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{IObserver_8h_source_l00088}{88}} of file \mbox{\hyperlink{IObserver_8h_source}{IObserver.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}\label{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}} 
+\index{IObserver@{IObserver}!NewMaxheightReached@{NewMaxheightReached}}
+\index{NewMaxheightReached@{NewMaxheightReached}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{NewMaxheightReached()}{NewMaxheightReached()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+New\+Maxheight\+Reached (\begin{DoxyParamCaption}\item[{const float \&}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the observers because a new maxheight is reached. 
+
+This function updates the observers because a new maxheight is reached.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ypos} & new height of the subject. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{Score}}, and \mbox{\hyperlink{classObserver_a735a63bea519460306f1f7e517262c88}{Observer}}.
+
+\mbox{\Hypertarget{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}\label{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}} 
+\index{IObserver@{IObserver}!Resetscore@{Resetscore}}
+\index{Resetscore@{Resetscore}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{Resetscore()}{Resetscore()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Resetscore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the observers to reset 
+
+This function updates the observers to reset themselves. (go back to the state you were in when you where first initialised) 
+
+Implemented in \mbox{\hyperlink{classObserver_a39770cb7bbfe046845d669473f9912db}{Observer}}, and \mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{Score}}.
+
+\mbox{\Hypertarget{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}\label{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}} 
+\index{IObserver@{IObserver}!ResetTexture@{ResetTexture}}
+\index{ResetTexture@{ResetTexture}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{ResetTexture()}{ResetTexture()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Reset\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+resets the observers texture to normal 
+
+This function resets the observers texture back to normal this texture is used for a normal jump height of up to 500 units 
+
+Implemented in \mbox{\hyperlink{classObserver_ab3cc8a82861a46aef4e09c092864af46}{Observer}}, and \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{View\+::\+Player}}.
+
+\mbox{\Hypertarget{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}\label{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}} 
+\index{IObserver@{IObserver}!UpdateBonusScore@{UpdateBonusScore}}
+\index{UpdateBonusScore@{UpdateBonusScore}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{UpdateBonusScore()}{UpdateBonusScore()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Update\+Bonus\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates te score when a bonus is collected 
+
+This function updates te score when a bonus is collected
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & that need to be added to the score \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classObserver_acea9e3d7751b775e395f53dc4292e359}{Observer}}, and \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{Score}}.
+
+\mbox{\Hypertarget{classIObserver_a2af1f25bfbd006422aa79770fb966977}\label{classIObserver_a2af1f25bfbd006422aa79770fb966977}} 
+\index{IObserver@{IObserver}!UpdateHighJump@{UpdateHighJump}}
+\index{UpdateHighJump@{UpdateHighJump}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{UpdateHighJump()}{UpdateHighJump()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Update\+High\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the observers texture to high 
+
+This function updates the observers texture to the high jump texture this texture is used for a high jump of more than 1500 units 
+
+Implemented in \mbox{\hyperlink{classObserver_a370e898c6e07923062e32e2fbf8fbf85}{Observer}}, and \mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{View\+::\+Player}}.
+
+\mbox{\Hypertarget{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}\label{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}} 
+\index{IObserver@{IObserver}!UpdateMediumJump@{UpdateMediumJump}}
+\index{UpdateMediumJump@{UpdateMediumJump}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{UpdateMediumJump()}{UpdateMediumJump()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Update\+Medium\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the observers texture to medium 
+
+This function updates the observers texture to the medium jump texture this texture is used for a medial jump height of up to 1500 units 
+
+Implemented in \mbox{\hyperlink{classObserver_add3f66baf416ac09661e375b05d5484e}{Observer}}, and \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{View\+::\+Player}}.
+
+\mbox{\Hypertarget{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}\label{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}} 
+\index{IObserver@{IObserver}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the position o the observers. 
+
+This function updates the position o the observers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpos} & position of the subject. \\
+\hline
+{\em ypos} & position of the subject. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}, \mbox{\hyperlink{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}{Observer}}, \mbox{\hyperlink{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}{View\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{View\+::\+Jetpack}}, \mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{View\+::\+Spring}}, \mbox{\hyperlink{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a4d87dfdd07d02e83720c0077874eaf7c}{View\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1White__Platform_aa9147238d1f648413ac75a0ea4930190}{View\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{View\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{View\+::\+Player}}, and \mbox{\hyperlink{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}{View\+::\+Platform}}.
+
+\mbox{\Hypertarget{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}\label{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}} 
+\index{IObserver@{IObserver}!UpdateReduceScore@{UpdateReduceScore}}
+\index{UpdateReduceScore@{UpdateReduceScore}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{UpdateReduceScore()}{UpdateReduceScore()}}
+{\footnotesize\ttfamily virtual void IObserver\+::\+Update\+Reduce\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+reduces the score 
+
+This function reduces the score when jumped on the same platform
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & that need to be subtracted from the score \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classObserver_ac70e701beca3f587d8188f558bc2b835}{Observer}}, and \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{Score}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/design\+\_\+patterns/IObserver.\+h\end{DoxyCompactItemize}

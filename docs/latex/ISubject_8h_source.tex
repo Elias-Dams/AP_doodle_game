@@ -1,0 +1,48 @@
+\hypertarget{ISubject_8h_source}{}\doxysection{ISubject.\+h}
+\label{ISubject_8h_source}\index{src/logic/design\_patterns/ISubject.h@{src/logic/design\_patterns/ISubject.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_ISUBJECT\_H}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_ISUBJECT\_H}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}IObserver.h"{}}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00011}00011 \textcolor{comment}{// for this design pattern i user https://refactoring.guru/design-\/patterns/observer/cpp/example as a reference}}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00013}\mbox{\hyperlink{classISubject}{00013}} \textcolor{keyword}{class }\mbox{\hyperlink{classISubject}{ISubject}} \{}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00014}00014 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00025}\mbox{\hyperlink{classISubject_a49b5debdf1d06d9f9911d2369aa032b1}{00025}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a49b5debdf1d06d9f9911d2369aa032b1}{Attach}}(std::shared\_ptr<IObserver> observer) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00034}\mbox{\hyperlink{classISubject_a790eabbfafd693f9ac55173cc774c314}{00034}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a790eabbfafd693f9ac55173cc774c314}{Detach}}(std::shared\_ptr<IObserver> observer) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00043}\mbox{\hyperlink{classISubject_a243e9486c768ded6b1e31f3e916ae9d7}{00043}}     \textcolor{keyword}{virtual} \textcolor{keyword}{const} std::list<std::shared\_ptr<IObserver>> \mbox{\hyperlink{classISubject_a243e9486c768ded6b1e31f3e916ae9d7}{getListObserver}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00053}\mbox{\hyperlink{classISubject_a018ce3555d6d750ab4f31d5dd33412f4}{00053}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a018ce3555d6d750ab4f31d5dd33412f4}{NotifyPosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00062}\mbox{\hyperlink{classISubject_a981a314b3eac969d5c436b19e5afd579}{00062}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a981a314b3eac969d5c436b19e5afd579}{NewMaxHeigh}}(\textcolor{keywordtype}{float} ypos) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00071}\mbox{\hyperlink{classISubject_aafef49ee27f01cf82073424432d420c4}{00071}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_aafef49ee27f01cf82073424432d420c4}{NotifyReset}}() = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00080}\mbox{\hyperlink{classISubject_aef0249fb858deb8f3cacfa42d9037b0e}{00080}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_aef0249fb858deb8f3cacfa42d9037b0e}{NotifyNormal}}() = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00089}\mbox{\hyperlink{classISubject_a88bf55ad4ab119337b9343003d5e91d4}{00089}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a88bf55ad4ab119337b9343003d5e91d4}{NotifyMedium}}() = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00098}\mbox{\hyperlink{classISubject_abf65305b44b86ee5ee828dde2feb5e74}{00098}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_abf65305b44b86ee5ee828dde2feb5e74}{NotifyHigh}}() = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00107}\mbox{\hyperlink{classISubject_a425347e00840af8d54694a04e3aac7f9}{00107}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a425347e00840af8d54694a04e3aac7f9}{NotifyIncreaseScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00116}\mbox{\hyperlink{classISubject_a908f7358488186614334614dfb9a6856}{00116}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classISubject_a908f7358488186614334614dfb9a6856}{NotifyDecreaseScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) = 0;}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00118}00118     \textcolor{keyword}{virtual} \mbox{\hyperlink{classISubject}{\string~ISubject}}()\{\};}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00119}00119 \};}
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{ISubject_8h_source_l00122}00122 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AP\_DOODLE\_GAME\_ISUBJECT\_H}}
+
+\end{DoxyCode}

@@ -28,28 +28,28 @@ set(LOGIC
         src/logic/design_patterns/Abstract_Factory.h
         src/logic/design_patterns/Abstract_Factory.cpp
 
-        src/logic/Entity_Model/BG_Tile.cpp
-        src/logic/Entity_Model/BG_Tile.h
-        src/logic/Entity_Model/Bonus.h
-        src/logic/Entity_Model/Bonus.cpp
-        src/logic/Entity_Model/Player.cpp
-        src/logic/Entity_Model/Player.h
-        src/logic/Entity_Model/Platform.cpp
-        src/logic/Entity_Model/Platform.h
+        src/logic/Entity_Model/M_BG_Tile.cpp
+        src/logic/Entity_Model/M_BG_Tile.h
+        src/logic/Entity_Model/M_Bonus.h
+        src/logic/Entity_Model/M_Bonus.cpp
+        src/logic/Entity_Model/M_Player.cpp
+        src/logic/Entity_Model/M_Player.h
+        src/logic/Entity_Model/M_Platform.cpp
+        src/logic/Entity_Model/M_Platform.h
         src/logic/Entity_Model/Entity_Model.h
         src/logic/Entity_Model/Entity_Model.cpp
-        src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp
-        src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h
-        src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp
-        src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h
-        src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp
-        src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h
-        src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp
-        src/logic/Entity_Model/EM_Platform_Types/White_Platform.h
-        src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp
-        src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h
-        src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp
-        src/logic/Entity_Model/EM_Bonus_Types/Spring.h
+        src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp
+        src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h
+        src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp
+        src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h
+        src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp
+        src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h
+        src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp
+        src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h
+        src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp
+        src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h
+        src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp
+        src/logic/Entity_Model/M_Bonus_Types/M_Spring.h
 
         src/logic/Namespaces.cpp
         )
@@ -63,28 +63,28 @@ set( REPRESENTATION
         src/representation/design_patterns/Concrete_Factory.h
         src/representation/design_patterns/Concrete_Factory.cpp
 
-        src/representation/Entity_View/Player.h
-        src/representation/Entity_View/Player.cpp
-        src/representation/Entity_View/Platform.h
-        src/representation/Entity_View/Platform.cpp
-        src/representation/Entity_View/BG_Tile.cpp
-        src/representation/Entity_View/BG_Tile.h
-        src/representation/Entity_View/Bonus.h
-        src/representation/Entity_View/Bonus.cpp
+        src/representation/Entity_View/V_Player.h
+        src/representation/Entity_View/V_Player.cpp
+        src/representation/Entity_View/V_Platform.h
+        src/representation/Entity_View/V_Platform.cpp
+        src/representation/Entity_View/V_BG_Tile.cpp
+        src/representation/Entity_View/V_BG_Tile.h
+        src/representation/Entity_View/V_Bonus.h
+        src/representation/Entity_View/V_Bonus.cpp
         src/representation/Entity_View/Entity_View.h
         src/representation/Entity_View/Entity_View.cpp
-        src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp
-        src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h
-        src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp
-        src/representation/Entity_View/EV_Platform_Types/Green_Platform.h
-        src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp
-        src/representation/Entity_View/EV_Platform_Types/White_Platform.h
-        src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp
-        src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h
-        src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp
-        src/representation/Entity_View/EV_Bonus_Types/Jetpack.h
-        src/representation/Entity_View/EV_Bonus_Types/Spring.cpp
-        src/representation/Entity_View/EV_Bonus_Types/Spring.h
+        src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp
+        src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h
+        src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp
+        src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h
+        src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp
+        src/representation/Entity_View/V_Platform_Types/V_White_Platform.h
+        src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp
+        src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h
+        src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp
+        src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h
+        src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp
+        src/representation/Entity_View/V_Bonus_Types/V_Spring.h
         )
 
 add_executable(AP_doodle_game ${REPRESENTATION})

@@ -1,0 +1,277 @@
+\hypertarget{classModel_1_1Player}{}\doxysection{Model\+::Player Class Reference}
+\label{classModel_1_1Player}\index{Model::Player@{Model::Player}}
+Inheritance diagram for Model\+::Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classModel_1_1Player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModel_1_1Player_a9c412e8a0966db7914f99dbfa698cf33}{Player}} (float player\+\_\+width, float player\+\_\+height)
+\item 
+void \mbox{\hyperlink{classModel_1_1Player_aa1e5cb75b10f73bd865cc4df144b74fb}{move}} (const float \&x, const float \&y)
+\begin{DoxyCompactList}\small\item\em moves a player to a new position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Player_aa510a9fca552108468d8f76de7ab8052}{jump}} (const float \&dt, const bool \&hit, int height\+\_\+modifier)
+\begin{DoxyCompactList}\small\item\em makes the player jump. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classModel_1_1Player_ab0c0dd9143b06190f339eda39820faca}{isfalling}} () const
+\begin{DoxyCompactList}\small\item\em checks if the player is falling. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Player_a346d8bae19e2b9de44884cdeb5c39676}{Player\+Reset}} (float startposx, float startposy)
+\begin{DoxyCompactList}\small\item\em fully resets the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Player_a0b5b4fe68b9923132f3bc144ee6df000}{set\+Platfom\+Touched}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity__Model}{Entity\+\_\+\+Model}} $>$ \&platfom\+Touched)
+\begin{DoxyCompactList}\small\item\em sets the platform last touched by the player. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}{get\+Width}} () const override
+\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1Player_a8dfdf805e8248f27975b652e2bda1496}{get\+Height}} () const override
+\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Player_acd4590b160e3877e66c643f34328d9ed}{get\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Player_adee8e610c0354aad29613843274219fd}{set\+Position}} (const float \&x, const float \&y) override
+\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8h_source_l00016}{16}} of file \mbox{\hyperlink{M__Player_8h_source}{M\+\_\+\+Player.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_1_1Player_a9c412e8a0966db7914f99dbfa698cf33}\label{classModel_1_1Player_a9c412e8a0966db7914f99dbfa698cf33}} 
+\index{Model::Player@{Model::Player}!Player@{Player}}
+\index{Player@{Player}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{player\+\_\+width,  }\item[{float}]{player\+\_\+height }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classModel_1_1Player}{Player}} constructor. constructs the \mbox{\hyperlink{classModel_1_1Player}{Player}} whit a certain width and height. 
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_a749d2c00e1fe0f5c2746f7505a58c062}\label{classModel_1_1Player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Model::Player@{Model::Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_1_1Player_a8dfdf805e8248f27975b652e2bda1496}\label{classModel_1_1Player_a8dfdf805e8248f27975b652e2bda1496}} 
+\index{Model::Player@{Model::Player}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float Player\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the height of the entity. 
+
+This function gives the height of the entity.
+
+\begin{DoxyReturn}{Returns}
+height of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a40552727045a45dd4616217e5c799052}{Entity\+\_\+\+Model}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_acd4590b160e3877e66c643f34328d9ed}\label{classModel_1_1Player_acd4590b160e3877e66c643f34328d9ed}} 
+\index{Model::Player@{Model::Player}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const pair$<$ float, float $>$ \& Player\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the x and y coordinate of the entity. 
+
+This function gives the position of the entity in a normalised world.
+
+\begin{DoxyReturn}{Returns}
+a pair consisting of the x and y coordinates of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a2fd42342d82e9e214a051b205eea2066}{Entity\+\_\+\+Model}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}\label{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}} 
+\index{Model::Player@{Model::Player}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float Player\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the width of the entity. 
+
+This function gives the width of the entity.
+
+\begin{DoxyReturn}{Returns}
+width of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9}{Entity\+\_\+\+Model}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_ab0c0dd9143b06190f339eda39820faca}\label{classModel_1_1Player_ab0c0dd9143b06190f339eda39820faca}} 
+\index{Model::Player@{Model::Player}!isfalling@{isfalling}}
+\index{isfalling@{isfalling}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{isfalling()}{isfalling()}}
+{\footnotesize\ttfamily bool Player\+::isfalling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+checks if the player is falling. 
+
+This function is used to check if the player is falling so it can collide whit an other entity.
+
+\begin{DoxyReturn}{Returns}
+true if the player is falling. False if the player is going up. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_aa510a9fca552108468d8f76de7ab8052}\label{classModel_1_1Player_aa510a9fca552108468d8f76de7ab8052}} 
+\index{Model::Player@{Model::Player}!jump@{jump}}
+\index{jump@{jump}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Player\+::jump (\begin{DoxyParamCaption}\item[{const float \&}]{dt,  }\item[{const bool \&}]{hit,  }\item[{int}]{height\+\_\+modifier }\end{DoxyParamCaption})}
+
+
+
+makes the player jump. 
+
+This function makes the player jump bye adding a certain gravity to player. If a platorm is hit this gravity constant is reset and the player jumps up.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+{\em hit} & indication that a platform has been hit. \\
+\hline
+{\em height\+\_\+modifier} & the height modification of the bonus; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_aa1e5cb75b10f73bd865cc4df144b74fb}\label{classModel_1_1Player_aa1e5cb75b10f73bd865cc4df144b74fb}} 
+\index{Model::Player@{Model::Player}!move@{move}}
+\index{move@{move}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Player\+::move (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})}
+
+
+
+moves a player to a new position. 
+
+This function updates the position of the player bye adding. the the distance travelled on the x axis and the y axis to the current position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the distance travelled on the x axis. \\
+\hline
+{\em y} & the distance travelled on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_a346d8bae19e2b9de44884cdeb5c39676}\label{classModel_1_1Player_a346d8bae19e2b9de44884cdeb5c39676}} 
+\index{Model::Player@{Model::Player}!PlayerReset@{PlayerReset}}
+\index{PlayerReset@{PlayerReset}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{PlayerReset()}{PlayerReset()}}
+{\footnotesize\ttfamily void Player\+::\+Player\+Reset (\begin{DoxyParamCaption}\item[{float}]{startposx,  }\item[{float}]{startposy }\end{DoxyParamCaption})}
+
+
+
+fully resets the player 
+
+This function resets the player to the state it was in when it was first initialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em startposx} & startposition of the player on the x axis. \\
+\hline
+{\em startposy} & startposition of the player on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00087}{87}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_a0b5b4fe68b9923132f3bc144ee6df000}\label{classModel_1_1Player_a0b5b4fe68b9923132f3bc144ee6df000}} 
+\index{Model::Player@{Model::Player}!setPlatfomTouched@{setPlatfomTouched}}
+\index{setPlatfomTouched@{setPlatfomTouched}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{setPlatfomTouched()}{setPlatfomTouched()}}
+{\footnotesize\ttfamily void Player\+::set\+Platfom\+Touched (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classEntity__Model}{Entity\+\_\+\+Model}} $>$ \&}]{platfom\+Touched }\end{DoxyParamCaption})}
+
+
+
+sets the platform last touched by the player. 
+
+This function sets the platform last touched by the player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em platfom\+Touched} & platform last touched by the player. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00100}{100}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Player_adee8e610c0354aad29613843274219fd}\label{classModel_1_1Player_adee8e610c0354aad29613843274219fd}} 
+\index{Model::Player@{Model::Player}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Model::Player@{Model::Player}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Player\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+sets the position of the entity. 
+
+This function updates the position of the entity with the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a position on the x axis. \\
+\hline
+{\em y} & a position on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{Entity\+\_\+\+Model}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Player_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{M__Player_8cpp_source}{M\+\_\+\+Player.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/\+Entity\+\_\+\+Model/M\+\_\+\+Player.\+h\item 
+src/logic/\+Entity\+\_\+\+Model/M\+\_\+\+Player.\+cpp\end{DoxyCompactItemize}

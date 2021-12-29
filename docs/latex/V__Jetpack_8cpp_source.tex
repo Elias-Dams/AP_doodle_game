@@ -1,0 +1,45 @@
+\hypertarget{V__Jetpack_8cpp_source}{}\doxysection{V\+\_\+\+Jetpack.\+cpp}
+\label{V__Jetpack_8cpp_source}\index{src/representation/Entity\_View/V\_Bonus\_Types/V\_Jetpack.cpp@{src/representation/Entity\_View/V\_Bonus\_Types/V\_Jetpack.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}V\_Jetpack.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00004}\mbox{\hyperlink{classView_1_1Jetpack_a9a79c0bd1dd86d1f1d9d0499beedc2d0}{00004}} \mbox{\hyperlink{classView_1_1Jetpack_a9a79c0bd1dd86d1f1d9d0499beedc2d0}{View::Jetpack::Jetpack}}(\textcolor{keywordtype}{float} Width, \textcolor{keywordtype}{float} Height, shared\_ptr<Camera> camera\_) :}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00005}00005     camera(camera\_), jetpack\_Width(Width), jetpack\_Height(Height) \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00006}00006     \textcolor{comment}{// we initiaize a new platform}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00008}00008     jetpack = unique\_ptr<sf::Sprite>(\textcolor{keyword}{new} sf::Sprite);}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00009}00009     texture = unique\_ptr<sf::Texture>(\textcolor{keyword}{new} sf::Texture);}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00011}00011     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00012}00012         \textcolor{keywordflow}{if} (!texture-\/>loadFromFile(\textcolor{stringliteral}{"{}../Textures/Doodle/raketa\_on\_panel.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00013}00013             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading jetpack failed"{}};}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00014}00014             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00015}00015         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00016}00016             \textcolor{comment}{// we give the jetpack a texture}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00017}00017             jetpack-\/>setTexture(*texture);}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00019}00019     \} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{string} \&a) \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00020}00020         cerr << a << endl;}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00023}00023     jetpack-\/>setScale(Width / texture-\/>getSize().x, Height / texture-\/>getSize().y);}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00024}00024     jetpack-\/>setColor(sf::Color(82, 170, 228));}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00027}\mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{00027}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{View::Jetpack::UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00028}00028     \textcolor{comment}{//cout << "{}jeej we get updates"{} << endl;}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00030}00030     jetpack-\/>setPosition(camera-\/>toGamewidth(xpos, jetpack\_Width), camera-\/>toGameheight(ypos, jetpack\_Height));}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00033}\mbox{\hyperlink{classView_1_1Jetpack_a2cee29cbf772b797bdea7074833a4167}{00033}} sf::Sprite \mbox{\hyperlink{classView_1_1Jetpack_a2cee29cbf772b797bdea7074833a4167}{View::Jetpack::getBonus}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00034}00034     \textcolor{keywordflow}{return} *jetpack;}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00037}00037 View::Jetpack::\string~Jetpack() \{}
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{V__Jetpack_8cpp_source_l00039}00039 \}}
+
+\end{DoxyCode}

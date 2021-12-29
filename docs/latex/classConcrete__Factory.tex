@@ -1,0 +1,409 @@
+\hypertarget{classConcrete__Factory}{}\doxysection{Concrete\+\_\+\+Factory Class Reference}
+\label{classConcrete__Factory}\index{Concrete\_Factory@{Concrete\_Factory}}
+Inheritance diagram for Concrete\+\_\+\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classConcrete__Factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConcrete__Factory_a2d9a93b51756e31a35002875d3c5a30b}{Concrete\+\_\+\+Factory}} ()
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Model\+::\+Player}} $>$ \mbox{\hyperlink{classConcrete__Factory_af5cde1527aa69224cdb13653de685f95}{create\+Player}} (float player\+\_\+width, float player\+\_\+height, float startposx, float startposy, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Green__Platform}{Model\+::\+Green\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classConcrete__Factory_a19b8e642221281310589451fe4951b1d}{create\+Green\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Blue__Platform}{Model\+::\+Blue\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classConcrete__Factory_aec7195547845dab3a0cca813abe8fc2f}{create\+Blue\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, float move\+\_\+width, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1White__Platform}{Model\+::\+White\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classConcrete__Factory_a33624ef79db1a11d56c64f89aedaa6fc}{create\+White\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Yellow__Platform}{Model\+::\+Yellow\+\_\+\+Platform}} $>$ \mbox{\hyperlink{classConcrete__Factory_ada39ced5f3e60f5fb4f9011076ceda7a}{create\+Yellow\+Platform}} (float platform\+\_\+width, float platform\+\_\+height, float move\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Spring}{Model\+::\+Spring}} $>$ \mbox{\hyperlink{classConcrete__Factory_a82a874ec09f44c08c259bc87928710e9}{create\+Spring}} (float spring\+\_\+width, float spring\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Jetpack}{Model\+::\+Jetpack}} $>$ \mbox{\hyperlink{classConcrete__Factory_afe4cb53cd7296da886fbe23550631202}{create\+Jetpack}} (float jetpack\+\_\+width, float jetpack\+\_\+height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{Model\+::\+BG\+\_\+\+Tile}} $>$ \mbox{\hyperlink{classConcrete__Factory_a123388fc1fd74e1bd6ba55f7886fb9c2}{create\+Background}} (float background\+\_\+width, float background\+\_\+height, float startposx, float startposy, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera) override
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \mbox{\hyperlink{classConcrete__Factory_a436083d80061c9b276839c86f196ee47}{create\+Camera}} (float camera\+\_\+width, float camera\+\_\+height) override
+\item 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Player}{View\+::\+Player}} $>$ \mbox{\hyperlink{classConcrete__Factory_a5a30bfbd0a29c54ab595e0cbb34e667c}{get\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em returns the view of the player \end{DoxyCompactList}\item 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Platform}{View\+::\+Platform}} $>$ \mbox{\hyperlink{classConcrete__Factory_a8ab829eea7806f66298356acc68c21eb}{get\+\_\+platform}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$ \&platform)
+\begin{DoxyCompactList}\small\item\em returns the view of the platform \end{DoxyCompactList}\item 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Bonus}{View\+::\+Bonus}} $>$ \mbox{\hyperlink{classConcrete__Factory_a83bc337774e4a983e4b5d15d340365a8}{get\+\_\+bonus}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$ \&bonus)
+\begin{DoxyCompactList}\small\item\em returns the view of the bonus \end{DoxyCompactList}\item 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classScore}{Score}} $>$ \mbox{\hyperlink{classConcrete__Factory_a41778fe663ad63462cc31d4affc46f93}{get\+\_\+score}} ()
+\begin{DoxyCompactList}\small\item\em returns the score \end{DoxyCompactList}\item 
+const vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1BG__Tile}{View\+::\+BG\+\_\+\+Tile}} $>$ $>$ \& \mbox{\hyperlink{classConcrete__Factory_a131365184cf31a07241e8ed4be9acbf3}{get\+Backgrounds}} () const
+\begin{DoxyCompactList}\small\item\em returns the vector of background tiles \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}{delete\+\_\+platform}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$ platform) override
+\begin{DoxyCompactList}\small\item\em deletes a platform \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}{delete\+\_\+bonus}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$ bonus) override
+\begin{DoxyCompactList}\small\item\em deletes a bonus \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8h_source_l00026}{26}} of file \mbox{\hyperlink{Concrete__Factory_8h_source}{Concrete\+\_\+\+Factory.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classConcrete__Factory_a2d9a93b51756e31a35002875d3c5a30b}\label{classConcrete__Factory_a2d9a93b51756e31a35002875d3c5a30b}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!Concrete\_Factory@{Concrete\_Factory}}
+\index{Concrete\_Factory@{Concrete\_Factory}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{Concrete\_Factory()}{Concrete\_Factory()}}
+{\footnotesize\ttfamily Concrete\+\_\+\+Factory\+::\+Concrete\+\_\+\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classConcrete__Factory}{Concrete\+\_\+\+Factory}} constructor. constructs the \mbox{\hyperlink{classConcrete__Factory}{Concrete\+\_\+\+Factory}} 
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_aad8ac235330227751e8247ffb1ebb19e}\label{classConcrete__Factory_aad8ac235330227751e8247ffb1ebb19e}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!````~Concrete\_Factory@{$\sim$Concrete\_Factory}}
+\index{````~Concrete\_Factory@{$\sim$Concrete\_Factory}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{$\sim$Concrete\_Factory()}{~Concrete\_Factory()}}
+{\footnotesize\ttfamily Concrete\+\_\+\+Factory\+::$\sim$\+Concrete\+\_\+\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00159}{159}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classConcrete__Factory_a123388fc1fd74e1bd6ba55f7886fb9c2}\label{classConcrete__Factory_a123388fc1fd74e1bd6ba55f7886fb9c2}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createBackground@{createBackground}}
+\index{createBackground@{createBackground}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createBackground()}{createBackground()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{Model\+::\+BG\+\_\+\+Tile}} $>$ Concrete\+\_\+\+Factory\+::create\+Background (\begin{DoxyParamCaption}\item[{float}]{background\+\_\+width,  }\item[{float}]{background\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} constructor. constructs a \mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item startposition
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a0f5fff44f4d1e087a9c55ebf59a8a232}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_aec7195547845dab3a0cca813abe8fc2f}\label{classConcrete__Factory_aec7195547845dab3a0cca813abe8fc2f}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createBluePlatform@{createBluePlatform}}
+\index{createBluePlatform@{createBluePlatform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createBluePlatform()}{createBluePlatform()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Blue__Platform}{Model\+::\+Blue\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Blue\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+width,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item move width
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a2701200cb9e49e24dabfbbc3df6ae044}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a436083d80061c9b276839c86f196ee47}\label{classConcrete__Factory_a436083d80061c9b276839c86f196ee47}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createCamera@{createCamera}}
+\index{createCamera@{createCamera}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ Concrete\+\_\+\+Factory\+::create\+Camera (\begin{DoxyParamCaption}\item[{float}]{camera\+\_\+width,  }\item[{float}]{camera\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classCamera}{Camera}} constructor. constructs the \mbox{\hyperlink{classCamera}{Camera}} 
+
+Implements \mbox{\hyperlink{classAbstract__Factory_aac9beef9805345f0129cdf3b70dc973f}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a19b8e642221281310589451fe4951b1d}\label{classConcrete__Factory_a19b8e642221281310589451fe4951b1d}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createGreenPlatform@{createGreenPlatform}}
+\index{createGreenPlatform@{createGreenPlatform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createGreenPlatform()}{createGreenPlatform()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Green__Platform}{Model\+::\+Green\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Green\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Green\+\_\+\+Platform constructor. constructs a Green\+\_\+\+Platform whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a345a887eb672d8c56c1201fdd740f89e}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_afe4cb53cd7296da886fbe23550631202}\label{classConcrete__Factory_afe4cb53cd7296da886fbe23550631202}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createJetpack@{createJetpack}}
+\index{createJetpack@{createJetpack}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createJetpack()}{createJetpack()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Jetpack}{Model\+::\+Jetpack}} $>$ Concrete\+\_\+\+Factory\+::create\+Jetpack (\begin{DoxyParamCaption}\item[{float}]{jetpack\+\_\+width,  }\item[{float}]{jetpack\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classJetpack}{Jetpack}} constructor. constructs the \mbox{\hyperlink{classJetpack}{Jetpack}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_ac5834d8f98011d6200b908a5cccaff9f}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_af5cde1527aa69224cdb13653de685f95}\label{classConcrete__Factory_af5cde1527aa69224cdb13653de685f95}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createPlayer@{createPlayer}}
+\index{createPlayer@{createPlayer}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Model\+::\+Player}} $>$ Concrete\+\_\+\+Factory\+::create\+Player (\begin{DoxyParamCaption}\item[{float}]{player\+\_\+width,  }\item[{float}]{player\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classPlayer}{Player}} constructor. constructs the \mbox{\hyperlink{classPlayer}{Player}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item startposition
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a1a4e5f271c020c31d86a1382336f2f3e}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a82a874ec09f44c08c259bc87928710e9}\label{classConcrete__Factory_a82a874ec09f44c08c259bc87928710e9}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createSpring@{createSpring}}
+\index{createSpring@{createSpring}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createSpring()}{createSpring()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Spring}{Model\+::\+Spring}} $>$ Concrete\+\_\+\+Factory\+::create\+Spring (\begin{DoxyParamCaption}\item[{float}]{spring\+\_\+width,  }\item[{float}]{spring\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classSpring}{Spring}} constructor. constructs the \mbox{\hyperlink{classSpring}{Spring}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a7fcb29c04c5e1c43ab027582f4123c2e}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a33624ef79db1a11d56c64f89aedaa6fc}\label{classConcrete__Factory_a33624ef79db1a11d56c64f89aedaa6fc}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createWhitePlatform@{createWhitePlatform}}
+\index{createWhitePlatform@{createWhitePlatform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createWhitePlatform()}{createWhitePlatform()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1White__Platform}{Model\+::\+White\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+White\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a3382feccb3577905f3d2d34f49415c0e}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_ada39ced5f3e60f5fb4f9011076ceda7a}\label{classConcrete__Factory_ada39ced5f3e60f5fb4f9011076ceda7a}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!createYellowPlatform@{createYellowPlatform}}
+\index{createYellowPlatform@{createYellowPlatform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{createYellowPlatform()}{createYellowPlatform()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Yellow__Platform}{Model\+::\+Yellow\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Yellow\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} whit a certain
+\begin{DoxyItemize}
+\item width
+\item height
+\item move height
+\item camera 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a257cda46dc99e2ea18fc5216a4aea133}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}\label{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!delete\_bonus@{delete\_bonus}}
+\index{delete\_bonus@{delete\_bonus}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{delete\_bonus()}{delete\_bonus()}}
+{\footnotesize\ttfamily void Concrete\+\_\+\+Factory\+::delete\+\_\+bonus (\begin{DoxyParamCaption}\item[{weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$}]{bonus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+deletes a bonus 
+
+This function deletes a bonus from the map of bonuses. In this map the view are being saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform} & weak pointer to the bonus that must be deleted \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a7a7cc4422b18163025702950e0dc0b3b}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00154}{154}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}\label{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!delete\_platform@{delete\_platform}}
+\index{delete\_platform@{delete\_platform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{delete\_platform()}{delete\_platform()}}
+{\footnotesize\ttfamily void Concrete\+\_\+\+Factory\+::delete\+\_\+platform (\begin{DoxyParamCaption}\item[{weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$}]{platform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+deletes a platform 
+
+This function deletes a platform from the map of platforms. In this map the view are being saved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform} & weak pointer to the platform that must be deleted \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classAbstract__Factory_a1d9b69bdae3da5993350f8e04f9556b6}{Abstract\+\_\+\+Factory}}.
+
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00149}{149}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a83bc337774e4a983e4b5d15d340365a8}\label{classConcrete__Factory_a83bc337774e4a983e4b5d15d340365a8}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!get\_bonus@{get\_bonus}}
+\index{get\_bonus@{get\_bonus}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{get\_bonus()}{get\_bonus()}}
+{\footnotesize\ttfamily weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Bonus}{View\+::\+Bonus}} $>$ Concrete\+\_\+\+Factory\+::get\+\_\+bonus (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$ \&}]{bonus }\end{DoxyParamCaption})}
+
+
+
+returns the view of the bonus 
+
+This function returns the view of the bonus
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the bonus whose view we want to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the view of the bonus 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a8ab829eea7806f66298356acc68c21eb}\label{classConcrete__Factory_a8ab829eea7806f66298356acc68c21eb}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!get\_platform@{get\_platform}}
+\index{get\_platform@{get\_platform}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{get\_platform()}{get\_platform()}}
+{\footnotesize\ttfamily weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Platform}{View\+::\+Platform}} $>$ Concrete\+\_\+\+Factory\+::get\+\_\+platform (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$ \&}]{platform }\end{DoxyParamCaption})}
+
+
+
+returns the view of the platform 
+
+This function returns the view of the platform
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the platform whose view we want to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the view of the platform 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a5a30bfbd0a29c54ab595e0cbb34e667c}\label{classConcrete__Factory_a5a30bfbd0a29c54ab595e0cbb34e667c}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!get\_player@{get\_player}}
+\index{get\_player@{get\_player}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{get\_player()}{get\_player()}}
+{\footnotesize\ttfamily weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1Player}{View\+::\+Player}} $>$ Concrete\+\_\+\+Factory\+::get\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the view of the player 
+
+This function returns the view of the player
+
+\begin{DoxyReturn}{Returns}
+the view of the player 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00125}{125}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a41778fe663ad63462cc31d4affc46f93}\label{classConcrete__Factory_a41778fe663ad63462cc31d4affc46f93}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!get\_score@{get\_score}}
+\index{get\_score@{get\_score}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{get\_score()}{get\_score()}}
+{\footnotesize\ttfamily weak\+\_\+ptr$<$ \mbox{\hyperlink{classScore}{Score}} $>$ Concrete\+\_\+\+Factory\+::get\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the score 
+
+This function returns the score
+
+\begin{DoxyReturn}{Returns}
+the score 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+\mbox{\Hypertarget{classConcrete__Factory_a131365184cf31a07241e8ed4be9acbf3}\label{classConcrete__Factory_a131365184cf31a07241e8ed4be9acbf3}} 
+\index{Concrete\_Factory@{Concrete\_Factory}!getBackgrounds@{getBackgrounds}}
+\index{getBackgrounds@{getBackgrounds}!Concrete\_Factory@{Concrete\_Factory}}
+\doxysubsubsection{\texorpdfstring{getBackgrounds()}{getBackgrounds()}}
+{\footnotesize\ttfamily const vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1BG__Tile}{View\+::\+BG\+\_\+\+Tile}} $>$ $>$ \& Concrete\+\_\+\+Factory\+::get\+Backgrounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the vector of background tiles 
+
+This function returns the vector of background tiles
+
+\begin{DoxyReturn}{Returns}
+the vector of background tiles 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00145}{145}} of file \mbox{\hyperlink{Concrete__Factory_8cpp_source}{Concrete\+\_\+\+Factory.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/representation/design\+\_\+patterns/Concrete\+\_\+\+Factory.\+h\item 
+src/representation/design\+\_\+patterns/Concrete\+\_\+\+Factory.\+cpp\end{DoxyCompactItemize}

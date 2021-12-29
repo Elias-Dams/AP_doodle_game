@@ -1,0 +1,46 @@
+\hypertarget{Random_8h_source}{}\doxysection{Random.\+h}
+\label{Random_8h_source}\index{src/logic/Random.h@{src/logic/Random.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_RANDOM\_H}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_RANDOM\_H}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00012}00012 \textcolor{comment}{// i used https://refactoring.guru/design-\/patterns/singleton/cpp/example as inspiration for the singleton design pattern}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00014}00014 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00021}\mbox{\hyperlink{classRandom}{00021}} \textcolor{keyword}{class }\mbox{\hyperlink{classRandom}{Random}} \{}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00023}00023 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00025}00025     \textcolor{keyword}{static} shared\_ptr<Random> singleton\_;  }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00028}00028 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00029}00029     \textcolor{comment}{//Singletons should not be cloneable.}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00030}00030     \mbox{\hyperlink{classRandom}{Random}}(\mbox{\hyperlink{classRandom}{Random}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00032}00032     \textcolor{comment}{//Singletons should not be assignable.}}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00033}00033     \textcolor{keywordtype}{void} operator=(\textcolor{keyword}{const} \mbox{\hyperlink{classRandom}{Random}} \&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00042}00042     \textcolor{keyword}{static} shared\_ptr<Random> \mbox{\hyperlink{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}{GetInstance}}();}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00053}00053     \textcolor{keywordtype}{float} \mbox{\hyperlink{classRandom_af6ecf678ff659916787cc33bab141eae}{generate\_between}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&min, \textcolor{keyword}{const} \textcolor{keywordtype}{float} \&max);}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00055}00055     \mbox{\hyperlink{classRandom}{Random}}();}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00057}00057     \textcolor{keyword}{virtual} \mbox{\hyperlink{classRandom}{\string~Random}}();}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00058}00058 \};}
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{Random_8h_source_l00061}00061 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_RANDOM\_H}}
+
+\end{DoxyCode}

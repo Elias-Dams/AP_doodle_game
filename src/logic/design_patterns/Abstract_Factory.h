@@ -3,21 +3,26 @@
 #define AP_DOODLE_GAME_ABSTRACT_FACTORY_H
 
 #include "../Camera.h"
-#include "../Entity_Model/BG_Tile.h"
-#include "../Entity_Model/Bonus.h"
-#include "../Entity_Model/EM_Bonus_Types/Jetpack.h"
-#include "../Entity_Model/EM_Bonus_Types/Spring.h"
-#include "../Entity_Model/EM_Platform_Types/Blue_Platform.h"
-#include "../Entity_Model/EM_Platform_Types/Green_Platform.h"
-#include "../Entity_Model/EM_Platform_Types/White_Platform.h"
-#include "../Entity_Model/EM_Platform_Types/Yellow_Platform.h"
-#include "../Entity_Model/Player.h"
+#include "../Entity_Model/M_Bonus_Types/M_Jetpack.h"
+#include "../Entity_Model/M_Bonus_Types/M_Spring.h"
+#include "../Entity_Model/M_Platform_Types/M_Blue_Platform.h"
+#include "../Entity_Model/M_Platform_Types/M_Green_Platform.h"
+#include "../Entity_Model/M_Platform_Types/M_White_Platform.h"
+#include "../Entity_Model/M_Platform_Types/M_Yellow_Platform.h"
+#include "../Entity_Model/M_BG_Tile.h"
+#include "../Entity_Model/M_Bonus.h"
+#include "../Entity_Model/M_Player.h"
 #include "../Score.h"
 #include <iostream>
 #include <list>
 #include <memory>
 #include <string>
 
+/**
+ * @class Abstract_Factory
+ *
+ * @brief Creates the entity's used in the World.
+ */
 class Abstract_Factory {
 
 public:

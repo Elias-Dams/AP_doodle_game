@@ -1,0 +1,183 @@
+\hypertarget{classScore}{}\doxysection{Score Class Reference}
+\label{classScore}\index{Score@{Score}}
+
+
+Keep track of the \mbox{\hyperlink{classPlayer}{Player}}\textquotesingle{}s \mbox{\hyperlink{classScore}{Score}}.  
+
+
+
+
+{\ttfamily \#include $<$Score.\+h$>$}
+
+Inheritance diagram for Score\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classScore}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScore_a039c99843551e5e4b512ecee99e46617}{Score}} ()
+\item 
+void \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{New\+Maxheight\+Reached}} (const float \&y) override
+\begin{DoxyCompactList}\small\item\em updates the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{Update\+Bonus\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em updates the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{Update\+Reduce\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em reduces the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{Resetscore}} () override
+\begin{DoxyCompactList}\small\item\em fully resets the score. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}{getscore}} () const
+\begin{DoxyCompactList}\small\item\em get the score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Keep track of the \mbox{\hyperlink{classPlayer}{Player}}\textquotesingle{}s \mbox{\hyperlink{classScore}{Score}}. 
+
+Definition at line \mbox{\hyperlink{Score_8h_source_l00019}{19}} of file \mbox{\hyperlink{Score_8h_source}{Score.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScore_a039c99843551e5e4b512ecee99e46617}\label{classScore_a039c99843551e5e4b512ecee99e46617}} 
+\index{Score@{Score}!Score@{Score}}
+\index{Score@{Score}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{Score()}{Score()}}
+{\footnotesize\ttfamily Score\+::\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classScore}{Score}} constructor. constructs the \mbox{\hyperlink{classScore}{Score}}. 
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+\mbox{\Hypertarget{classScore_a54ab36a6fdd88696f0176d9534a76883}\label{classScore_a54ab36a6fdd88696f0176d9534a76883}} 
+\index{Score@{Score}!````~Score@{$\sim$Score}}
+\index{````~Score@{$\sim$Score}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{$\sim$Score()}{~Score()}}
+{\footnotesize\ttfamily Score\+::$\sim$\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}\label{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}} 
+\index{Score@{Score}!getscore@{getscore}}
+\index{getscore@{getscore}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{getscore()}{getscore()}}
+{\footnotesize\ttfamily int Score\+::getscore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the score. 
+
+This function is used to get the score of the player.
+
+\begin{DoxyReturn}{Returns}
+the score of the player. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+\mbox{\Hypertarget{classScore_a4d5da81a947f243dc4cf737613cffbe8}\label{classScore_a4d5da81a947f243dc4cf737613cffbe8}} 
+\index{Score@{Score}!NewMaxheightReached@{NewMaxheightReached}}
+\index{NewMaxheightReached@{NewMaxheightReached}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{NewMaxheightReached()}{NewMaxheightReached()}}
+{\footnotesize\ttfamily void Score\+::\+New\+Maxheight\+Reached (\begin{DoxyParamCaption}\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the score. 
+
+This function updates the score if a new maximum height is reached.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & position on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classObserver_a735a63bea519460306f1f7e517262c88}{Observer}}.
+
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+\mbox{\Hypertarget{classScore_a656db66bcc584dda91a352e1fe6a16b0}\label{classScore_a656db66bcc584dda91a352e1fe6a16b0}} 
+\index{Score@{Score}!Resetscore@{Resetscore}}
+\index{Resetscore@{Resetscore}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{Resetscore()}{Resetscore()}}
+{\footnotesize\ttfamily void Score\+::\+Resetscore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+fully resets the score. 
+
+This function resets the score to the state it was in when it was first initialized. 
+
+Reimplemented from \mbox{\hyperlink{classObserver_a39770cb7bbfe046845d669473f9912db}{Observer}}.
+
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+\mbox{\Hypertarget{classScore_a0c0742f5863a427aa8d5ae5fbd870932}\label{classScore_a0c0742f5863a427aa8d5ae5fbd870932}} 
+\index{Score@{Score}!UpdateBonusScore@{UpdateBonusScore}}
+\index{UpdateBonusScore@{UpdateBonusScore}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{UpdateBonusScore()}{UpdateBonusScore()}}
+{\footnotesize\ttfamily void Score\+::\+Update\+Bonus\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the score. 
+
+This function updates the score if a certain bonus is collected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & that need to be added to the score. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classObserver_acea9e3d7751b775e395f53dc4292e359}{Observer}}.
+
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+\mbox{\Hypertarget{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}\label{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}} 
+\index{Score@{Score}!UpdateReduceScore@{UpdateReduceScore}}
+\index{UpdateReduceScore@{UpdateReduceScore}!Score@{Score}}
+\doxysubsubsection{\texorpdfstring{UpdateReduceScore()}{UpdateReduceScore()}}
+{\footnotesize\ttfamily void Score\+::\+Update\+Reduce\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+reduces the score. 
+
+This function reduces the score when jumped on the same platform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & that need to be subtracted from the score. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classObserver_ac70e701beca3f587d8188f558bc2b835}{Observer}}.
+
+
+
+Definition at line \mbox{\hyperlink{Score_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Score_8cpp_source}{Score.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/Score.\+h\item 
+src/logic/Score.\+cpp\end{DoxyCompactItemize}

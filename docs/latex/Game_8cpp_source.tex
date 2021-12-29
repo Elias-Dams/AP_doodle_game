@@ -1,0 +1,268 @@
+\hypertarget{Game_8cpp_source}{}\doxysection{Game.\+cpp}
+\label{Game_8cpp_source}\index{src/representation/Game.cpp@{src/representation/Game.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Game.h"{}}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00004}\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{00004}} \mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game::Game}}() \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00006}00006     \textcolor{comment}{// make the game}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00007}00007     ConcreteFactory = make\_shared<Concrete\_Factory>();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00008}00008     world = std::make\_unique<World>(ConcreteFactory);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00009}00009     window = make\_unique<sf::RenderWindow>(sf::VideoMode(world-\/>getWidth(), world-\/>getHeight()), \textcolor{stringliteral}{"{}doodle jump"{}});}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00011}00011     weak\_ptr<Stopwatch>clock = \mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{Stopwatch::GetInstance}}(); \textcolor{comment}{// initialise the singleton}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00013}00013     view = make\_shared<sf::View>(sf::FloatRect(0, 0, world-\/>getWidth(), world-\/>getHeight()));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00015}00015     highscore = 0;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00017}00017     \textcolor{comment}{// when the game starts the game state is start}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00019}00019     GameState = start;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00021}00021     \textcolor{comment}{// Load the menu textures}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00022}00022     this-\/>LoadTextures();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00024}00024     \textcolor{comment}{// make score\_text}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00025}00025     score\_text.setFont(font);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00026}00026     score\_text.setCharacterSize(50);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00027}00027     score\_text.setString(to\_string(ConcreteFactory-\/>get\_score().lock()-\/>getscore()));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00028}00028     score\_text.setFillColor(sf::Color::Black);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00030}00030     \textcolor{comment}{// make highscore}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00031}00031     highscore\_text.setFont(font);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00032}00032     highscore\_text.setCharacterSize(50);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00033}00033     highscore\_text.setFillColor(sf::Color::Black);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00035}00035     \textcolor{comment}{// make button}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00037}00037     Button.setTexture(ButtonTexture);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00038}00038     Button.setPosition(world-\/>getWidth() / 2 -\/ Button.getLocalBounds().width / 2,}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00039}00039                        world-\/>getHeight() / 2 -\/ Button.getLocalBounds().height / 2);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00041}00041     can\_reset = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00044}00044 \textcolor{keywordtype}{void} Game::LoadTextures() \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00045}00045     \textcolor{keyword}{auto} image = sf::Image\{\};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00047}00047     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00048}00048         \textcolor{keywordflow}{if} (!image.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Doodle/Doodle\_Jump\_icon.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00049}00049             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading icon failed"{}};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00050}00050             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00052}00052         \textcolor{keywordflow}{if} (!font.loadFromFile(\textcolor{stringliteral}{"{}../Textures/AmaticSC-\/Regular.ttf"{}})) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00053}00053             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading font failed"{}};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00054}00054             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00055}00055         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00056}00056         \textcolor{keywordflow}{if} (!ButtonTexture.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Doodle/button\_newgame.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00057}00057             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading buttontexture failed"{}};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00058}00058             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00059}00059         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00060}00060         \textcolor{keywordflow}{if} (!ButtonTexture\_pressed.loadFromFile(\textcolor{stringliteral}{"{}../Textures/Doodle/button\_newgame\_active.png"{}})) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00061}00061             \textcolor{keywordtype}{string} error = \textcolor{stringliteral}{"{}Loading buttontexture failed"{}};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00062}00062             \textcolor{keywordflow}{throw} error;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00063}00063         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00064}00064             \textcolor{comment}{// we give the window an icon}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00065}00065             window-\/>setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00066}00066         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00067}00067     \} \textcolor{keywordflow}{catch} (\textcolor{keywordtype}{string} \&a) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00068}00068         cerr << a << endl;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00072}\mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{00072}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{Game::run}}() \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00073}00073     \textcolor{keywordtype}{float} dt;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00074}00074     window-\/>setFramerateLimit(120);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00075}00075     weak\_ptr<Stopwatch> clock = \mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{Stopwatch::GetInstance}}();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00077}00077     \textcolor{keywordflow}{while} (window-\/>isOpen()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00078}00078         dt = clock.lock()-\/>mark\_time();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00080}00080         this-\/>\mbox{\hyperlink{classGame_acc5022f7f8abcbab013f7f3195583a1e}{update}}(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00082}00082         window-\/>setView(*view);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00084}00084         this-\/>\mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{drawGame}}();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00086}00086         \textcolor{comment}{//cout << "{}dt: "{} << dt << "{}  "{} << "{}fps: "{} << 1 / dt << endl;}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00088}00088 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00091}\mbox{\hyperlink{classGame_acc5022f7f8abcbab013f7f3195583a1e}{00091}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_acc5022f7f8abcbab013f7f3195583a1e}{Game::update}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00093}00093     sf::Event event;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00095}00095     \textcolor{keywordflow}{while} (window-\/>pollEvent(event)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00096}00096         \textcolor{keywordflow}{if} (event.type == sf::Event::Closed) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00097}00097             window-\/>close();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00098}00098         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00099}00099         \textcolor{keywordflow}{if} (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00100}00100             window-\/>close();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00101}00101         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00102}00102         \textcolor{keywordflow}{if} (GameState == gameover || GameState == start) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00103}00103             \textcolor{keywordflow}{if} (event.type == sf::Event::MouseMoved \&\& MouseOnButton(Button)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00104}00104                 Button.setTexture(ButtonTexture\_pressed);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00106}00106             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00107}00107                 Button.setTexture(ButtonTexture);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00108}00108             \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00109}00109             \textcolor{comment}{// when the restart button is clicked the game starts}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00110}00110             \textcolor{keywordflow}{if} (event.type == sf::Event::MouseButtonPressed \&\& MouseOnButton(Button)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00111}00111                 GameState = gameloop;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00112}00112             \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00113}00113         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00116}00116     \textcolor{keywordflow}{if} (GameState == start) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00118}00118         this-\/>\mbox{\hyperlink{classGame_a8cc8cf130eecb22147462e9a1523fb25}{gameStart}}(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00120}00120     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (GameState == gameloop) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00122}00122         this-\/>\mbox{\hyperlink{classGame_ab34f52913b751b1157e6a23b7483395a}{gameLoop}}(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00124}00124     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (GameState == gameover) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00126}00126         this-\/>\mbox{\hyperlink{classGame_a42349972c6f10087fcc56ed045725e05}{gameOver}}(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00127}00127     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00128}00128 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00130}\mbox{\hyperlink{classGame_a8cc8cf130eecb22147462e9a1523fb25}{00130}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a8cc8cf130eecb22147462e9a1523fb25}{Game::gameStart}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00131}00131     world-\/>startstate(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00132}00132 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00134}\mbox{\hyperlink{classGame_ab34f52913b751b1157e6a23b7483395a}{00134}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_ab34f52913b751b1157e6a23b7483395a}{Game::gameLoop}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00135}00135     \textcolor{comment}{// update the pressed key}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00136}00136     \textcolor{keywordtype}{char} key = \textcolor{charliteral}{'X'};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00137}00137     \textcolor{keywordflow}{if} (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00138}00138         key = \textcolor{charliteral}{'Q'};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00139}00139     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00140}00140     \textcolor{keywordflow}{if} (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00141}00141         key = \textcolor{charliteral}{'D'};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00142}00142     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00144}00144     \textcolor{comment}{// update the world}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00145}00145     world-\/>update(dt, key);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00147}00147     \textcolor{comment}{// update the view according to the player in the world}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00148}00148     view-\/>setCenter(world-\/>getWidth() / 2.0f, world-\/>getCamera()-\/>getConvertedHeight());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00150}00150     \textcolor{comment}{// update the position/value of the score}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00151}00151     score\_text.setPosition(0, world-\/>getCamera()-\/>getConvertedHeight() -\/ (world-\/>getHeight() / 2.0f));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00152}00152     score\_text.setString(to\_string(ConcreteFactory-\/>get\_score().lock()-\/>getscore()));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00154}00154     \textcolor{comment}{// check if game is over}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00155}00155     \textcolor{keywordflow}{if} (world-\/>isGameOver()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00156}00156         GameState = gameover;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00157}00157         can\_reset = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00158}00158     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00159}00159 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00161}\mbox{\hyperlink{classGame_a42349972c6f10087fcc56ed045725e05}{00161}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a42349972c6f10087fcc56ed045725e05}{Game::gameOver}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00163}00163     \textcolor{comment}{// resetting the world}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00164}00164     \textcolor{keywordflow}{if} (can\_reset) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00165}00165         \textcolor{comment}{// set the score for the endgame screen;}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00166}00166         score\_text.setString(\textcolor{stringliteral}{"{}Score : "{}} + to\_string(ConcreteFactory-\/>get\_score().lock()-\/>getscore()));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00167}00167         score\_text.setPosition(world-\/>getWidth() / 2.0f -\/ score\_text.getGlobalBounds().width / 2.0f,}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00168}00168                                world-\/>getHeight() / 2.0f -\/ score\_text.getGlobalBounds().height / 2.0f -\/ 70.0f);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00170}00170         \textcolor{comment}{// update the highscore}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00171}00171         \textcolor{keywordflow}{if} (highscore <= ConcreteFactory-\/>get\_score().lock()-\/>getscore()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00172}00172             highscore = ConcreteFactory-\/>get\_score().lock()-\/>getscore();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00173}00173         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00175}00175         \textcolor{comment}{// set the highscore for the endgame screen;}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00176}00176         highscore\_text.setString(\textcolor{stringliteral}{"{}highscore : "{}} + to\_string(highscore));}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00177}00177         highscore\_text.setPosition(world-\/>getWidth() / 2.0f -\/ highscore\_text.getGlobalBounds().width / 2.0f,}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00178}00178                                    world-\/>getHeight() / 2.0f -\/ highscore\_text.getGlobalBounds().height / 2.0f -\/ 130.0f);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00180}00180         world-\/>Reset();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00181}00181         can\_reset = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00182}00182     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00183}00183     view-\/>setCenter(world-\/>getWidth() / 2.0f, world-\/>getCamera()-\/>getConvertedHeight());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00184}00184     world-\/>startstate(dt);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00185}00185 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00187}\mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{00187}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{Game::drawGame}}() \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00188}00188     window-\/>clear(sf::Color::White);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00190}00190     \textcolor{comment}{// start draws}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00191}00191     \textcolor{keywordflow}{if} (GameState == start) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00193}00193         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} weak\_ptr<View::BG\_Tile> \&background : ConcreteFactory-\/>getBackgrounds()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00194}00194             window-\/>draw(background.lock()-\/>getBackground());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00195}00195         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00197}00197         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} shared\_ptr<Platform> \&platform : world-\/>getPlatforms()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00198}00198             window-\/>draw(ConcreteFactory-\/>get\_platform(platform).lock()-\/>getPlatform());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00199}00199         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00200}00200 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00201}00201         window-\/>draw(ConcreteFactory-\/>get\_player().lock()-\/>getPlayer());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00203}00203         window-\/>draw(Button);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00204}00204     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00205}00205     \textcolor{comment}{// game loop draws}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00206}00206     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (GameState == gameloop) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00208}00208         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} weak\_ptr<View::BG\_Tile> \&background : ConcreteFactory-\/>getBackgrounds()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00209}00209             window-\/>draw(background.lock()-\/>getBackground());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00210}00210         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00212}00212         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} shared\_ptr<Platform> \&platform : world-\/>getPlatforms()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00213}00213             window-\/>draw(ConcreteFactory-\/>get\_platform(platform).lock()-\/>getPlatform());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00214}00214         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00216}00216         map<shared\_ptr<Platform>, shared\_ptr<Bonus>> bonus = world-\/>getBonuses();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00217}00217         \textcolor{keywordflow}{for} (std::map<shared\_ptr<Platform>, shared\_ptr<Bonus>>::iterator it = bonus.begin();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00218}00218              it != bonus.end(); it++) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00219}00219             window-\/>draw(ConcreteFactory-\/>get\_bonus(it-\/>second).lock()-\/>getBonus());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00220}00220         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00222}00222         window-\/>draw(ConcreteFactory-\/>get\_player().lock()-\/>getPlayer());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00224}00224         window-\/>draw(score\_text);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00226}00226     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00227}00227     \textcolor{comment}{// game over draws}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00228}00228     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (GameState == gameover) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00229}00229         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} weak\_ptr<View::BG\_Tile> \&background : ConcreteFactory-\/>getBackgrounds()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00230}00230             window-\/>draw(background.lock()-\/>getBackground());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00231}00231         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00233}00233         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} shared\_ptr<Platform> \&platform : world-\/>getPlatforms()) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00234}00234             window-\/>draw(ConcreteFactory-\/>get\_platform(platform).lock()-\/>getPlatform());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00235}00235         \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00236}00236 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00237}00237         window-\/>draw(ConcreteFactory-\/>get\_player().lock()-\/>getPlayer());}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00238}00238         window-\/>draw(score\_text);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00239}00239         window-\/>draw(highscore\_text);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00240}00240         window-\/>draw(Button);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00241}00241     \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00243}00243     window-\/>display();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00244}00244 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00245}00245 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00246}00246 \textcolor{keywordtype}{bool} Game::MouseOnButton(\textcolor{keyword}{const} sf::Sprite \&\_button) \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00247}00247 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00248}00248     sf::Vector2i mousePosition = sf::Mouse::getPosition(*window);}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00250}00250     \textcolor{keywordtype}{bool} mouseInButton = (float) mousePosition.x >= \_button.getPosition().x}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00251}00251                          \&\& (float) mousePosition.x <= \_button.getPosition().x + \_button.getGlobalBounds().width}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00252}00252                          \&\& (float) mousePosition.y >= \_button.getPosition().y}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00253}00253                          \&\& (float) mousePosition.y <= \_button.getPosition().y + \_button.getGlobalBounds().height;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00254}00254     \textcolor{keywordflow}{return} mouseInButton;}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00255}00255 \}}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00256}00256 }
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00257}00257 Game::\string~Game() \{}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00258}00258     world.reset();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00259}00259     ConcreteFactory.reset();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00260}00260     view.reset();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00261}00261     window.reset();}
+\DoxyCodeLine{\Hypertarget{Game_8cpp_source_l00262}00262 \}}
+
+\end{DoxyCode}

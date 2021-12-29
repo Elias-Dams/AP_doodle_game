@@ -1,0 +1,268 @@
+\hypertarget{classSubject}{}\doxysection{Subject Class Reference}
+\label{classSubject}\index{Subject@{Subject}}
+Inheritance diagram for Subject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.631579cm]{classSubject}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSubject_a1ad7c3dfa77e8b4d06601f3c22510cb2}{Attach}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ observer) override
+\item 
+void \mbox{\hyperlink{classSubject_ac36c9756a9df9b4b0f787b744b1cd477}{Detach}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ observer) override
+\begin{DoxyCompactList}\small\item\em Detach an observer from the subject. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_afd4f37bbbeb10f0efe507b5c0208c541}{Notify\+Position}} (float xpos, float ypos) override
+\begin{DoxyCompactList}\small\item\em notifies all entity\textquotesingle{}s to change their position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a24d556223c680a2c8f6b063247629b9f}{New\+Max\+Heigh}} (float ypos) override
+\begin{DoxyCompactList}\small\item\em notifies the score if a new max height has been reached \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a642b22ced9861b924054166530067ef8}{Notify\+Reset}} () override
+\begin{DoxyCompactList}\small\item\em notifies the entity\textquotesingle{}s who have to reset \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}{Notify\+Normal}} () override
+\begin{DoxyCompactList}\small\item\em notifies the view of the player to reset it als the normal texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a48fe200839cc8546b0adf250595c7d96}{Notify\+Medium}} () override
+\begin{DoxyCompactList}\small\item\em notifies the view of the player if a spring is collected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_aa1c003f315ccd4a6f2e8c96d5552911d}{Notify\+High}} () override
+\begin{DoxyCompactList}\small\item\em notifies the view of the player if a jetpack is collected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_acc94f8affd220fed30818b98fc0d630c}{Notify\+Increase\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em notifies the observers to increase the score \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a2046cc5d8190b82eb609256dd70b9926}{Notify\+Decrease\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em notifies the observers to decrease the score \end{DoxyCompactList}\item 
+const std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ $>$ \mbox{\hyperlink{classSubject_acf67f533761c143ea79c35501ab8e052}{get\+List\+Observer}} () const
+\begin{DoxyCompactList}\small\item\em gets the list of observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Subject_8h_source_l00012}{12}} of file \mbox{\hyperlink{Subject_8h_source}{Subject.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSubject_a7c4f522850f718466e5be7eb55ba1969}\label{classSubject_a7c4f522850f718466e5be7eb55ba1969}} 
+\index{Subject@{Subject}!````~Subject@{$\sim$Subject}}
+\index{````~Subject@{$\sim$Subject}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{$\sim$Subject()}{~Subject()}}
+{\footnotesize\ttfamily Subject\+::$\sim$\+Subject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSubject_a1ad7c3dfa77e8b4d06601f3c22510cb2}\label{classSubject_a1ad7c3dfa77e8b4d06601f3c22510cb2}} 
+\index{Subject@{Subject}!Attach@{Attach}}
+\index{Attach@{Attach}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily void Subject\+::\+Attach (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The subscription management methods. 
+
+Implements \mbox{\hyperlink{classISubject_a49b5debdf1d06d9f9911d2369aa032b1}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_ac36c9756a9df9b4b0f787b744b1cd477}\label{classSubject_ac36c9756a9df9b4b0f787b744b1cd477}} 
+\index{Subject@{Subject}!Detach@{Detach}}
+\index{Detach@{Detach}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Detach()}{Detach()}}
+{\footnotesize\ttfamily void Subject\+::\+Detach (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Detach an observer from the subject. 
+
+This function removes a pointer to an observer from the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & pointer to an observer. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classISubject_a790eabbfafd693f9ac55173cc774c314}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_acf67f533761c143ea79c35501ab8e052}\label{classSubject_acf67f533761c143ea79c35501ab8e052}} 
+\index{Subject@{Subject}!getListObserver@{getListObserver}}
+\index{getListObserver@{getListObserver}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{getListObserver()}{getListObserver()}}
+{\footnotesize\ttfamily const std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ $>$ Subject\+::get\+List\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+gets the list of observers. 
+
+This function gets the list of observers attached to this subject.
+
+\begin{DoxyReturn}{Returns}
+a list of observers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classISubject_a243e9486c768ded6b1e31f3e916ae9d7}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_a24d556223c680a2c8f6b063247629b9f}\label{classSubject_a24d556223c680a2c8f6b063247629b9f}} 
+\index{Subject@{Subject}!NewMaxHeigh@{NewMaxHeigh}}
+\index{NewMaxHeigh@{NewMaxHeigh}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NewMaxHeigh()}{NewMaxHeigh()}}
+{\footnotesize\ttfamily void Subject\+::\+New\+Max\+Heigh (\begin{DoxyParamCaption}\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the score if a new max height has been reached 
+
+
+
+Implements \mbox{\hyperlink{classISubject_a981a314b3eac969d5c436b19e5afd579}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_a2046cc5d8190b82eb609256dd70b9926}\label{classSubject_a2046cc5d8190b82eb609256dd70b9926}} 
+\index{Subject@{Subject}!NotifyDecreaseScore@{NotifyDecreaseScore}}
+\index{NotifyDecreaseScore@{NotifyDecreaseScore}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyDecreaseScore()}{NotifyDecreaseScore()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Decrease\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the observers to decrease the score 
+
+
+
+Implements \mbox{\hyperlink{classISubject_a908f7358488186614334614dfb9a6856}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_aa1c003f315ccd4a6f2e8c96d5552911d}\label{classSubject_aa1c003f315ccd4a6f2e8c96d5552911d}} 
+\index{Subject@{Subject}!NotifyHigh@{NotifyHigh}}
+\index{NotifyHigh@{NotifyHigh}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyHigh()}{NotifyHigh()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+High (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the view of the player if a jetpack is collected 
+
+
+
+Implements \mbox{\hyperlink{classISubject_abf65305b44b86ee5ee828dde2feb5e74}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_acc94f8affd220fed30818b98fc0d630c}\label{classSubject_acc94f8affd220fed30818b98fc0d630c}} 
+\index{Subject@{Subject}!NotifyIncreaseScore@{NotifyIncreaseScore}}
+\index{NotifyIncreaseScore@{NotifyIncreaseScore}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyIncreaseScore()}{NotifyIncreaseScore()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Increase\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the observers to increase the score 
+
+
+
+Implements \mbox{\hyperlink{classISubject_a425347e00840af8d54694a04e3aac7f9}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_a48fe200839cc8546b0adf250595c7d96}\label{classSubject_a48fe200839cc8546b0adf250595c7d96}} 
+\index{Subject@{Subject}!NotifyMedium@{NotifyMedium}}
+\index{NotifyMedium@{NotifyMedium}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyMedium()}{NotifyMedium()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Medium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the view of the player if a spring is collected 
+
+
+
+Implements \mbox{\hyperlink{classISubject_a88bf55ad4ab119337b9343003d5e91d4}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}\label{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}} 
+\index{Subject@{Subject}!NotifyNormal@{NotifyNormal}}
+\index{NotifyNormal@{NotifyNormal}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyNormal()}{NotifyNormal()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the view of the player to reset it als the normal texture 
+
+
+
+Implements \mbox{\hyperlink{classISubject_aef0249fb858deb8f3cacfa42d9037b0e}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_afd4f37bbbeb10f0efe507b5c0208c541}\label{classSubject_afd4f37bbbeb10f0efe507b5c0208c541}} 
+\index{Subject@{Subject}!NotifyPosition@{NotifyPosition}}
+\index{NotifyPosition@{NotifyPosition}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyPosition()}{NotifyPosition()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies all entity\textquotesingle{}s to change their position 
+
+
+
+Implements \mbox{\hyperlink{classISubject_a018ce3555d6d750ab4f31d5dd33412f4}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+\mbox{\Hypertarget{classSubject_a642b22ced9861b924054166530067ef8}\label{classSubject_a642b22ced9861b924054166530067ef8}} 
+\index{Subject@{Subject}!NotifyReset@{NotifyReset}}
+\index{NotifyReset@{NotifyReset}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{NotifyReset()}{NotifyReset()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+notifies the entity\textquotesingle{}s who have to reset 
+
+
+
+Implements \mbox{\hyperlink{classISubject_aafef49ee27f01cf82073424432d420c4}{ISubject}}.
+
+
+
+Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/design\+\_\+patterns/Subject.\+h\item 
+src/logic/design\+\_\+patterns/Subject.\+cpp\end{DoxyCompactItemize}

@@ -3,22 +3,26 @@
 #define AP_DOODLE_GAME_CONCRETE_FACTORY_H
 
 #include "../../logic/design_patterns/Abstract_Factory.h"
-#include "../Entity_View/BG_Tile.h"
-#include "../Entity_View/Bonus.h"
-#include "../Entity_View/EV_Bonus_Types/Jetpack.h"
-#include "../Entity_View/EV_Bonus_Types/Spring.h"
-#include "../Entity_View/EV_Platform_Types/Blue_Platform.h"
-#include "../Entity_View/EV_Platform_Types/Green_Platform.h"
-#include "../Entity_View/EV_Platform_Types/White_Platform.h"
-#include "../Entity_View/EV_Platform_Types/Yellow_Platform.h"
-#include "../Entity_View/Player.h"
+#include "../Entity_View/V_Bonus_Types/V_Jetpack.h"
+#include "../Entity_View/V_Bonus_Types/V_Spring.h"
+#include "../Entity_View/V_Platform_Types/V_Blue_Platform.h"
+#include "../Entity_View/V_Platform_Types/V_Green_Platform.h"
+#include "../Entity_View/V_Platform_Types/V_White_Platform.h"
+#include "../Entity_View/V_Platform_Types/V_Yellow_Platform.h"
+#include "../Entity_View/V_BG_Tile.h"
+#include "../Entity_View/V_Bonus.h"
+#include "../Entity_View/V_Player.h"
 #include <iostream>
 #include <list>
 #include <map>
 #include <memory>
 #include <string>
 
-
+/**
+ * @class Abstract_Factory
+ *
+ * @brief Creates the views used in the Game.
+ */
 class Concrete_Factory : public Abstract_Factory {
 
 public:

@@ -1,6 +1,6 @@
 
 #include "Score.h"
-#include "Entity_Model/Player.h"
+#include "Entity_Model/M_Player.h"
 
 Score::Score() {
     score = 0;

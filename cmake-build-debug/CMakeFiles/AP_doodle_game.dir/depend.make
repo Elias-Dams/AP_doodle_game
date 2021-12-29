@@ -5,16 +5,17 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../main.cpp \
  ../src/logic/Camera.h \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Random.h \
  ../src/logic/Score.h \
@@ -25,111 +26,19 @@ CMakeFiles/AP_doodle_game.dir/main.cpp.o: \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Observer.h \
  ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/BG_Tile.h \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Jetpack.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Spring.h \
- ../src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Green_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/White_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h \
  ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h \
- ../src/representation/Entity_View/Player.h \
+ ../src/representation/Entity_View/V_BG_Tile.h \
+ ../src/representation/Entity_View/V_Bonus.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Spring.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_White_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h \
+ ../src/representation/Entity_View/V_Player.h \
  ../src/representation/Game.h \
  ../src/representation/design_patterns/Concrete_Factory.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/BG_Tile.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/BG_Tile.cpp \
- ../src/representation/Entity_View/BG_Tile.h \
- ../src/representation/Entity_View/Entity_View.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Bonus.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/Bonus.cpp \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/Entity_View.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp \
- ../src/representation/Entity_View/EV_Bonus_Types/Jetpack.h \
- ../src/representation/Entity_View/Entity_View.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Spring.cpp \
- ../src/representation/Entity_View/EV_Bonus_Types/Spring.h \
- ../src/representation/Entity_View/Entity_View.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp \
- ../src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h \
- ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp \
- ../src/representation/Entity_View/EV_Platform_Types/Green_Platform.h \
- ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp \
- ../src/representation/Entity_View/EV_Platform_Types/White_Platform.h \
- ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.o: \
- ../src/logic/Camera.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Namespaces.cpp \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Observer.h \
- ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp \
- ../src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h \
- ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h
 CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o: \
  ../src/logic/Camera.h \
  ../src/logic/design_patterns/IObserver.h \
@@ -138,7 +47,7 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.o: 
  ../src/logic/design_patterns/Subject.h \
  ../src/representation/Entity_View/Entity_View.cpp \
  ../src/representation/Entity_View/Entity_View.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Platform.cpp.o: \
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_BG_Tile.cpp.o: \
  ../src/logic/Camera.h \
  ../src/logic/Namespaces.cpp \
  ../src/logic/design_patterns/IObserver.h \
@@ -146,9 +55,19 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Platform.cpp.o: \
  ../src/logic/design_patterns/Observer.h \
  ../src/logic/design_patterns/Subject.h \
  ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.cpp \
- ../src/representation/Entity_View/Platform.h
-CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Player.cpp.o: \
+ ../src/representation/Entity_View/V_BG_Tile.cpp \
+ ../src/representation/Entity_View/V_BG_Tile.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Bonus.cpp \
+ ../src/representation/Entity_View/V_Bonus.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.o: \
  ../src/logic/Camera.h \
  ../src/logic/Entity_Model/Entity_Model.h \
  ../src/logic/Namespaces.cpp \
@@ -157,21 +76,104 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Player.cpp.o: \
  ../src/logic/design_patterns/Observer.h \
  ../src/logic/design_patterns/Subject.h \
  ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Player.cpp \
- ../src/representation/Entity_View/Player.h
+ ../src/representation/Entity_View/V_Bonus.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Bonus.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Spring.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Platform.cpp \
+ ../src/representation/Entity_View/V_Platform.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp \
+ ../src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp \
+ ../src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp \
+ ../src/representation/Entity_View/V_Platform_Types/V_White_Platform.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp \
+ ../src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h
+CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Player.cpp.o: \
+ ../src/logic/Camera.h \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Observer.h \
+ ../src/logic/design_patterns/Subject.h \
+ ../src/representation/Entity_View/Entity_View.h \
+ ../src/representation/Entity_View/V_Player.cpp \
+ ../src/representation/Entity_View/V_Player.h
 CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Camera.h \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Random.h \
  ../src/logic/Score.h \
@@ -182,33 +184,34 @@ CMakeFiles/AP_doodle_game.dir/src/representation/Game.cpp.o: \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Observer.h \
  ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/BG_Tile.h \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Jetpack.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Spring.h \
- ../src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Green_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/White_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h \
  ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h \
- ../src/representation/Entity_View/Player.h \
+ ../src/representation/Entity_View/V_BG_Tile.h \
+ ../src/representation/Entity_View/V_Bonus.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Spring.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_White_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h \
+ ../src/representation/Entity_View/V_Player.h \
  ../src/representation/Game.cpp \
  ../src/representation/Game.h \
  ../src/representation/design_patterns/Concrete_Factory.h
 CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factory.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Camera.h \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Score.h \
  ../src/logic/design_patterns/Abstract_Factory.h \
@@ -216,16 +219,16 @@ CMakeFiles/AP_doodle_game.dir/src/representation/design_patterns/Concrete_Factor
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Observer.h \
  ../src/logic/design_patterns/Subject.h \
- ../src/representation/Entity_View/BG_Tile.h \
- ../src/representation/Entity_View/Bonus.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Jetpack.h \
- ../src/representation/Entity_View/EV_Bonus_Types/Spring.h \
- ../src/representation/Entity_View/EV_Platform_Types/Blue_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Green_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/White_Platform.h \
- ../src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.h \
  ../src/representation/Entity_View/Entity_View.h \
- ../src/representation/Entity_View/Platform.h \
- ../src/representation/Entity_View/Player.h \
+ ../src/representation/Entity_View/V_BG_Tile.h \
+ ../src/representation/Entity_View/V_Bonus.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Jetpack.h \
+ ../src/representation/Entity_View/V_Bonus_Types/V_Spring.h \
+ ../src/representation/Entity_View/V_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Green_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_White_Platform.h \
+ ../src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.h \
+ ../src/representation/Entity_View/V_Player.h \
  ../src/representation/design_patterns/Concrete_Factory.cpp \
  ../src/representation/design_patterns/Concrete_Factory.h

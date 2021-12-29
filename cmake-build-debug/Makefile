@@ -190,198 +190,6 @@ src/logic/Camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Camera.cpp.s
 .PHONY : src/logic/Camera.cpp.s
 
-src/logic/Entity_Model/BG_Tile.o: src/logic/Entity_Model/BG_Tile.cpp.o
-.PHONY : src/logic/Entity_Model/BG_Tile.o
-
-# target to build an object file
-src/logic/Entity_Model/BG_Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o
-.PHONY : src/logic/Entity_Model/BG_Tile.cpp.o
-
-src/logic/Entity_Model/BG_Tile.i: src/logic/Entity_Model/BG_Tile.cpp.i
-.PHONY : src/logic/Entity_Model/BG_Tile.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/BG_Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.i
-.PHONY : src/logic/Entity_Model/BG_Tile.cpp.i
-
-src/logic/Entity_Model/BG_Tile.s: src/logic/Entity_Model/BG_Tile.cpp.s
-.PHONY : src/logic/Entity_Model/BG_Tile.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/BG_Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.s
-.PHONY : src/logic/Entity_Model/BG_Tile.cpp.s
-
-src/logic/Entity_Model/Bonus.o: src/logic/Entity_Model/Bonus.cpp.o
-.PHONY : src/logic/Entity_Model/Bonus.o
-
-# target to build an object file
-src/logic/Entity_Model/Bonus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o
-.PHONY : src/logic/Entity_Model/Bonus.cpp.o
-
-src/logic/Entity_Model/Bonus.i: src/logic/Entity_Model/Bonus.cpp.i
-.PHONY : src/logic/Entity_Model/Bonus.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/Bonus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.i
-.PHONY : src/logic/Entity_Model/Bonus.cpp.i
-
-src/logic/Entity_Model/Bonus.s: src/logic/Entity_Model/Bonus.cpp.s
-.PHONY : src/logic/Entity_Model/Bonus.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/Bonus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.s
-.PHONY : src/logic/Entity_Model/Bonus.cpp.s
-
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.o: src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o
-
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.i: src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.i
-
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.s: src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.s
-
-src/logic/Entity_Model/EM_Bonus_Types/Spring.o: src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o
-
-src/logic/Entity_Model/EM_Bonus_Types/Spring.i: src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.i
-
-src/logic/Entity_Model/EM_Bonus_Types/Spring.s: src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.s
-
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.o: src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o
-
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.i: src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.i
-
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.s: src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.s
-
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.o: src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o
-
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.i: src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.i
-
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.s: src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.s
-
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.o: src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o
-
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.i: src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.i
-
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.s: src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.s
-
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.o: src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.o
-
-# target to build an object file
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o
-
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.i: src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.i
-
-# target to preprocess a source file
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.i
-
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.s: src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.s
-
-# target to generate assembly for a file
-src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s
-.PHONY : src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.s
-
 src/logic/Entity_Model/Entity_Model.o: src/logic/Entity_Model/Entity_Model.cpp.o
 .PHONY : src/logic/Entity_Model/Entity_Model.o
 
@@ -406,53 +214,245 @@ src/logic/Entity_Model/Entity_Model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.s
 .PHONY : src/logic/Entity_Model/Entity_Model.cpp.s
 
-src/logic/Entity_Model/Platform.o: src/logic/Entity_Model/Platform.cpp.o
-.PHONY : src/logic/Entity_Model/Platform.o
+src/logic/Entity_Model/M_BG_Tile.o: src/logic/Entity_Model/M_BG_Tile.cpp.o
+.PHONY : src/logic/Entity_Model/M_BG_Tile.o
 
 # target to build an object file
-src/logic/Entity_Model/Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o
-.PHONY : src/logic/Entity_Model/Platform.cpp.o
+src/logic/Entity_Model/M_BG_Tile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_BG_Tile.cpp.o
+.PHONY : src/logic/Entity_Model/M_BG_Tile.cpp.o
 
-src/logic/Entity_Model/Platform.i: src/logic/Entity_Model/Platform.cpp.i
-.PHONY : src/logic/Entity_Model/Platform.i
+src/logic/Entity_Model/M_BG_Tile.i: src/logic/Entity_Model/M_BG_Tile.cpp.i
+.PHONY : src/logic/Entity_Model/M_BG_Tile.i
 
 # target to preprocess a source file
-src/logic/Entity_Model/Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.i
-.PHONY : src/logic/Entity_Model/Platform.cpp.i
+src/logic/Entity_Model/M_BG_Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_BG_Tile.cpp.i
+.PHONY : src/logic/Entity_Model/M_BG_Tile.cpp.i
 
-src/logic/Entity_Model/Platform.s: src/logic/Entity_Model/Platform.cpp.s
-.PHONY : src/logic/Entity_Model/Platform.s
+src/logic/Entity_Model/M_BG_Tile.s: src/logic/Entity_Model/M_BG_Tile.cpp.s
+.PHONY : src/logic/Entity_Model/M_BG_Tile.s
 
 # target to generate assembly for a file
-src/logic/Entity_Model/Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.s
-.PHONY : src/logic/Entity_Model/Platform.cpp.s
+src/logic/Entity_Model/M_BG_Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_BG_Tile.cpp.s
+.PHONY : src/logic/Entity_Model/M_BG_Tile.cpp.s
 
-src/logic/Entity_Model/Player.o: src/logic/Entity_Model/Player.cpp.o
-.PHONY : src/logic/Entity_Model/Player.o
+src/logic/Entity_Model/M_Bonus.o: src/logic/Entity_Model/M_Bonus.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus.o
 
 # target to build an object file
-src/logic/Entity_Model/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o
-.PHONY : src/logic/Entity_Model/Player.cpp.o
+src/logic/Entity_Model/M_Bonus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus.cpp.o
 
-src/logic/Entity_Model/Player.i: src/logic/Entity_Model/Player.cpp.i
-.PHONY : src/logic/Entity_Model/Player.i
+src/logic/Entity_Model/M_Bonus.i: src/logic/Entity_Model/M_Bonus.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus.i
 
 # target to preprocess a source file
-src/logic/Entity_Model/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.i
-.PHONY : src/logic/Entity_Model/Player.cpp.i
+src/logic/Entity_Model/M_Bonus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus.cpp.i
 
-src/logic/Entity_Model/Player.s: src/logic/Entity_Model/Player.cpp.s
-.PHONY : src/logic/Entity_Model/Player.s
+src/logic/Entity_Model/M_Bonus.s: src/logic/Entity_Model/M_Bonus.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus.s
 
 # target to generate assembly for a file
-src/logic/Entity_Model/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.s
-.PHONY : src/logic/Entity_Model/Player.cpp.s
+src/logic/Entity_Model/M_Bonus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus.cpp.s
+
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.o: src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.o
+
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.i: src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.i
+
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.s: src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.s
+
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.o: src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.o
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.o
+
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.i: src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.i
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.i
+
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.s: src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.s
+.PHONY : src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.s
+
+src/logic/Entity_Model/M_Platform.o: src/logic/Entity_Model/M_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform.cpp.o
+
+src/logic/Entity_Model/M_Platform.i: src/logic/Entity_Model/M_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform.cpp.i
+
+src/logic/Entity_Model/M_Platform.s: src/logic/Entity_Model/M_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform.cpp.s
+
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.o: src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.o
+
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.i: src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.i
+
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.s: src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.s
+
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.o: src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.o
+
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.i: src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.i
+
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.s: src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.s
+
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.o: src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.o
+
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.i: src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.i
+
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.s: src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.s
+
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.o: src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.o
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.o
+
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.i: src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.i
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.i
+
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.s: src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.s
+.PHONY : src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.s
+
+src/logic/Entity_Model/M_Player.o: src/logic/Entity_Model/M_Player.cpp.o
+.PHONY : src/logic/Entity_Model/M_Player.o
+
+# target to build an object file
+src/logic/Entity_Model/M_Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Player.cpp.o
+.PHONY : src/logic/Entity_Model/M_Player.cpp.o
+
+src/logic/Entity_Model/M_Player.i: src/logic/Entity_Model/M_Player.cpp.i
+.PHONY : src/logic/Entity_Model/M_Player.i
+
+# target to preprocess a source file
+src/logic/Entity_Model/M_Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Player.cpp.i
+.PHONY : src/logic/Entity_Model/M_Player.cpp.i
+
+src/logic/Entity_Model/M_Player.s: src/logic/Entity_Model/M_Player.cpp.s
+.PHONY : src/logic/Entity_Model/M_Player.s
+
+# target to generate assembly for a file
+src/logic/Entity_Model/M_Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/Entity_Model/M_Player.cpp.s
+.PHONY : src/logic/Entity_Model/M_Player.cpp.s
 
 src/logic/Namespaces.o: src/logic/Namespaces.cpp.o
 .PHONY : src/logic/Namespaces.o
@@ -694,198 +694,6 @@ src/logic/design_patterns/Subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logic.dir/build.make CMakeFiles/logic.dir/src/logic/design_patterns/Subject.cpp.s
 .PHONY : src/logic/design_patterns/Subject.cpp.s
 
-src/representation/Entity_View/BG_Tile.o: src/representation/Entity_View/BG_Tile.cpp.o
-.PHONY : src/representation/Entity_View/BG_Tile.o
-
-# target to build an object file
-src/representation/Entity_View/BG_Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/BG_Tile.cpp.o
-.PHONY : src/representation/Entity_View/BG_Tile.cpp.o
-
-src/representation/Entity_View/BG_Tile.i: src/representation/Entity_View/BG_Tile.cpp.i
-.PHONY : src/representation/Entity_View/BG_Tile.i
-
-# target to preprocess a source file
-src/representation/Entity_View/BG_Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/BG_Tile.cpp.i
-.PHONY : src/representation/Entity_View/BG_Tile.cpp.i
-
-src/representation/Entity_View/BG_Tile.s: src/representation/Entity_View/BG_Tile.cpp.s
-.PHONY : src/representation/Entity_View/BG_Tile.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/BG_Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/BG_Tile.cpp.s
-.PHONY : src/representation/Entity_View/BG_Tile.cpp.s
-
-src/representation/Entity_View/Bonus.o: src/representation/Entity_View/Bonus.cpp.o
-.PHONY : src/representation/Entity_View/Bonus.o
-
-# target to build an object file
-src/representation/Entity_View/Bonus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Bonus.cpp.o
-.PHONY : src/representation/Entity_View/Bonus.cpp.o
-
-src/representation/Entity_View/Bonus.i: src/representation/Entity_View/Bonus.cpp.i
-.PHONY : src/representation/Entity_View/Bonus.i
-
-# target to preprocess a source file
-src/representation/Entity_View/Bonus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Bonus.cpp.i
-.PHONY : src/representation/Entity_View/Bonus.cpp.i
-
-src/representation/Entity_View/Bonus.s: src/representation/Entity_View/Bonus.cpp.s
-.PHONY : src/representation/Entity_View/Bonus.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/Bonus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Bonus.cpp.s
-.PHONY : src/representation/Entity_View/Bonus.cpp.s
-
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.o: src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.o
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.o
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.o
-
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.i: src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.i
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.i
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.i
-
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.s: src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.s
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.s
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Jetpack.cpp.s
-
-src/representation/Entity_View/EV_Bonus_Types/Spring.o: src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.o
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.o
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.o
-
-src/representation/Entity_View/EV_Bonus_Types/Spring.i: src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.i
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.i
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.i
-
-src/representation/Entity_View/EV_Bonus_Types/Spring.s: src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.s
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.s
-.PHONY : src/representation/Entity_View/EV_Bonus_Types/Spring.cpp.s
-
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.o: src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.o
-
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.i: src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.i
-
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.s: src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Blue_Platform.cpp.s
-
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.o: src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.o
-
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.i: src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.i
-
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.s: src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Green_Platform.cpp.s
-
-src/representation/Entity_View/EV_Platform_Types/White_Platform.o: src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.o
-
-src/representation/Entity_View/EV_Platform_Types/White_Platform.i: src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.i
-
-src/representation/Entity_View/EV_Platform_Types/White_Platform.s: src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/White_Platform.cpp.s
-
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.o: src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.o
-
-# target to build an object file
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.o
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.o
-
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.i: src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.i
-
-# target to preprocess a source file
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.i
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.i
-
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.s: src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.s
-
-# target to generate assembly for a file
-src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.s
-.PHONY : src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.cpp.s
-
 src/representation/Entity_View/Entity_View.o: src/representation/Entity_View/Entity_View.cpp.o
 .PHONY : src/representation/Entity_View/Entity_View.o
 
@@ -910,53 +718,245 @@ src/representation/Entity_View/Entity_View.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Entity_View.cpp.s
 .PHONY : src/representation/Entity_View/Entity_View.cpp.s
 
-src/representation/Entity_View/Platform.o: src/representation/Entity_View/Platform.cpp.o
-.PHONY : src/representation/Entity_View/Platform.o
+src/representation/Entity_View/V_BG_Tile.o: src/representation/Entity_View/V_BG_Tile.cpp.o
+.PHONY : src/representation/Entity_View/V_BG_Tile.o
 
 # target to build an object file
-src/representation/Entity_View/Platform.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Platform.cpp.o
-.PHONY : src/representation/Entity_View/Platform.cpp.o
+src/representation/Entity_View/V_BG_Tile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_BG_Tile.cpp.o
+.PHONY : src/representation/Entity_View/V_BG_Tile.cpp.o
 
-src/representation/Entity_View/Platform.i: src/representation/Entity_View/Platform.cpp.i
-.PHONY : src/representation/Entity_View/Platform.i
+src/representation/Entity_View/V_BG_Tile.i: src/representation/Entity_View/V_BG_Tile.cpp.i
+.PHONY : src/representation/Entity_View/V_BG_Tile.i
 
 # target to preprocess a source file
-src/representation/Entity_View/Platform.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Platform.cpp.i
-.PHONY : src/representation/Entity_View/Platform.cpp.i
+src/representation/Entity_View/V_BG_Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_BG_Tile.cpp.i
+.PHONY : src/representation/Entity_View/V_BG_Tile.cpp.i
 
-src/representation/Entity_View/Platform.s: src/representation/Entity_View/Platform.cpp.s
-.PHONY : src/representation/Entity_View/Platform.s
+src/representation/Entity_View/V_BG_Tile.s: src/representation/Entity_View/V_BG_Tile.cpp.s
+.PHONY : src/representation/Entity_View/V_BG_Tile.s
 
 # target to generate assembly for a file
-src/representation/Entity_View/Platform.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Platform.cpp.s
-.PHONY : src/representation/Entity_View/Platform.cpp.s
+src/representation/Entity_View/V_BG_Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_BG_Tile.cpp.s
+.PHONY : src/representation/Entity_View/V_BG_Tile.cpp.s
 
-src/representation/Entity_View/Player.o: src/representation/Entity_View/Player.cpp.o
-.PHONY : src/representation/Entity_View/Player.o
+src/representation/Entity_View/V_Bonus.o: src/representation/Entity_View/V_Bonus.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus.o
 
 # target to build an object file
-src/representation/Entity_View/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Player.cpp.o
-.PHONY : src/representation/Entity_View/Player.cpp.o
+src/representation/Entity_View/V_Bonus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus.cpp.o
 
-src/representation/Entity_View/Player.i: src/representation/Entity_View/Player.cpp.i
-.PHONY : src/representation/Entity_View/Player.i
+src/representation/Entity_View/V_Bonus.i: src/representation/Entity_View/V_Bonus.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus.i
 
 # target to preprocess a source file
-src/representation/Entity_View/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Player.cpp.i
-.PHONY : src/representation/Entity_View/Player.cpp.i
+src/representation/Entity_View/V_Bonus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus.cpp.i
 
-src/representation/Entity_View/Player.s: src/representation/Entity_View/Player.cpp.s
-.PHONY : src/representation/Entity_View/Player.s
+src/representation/Entity_View/V_Bonus.s: src/representation/Entity_View/V_Bonus.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus.s
 
 # target to generate assembly for a file
-src/representation/Entity_View/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/Player.cpp.s
-.PHONY : src/representation/Entity_View/Player.cpp.s
+src/representation/Entity_View/V_Bonus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus.cpp.s
+
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.o: src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.o
+
+# target to build an object file
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.o
+
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.i: src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.i
+
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.s: src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Jetpack.cpp.s
+
+src/representation/Entity_View/V_Bonus_Types/V_Spring.o: src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.o
+
+# target to build an object file
+src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.o
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.o
+
+src/representation/Entity_View/V_Bonus_Types/V_Spring.i: src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.i
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.i
+
+src/representation/Entity_View/V_Bonus_Types/V_Spring.s: src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.s
+.PHONY : src/representation/Entity_View/V_Bonus_Types/V_Spring.cpp.s
+
+src/representation/Entity_View/V_Platform.o: src/representation/Entity_View/V_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform.o
+
+# target to build an object file
+src/representation/Entity_View/V_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform.cpp.o
+
+src/representation/Entity_View/V_Platform.i: src/representation/Entity_View/V_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform.cpp.i
+
+src/representation/Entity_View/V_Platform.s: src/representation/Entity_View/V_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform.cpp.s
+
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.o: src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.o
+
+# target to build an object file
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.o
+
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.i: src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.i
+
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.s: src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.cpp.s
+
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.o: src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.o
+
+# target to build an object file
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.o
+
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.i: src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.i
+
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.s: src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Green_Platform.cpp.s
+
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.o: src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.o
+
+# target to build an object file
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.o
+
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.i: src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.i
+
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.s: src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_White_Platform.cpp.s
+
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.o: src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.o
+
+# target to build an object file
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.o
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.o
+
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.i: src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.i
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.i
+
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.s: src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.s
+.PHONY : src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.cpp.s
+
+src/representation/Entity_View/V_Player.o: src/representation/Entity_View/V_Player.cpp.o
+.PHONY : src/representation/Entity_View/V_Player.o
+
+# target to build an object file
+src/representation/Entity_View/V_Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Player.cpp.o
+.PHONY : src/representation/Entity_View/V_Player.cpp.o
+
+src/representation/Entity_View/V_Player.i: src/representation/Entity_View/V_Player.cpp.i
+.PHONY : src/representation/Entity_View/V_Player.i
+
+# target to preprocess a source file
+src/representation/Entity_View/V_Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Player.cpp.i
+.PHONY : src/representation/Entity_View/V_Player.cpp.i
+
+src/representation/Entity_View/V_Player.s: src/representation/Entity_View/V_Player.cpp.s
+.PHONY : src/representation/Entity_View/V_Player.s
+
+# target to generate assembly for a file
+src/representation/Entity_View/V_Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AP_doodle_game.dir/build.make CMakeFiles/AP_doodle_game.dir/src/representation/Entity_View/V_Player.cpp.s
+.PHONY : src/representation/Entity_View/V_Player.cpp.s
 
 src/representation/Game.o: src/representation/Game.cpp.o
 .PHONY : src/representation/Game.o
@@ -1022,39 +1022,39 @@ help:
 	@echo "... src/logic/Camera.o"
 	@echo "... src/logic/Camera.i"
 	@echo "... src/logic/Camera.s"
-	@echo "... src/logic/Entity_Model/BG_Tile.o"
-	@echo "... src/logic/Entity_Model/BG_Tile.i"
-	@echo "... src/logic/Entity_Model/BG_Tile.s"
-	@echo "... src/logic/Entity_Model/Bonus.o"
-	@echo "... src/logic/Entity_Model/Bonus.i"
-	@echo "... src/logic/Entity_Model/Bonus.s"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Jetpack.o"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Jetpack.i"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Jetpack.s"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Spring.o"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Spring.i"
-	@echo "... src/logic/Entity_Model/EM_Bonus_Types/Spring.s"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.o"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.i"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.s"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Green_Platform.o"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Green_Platform.i"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Green_Platform.s"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/White_Platform.o"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/White_Platform.i"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/White_Platform.s"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.o"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.i"
-	@echo "... src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.s"
 	@echo "... src/logic/Entity_Model/Entity_Model.o"
 	@echo "... src/logic/Entity_Model/Entity_Model.i"
 	@echo "... src/logic/Entity_Model/Entity_Model.s"
-	@echo "... src/logic/Entity_Model/Platform.o"
-	@echo "... src/logic/Entity_Model/Platform.i"
-	@echo "... src/logic/Entity_Model/Platform.s"
-	@echo "... src/logic/Entity_Model/Player.o"
-	@echo "... src/logic/Entity_Model/Player.i"
-	@echo "... src/logic/Entity_Model/Player.s"
+	@echo "... src/logic/Entity_Model/M_BG_Tile.o"
+	@echo "... src/logic/Entity_Model/M_BG_Tile.i"
+	@echo "... src/logic/Entity_Model/M_BG_Tile.s"
+	@echo "... src/logic/Entity_Model/M_Bonus.o"
+	@echo "... src/logic/Entity_Model/M_Bonus.i"
+	@echo "... src/logic/Entity_Model/M_Bonus.s"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.o"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.i"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.s"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Spring.o"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Spring.i"
+	@echo "... src/logic/Entity_Model/M_Bonus_Types/M_Spring.s"
+	@echo "... src/logic/Entity_Model/M_Platform.o"
+	@echo "... src/logic/Entity_Model/M_Platform.i"
+	@echo "... src/logic/Entity_Model/M_Platform.s"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.o"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.i"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.s"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.o"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.i"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.s"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_White_Platform.o"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_White_Platform.i"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_White_Platform.s"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.o"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.i"
+	@echo "... src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.s"
+	@echo "... src/logic/Entity_Model/M_Player.o"
+	@echo "... src/logic/Entity_Model/M_Player.i"
+	@echo "... src/logic/Entity_Model/M_Player.s"
 	@echo "... src/logic/Namespaces.o"
 	@echo "... src/logic/Namespaces.i"
 	@echo "... src/logic/Namespaces.s"
@@ -1085,39 +1085,39 @@ help:
 	@echo "... src/logic/design_patterns/Subject.o"
 	@echo "... src/logic/design_patterns/Subject.i"
 	@echo "... src/logic/design_patterns/Subject.s"
-	@echo "... src/representation/Entity_View/BG_Tile.o"
-	@echo "... src/representation/Entity_View/BG_Tile.i"
-	@echo "... src/representation/Entity_View/BG_Tile.s"
-	@echo "... src/representation/Entity_View/Bonus.o"
-	@echo "... src/representation/Entity_View/Bonus.i"
-	@echo "... src/representation/Entity_View/Bonus.s"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Jetpack.o"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Jetpack.i"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Jetpack.s"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Spring.o"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Spring.i"
-	@echo "... src/representation/Entity_View/EV_Bonus_Types/Spring.s"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Blue_Platform.o"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Blue_Platform.i"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Blue_Platform.s"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Green_Platform.o"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Green_Platform.i"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Green_Platform.s"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/White_Platform.o"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/White_Platform.i"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/White_Platform.s"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.o"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.i"
-	@echo "... src/representation/Entity_View/EV_Platform_Types/Yellow_Platform.s"
 	@echo "... src/representation/Entity_View/Entity_View.o"
 	@echo "... src/representation/Entity_View/Entity_View.i"
 	@echo "... src/representation/Entity_View/Entity_View.s"
-	@echo "... src/representation/Entity_View/Platform.o"
-	@echo "... src/representation/Entity_View/Platform.i"
-	@echo "... src/representation/Entity_View/Platform.s"
-	@echo "... src/representation/Entity_View/Player.o"
-	@echo "... src/representation/Entity_View/Player.i"
-	@echo "... src/representation/Entity_View/Player.s"
+	@echo "... src/representation/Entity_View/V_BG_Tile.o"
+	@echo "... src/representation/Entity_View/V_BG_Tile.i"
+	@echo "... src/representation/Entity_View/V_BG_Tile.s"
+	@echo "... src/representation/Entity_View/V_Bonus.o"
+	@echo "... src/representation/Entity_View/V_Bonus.i"
+	@echo "... src/representation/Entity_View/V_Bonus.s"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Jetpack.o"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Jetpack.i"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Jetpack.s"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Spring.o"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Spring.i"
+	@echo "... src/representation/Entity_View/V_Bonus_Types/V_Spring.s"
+	@echo "... src/representation/Entity_View/V_Platform.o"
+	@echo "... src/representation/Entity_View/V_Platform.i"
+	@echo "... src/representation/Entity_View/V_Platform.s"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.o"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.i"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Blue_Platform.s"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Green_Platform.o"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Green_Platform.i"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Green_Platform.s"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_White_Platform.o"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_White_Platform.i"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_White_Platform.s"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.o"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.i"
+	@echo "... src/representation/Entity_View/V_Platform_Types/V_Yellow_Platform.s"
+	@echo "... src/representation/Entity_View/V_Player.o"
+	@echo "... src/representation/Entity_View/V_Player.i"
+	@echo "... src/representation/Entity_View/V_Player.s"
 	@echo "... src/representation/Game.o"
 	@echo "... src/representation/Game.i"
 	@echo "... src/representation/Game.s"

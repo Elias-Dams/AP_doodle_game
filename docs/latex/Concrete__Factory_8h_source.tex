@@ -1,0 +1,78 @@
+\hypertarget{Concrete__Factory_8h_source}{}\doxysection{Concrete\+\_\+\+Factory.\+h}
+\label{Concrete__Factory_8h_source}\index{src/representation/design\_patterns/Concrete\_Factory.h@{src/representation/design\_patterns/Concrete\_Factory.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_CONCRETE\_FACTORY\_H}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_CONCRETE\_FACTORY\_H}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}../../logic/design\_patterns/Abstract\_Factory.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Bonus\_Types/V\_Jetpack.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Bonus\_Types/V\_Spring.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Platform\_Types/V\_Blue\_Platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Platform\_Types/V\_Green\_Platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Platform\_Types/V\_White\_Platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Platform\_Types/V\_Yellow\_Platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_BG\_Tile.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Bonus.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}../Entity\_View/V\_Player.h"{}}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00026}\mbox{\hyperlink{classConcrete__Factory}{00026}} \textcolor{keyword}{class }\mbox{\hyperlink{classConcrete__Factory}{Concrete\_Factory}} : \textcolor{keyword}{public} \mbox{\hyperlink{classAbstract__Factory}{Abstract\_Factory}} \{}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00028}00028 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00033}00033     \mbox{\hyperlink{classConcrete__Factory_a2d9a93b51756e31a35002875d3c5a30b}{Concrete\_Factory}}();}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00034}00034     \textcolor{comment}{// create player}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00035}00035     shared\_ptr<Model::Player> \mbox{\hyperlink{classConcrete__Factory_af5cde1527aa69224cdb13653de685f95}{createPlayer}}(\textcolor{keywordtype}{float} player\_width, \textcolor{keywordtype}{float} player\_height, \textcolor{keywordtype}{float} startposx, \textcolor{keywordtype}{float} startposy, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00037}00037     \textcolor{comment}{// create platforms}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00038}00038     shared\_ptr<Model::Green\_Platform> \mbox{\hyperlink{classConcrete__Factory_a19b8e642221281310589451fe4951b1d}{createGreenPlatform}}(\textcolor{keywordtype}{float} platform\_width, \textcolor{keywordtype}{float} platform\_height, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00039}00039     shared\_ptr<Model::Blue\_Platform> \mbox{\hyperlink{classConcrete__Factory_aec7195547845dab3a0cca813abe8fc2f}{createBluePlatform}}(\textcolor{keywordtype}{float} platform\_width, \textcolor{keywordtype}{float} platform\_height, \textcolor{keywordtype}{float} move\_width, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00040}00040     shared\_ptr<Model::White\_Platform> \mbox{\hyperlink{classConcrete__Factory_a33624ef79db1a11d56c64f89aedaa6fc}{createWhitePlatform}}(\textcolor{keywordtype}{float} platform\_width, \textcolor{keywordtype}{float} platform\_height, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00041}00041     shared\_ptr<Model::Yellow\_Platform> \mbox{\hyperlink{classConcrete__Factory_ada39ced5f3e60f5fb4f9011076ceda7a}{createYellowPlatform}}(\textcolor{keywordtype}{float} platform\_width, \textcolor{keywordtype}{float} platform\_height, \textcolor{keywordtype}{float} move\_height, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00043}00043     \textcolor{comment}{//  create bonuses}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00044}00044     shared\_ptr<Model::Spring> \mbox{\hyperlink{classConcrete__Factory_a82a874ec09f44c08c259bc87928710e9}{createSpring}}(\textcolor{keywordtype}{float} spring\_width, \textcolor{keywordtype}{float} spring\_height, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00045}00045     shared\_ptr<Model::Jetpack> \mbox{\hyperlink{classConcrete__Factory_afe4cb53cd7296da886fbe23550631202}{createJetpack}}(\textcolor{keywordtype}{float} jetpack\_width, \textcolor{keywordtype}{float} jetpack\_height, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00047}00047     \textcolor{comment}{// create background}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00048}00048     shared\_ptr<Model::BG\_Tile> \mbox{\hyperlink{classConcrete__Factory_a123388fc1fd74e1bd6ba55f7886fb9c2}{createBackground}}(\textcolor{keywordtype}{float} background\_width, \textcolor{keywordtype}{float} background\_height, \textcolor{keywordtype}{float} startposx, \textcolor{keywordtype}{float} startposy, shared\_ptr<Camera> camera) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00050}00050     shared\_ptr<Camera> \mbox{\hyperlink{classConcrete__Factory_a436083d80061c9b276839c86f196ee47}{createCamera}}(\textcolor{keywordtype}{float} camera\_width, \textcolor{keywordtype}{float} camera\_height) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00052}00052     \textcolor{comment}{// Model view getters}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00061}00061     weak\_ptr<View::Player> \mbox{\hyperlink{classConcrete__Factory_a5a30bfbd0a29c54ab595e0cbb34e667c}{get\_player}}();}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00071}00071     weak\_ptr<View::Platform> \mbox{\hyperlink{classConcrete__Factory_a8ab829eea7806f66298356acc68c21eb}{get\_platform}}(\textcolor{keyword}{const} shared\_ptr<Model::Platform> \&platform);}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00081}00081     weak\_ptr<View::Bonus> \mbox{\hyperlink{classConcrete__Factory_a83bc337774e4a983e4b5d15d340365a8}{get\_bonus}}(\textcolor{keyword}{const} shared\_ptr<Model::Bonus> \&bonus);}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00090}00090     weak\_ptr<Score> \mbox{\hyperlink{classConcrete__Factory_a41778fe663ad63462cc31d4affc46f93}{get\_score}}();}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00099}00099     \textcolor{keyword}{const} vector<weak\_ptr<View::BG\_Tile>> \&\mbox{\hyperlink{classConcrete__Factory_a131365184cf31a07241e8ed4be9acbf3}{getBackgrounds}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00101}00101     \textcolor{comment}{// deleters}}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00102}00102     \textcolor{keywordtype}{void} \mbox{\hyperlink{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}{delete\_platform}}(weak\_ptr<Model::Platform> platform) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00103}00103     \textcolor{keywordtype}{void} \mbox{\hyperlink{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}{delete\_bonus}}(weak\_ptr<Model::Bonus> bonus) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00106}00106     \textcolor{keyword}{virtual} \mbox{\hyperlink{classConcrete__Factory}{\string~Concrete\_Factory}}();}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00108}00108 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00109}00109     weak\_ptr<View::Player> Playerview; }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00110}00110     map<shared\_ptr<Model::Platform>, weak\_ptr<View::Platform>> Platformviews; }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00111}00111     map<shared\_ptr<Model::Bonus>, weak\_ptr<View::Bonus>> Bonusviews; }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00112}00112     vector<weak\_ptr<View::BG\_Tile>> backgrounds; }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00113}00113     weak\_ptr<Score> score; }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00115}00115 \};}
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{Concrete__Factory_8h_source_l00118}00118 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_CONCRETE\_FACTORY\_H}}
+
+\end{DoxyCode}

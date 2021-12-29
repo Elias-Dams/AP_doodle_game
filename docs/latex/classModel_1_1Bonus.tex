@@ -1,0 +1,190 @@
+\hypertarget{classModel_1_1Bonus}{}\doxysection{Model\+::Bonus Class Reference}
+\label{classModel_1_1Bonus}\index{Model::Bonus@{Model::Bonus}}
+Inheritance diagram for Model\+::Bonus\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classModel_1_1Bonus}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Bonus_adcdb8ab1389dcc6a3a1046feb7ca0edd}{get\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}{get\+Width}} () const =0
+\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classModel_1_1Bonus_a043e3ca71efcebbbc4a62881fd73885b}{get\+Height}} () const =0
+\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{set\+Position}} (const float \&x, const float \&y)=0
+\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}{update}} (float x, float y)=0
+\begin{DoxyCompactList}\small\item\em updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classModel_1_1Bonus_a6a2d5ec96bbcd37ef5d1a37f49e7a3a3}{get\+Bonuspower}} () const =0
+\begin{DoxyCompactList}\small\item\em get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{M__Bonus_8h_source_l00013}{13}} of file \mbox{\hyperlink{M__Bonus_8h_source}{M\+\_\+\+Bonus.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_1_1Bonus_ace96cd91925b1f65b2c8596930fed6f5}\label{classModel_1_1Bonus_ace96cd91925b1f65b2c8596930fed6f5}} 
+\index{Model::Bonus@{Model::Bonus}!````~Bonus@{$\sim$Bonus}}
+\index{````~Bonus@{$\sim$Bonus}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bonus()}{~Bonus()}}
+{\footnotesize\ttfamily Bonus\+::$\sim$\+Bonus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{M__Bonus_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{M__Bonus_8cpp_source}{M\+\_\+\+Bonus.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_1_1Bonus_a6a2d5ec96bbcd37ef5d1a37f49e7a3a3}\label{classModel_1_1Bonus_a6a2d5ec96bbcd37ef5d1a37f49e7a3a3}} 
+\index{Model::Bonus@{Model::Bonus}!getBonuspower@{getBonuspower}}
+\index{getBonuspower@{getBonuspower}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{getBonuspower()}{getBonuspower()}}
+{\footnotesize\ttfamily virtual int Model\+::\+Bonus\+::get\+Bonuspower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get the bonuspower. 
+
+This function gets the power of a certain bonus. e.\+g. the spring makes the player jump x5 higher.
+
+\begin{DoxyReturn}{Returns}
+gets the type of the bonus 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a42d42ead15aa743e3babd67ebb2796d7}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_a1dfb30ca6c93cf9659c2c34361e86368}{Model\+::\+Spring}}.
+
+\mbox{\Hypertarget{classModel_1_1Bonus_a043e3ca71efcebbbc4a62881fd73885b}\label{classModel_1_1Bonus_a043e3ca71efcebbbc4a62881fd73885b}} 
+\index{Model::Bonus@{Model::Bonus}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily virtual float Model\+::\+Bonus\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gives the height of the entity. 
+
+This function gives the height of the entity.
+
+\begin{DoxyReturn}{Returns}
+height of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a40552727045a45dd4616217e5c799052}{Entity\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a761260794e06aa609ef30222071df6fc}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_a45f7937da30ed55ba9368809a7b9b8b2}{Model\+::\+Spring}}.
+
+\mbox{\Hypertarget{classModel_1_1Bonus_adcdb8ab1389dcc6a3a1046feb7ca0edd}\label{classModel_1_1Bonus_adcdb8ab1389dcc6a3a1046feb7ca0edd}} 
+\index{Model::Bonus@{Model::Bonus}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily virtual const pair$<$ float, float $>$ \& Model\+::\+Bonus\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gives the x and y coordinate of the entity. 
+
+This function gives the position of the entity in a normalised world.
+
+\begin{DoxyReturn}{Returns}
+a pair consisting of the x and y coordinates of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a2fd42342d82e9e214a051b205eea2066}{Entity\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753d20be93}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_add4a5748531614051b2849c285aecc34}{Model\+::\+Spring}}.
+
+\mbox{\Hypertarget{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}\label{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}} 
+\index{Model::Bonus@{Model::Bonus}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily virtual float Model\+::\+Bonus\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gives the width of the entity. 
+
+This function gives the width of the entity.
+
+\begin{DoxyReturn}{Returns}
+width of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9}{Entity\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_a041ee7f3723b5c25eaa01bd11ac29a78}{Model\+::\+Spring}}.
+
+\mbox{\Hypertarget{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}\label{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}} 
+\index{Model::Bonus@{Model::Bonus}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+sets the position of the entity. 
+
+This function updates the position of the entity with the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a position on the x axis. \\
+\hline
+{\em y} & a position on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{Entity\+\_\+\+Model}}.
+
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}{Model\+::\+Spring}}.
+
+\mbox{\Hypertarget{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}\label{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}} 
+\index{Model::Bonus@{Model::Bonus}!update@{update}}
+\index{update@{update}!Model::Bonus@{Model::Bonus}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the position of the bonus if it can move. 
+
+This function updates the position of the bonus if it can move. This is the case if it is on a moving platform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position of the platform the bonus is on. \\
+\hline
+{\em y} & position of the platform the bonus is on. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_ade4f01eb083c813483dbf8007e59c729}{Model\+::\+Spring}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/\+Entity\+\_\+\+Model/M\+\_\+\+Bonus.\+h\item 
+src/logic/\+Entity\+\_\+\+Model/M\+\_\+\+Bonus.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,421 @@
+\hypertarget{World_8cpp_source}{}\doxysection{World.\+cpp}
+\label{World_8cpp_source}\index{src/logic/World.cpp@{src/logic/World.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}World.h"{}}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00004}\mbox{\hyperlink{classWorld_a4e61e0c1d6e5ad0f65ede0e0b6d4b904}{00004}} \mbox{\hyperlink{classWorld_a4e61e0c1d6e5ad0f65ede0e0b6d4b904}{World::World}}(\textcolor{keyword}{const} shared\_ptr<Abstract\_Factory> \&factory) :}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00005}00005     factory(factory) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00006}00006     WIDTH = 400;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00007}00007     HEIGHT = 600;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00008}00008     platforms\_per\_view = 20;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00009}00009     last\_max\_of\_radius = 0;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00010}00010     height\_of\_the\_last\_platform = 0;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00011}00011     camera = factory-\/>createCamera(WIDTH, HEIGHT);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00012}00012     player = factory-\/>createPlayer((\textcolor{keywordtype}{float}) WIDTH / 8.0f, (\textcolor{keywordtype}{float}) HEIGHT / 12.0f, 150.0f, 300.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00013}00013     background.first = factory-\/>createBackground((\textcolor{keywordtype}{float}) WIDTH, (\textcolor{keywordtype}{float}) HEIGHT, 0.0f, 0.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00014}00014     background.second = factory-\/>createBackground((\textcolor{keywordtype}{float}) WIDTH, (\textcolor{keywordtype}{float}) HEIGHT, 0.0f, (\textcolor{keywordtype}{float}) HEIGHT + 0.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00015}00015     weak\_ptr<Random> random = \mbox{\hyperlink{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}{Random::GetInstance}}(); \textcolor{comment}{// initialize the singleton}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00016}00016     GameOver = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00017}00017     constant = 1;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00020}00020 \textcolor{keywordtype}{void} World::create\_start\_platform() \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00022}00022     shared\_ptr<Green\_Platform> platform = factory-\/>createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00023}00023     platform-\/>setPosition(45.0f, 100.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00024}00024     platforms.push\_back(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00027}00027 \textcolor{keywordtype}{void} World::create\_platforms() \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00028}00028     \textcolor{keywordtype}{int} radius\_per\_platform = (HEIGHT * 2) / platforms\_per\_view;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00029}00029     weak\_ptr<Random> random = \mbox{\hyperlink{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}{Random::GetInstance}}();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00031}00031     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < platforms\_per\_view; i++) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00033}00033         \textcolor{keywordtype}{int} from = last\_max\_of\_radius;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00034}00034         \textcolor{keywordtype}{int} to = last\_max\_of\_radius + radius\_per\_platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00035}00035         shared\_ptr<Green\_Platform> platform = factory-\/>createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00036}00036         platform-\/>setPosition(random.lock()-\/>generate\_between(0, (\textcolor{keywordtype}{float}) WIDTH -\/ platform-\/>getWidth()),}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00037}00037                               random.lock()-\/>generate\_between((\textcolor{keywordtype}{float}) from + platform-\/>getHeight(), (\textcolor{keywordtype}{float}) to));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00038}00038         platforms.push\_back(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00039}00039         last\_max\_of\_radius = last\_max\_of\_radius + radius\_per\_platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00040}00040         height\_of\_the\_last\_platform = platform-\/>getPosition().second;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00044}00044 \textcolor{keywordtype}{void} World::add\_platforms() \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00046}00046     \textcolor{keywordtype}{int} platforms\_to\_add = platforms\_per\_view -\/ (int) platforms.size();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00048}00048     \textcolor{keywordflow}{if} (platforms\_to\_add > 0) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00050}00050         weak\_ptr<Random> random = \mbox{\hyperlink{classRandom_a7f0df440d5f1d4f9a097952169beb6fc}{Random::GetInstance}}();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00052}00052         \textcolor{keywordtype}{int} radius\_per\_platform = (float) 2 * HEIGHT / platforms\_per\_view;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00054}00054         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < platforms\_to\_add; i++) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00056}00056             \textcolor{keywordtype}{int} from = last\_max\_of\_radius;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00057}00057             \textcolor{keywordtype}{int} to = last\_max\_of\_radius + radius\_per\_platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00060}00060             shared\_ptr<Platform> platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00061}00061             shared\_ptr<Bonus> bonus;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00062}00062             \textcolor{keywordtype}{bool} has\_bonus = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00063}00063             \textcolor{comment}{// randomly choose a type of platform}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00064}00064             \textcolor{keywordtype}{float} platform\_chance = random.lock()-\/>generate\_between(0.0f, 10.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00065}00065             \textcolor{keywordtype}{float} bonus\_chance = random.lock()-\/>generate\_between(0.0f, 10.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00067}00067             \textcolor{comment}{// green platform}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00068}00068             \textcolor{comment}{// the constant is used to reduce the platform\_chances of a green platform at a big height}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00069}00069             \textcolor{keywordflow}{if} (platform\_chance <= (7.0f -\/ (0.4375f) * (constant -\/ 1))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00070}00070                 platform = factory-\/>createGreenPlatform((\textcolor{keywordtype}{float}) WIDTH / 5.5f, (float) HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00072}00072                 \textcolor{comment}{// determine whether the platform has a bonus}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00073}00073                 \textcolor{keywordflow}{if} (bonus\_chance <= 1.0f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00074}00074                     bonus = factory-\/>createSpring((\textcolor{keywordtype}{float}) WIDTH / 21.5f, (float) HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00075}00075                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00076}00076                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bonus\_chance >= 9.5f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00077}00077                     bonus = factory-\/>createJetpack((\textcolor{keywordtype}{float}) WIDTH / 14.0f, (float) HEIGHT / 14.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00078}00078                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00079}00079                 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00080}00080             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00081}00081             \textcolor{comment}{// white platform}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00082}00082             \textcolor{comment}{// the constant is used to reduce the platform\_chances of a green platform at a big height}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00083}00083             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (platform\_chance <= (9.00f -\/ (0.5f) * (constant -\/ 1))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00084}00084                 platform = factory-\/>createWhitePlatform((\textcolor{keywordtype}{float}) WIDTH / 5.5f, (float) HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00086}00086             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00087}00087             \textcolor{comment}{// blue platform}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00088}00088             \textcolor{comment}{// the constant is used to reduce the platform\_chances of a green platform at a big height}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00089}00089             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (platform\_chance <= (9.50f -\/ (0.25f) * (constant -\/ 1))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00090}00090                 platform = factory-\/>createBluePlatform((\textcolor{keywordtype}{float}) WIDTH / 5.5f, (float) HEIGHT / 32.0f, WIDTH, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00092}00092                 \textcolor{comment}{// determine whether the platform has a bonus}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00093}00093                 \textcolor{keywordflow}{if} (bonus\_chance <= 0.5f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00094}00094                     bonus = factory-\/>createSpring((\textcolor{keywordtype}{float}) WIDTH / 21.5f, (float) HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00095}00095                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00096}00096                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bonus\_chance >= 9.5f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00097}00097                     bonus = factory-\/>createJetpack((\textcolor{keywordtype}{float}) WIDTH / 14.0f, (float) HEIGHT / 14.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00098}00098                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00099}00099                 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00101}00101             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00102}00102             \textcolor{comment}{// yellow platform}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00103}00103             \textcolor{comment}{// the constant is used to reduce the platform\_chances of a green platform at a big height}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00104}00104             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (platform\_chance <= 10.0f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00105}00105                 platform = factory-\/>createYellowPlatform((\textcolor{keywordtype}{float}) WIDTH / 5.5f, (float) HEIGHT / 32.0f, 200.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00107}00107                 \textcolor{comment}{// determine whether the platform has a bonus}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00108}00108                 \textcolor{keywordflow}{if} (bonus\_chance <= 0.5f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00109}00109                     bonus = factory-\/>createSpring((\textcolor{keywordtype}{float}) WIDTH / 21.5f, (float) HEIGHT / 32.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00110}00110                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00111}00111                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bonus\_chance >= 9.5f) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00112}00112                     bonus = factory-\/>createJetpack((\textcolor{keywordtype}{float}) WIDTH / 14.0f, (float) HEIGHT / 14.0f, camera);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00113}00113                     has\_bonus = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00114}00114                 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00115}00115             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00117}00117             platform-\/>setPosition(random.lock()-\/>generate\_between(0, (\textcolor{keywordtype}{float}) WIDTH -\/ platform-\/>getWidth()),}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00118}00118                                   random.lock()-\/>generate\_between((\textcolor{keywordtype}{float}) from + platform-\/>getHeight(), (float) to));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00120}00120             \textcolor{keywordflow}{if} (height\_of\_the\_last\_platform + 200.0f < platform-\/>getPosition().second) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00121}00121                 \textcolor{comment}{// we have to correct the height of the platform, so it is reachable}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00123}00123                 platform-\/>setPosition(platform-\/>getPosition().first, height\_of\_the\_last\_platform + 200.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00125}00125                 last\_max\_of\_radius = last\_max\_of\_radius + radius\_per\_platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00126}00126                 height\_of\_the\_last\_platform = (int) platform-\/>getPosition().second;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00127}00127                 platforms.push\_back(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00128}00128                 \textcolor{keywordflow}{if} (has\_bonus) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00129}00129                     bonus-\/>setPosition(platform-\/>getPosition().first + platform-\/>getWidth() / 2 -\/ bonus-\/>getWidth() / 2,}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00130}00130                                        platform-\/>getPosition().second + platform-\/>getHeight());}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00131}00131                     bonusses[platform] = bonus;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00132}00132                 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00134}00134             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00135}00135                 last\_max\_of\_radius = last\_max\_of\_radius + radius\_per\_platform;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00136}00136                 height\_of\_the\_last\_platform = (int) platform-\/>getPosition().second;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00137}00137                 platforms.push\_back(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00138}00138                 \textcolor{keywordflow}{if} (has\_bonus) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00139}00139                     bonus-\/>setPosition(platform-\/>getPosition().first + platform-\/>getWidth() / 2 -\/ bonus-\/>getWidth() / 2,}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00140}00140                                        platform-\/>getPosition().second + platform-\/>getHeight());}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00141}00141                     bonusses[platform] = bonus;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00142}00142                 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00143}00143             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00144}00144         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00145}00145     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00146}00146 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00149}00149 \textcolor{keywordtype}{bool} World::colisionCheck(shared\_ptr<Entity\_Model> entity, \textcolor{keywordtype}{bool} can\_update\_score) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00150}00150     \textcolor{comment}{// the left side of the player}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00151}00151     \textcolor{keywordflow}{if} (entity-\/>getPosition().first <= player-\/>getPosition().first and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00152}00152         player-\/>getPosition().first <= entity-\/>getPosition().first + entity-\/>getWidth()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00154}00154         \textcolor{keywordflow}{if} (player-\/>getPosition().second -\/ (entity-\/>getPosition().second + entity-\/>getHeight()) <= 0 and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00155}00155             player-\/>getPosition().second -\/ entity-\/>getPosition().second >= 0 and player-\/>isfalling()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00157}00157             \textcolor{keywordflow}{if}(can\_update\_score)\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00158}00158                 player-\/>setPlatfomTouched(entity);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00159}00159             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00161}00161             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00162}00162         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00163}00163     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00164}00164     \textcolor{comment}{// right side of the player}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00165}00165     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (entity-\/>getPosition().first <= player-\/>getPosition().first + player-\/>getWidth() and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00166}00166              player-\/>getPosition().first + player-\/>getWidth() <= entity-\/>getPosition().first + entity-\/>getWidth()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00168}00168         \textcolor{keywordflow}{if} (player-\/>getPosition().second -\/ (entity-\/>getPosition().second + entity-\/>getHeight()) <= 0 and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00169}00169             player-\/>getPosition().second -\/ entity-\/>getPosition().second >= 0 and player-\/>isfalling()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00171}00171             \textcolor{keywordflow}{if}(can\_update\_score)\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00172}00172                 player-\/>setPlatfomTouched(entity);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00173}00173             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00175}00175             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00176}00176         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00177}00177     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00179}00179     \textcolor{comment}{// between the player}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00180}00180     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (entity-\/>getPosition().first >= player-\/>getPosition().first and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00181}00181              player-\/>getPosition().first + player-\/>getWidth() >= entity-\/>getPosition().first + entity-\/>getWidth()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00183}00183         \textcolor{keywordflow}{if} (player-\/>getPosition().second -\/ (entity-\/>getPosition().second + entity-\/>getHeight()) <= 0 and}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00184}00184             player-\/>getPosition().second -\/ entity-\/>getPosition().second >= 0 and player-\/>isfalling()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00185}00185 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00186}00186             \textcolor{keywordflow}{if}(can\_update\_score)\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00187}00187                 player-\/>setPlatfomTouched(entity);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00188}00188             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00190}00190             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00191}00191         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00192}00192     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00193}00193     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00194}00194 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00196}\mbox{\hyperlink{classWorld_a832d4738e2abc0317d10775d59accb8a}{00196}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_a832d4738e2abc0317d10775d59accb8a}{World::startstate}}(\textcolor{keywordtype}{float} dt) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00197}00197     \textcolor{keywordflow}{if} (platforms.empty()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00198}00198         this-\/>create\_start\_platform();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00199}00199         player-\/>PlayerReset(50.0f, 300.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00200}00200     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00202}00202     \textcolor{keywordtype}{bool} hit = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00203}00203     vector<shared\_ptr<Platform>>::iterator it = platforms.begin();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00204}00204     \textcolor{keywordflow}{while} (it != platforms.end()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00205}00205 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00206}00206         (*it)-\/>update(dt);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00208}00208         \textcolor{comment}{// false because we can't alter the score}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00209}00209         \textcolor{keywordflow}{if} (this-\/>colisionCheck(*it, \textcolor{keyword}{false})) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00210}00210             hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00211}00211         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00212}00212         ++it;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00213}00213     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00215}00215     player-\/>jump(dt, hit, 1);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00216}00216 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00218}\mbox{\hyperlink{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}{00218}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}{World::update}}(\textcolor{keywordtype}{float} dt, \textcolor{keyword}{const} \textcolor{keywordtype}{char} \&key) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00219}00219     \textcolor{keywordflow}{if} (platforms.size() == 1) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00220}00220         this-\/>create\_platforms();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00221}00221     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00222}00222     \textcolor{comment}{// game over;}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00223}00223     \textcolor{keywordflow}{if} (player-\/>getPosition().second < (camera-\/>getNomalisedHeight() -\/ HEIGHT / 2)) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00224}00224         GameOver = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00225}00225     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00227}00227     \textcolor{comment}{// update the camera pos}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00228}00228     \textcolor{keywordflow}{if} (player-\/>getPosition().second >= camera-\/>getNomalisedHeight()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00229}00229         camera-\/>setHeight(player-\/>getPosition().second);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00230}00230     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00232}00232     \textcolor{comment}{// update the background}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00233}00233     \textcolor{keywordflow}{if} (background.second-\/>getPosition().second + HEIGHT / 2 <= camera-\/>getNomalisedHeight()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00234}00234         background.first-\/>setPosition(background.second-\/>getPosition().first,}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00235}00235                                       background.second-\/>getPosition().second + HEIGHT);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00236}00236 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00237}00237         shared\_ptr<BG\_Tile> temp = background.second;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00238}00238         background.second = background.first;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00239}00239         background.first = temp;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00240}00240     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00241}00241 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00242}00242     \textcolor{comment}{// move the player}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00243}00243     \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'Q'}) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00244}00244         player-\/>move(-\/5.f * dt * 60.f, 0.f * dt * 60.f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00245}00245     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00246}00246     \textcolor{keywordflow}{if} (key == \textcolor{charliteral}{'D'}) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00247}00247         player-\/>move(5.f * dt * 60.f, 0.f * dt * 60.f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00248}00248     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00250}00250     \textcolor{comment}{// if player goes out of the screen to the left it wil go to the right.}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00251}00251     \textcolor{keywordflow}{if} (player-\/>getPosition().first <= -\/player-\/>getWidth()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00252}00252         player-\/>setPosition(WIDTH -\/ player-\/>getWidth(), player-\/>getPosition().second);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00253}00253     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00254}00254     \textcolor{comment}{// if player goes out of the screen to the right it wil go to the left.}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00255}00255     \textcolor{keywordflow}{if} (player-\/>getPosition().first >= WIDTH) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00256}00256         player-\/>setPosition(0, player-\/>getPosition().second);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00257}00257     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00258}00258 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00259}00259     \textcolor{comment}{// check collision}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00260}00260     \textcolor{keywordtype}{int} height\_modification = 1;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00262}00262     \textcolor{keywordtype}{bool} hit = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00263}00263     \textcolor{keywordtype}{bool} bonus\_hit = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00264}00264 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00265}00265     vector<shared\_ptr<Platform>>::iterator it = platforms.begin();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00266}00266     \textcolor{keywordflow}{while} (it != platforms.end()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00267}00267         \textcolor{keywordtype}{bool} current\_hit = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00268}00268 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00269}00269         (*it)-\/>update(dt);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00270}00270 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00271}00271         \textcolor{keywordflow}{if} (bonusses.count((*it))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00272}00272             bonusses[(*it)]-\/>update(}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00273}00273                     (*it)-\/>getPosition().first + (*it)-\/>getWidth() / 2 -\/ bonusses[(*it)]-\/>getWidth() / 2,}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00274}00274                     (*it)-\/>getPosition().second + (*it)-\/>getHeight());}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00275}00275             \textcolor{comment}{// true because we can alter the score}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00276}00276             \textcolor{keywordflow}{if} (this-\/>colisionCheck(bonusses[(*it)], \textcolor{keyword}{true})) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00277}00277                 hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00278}00278                 bonus\_hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00279}00279                 current\_hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00280}00280                 height\_modification = bonusses[(*it)]-\/>getBonuspower();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00281}00281             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00282}00282         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00283}00283         \textcolor{comment}{// true because we can alter the score}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00284}00284         \textcolor{keywordflow}{if} (this-\/>colisionCheck(*it, \textcolor{keyword}{true}) and !hit) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00285}00285             hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00286}00286             current\_hit = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00287}00287         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00288}00288 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00289}00289         \textcolor{keywordflow}{if} ((*it)-\/>getPosition().second < (camera-\/>getNomalisedHeight() -\/ HEIGHT / 2) -\/ (*it)-\/>getHeight()) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00290}00290             \textcolor{keywordflow}{if} (bonusses.count((*it))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00291}00291                 factory-\/>delete\_bonus(bonusses[(*it)]);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00292}00292                 bonusses[(*it)].reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00293}00293                 bonusses.erase((*it));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00294}00294             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00295}00295             factory-\/>delete\_platform((*it));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00296}00296             (*it).reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00297}00297             platforms.erase(it);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00298}00298 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00299}00299         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_hit and (*it)-\/>getColor() == \textcolor{stringliteral}{"{}White"{}}) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00300}00300             factory-\/>delete\_platform((*it));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00301}00301             (*it).reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00302}00302             platforms.erase(it);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00303}00303         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (current\_hit and bonus\_hit and bonusses.count((*it))) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00304}00304             \textcolor{comment}{// make the jetpack disappear}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00305}00305             \textcolor{keywordflow}{if} (bonusses[(*it)]-\/>getBonuspower() == 12) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00306}00306                 factory-\/>delete\_bonus(bonusses[(*it)]);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00307}00307                 bonusses[(*it)].reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00308}00308                 bonusses.erase((*it));}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00309}00309             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00310}00310                 ++it;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00311}00311             \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00312}00312         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00313}00313             ++it;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00314}00314         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00315}00315     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00317}00317     \textcolor{comment}{// if we het higher there need to be less platforms}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00318}00318     \textcolor{comment}{// because of the way draw my platforms the constant has to be smaller or equil to}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00319}00319     \textcolor{comment}{// the height if the world * 2 /100 <= platforms per 2 views -\/ constant}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00320}00320     \textcolor{comment}{// |-\/-\/-\/-\/-\/-\/-\/-\/-\/600 * 2 / 100-\/-\/-\/-\/-\/-\/-\/-\/| <= |-\/-\/-\/-\/-\/-\/-\/-\/20 -\/ constant-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/| ==> 12 <= 20 -\/ constant}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00321}00321     \textcolor{comment}{// if the constant becomes more than it is almost impossible to draw platforms that are reachable bij the player}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00322}00322     \textcolor{keywordflow}{if} ((\textcolor{keywordtype}{int}) camera-\/>getNomalisedHeight() >= 3000 * constant \&\& constant <= 16) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00323}00323         constant += 1;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00324}00324         platforms\_per\_view -\/= 1;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00325}00325     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00326}00326 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00327}00327     \textcolor{comment}{// add platforms}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00328}00328     this-\/>add\_platforms();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00329}00329 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00330}00330     player-\/>jump(dt, hit, height\_modification);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00332}00332     \textcolor{comment}{//cout << player-\/>getPosition().second << endl;}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00333}00333 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00334}00334 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00335}\mbox{\hyperlink{classWorld_a6d710b085f1a8f195f18f9d6b124c327}{00335}} shared\_ptr<Player> \mbox{\hyperlink{classWorld_a6d710b085f1a8f195f18f9d6b124c327}{World::getPlayer}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00336}00336     \textcolor{keywordflow}{return} player;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00337}00337 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00338}00338 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00339}\mbox{\hyperlink{classWorld_a2a7614f0f862c86de97e7696406d2693}{00339}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classWorld_a2a7614f0f862c86de97e7696406d2693}{World::getWidth}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00340}00340     \textcolor{keywordflow}{return} WIDTH;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00341}00341 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00342}00342 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00343}\mbox{\hyperlink{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}{00343}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}{World::getHeight}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00344}00344     \textcolor{keywordflow}{return} HEIGHT;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00345}00345 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00346}00346 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00347}\mbox{\hyperlink{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}{00347}} \textcolor{keyword}{const} vector<shared\_ptr<Platform>> \&\mbox{\hyperlink{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}{World::getPlatforms}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00348}00348     \textcolor{keywordflow}{return} platforms;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00349}00349 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00350}00350 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00351}\mbox{\hyperlink{classWorld_a385d14afa06604151529325b8736bcd7}{00351}} shared\_ptr<Camera> \mbox{\hyperlink{classWorld_a385d14afa06604151529325b8736bcd7}{World::getCamera}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00352}00352     \textcolor{keywordflow}{return} camera;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00353}00353 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00354}00354 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00355}\mbox{\hyperlink{classWorld_a0ccb7137db33414179c4bdc1609331bd}{00355}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classWorld_a0ccb7137db33414179c4bdc1609331bd}{World::isGameOver}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00356}00356     \textcolor{keywordflow}{return} GameOver;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00357}00357 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00358}00358 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00359}\mbox{\hyperlink{classWorld_abd1528dd5557dbfc40283542e5edfabf}{00359}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_abd1528dd5557dbfc40283542e5edfabf}{World::Reset}}() \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00360}00360     player-\/>PlayerReset(50.0f, 300.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00361}00361     camera-\/>CameraReset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00362}00362     last\_max\_of\_radius = 0;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00363}00363     height\_of\_the\_last\_platform = 0;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00364}00364     platforms\_per\_view = 20;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00365}00365 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00366}00366     \textcolor{keywordflow}{for} (shared\_ptr<Platform> platform : platforms) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00367}00367         \textcolor{keywordflow}{if} (bonusses.count(platform)) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00368}00368             factory-\/>delete\_bonus(bonusses[platform]);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00369}00369             bonusses[platform].reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00370}00370             bonusses.erase(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00371}00371         \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00372}00372         factory-\/>delete\_platform(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00373}00373         platform.reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00374}00374     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00375}00375     platforms.clear();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00376}00376 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00377}00377     GameOver = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00378}00378 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00379}00379     background.first-\/>setPosition(0.0f, 0.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00380}00380     background.second-\/>setPosition(0.0f, (\textcolor{keywordtype}{float}) HEIGHT + 0.0f);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00381}00381 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00382}00382     constant = 1;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00383}00383 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00384}00384     platforms.clear();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00385}00385     bonusses.clear();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00386}00386 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00387}00387 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00388}00388 World::\string~World() \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00389}00389 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00390}00390     \textcolor{keywordflow}{for} (std::map<shared\_ptr<Platform>, shared\_ptr<Bonus>>::iterator it = bonusses.begin(); it != bonusses.end(); it++) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00391}00391         factory-\/>delete\_bonus(it-\/>second);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00392}00392         it-\/>second.reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00393}00393     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00394}00394 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00395}00395     \textcolor{keywordflow}{for} (shared\_ptr<Platform> platform : platforms) \{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00396}00396         bonusses.erase(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00397}00397         factory-\/>delete\_platform(platform);}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00398}00398     \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00399}00399 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00400}00400     platforms.clear();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00401}00401     bonusses.clear();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00402}00402 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00403}00403     factory.reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00404}00404 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00405}00405     background.first.reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00406}00406     background.second.reset();}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00407}00407 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00408}00408 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00409}\mbox{\hyperlink{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}{00409}} \textcolor{keyword}{const} pair<shared\_ptr<BG\_Tile>, shared\_ptr<BG\_Tile>> \&\mbox{\hyperlink{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}{World::getBackground}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00410}00410     \textcolor{keywordflow}{return} background;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00411}00411 \}}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00412}00412 }
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00413}\mbox{\hyperlink{classWorld_a5475c4f46f2711d97339c541a92ba3cc}{00413}} \textcolor{keyword}{const} map<shared\_ptr<Platform>, shared\_ptr<Bonus>> \&\mbox{\hyperlink{classWorld_a5475c4f46f2711d97339c541a92ba3cc}{World::getBonuses}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00414}00414     \textcolor{keywordflow}{return} bonusses;}
+\DoxyCodeLine{\Hypertarget{World_8cpp_source_l00415}00415 \}}
+
+\end{DoxyCode}

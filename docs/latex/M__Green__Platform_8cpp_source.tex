@@ -1,0 +1,45 @@
+\hypertarget{M__Green__Platform_8cpp_source}{}\doxysection{M\+\_\+\+Green\+\_\+\+Platform.\+cpp}
+\label{M__Green__Platform_8cpp_source}\index{src/logic/Entity\_Model/M\_Platform\_Types/M\_Green\_Platform.cpp@{src/logic/Entity\_Model/M\_Platform\_Types/M\_Green\_Platform.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}M\_Green\_Platform.h"{}}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00004}\mbox{\hyperlink{classModel_1_1Green__Platform_aaef1479685987a5840deeaf88a61abde}{00004}} \mbox{\hyperlink{classModel_1_1Green__Platform_aaef1479685987a5840deeaf88a61abde}{Model::Green\_Platform::Green\_Platform}}(\textcolor{keywordtype}{float} platformWidth, \textcolor{keywordtype}{float} platformHeight) :}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00005}00005     platform\_width(platformWidth), platform\_height(platformHeight) \{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00006}00006     position.first = 0;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00007}00007     position.second = 0;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00008}00008     color = \textcolor{stringliteral}{"{}Green"{}};}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00009}00009 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00011}\mbox{\hyperlink{classModel_1_1Green__Platform_ae97d7787c47261de6275fa240a0c95ca}{00011}} \textcolor{keyword}{const} pair<float, float> \&\mbox{\hyperlink{classModel_1_1Green__Platform_ae97d7787c47261de6275fa240a0c95ca}{Model::Green\_Platform::getPosition}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00012}00012     \textcolor{keywordflow}{return} position;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00013}00013 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00015}\mbox{\hyperlink{classModel_1_1Green__Platform_a06b5d0d48a8e6dc6503b737913145e50}{00015}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Green__Platform_a06b5d0d48a8e6dc6503b737913145e50}{Model::Green\_Platform::setPosition}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&x, \textcolor{keyword}{const} \textcolor{keywordtype}{float} \&y) \{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00016}00016     Green\_Platform::position = make\_pair(x, y);}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00017}00017     NotifyPosition(position.first, position.second);}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00020}\mbox{\hyperlink{classModel_1_1Green__Platform_a703e98bae94a3766019339fc26043907}{00020}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classModel_1_1Green__Platform_a703e98bae94a3766019339fc26043907}{Model::Green\_Platform::update}}(\textcolor{keywordtype}{float} dt) \{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00021}00021     \textcolor{comment}{// the platform doesn't move}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00022}00022     NotifyPosition(position.first, position.second);}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00025}\mbox{\hyperlink{classModel_1_1Green__Platform_a8c042daa9815abb6f1600163aea3c316}{00025}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classModel_1_1Green__Platform_a8c042daa9815abb6f1600163aea3c316}{Model::Green\_Platform::getWidth}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00026}00026     \textcolor{keywordflow}{return} platform\_width;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00029}\mbox{\hyperlink{classModel_1_1Green__Platform_a72818151ade0bbd2e8e8722d517011fd}{00029}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classModel_1_1Green__Platform_a72818151ade0bbd2e8e8722d517011fd}{Model::Green\_Platform::getHeight}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} platform\_height;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00033}\mbox{\hyperlink{classModel_1_1Green__Platform_a19dafcc59a4cca8ac6dc9dc17ce5771e}{00033}} \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classModel_1_1Green__Platform_a19dafcc59a4cca8ac6dc9dc17ce5771e}{Model::Green\_Platform::getColor}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00034}00034     \textcolor{keywordflow}{return} color;}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00037}00037 Model::Green\_Platform::\string~Green\_Platform() \{}
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{M__Green__Platform_8cpp_source_l00039}00039 \}}
+
+\end{DoxyCode}

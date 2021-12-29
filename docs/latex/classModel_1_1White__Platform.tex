@@ -1,0 +1,208 @@
+\hypertarget{classModel_1_1White__Platform}{}\doxysection{Model\+::White\+\_\+\+Platform Class Reference}
+\label{classModel_1_1White__Platform}\index{Model::White\_Platform@{Model::White\_Platform}}
+Inheritance diagram for Model\+::White\+\_\+\+Platform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classModel_1_1White__Platform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModel_1_1White__Platform_a4b75fabffc1d847a6d3ba70d508d2ccb}{White\+\_\+\+Platform}} (float platform\+Width, float platform\+Height)
+\item 
+const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1White__Platform_a27116716f42d7e588869ab1c8b064fa6}{get\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1White__Platform_ab014b3021861a37c626236d4febf4f10}{set\+Position}} (const float \&x, const float \&y) override
+\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1White__Platform_aabe4c4671b4c57ff1e838f6f1bf2c1d5}{update}} (float dt) override
+\begin{DoxyCompactList}\small\item\em updates the position of the platform if it can move. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1White__Platform_a2bde9b87065fd87a5a5a42af550afffb}{get\+Width}} () const override
+\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1White__Platform_add614ed8f59e7313e11b58ada2a21295}{get\+Height}} () const override
+\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classModel_1_1White__Platform_a7628af2e86cc45d7640f1ba266751a5f}{get\+Color}} () const override
+\begin{DoxyCompactList}\small\item\em gives the color of the platform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8h_source_l00013}{13}} of file \mbox{\hyperlink{M__White__Platform_8h_source}{M\+\_\+\+White\+\_\+\+Platform.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_1_1White__Platform_a4b75fabffc1d847a6d3ba70d508d2ccb}\label{classModel_1_1White__Platform_a4b75fabffc1d847a6d3ba70d508d2ccb}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!White\_Platform@{White\_Platform}}
+\index{White\_Platform@{White\_Platform}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{White\_Platform()}{White\_Platform()}}
+{\footnotesize\ttfamily White\+\_\+\+Platform\+::\+White\+\_\+\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+Width,  }\item[{float}]{platform\+Height }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classModel_1_1White__Platform}{White\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classModel_1_1White__Platform}{White\+\_\+\+Platform}} whit a certain width and height. 
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_a066b149089416db9a5ffea7e61ddb36f}\label{classModel_1_1White__Platform_a066b149089416db9a5ffea7e61ddb36f}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!````~White\_Platform@{$\sim$White\_Platform}}
+\index{````~White\_Platform@{$\sim$White\_Platform}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{$\sim$White\_Platform()}{~White\_Platform()}}
+{\footnotesize\ttfamily White\+\_\+\+Platform\+::$\sim$\+White\+\_\+\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_1_1White__Platform_a7628af2e86cc45d7640f1ba266751a5f}\label{classModel_1_1White__Platform_a7628af2e86cc45d7640f1ba266751a5f}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!getColor@{getColor}}
+\index{getColor@{getColor}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily const string \& White\+\_\+\+Platform\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the color of the platform. 
+
+This function gives the color of the platform. this is important because there are different types of platforms with various properties.
+
+\begin{DoxyReturn}{Returns}
+color of the platform. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_a157f674d7e94d15ab793eac1d35c4973}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_add614ed8f59e7313e11b58ada2a21295}\label{classModel_1_1White__Platform_add614ed8f59e7313e11b58ada2a21295}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float White\+\_\+\+Platform\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the height of the entity. 
+
+This function gives the height of the entity.
+
+\begin{DoxyReturn}{Returns}
+height of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_a831e83607e33e3b785db56f405dbcc28}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_a27116716f42d7e588869ab1c8b064fa6}\label{classModel_1_1White__Platform_a27116716f42d7e588869ab1c8b064fa6}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const pair$<$ float, float $>$ \& White\+\_\+\+Platform\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the x and y coordinate of the entity. 
+
+This function gives the position of the entity in a normalised world.
+
+\begin{DoxyReturn}{Returns}
+a pair consisting of the x and y coordinates of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_ad323b93f2f2413bd415d02078b454669}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_a2bde9b87065fd87a5a5a42af550afffb}\label{classModel_1_1White__Platform_a2bde9b87065fd87a5a5a42af550afffb}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float White\+\_\+\+Platform\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the width of the entity. 
+
+This function gives the width of the entity.
+
+\begin{DoxyReturn}{Returns}
+width of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_ae36aec9d47c8e4a3df3c09f83894199b}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_ab014b3021861a37c626236d4febf4f10}\label{classModel_1_1White__Platform_ab014b3021861a37c626236d4febf4f10}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void White\+\_\+\+Platform\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+sets the position of the entity. 
+
+This function updates the position of the entity with the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a position on the x axis. \\
+\hline
+{\em y} & a position on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_a3b4240495d55a75c9acd6f93f2d16acb}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1White__Platform_aabe4c4671b4c57ff1e838f6f1bf2c1d5}\label{classModel_1_1White__Platform_aabe4c4671b4c57ff1e838f6f1bf2c1d5}} 
+\index{Model::White\_Platform@{Model::White\_Platform}!update@{update}}
+\index{update@{update}!Model::White\_Platform@{Model::White\_Platform}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void White\+\_\+\+Platform\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the position of the platform if it can move. 
+
+This function makes the platform move.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time (time it takes to render a frame) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Platform_aa9912ed5c52f73b616bb670e21f7d97c}{Model\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__White__Platform_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{M__White__Platform_8cpp_source}{M\+\_\+\+White\+\_\+\+Platform.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/\+Entity\+\_\+\+Model/\+M\+\_\+\+Platform\+\_\+\+Types/M\+\_\+\+White\+\_\+\+Platform.\+h\item 
+src/logic/\+Entity\+\_\+\+Model/\+M\+\_\+\+Platform\+\_\+\+Types/M\+\_\+\+White\+\_\+\+Platform.\+cpp\end{DoxyCompactItemize}

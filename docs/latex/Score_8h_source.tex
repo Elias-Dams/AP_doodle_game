@@ -1,0 +1,41 @@
+\hypertarget{Score_8h_source}{}\doxysection{Score.\+h}
+\label{Score_8h_source}\index{src/logic/Score.h@{src/logic/Score.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_SCORE\_H}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_SCORE\_H}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}Entity\_Model/Entity\_Model.h"{}}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}design\_patterns/Observer.h"{}}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00012}00012 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00019}\mbox{\hyperlink{classScore}{00019}} \textcolor{keyword}{class }\mbox{\hyperlink{classScore}{Score}} : \textcolor{keyword}{public} \mbox{\hyperlink{classObserver}{Observer}} \{}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00020}00020 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00025}00025     \mbox{\hyperlink{classScore_a039c99843551e5e4b512ecee99e46617}{Score}}();}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00034}00034     \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{NewMaxheightReached}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&y) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00043}00043     \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{UpdateBonusScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00052}00052     \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{UpdateReduceScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00060}00060     \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{Resetscore}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00069}00069     \textcolor{keywordtype}{int} \mbox{\hyperlink{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}{getscore}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00071}00071     \textcolor{keyword}{virtual} \mbox{\hyperlink{classScore}{\string~Score}}();}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00073}00073 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00074}00074     \textcolor{keywordtype}{int} score;}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00075}00075 \};}
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{Score_8h_source_l00078}00078 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_SCORE\_H}}
+
+\end{DoxyCode}

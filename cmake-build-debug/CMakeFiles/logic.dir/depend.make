@@ -7,95 +7,95 @@ CMakeFiles/logic.dir/src/logic/Camera.cpp.o: \
  ../src/logic/design_patterns/IObserver.h \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/BG_Tile.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/BG_Tile.cpp \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/Bonus.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/Bonus.cpp \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.cpp \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.cpp \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp.o: \
- ../src/logic/Namespaces.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.cpp \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
- ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/design_patterns/IObserver.h \
- ../src/logic/design_patterns/ISubject.h \
- ../src/logic/design_patterns/Subject.h
 CMakeFiles/logic.dir/src/logic/Entity_Model/Entity_Model.cpp.o: \
  ../src/logic/Entity_Model/Entity_Model.cpp \
  ../src/logic/Entity_Model/Entity_Model.h \
  ../src/logic/design_patterns/IObserver.h \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/Platform.cpp.o: \
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_BG_Tile.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.cpp \
- ../src/logic/Entity_Model/Platform.h \
+ ../src/logic/Entity_Model/M_BG_Tile.cpp \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
  ../src/logic/design_patterns/IObserver.h \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Subject.h
-CMakeFiles/logic.dir/src/logic/Entity_Model/Player.cpp.o: \
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Player.cpp \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_Bonus.cpp \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.cpp \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.cpp \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Platform.cpp \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.cpp \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.cpp \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.cpp \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.cpp \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/design_patterns/IObserver.h \
+ ../src/logic/design_patterns/ISubject.h \
+ ../src/logic/design_patterns/Subject.h
+CMakeFiles/logic.dir/src/logic/Entity_Model/M_Player.cpp.o: \
+ ../src/logic/Namespaces.cpp \
+ ../src/logic/Entity_Model/Entity_Model.h \
+ ../src/logic/Entity_Model/M_Player.cpp \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/design_patterns/IObserver.h \
  ../src/logic/design_patterns/ISubject.h \
  ../src/logic/design_patterns/Subject.h
@@ -107,7 +107,7 @@ CMakeFiles/logic.dir/src/logic/Random.cpp.o: \
 CMakeFiles/logic.dir/src/logic/Score.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Score.cpp \
  ../src/logic/Score.h \
  ../src/logic/design_patterns/IObserver.h \
@@ -120,17 +120,17 @@ CMakeFiles/logic.dir/src/logic/Stopwatch.cpp.o: \
 CMakeFiles/logic.dir/src/logic/World.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Camera.h \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Random.h \
  ../src/logic/Score.h \
  ../src/logic/World.cpp \
@@ -143,17 +143,17 @@ CMakeFiles/logic.dir/src/logic/World.cpp.o: \
 CMakeFiles/logic.dir/src/logic/design_patterns/Abstract_Factory.cpp.o: \
  ../src/logic/Namespaces.cpp \
  ../src/logic/Camera.h \
- ../src/logic/Entity_Model/BG_Tile.h \
- ../src/logic/Entity_Model/Bonus.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Jetpack.h \
- ../src/logic/Entity_Model/EM_Bonus_Types/Spring.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Blue_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Green_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/White_Platform.h \
- ../src/logic/Entity_Model/EM_Platform_Types/Yellow_Platform.h \
  ../src/logic/Entity_Model/Entity_Model.h \
- ../src/logic/Entity_Model/Platform.h \
- ../src/logic/Entity_Model/Player.h \
+ ../src/logic/Entity_Model/M_BG_Tile.h \
+ ../src/logic/Entity_Model/M_Bonus.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Jetpack.h \
+ ../src/logic/Entity_Model/M_Bonus_Types/M_Spring.h \
+ ../src/logic/Entity_Model/M_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Blue_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Green_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_White_Platform.h \
+ ../src/logic/Entity_Model/M_Platform_Types/M_Yellow_Platform.h \
+ ../src/logic/Entity_Model/M_Player.h \
  ../src/logic/Score.h \
  ../src/logic/design_patterns/Abstract_Factory.cpp \
  ../src/logic/design_patterns/Abstract_Factory.h \

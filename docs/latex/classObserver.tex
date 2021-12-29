@@ -1,0 +1,254 @@
+\hypertarget{classObserver}{}\doxysection{Observer Class Reference}
+\label{classObserver}\index{Observer@{Observer}}
+Inheritance diagram for Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.758621cm]{classObserver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}{Update\+Position}} (float xpos, float ypos) override
+\begin{DoxyCompactList}\small\item\em updates the position of every entity \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_a735a63bea519460306f1f7e517262c88}{New\+Maxheight\+Reached}} (const float \&ypos) override
+\begin{DoxyCompactList}\small\item\em updates the score if a new max height is reached \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_acea9e3d7751b775e395f53dc4292e359}{Update\+Bonus\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em updates te score when a bonus is collected \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_ac70e701beca3f587d8188f558bc2b835}{Update\+Reduce\+Score}} (const int \&points) override
+\begin{DoxyCompactList}\small\item\em reduces the score \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_a39770cb7bbfe046845d669473f9912db}{Resetscore}} () override
+\begin{DoxyCompactList}\small\item\em resets the score \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_ab3cc8a82861a46aef4e09c092864af46}{Reset\+Texture}} () override
+\begin{DoxyCompactList}\small\item\em resets te texture of the player \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_add3f66baf416ac09661e375b05d5484e}{Update\+Medium\+Jump}} () override
+\begin{DoxyCompactList}\small\item\em updates te texture of the player if a spring is collected \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_a370e898c6e07923062e32e2fbf8fbf85}{Update\+High\+Jump}} () override
+\begin{DoxyCompactList}\small\item\em updates te texture of the player if a jetpack is collected \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classObserver_add6dc712ca2df410b40dde7be83c1084}{Remove\+Me\+From\+The\+List}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Observer_8h_source_l00012}{12}} of file \mbox{\hyperlink{Observer_8h_source}{Observer.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classObserver_a19c43f80a38a332a6f694783df3c9835}\label{classObserver_a19c43f80a38a332a6f694783df3c9835}} 
+\index{Observer@{Observer}!Observer@{Observer}}
+\index{Observer@{Observer}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{Observer()}{Observer()}}
+{\footnotesize\ttfamily Observer\+::\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_a450645e61c136826f09940a1334c7f34}\label{classObserver_a450645e61c136826f09940a1334c7f34}} 
+\index{Observer@{Observer}!````~Observer@{$\sim$Observer}}
+\index{````~Observer@{$\sim$Observer}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Observer()}{~Observer()}}
+{\footnotesize\ttfamily Observer\+::$\sim$\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classObserver_a735a63bea519460306f1f7e517262c88}\label{classObserver_a735a63bea519460306f1f7e517262c88}} 
+\index{Observer@{Observer}!NewMaxheightReached@{NewMaxheightReached}}
+\index{NewMaxheightReached@{NewMaxheightReached}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{NewMaxheightReached()}{NewMaxheightReached()}}
+{\footnotesize\ttfamily void Observer\+::\+New\+Maxheight\+Reached (\begin{DoxyParamCaption}\item[{const float \&}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the score if a new max height is reached 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{Score}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_add6dc712ca2df410b40dde7be83c1084}\label{classObserver_add6dc712ca2df410b40dde7be83c1084}} 
+\index{Observer@{Observer}!RemoveMeFromTheList@{RemoveMeFromTheList}}
+\index{RemoveMeFromTheList@{RemoveMeFromTheList}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{RemoveMeFromTheList()}{RemoveMeFromTheList()}}
+{\footnotesize\ttfamily void Observer\+::\+Remove\+Me\+From\+The\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_a39770cb7bbfe046845d669473f9912db}\label{classObserver_a39770cb7bbfe046845d669473f9912db}} 
+\index{Observer@{Observer}!Resetscore@{Resetscore}}
+\index{Resetscore@{Resetscore}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{Resetscore()}{Resetscore()}}
+{\footnotesize\ttfamily void Observer\+::\+Resetscore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+resets the score 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{Score}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_ab3cc8a82861a46aef4e09c092864af46}\label{classObserver_ab3cc8a82861a46aef4e09c092864af46}} 
+\index{Observer@{Observer}!ResetTexture@{ResetTexture}}
+\index{ResetTexture@{ResetTexture}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{ResetTexture()}{ResetTexture()}}
+{\footnotesize\ttfamily void Observer\+::\+Reset\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+resets te texture of the player 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{View\+::\+Player}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_acea9e3d7751b775e395f53dc4292e359}\label{classObserver_acea9e3d7751b775e395f53dc4292e359}} 
+\index{Observer@{Observer}!UpdateBonusScore@{UpdateBonusScore}}
+\index{UpdateBonusScore@{UpdateBonusScore}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{UpdateBonusScore()}{UpdateBonusScore()}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Bonus\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates te score when a bonus is collected 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{Score}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_a370e898c6e07923062e32e2fbf8fbf85}\label{classObserver_a370e898c6e07923062e32e2fbf8fbf85}} 
+\index{Observer@{Observer}!UpdateHighJump@{UpdateHighJump}}
+\index{UpdateHighJump@{UpdateHighJump}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{UpdateHighJump()}{UpdateHighJump()}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+High\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates te texture of the player if a jetpack is collected 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a2af1f25bfbd006422aa79770fb966977}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{View\+::\+Player}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_add3f66baf416ac09661e375b05d5484e}\label{classObserver_add3f66baf416ac09661e375b05d5484e}} 
+\index{Observer@{Observer}!UpdateMediumJump@{UpdateMediumJump}}
+\index{UpdateMediumJump@{UpdateMediumJump}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{UpdateMediumJump()}{UpdateMediumJump()}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Medium\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates te texture of the player if a spring is collected 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{View\+::\+Player}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}\label{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}} 
+\index{Observer@{Observer}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the position of every entity 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}, \mbox{\hyperlink{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}{View\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{View\+::\+Jetpack}}, \mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{View\+::\+Spring}}, \mbox{\hyperlink{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a4d87dfdd07d02e83720c0077874eaf7c}{View\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1White__Platform_aa9147238d1f648413ac75a0ea4930190}{View\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{View\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{View\+::\+Player}}, and \mbox{\hyperlink{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}{View\+::\+Platform}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+\mbox{\Hypertarget{classObserver_ac70e701beca3f587d8188f558bc2b835}\label{classObserver_ac70e701beca3f587d8188f558bc2b835}} 
+\index{Observer@{Observer}!UpdateReduceScore@{UpdateReduceScore}}
+\index{UpdateReduceScore@{UpdateReduceScore}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{UpdateReduceScore()}{UpdateReduceScore()}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Reduce\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+reduces the score 
+
+
+
+Implements \mbox{\hyperlink{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}{IObserver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{Score}}.
+
+
+
+Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/design\+\_\+patterns/Observer.\+h\item 
+src/logic/design\+\_\+patterns/Observer.\+cpp\end{DoxyCompactItemize}

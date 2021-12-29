@@ -1,0 +1,41 @@
+\hypertarget{IObserver_8h_source}{}\doxysection{IObserver.\+h}
+\label{IObserver_8h_source}\index{src/logic/design\_patterns/IObserver.h@{src/logic/design\_patterns/IObserver.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_IOBSERVER\_H}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_IOBSERVER\_H}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00010}00010 \textcolor{comment}{// for this design pattern i user https://refactoring.guru/design-\/patterns/observer/cpp/example as a reference}}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00012}\mbox{\hyperlink{classIObserver}{00012}} \textcolor{keyword}{class }\mbox{\hyperlink{classIObserver}{IObserver}} \{}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00013}00013 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00023}\mbox{\hyperlink{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}{00023}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}{UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00032}\mbox{\hyperlink{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}{00032}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}{NewMaxheightReached}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&ypos) = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00041}\mbox{\hyperlink{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}{00041}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a7651ec17a497dd9d21ec32b95a8ef970}{Resetscore}}() = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00050}\mbox{\hyperlink{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}{00050}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a4d24068d30031d15d5c9c2f223f00fb7}{ResetTexture}}() = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00059}\mbox{\hyperlink{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}{00059}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a80a6770153981c2bf0a7fcddf2ca3f31}{UpdateMediumJump}}() = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00068}\mbox{\hyperlink{classIObserver_a2af1f25bfbd006422aa79770fb966977}{00068}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a2af1f25bfbd006422aa79770fb966977}{UpdateHighJump}}() = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00077}\mbox{\hyperlink{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}{00077}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}{UpdateBonusScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00086}\mbox{\hyperlink{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}{00086}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}{UpdateReduceScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) = 0;}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00088}00088     \textcolor{keyword}{virtual} \mbox{\hyperlink{classIObserver}{\string~IObserver}}()\{\};}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00089}00089 \};}
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{IObserver_8h_source_l00092}00092 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AP\_DOODLE\_GAME\_IOBSERVER\_H}}
+
+\end{DoxyCode}

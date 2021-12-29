@@ -14,7 +14,11 @@
 #include <vector>
 
 using namespace Model;
-
+/**
+* @class World
+*
+* @brief Responsible for orchestrating the overall game logic and the interactions between the entities.
+*/
 class World {
 public:
     /**
@@ -24,28 +28,28 @@ public:
     World(const shared_ptr<Abstract_Factory> &factory);
 
     /**
-    * @brief handles the start state and gameover state of the game
+    * @brief handles the start state and gameover state of the game.
     *
-    * This function handles the start state gameover state of the game
-    * It makes a platform and lets the player jump in place
-    * The player can't move in this state so there is no need for a key variable
+    * This function handles the start state gameover state of the game.
+    * It makes a platform and lets the player jump in place.
+    * The player can't move in this state so there is no need for a key variable.
     *
-    * @param dt: delta time (time it takes to render a frame)
+    * @param dt: delta time (time it takes to render a frame).
     */
     void startstate(float dt);
 
     /**
-    * @brief updates the world in teh actual game state
+    * @brief updates the world in teh actual game state.
     *
-    * This function updates the world in teh actual game state
+    * This function updates the world in teh actual game state.
     * - updates the camera position
     * - updates the background
     * - move the player (whit given key)
     * - check collision
     * - destroys and adds platforms
     *
-    * @param dt: delta time (time it takes to render a frame)
-    * @param key: key that is pressed
+    * @param dt: delta time (time it takes to render a frame).
+    * @param key: key that is pressed.
     */
     void update(float dt, const char &key);
 
@@ -59,30 +63,30 @@ public:
     shared_ptr<Player> getPlayer() const;
 
     /**
-    * @brief returns the game width
+    * @brief returns the game width.
     *
-    * This function returns the game width
+    * This function returns the game width.
     *
-    * @return the game width
+    * @return the game width.
     */
     int getWidth() const;
 
     /**
-    * @brief returns the game height
+    * @brief returns the game height.
     *
-    * This function returns the game height
+    * This function returns the game height.
     *
-    * @return the game height
+    * @return the game height.
     */
     int getHeight() const;
 
     /**
-    * @brief returns the background
+    * @brief returns the background.
     *
-    * This function returns the background
-    * It is a pair of 2 tiles that updates when the player moves up in the world
+    * This function returns the background.
+    * It is a pair of 2 tiles that updates when the player moves up in the world.
     *
-    * @return pair of background Tiles
+    * @return pair of background Tiles.
     */
     const pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> &getBackground() const;
 
@@ -111,14 +115,14 @@ public:
     * - key a shared pointer to a platform
     * - van a shared pointer to a bonus
     *
-    * @return a map of bonuses
+    * @return a map of bonuses.
     */
     const map<shared_ptr<Platform>, shared_ptr<Bonus>> &getBonuses() const;
 
     /**
-    * @brief resets the world
+    * @brief resets the world.
     *
-    * This function resets the world to the state it was in when it was first initialized
+    * This function resets the world to the state it was in when it was first initialized.
     * it handles:
     * - reset of the player
     * - reset of the camera
@@ -130,11 +134,11 @@ public:
     void Reset();
 
     /**
-    * @brief checks if the game is over
+    * @brief checks if the game is over.
     *
-    * This function checks if the game is over
+    * This function checks if the game is over.
     *
-    * @return True if the game is over. False if the game is not over
+    * @return True if the game is over. False if the game is not over.
     */
     bool isGameOver() const;
 

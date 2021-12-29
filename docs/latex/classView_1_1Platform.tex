@@ -1,0 +1,102 @@
+\hypertarget{classView_1_1Platform}{}\doxysection{View\+::Platform Class Reference}
+\label{classView_1_1Platform}\index{View::Platform@{View::Platform}}
+Inheritance diagram for View\+::Platform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.827586cm]{classView_1_1Platform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classView_1_1Platform_a52028ea2984cbfdf8e9f42ee87f66cfe}{Platform}} ()
+\item 
+virtual sf\+::\+Sprite \mbox{\hyperlink{classView_1_1Platform_a0e59383e15b1c57bf57c0aa64974934c}{get\+Platform}} () const =0
+\begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}{Update\+Position}} (float xpos, float ypos)=0
+\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{V__Platform_8h_source_l00014}{14}} of file \mbox{\hyperlink{V__Platform_8h_source}{V\+\_\+\+Platform.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classView_1_1Platform_a52028ea2984cbfdf8e9f42ee87f66cfe}\label{classView_1_1Platform_a52028ea2984cbfdf8e9f42ee87f66cfe}} 
+\index{View::Platform@{View::Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!View::Platform@{View::Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}}
+{\footnotesize\ttfamily Platform\+::\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classView_1_1Platform}{Platform}} constructor. constructs the platform 
+
+Definition at line \mbox{\hyperlink{V__Platform_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{V__Platform_8cpp_source}{V\+\_\+\+Platform.\+cpp}}.
+
+\mbox{\Hypertarget{classView_1_1Platform_a13b5e4ef946b8a2fe38d22014145ab68}\label{classView_1_1Platform_a13b5e4ef946b8a2fe38d22014145ab68}} 
+\index{View::Platform@{View::Platform}!````~Platform@{$\sim$Platform}}
+\index{````~Platform@{$\sim$Platform}!View::Platform@{View::Platform}}
+\doxysubsubsection{\texorpdfstring{$\sim$Platform()}{~Platform()}}
+{\footnotesize\ttfamily Platform\+::$\sim$\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{V__Platform_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{V__Platform_8cpp_source}{V\+\_\+\+Platform.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classView_1_1Platform_a0e59383e15b1c57bf57c0aa64974934c}\label{classView_1_1Platform_a0e59383e15b1c57bf57c0aa64974934c}} 
+\index{View::Platform@{View::Platform}!getPlatform@{getPlatform}}
+\index{getPlatform@{getPlatform}!View::Platform@{View::Platform}}
+\doxysubsubsection{\texorpdfstring{getPlatform()}{getPlatform()}}
+{\footnotesize\ttfamily virtual sf\+::\+Sprite View\+::\+Platform\+::get\+Platform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+gets the sfml sprite 
+
+This function gets the sfml sprite of the platform
+
+\begin{DoxyReturn}{Returns}
+the sfml sprite of the platform 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classView_1_1Yellow__Platform_afcd1a8565975f93f5e5d2194f8734800}{View\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Blue__Platform_a0ceda9f57107d02c245e2566911c0609}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a24dfe10d62dc8013b9a8594e8e3a3077}{View\+::\+Green\+\_\+\+Platform}}, and \mbox{\hyperlink{classView_1_1White__Platform_a9a86b3a00e132e3cae18097aa583b033}{View\+::\+White\+\_\+\+Platform}}.
+
+\mbox{\Hypertarget{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}\label{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}} 
+\index{View::Platform@{View::Platform}!UpdatePosition@{UpdatePosition}}
+\index{UpdatePosition@{UpdatePosition}!View::Platform@{View::Platform}}
+\doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
+{\footnotesize\ttfamily virtual void View\+::\+Platform\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+updates the position of the entity views 
+
+This function updates the position of the view when the player has moved
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position of the entity in the game \\
+\hline
+{\em y} & position of the entity in the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}.
+
+
+
+Implemented in \mbox{\hyperlink{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a4d87dfdd07d02e83720c0077874eaf7c}{View\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1White__Platform_aa9147238d1f648413ac75a0ea4930190}{View\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{View\+::\+Yellow\+\_\+\+Platform}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/representation/\+Entity\+\_\+\+View/V\+\_\+\+Platform.\+h\item 
+src/representation/\+Entity\+\_\+\+View/V\+\_\+\+Platform.\+cpp\end{DoxyCompactItemize}

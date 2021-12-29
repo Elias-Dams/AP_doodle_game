@@ -1,0 +1,33 @@
+\hypertarget{V__BG__Tile_8h_source}{}\doxysection{V\+\_\+\+BG\+\_\+\+Tile.\+h}
+\label{V__BG__Tile_8h_source}\index{src/representation/Entity\_View/V\_BG\_Tile.h@{src/representation/Entity\_View/V\_BG\_Tile.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_V\_BG\_TILE\_H}}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_V\_BG\_TILE\_H}}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}../../logic/Namespaces.cpp"{}}}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}Entity\_View.h"{}}}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00008}\mbox{\hyperlink{classView_1_1BG__Tile}{00008}} \textcolor{keyword}{class }\mbox{\hyperlink{classView_1_1BG__Tile}{View::BG\_Tile}} : \textcolor{keyword}{public} \mbox{\hyperlink{classEntity__View}{Entity\_View}} \{}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00009}00009 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00015}00015     \mbox{\hyperlink{classView_1_1BG__Tile_a20dc6d189284a04877cf8ef342ff0ef4}{BG\_Tile}}(\textcolor{keywordtype}{float} width, \textcolor{keywordtype}{float} height, shared\_ptr<Camera> camera\_);}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00024}00024     \textcolor{keyword}{const} sf::Sprite \&\mbox{\hyperlink{classView_1_1BG__Tile_a80f82e8730d5d41a4617b1013bfa931a}{getBackground}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00026}00026     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}{UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00028}00028     \mbox{\hyperlink{classView_1_1BG__Tile}{\string~BG\_Tile}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00030}00030 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00031}00031     \textcolor{keywordtype}{float} width;}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00032}00032     \textcolor{keywordtype}{float} height;}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00033}00033     sf::Texture texture;}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00034}00034     sf::Sprite background;}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00035}00035     shared\_ptr<Camera> camera;}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00036}00036 \};}
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{V__BG__Tile_8h_source_l00039}00039 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_BG\_TILE\_H}}
+
+\end{DoxyCode}

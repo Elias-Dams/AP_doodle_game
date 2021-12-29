@@ -13,13 +13,13 @@ using namespace std;
 /**
  * @class Entity_Model
  *
- * This class encapsulates all entities
+ * @brief This class encapsulates all entities.
  */
 class Entity_Model : public Subject {
 public:
     /**
      * Entity_Model constructor.
-     * constructs an Entity_Model
+     * constructs an Entity_Model.
      */
     Entity_Model();
 
@@ -55,8 +55,8 @@ public:
     *
     * This function updates the position of the entity with the given coordinates.
     *
-    * @param x: a position on the x axis
-    * @param y: a position on the y axis
+    * @param x: a position on the x axis.
+    * @param y: a position on the y axis.
     */
     virtual void setPosition(const float &x, const float &y) = 0;
 

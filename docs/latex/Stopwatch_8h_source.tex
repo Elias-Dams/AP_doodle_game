@@ -1,0 +1,46 @@
+\hypertarget{Stopwatch_8h_source}{}\doxysection{Stopwatch.\+h}
+\label{Stopwatch_8h_source}\index{src/logic/Stopwatch.h@{src/logic/Stopwatch.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_STOPWATCH\_H}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_STOPWATCH\_H}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00011}00011 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00013}00013 \textcolor{comment}{// i used https://refactoring.guru/design-\/patterns/singleton/cpp/example as inspiration for the singleton design pattern}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00015}\mbox{\hyperlink{classStopwatch}{00015}} \textcolor{keyword}{class }\mbox{\hyperlink{classStopwatch}{Stopwatch}} \{}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00017}00017 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00018}00018     \textcolor{keyword}{static} shared\_ptr<Stopwatch> singleton\_; }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00020}00020     std::chrono::steady\_clock::time\_point now; }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00023}00023 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00024}00024     \textcolor{comment}{//Singletons should not be cloneable.}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00025}00025     \mbox{\hyperlink{classStopwatch}{Stopwatch}}(\mbox{\hyperlink{classStopwatch}{Stopwatch}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00027}00027     \textcolor{comment}{//Singletons should not be assignable.}}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00028}00028     \textcolor{keywordtype}{void} operator=(\textcolor{keyword}{const} \mbox{\hyperlink{classStopwatch}{Stopwatch}} \&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00037}00037     \textcolor{keyword}{static} shared\_ptr<Stopwatch> \mbox{\hyperlink{classStopwatch_afee88c02b434db0656371a0d2ee73446}{GetInstance}}();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00048}00048     \textcolor{keywordtype}{float} \mbox{\hyperlink{classStopwatch_aa1981849225d32f7d4b1a1d00bbaa9ed}{mark\_time}}();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00050}00050     \mbox{\hyperlink{classStopwatch}{Stopwatch}}();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00052}00052     \textcolor{keyword}{virtual} \mbox{\hyperlink{classStopwatch}{\string~Stopwatch}}();}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00053}00053 \};}
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{Stopwatch_8h_source_l00056}00056 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_STOPWATCH\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,210 @@
+\hypertarget{classModel_1_1Jetpack}{}\doxysection{Model\+::Jetpack Class Reference}
+\label{classModel_1_1Jetpack}\index{Model::Jetpack@{Model::Jetpack}}
+Inheritance diagram for Model\+::Jetpack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classModel_1_1Jetpack}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModel_1_1Jetpack_a91bf79ffd86067c66b5f3133cef62367}{Jetpack}} (float Width, float Height)
+\item 
+const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753d20be93}{get\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}{set\+Position}} (const float \&x, const float \&y) override
+\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}{update}} (float x, float y) override
+\begin{DoxyCompactList}\small\item\em updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}{get\+Width}} () const override
+\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classModel_1_1Jetpack_a761260794e06aa609ef30222071df6fc}{get\+Height}} () const override
+\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classModel_1_1Jetpack_a42d42ead15aa743e3babd67ebb2796d7}{get\+Bonuspower}} () const override
+\begin{DoxyCompactList}\small\item\em get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8h_source_l00014}{14}} of file \mbox{\hyperlink{M__Jetpack_8h_source}{M\+\_\+\+Jetpack.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_1_1Jetpack_a91bf79ffd86067c66b5f3133cef62367}\label{classModel_1_1Jetpack_a91bf79ffd86067c66b5f3133cef62367}} 
+\index{Model::Jetpack@{Model::Jetpack}!Jetpack@{Jetpack}}
+\index{Jetpack@{Jetpack}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{Jetpack()}{Jetpack()}}
+{\footnotesize\ttfamily Jetpack\+::\+Jetpack (\begin{DoxyParamCaption}\item[{float}]{Width,  }\item[{float}]{Height }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classModel_1_1Jetpack}{Jetpack}} constructor. constructs a \mbox{\hyperlink{classModel_1_1Jetpack}{Jetpack}} whit a certain width and height 
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a10e905b5fcb38032f427dec22cae94a6}\label{classModel_1_1Jetpack_a10e905b5fcb38032f427dec22cae94a6}} 
+\index{Model::Jetpack@{Model::Jetpack}!````~Jetpack@{$\sim$Jetpack}}
+\index{````~Jetpack@{$\sim$Jetpack}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{$\sim$Jetpack()}{~Jetpack()}}
+{\footnotesize\ttfamily Jetpack\+::$\sim$\+Jetpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_1_1Jetpack_a42d42ead15aa743e3babd67ebb2796d7}\label{classModel_1_1Jetpack_a42d42ead15aa743e3babd67ebb2796d7}} 
+\index{Model::Jetpack@{Model::Jetpack}!getBonuspower@{getBonuspower}}
+\index{getBonuspower@{getBonuspower}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{getBonuspower()}{getBonuspower()}}
+{\footnotesize\ttfamily int Jetpack\+::get\+Bonuspower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get the bonuspower. 
+
+This function gets the power of a certain bonus. e.\+g. the spring makes the player jump x5 higher.
+
+\begin{DoxyReturn}{Returns}
+gets the type of the bonus 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a6a2d5ec96bbcd37ef5d1a37f49e7a3a3}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a761260794e06aa609ef30222071df6fc}\label{classModel_1_1Jetpack_a761260794e06aa609ef30222071df6fc}} 
+\index{Model::Jetpack@{Model::Jetpack}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float Jetpack\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the height of the entity. 
+
+This function gives the height of the entity.
+
+\begin{DoxyReturn}{Returns}
+height of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a043e3ca71efcebbbc4a62881fd73885b}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753d20be93}\label{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753d20be93}} 
+\index{Model::Jetpack@{Model::Jetpack}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const pair$<$ float, float $>$ \& Jetpack\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the x and y coordinate of the entity. 
+
+This function gives the position of the entity in a normalised world.
+
+\begin{DoxyReturn}{Returns}
+a pair consisting of the x and y coordinates of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_adcdb8ab1389dcc6a3a1046feb7ca0edd}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}\label{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}} 
+\index{Model::Jetpack@{Model::Jetpack}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float Jetpack\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+gives the width of the entity. 
+
+This function gives the width of the entity.
+
+\begin{DoxyReturn}{Returns}
+width of the entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}\label{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}} 
+\index{Model::Jetpack@{Model::Jetpack}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Jetpack\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+sets the position of the entity. 
+
+This function updates the position of the entity with the given coordinates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a position on the x axis. \\
+\hline
+{\em y} & a position on the y axis. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+\mbox{\Hypertarget{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}\label{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}} 
+\index{Model::Jetpack@{Model::Jetpack}!update@{update}}
+\index{update@{update}!Model::Jetpack@{Model::Jetpack}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Jetpack\+::update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+updates the position of the bonus if it can move. 
+
+This function updates the position of the bonus if it can move. This is the case if it is on a moving platform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position of the platform the bonus is on. \\
+\hline
+{\em y} & position of the platform the bonus is on. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}{Model\+::\+Bonus}}.
+
+
+
+Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/logic/\+Entity\+\_\+\+Model/\+M\+\_\+\+Bonus\+\_\+\+Types/M\+\_\+\+Jetpack.\+h\item 
+src/logic/\+Entity\+\_\+\+Model/\+M\+\_\+\+Bonus\+\_\+\+Types/M\+\_\+\+Jetpack.\+cpp\end{DoxyCompactItemize}

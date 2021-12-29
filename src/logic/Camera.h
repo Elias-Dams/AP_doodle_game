@@ -5,6 +5,11 @@
 #include <iostream>
 #include "design_patterns/Subject.h"
 
+/**
+ * @class Camera
+ *
+ * @brief Explicitly modelles the view of the Player.
+ */
 class Camera : public Subject{
 public:
     /**

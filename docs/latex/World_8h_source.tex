@@ -1,0 +1,80 @@
+\hypertarget{World_8h_source}{}\doxysection{World.\+h}
+\label{World_8h_source}\index{src/logic/World.h@{src/logic/World.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00002}00002 \textcolor{preprocessor}{\#ifndef AP\_DOODLE\_GAME\_WORLD\_H}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00003}00003 \textcolor{preprocessor}{\#define AP\_DOODLE\_GAME\_WORLD\_H}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}Camera.h"{}}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}Random.h"{}}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}design\_patterns/Abstract\_Factory.h"{}}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <typeinfo>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00016}00016 \textcolor{keyword}{using namespace }\mbox{\hyperlink{namespaceModel}{Model}};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00022}\mbox{\hyperlink{classWorld}{00022}} \textcolor{keyword}{class }\mbox{\hyperlink{classWorld}{World}} \{}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00023}00023 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00028}00028     \mbox{\hyperlink{classWorld_a4e61e0c1d6e5ad0f65ede0e0b6d4b904}{World}}(\textcolor{keyword}{const} shared\_ptr<Abstract\_Factory> \&factory);}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00039}00039     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_a832d4738e2abc0317d10775d59accb8a}{startstate}}(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00054}00054     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}{update}}(\textcolor{keywordtype}{float} dt, \textcolor{keyword}{const} \textcolor{keywordtype}{char} \&key);}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00063}00063     shared\_ptr<Player> \mbox{\hyperlink{classWorld_a6d710b085f1a8f195f18f9d6b124c327}{getPlayer}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00072}00072     \textcolor{keywordtype}{int} \mbox{\hyperlink{classWorld_a2a7614f0f862c86de97e7696406d2693}{getWidth}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00081}00081     \textcolor{keywordtype}{int} \mbox{\hyperlink{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}{getHeight}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00091}00091     \textcolor{keyword}{const} pair<shared\_ptr<BG\_Tile>, shared\_ptr<BG\_Tile>> \&\mbox{\hyperlink{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}{getBackground}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00100}00100     shared\_ptr<Camera> \mbox{\hyperlink{classWorld_a385d14afa06604151529325b8736bcd7}{getCamera}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00109}00109     \textcolor{keyword}{const} vector<shared\_ptr<Platform>> \&\mbox{\hyperlink{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}{getPlatforms}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00120}00120     \textcolor{keyword}{const} map<shared\_ptr<Platform>, shared\_ptr<Bonus>> \&\mbox{\hyperlink{classWorld_a5475c4f46f2711d97339c541a92ba3cc}{getBonuses}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00134}00134     \textcolor{keywordtype}{void} \mbox{\hyperlink{classWorld_abd1528dd5557dbfc40283542e5edfabf}{Reset}}();}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00143}00143     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classWorld_a0ccb7137db33414179c4bdc1609331bd}{isGameOver}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00145}00145     \textcolor{keyword}{virtual} \mbox{\hyperlink{classWorld}{\string~World}}();}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00148}00148 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00149}00149     \textcolor{keywordtype}{void} create\_start\_platform();}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00151}00151     \textcolor{keywordtype}{void} create\_platforms();}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00153}00153     \textcolor{keywordtype}{void} add\_platforms();}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00155}00155     \textcolor{keywordtype}{bool} colisionCheck(shared\_ptr<Entity\_Model> entity, \textcolor{keywordtype}{bool} can\_update\_score);}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00157}00157     shared\_ptr<Abstract\_Factory> factory; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00159}00159     shared\_ptr<Player> player; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00160}00160     vector<shared\_ptr<Platform>> platforms; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00161}00161     map<shared\_ptr<Platform>, shared\_ptr<Bonus>> bonusses; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00162}00162     pair<shared\_ptr<BG\_Tile>, shared\_ptr<BG\_Tile>> background; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00163}00163     shared\_ptr<Camera> camera; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00165}00165     \textcolor{keywordtype}{bool} GameOver; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00166}00166     \textcolor{keywordtype}{int} constant; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00168}00168     \textcolor{keywordtype}{int} last\_max\_of\_radius; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00169}00169     \textcolor{keywordtype}{int} height\_of\_the\_last\_platform; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00170}00170     \textcolor{keywordtype}{int} platforms\_per\_view; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00171}00171     \textcolor{keywordtype}{int} WIDTH; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00172}00172     \textcolor{keywordtype}{int} HEIGHT; }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00173}00173 \};}
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{World_8h_source_l00176}00176 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_WORLD\_H}}
+
+\end{DoxyCode}

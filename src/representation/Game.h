@@ -19,6 +19,11 @@ enum gamestates {
     gameover
 };
 
+/**
+* @class Game
+*
+* @brief Runs main game loop.
+*/
 class Game {
 
 public:

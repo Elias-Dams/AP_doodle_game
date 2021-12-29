@@ -28,20 +28,20 @@ public:
     void operator=(const Stopwatch &) = delete;
 
     /**
-    * @brief creates unique instance of Stopwatch
+    * @brief creates unique instance of Stopwatch.
     *
-    * This function creates unique instance of Stopwatch
+    * This function creates unique instance of Stopwatch.
     *
-    * @return pointer to the stopwatch
+    * @return pointer to the stopwatch.
     */
     static shared_ptr<Stopwatch> GetInstance();
 
     /**
-    * @brief creates unique instance of Stopwatch
+    * @brief creates unique instance of Stopwatch.
     *
-    * This function marks the time
-    * It also calculates the differance between the prev mark ant now
-    * It is returned under the name delta time
+    * This function marks the time.
+    * It also calculates the differance between the prev mark ant now.
+    * It is returned under the name delta time.
     *
     * @return delta time
     */

@@ -1,0 +1,38 @@
+\hypertarget{Score_8cpp_source}{}\doxysection{Score.\+cpp}
+\label{Score_8cpp_source}\index{src/logic/Score.cpp@{src/logic/Score.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Score.h"{}}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}Entity\_Model/M\_Player.h"{}}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00005}\mbox{\hyperlink{classScore_a039c99843551e5e4b512ecee99e46617}{00005}} \mbox{\hyperlink{classScore_a039c99843551e5e4b512ecee99e46617}{Score::Score}}() \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00006}00006     score = 0;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00007}00007 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00009}00009 Score::\string~Score() \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00013}\mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{Score::NewMaxheightReached}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&y) \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00014}00014     score += (int)y;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00017}\mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{Score::UpdateBonusScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00018}00018     score += points;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00021}\mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{00021}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{Score::UpdateReduceScore}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \&points) \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00022}00022     score -\/= points;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00025}\mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{00025}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classScore_a656db66bcc584dda91a352e1fe6a16b0}{Score::Resetscore}}() \{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00026}00026     score = 0;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00029}\mbox{\hyperlink{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}{00029}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classScore_a4b1d29c4f1956914d90dd03fcd2a5f0a}{Score::getscore}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} score;}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{Score_8cpp_source_l00032}00032 }
+
+\end{DoxyCode}

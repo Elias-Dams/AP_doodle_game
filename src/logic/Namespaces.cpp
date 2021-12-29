@@ -1,5 +1,5 @@
 
-/// clear devision between Models and Views
+/// The models cover the logic of the game
 
 namespace Model {
     class Player;
@@ -16,6 +16,8 @@ namespace Model {
 
     class BG_Tile;
 }
+
+/// The Views cover the representation of the game
 
 namespace View {
     class Player;

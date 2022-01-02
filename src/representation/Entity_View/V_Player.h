@@ -17,14 +17,14 @@ class View::Player : public Entity_View {
 public:
     /**
      * Player constructor.
-     * constructs the Player
+     * Constructs the Player.
      */
     Player(const float &playerWidth,const float &playerHeight, const shared_ptr<Camera> &camera);
 
     /**
-    * @brief gets the sfml sprite
+    * @brief Gets the sfml sprite.
     *
-    * This function gets the sfml sprite of the player
+    * This function gets the sfml sprite of the player.
     *
     * @return the sfml sprite of the player
     */

@@ -8,49 +8,49 @@
 /**
  * @class Camera
  *
- * @brief Explicitly modelles the view of the Player.
+ * @brief Explicitly models the view of the Player.
  */
 class Camera : public Subject{
 public:
     /**
-     * camera constructor.
-     * constructs the camera whit a certain width and height
+     * Camera constructor.
+     * Constructs the camera with a certain width and height.
      */
     Camera(const float &cameraWidth, const float &cameraHeight);
 
     /**
-    * @brief gives the normalised height
+    * @brief Gives the normalized height
     *
-    * This function gives the normalised height of a normalised coordinate system
+    * This function gives the normalized height of a normalized coordinate system.
     *
-    * @return normalised height
+    * @return normalized height
     */
     float getNomalisedHeight() const;
 
     /**
-    * @brief gives the converted height
+    * @brief Gives the converted height
     *
-    * This function gives the converted height of a coordinates system
-    * in this case the sfml coordinate system
+    * This function gives the converted height of a coordinates system.
+    * In this case the sfml coordinate system.
     *
     * @return converted height
     */
     float getConvertedHeight() const;
 
     /**
-    * @brief sets the height
+    * @brief Sets the height
     *
-    * This function sets the height of the camera
+    * This function sets the height of the camera.
     *
-    * @param height: the hight the camera needt to be on
+    * @param height: the hight the camera needs to be on
     */
     void setHeight(const float &height);
 
     /**
-    * @brief converts the height to game height
+    * @brief Converts the height to game height
     *
-    * This function converts the height to game height
-    * it is the height in the normalised coordinate stelsel
+    * This function converts the height to game height.
+    * It is the height in the normalised coordinate system.
     *
     * @param position: the position of the entity
     * @param entity_height: the height of the entity
@@ -58,10 +58,10 @@ public:
     float toGameheight(const float &position, const float &entity_height);
 
     /**
-    * @brief converts the height to game width
+    * @brief Converts the height to game width
     *
-    * This function converts the width to game width
-    * it is the width in the normalised coordinate stelsel
+    * This function converts the width to game width.
+    * It is the width in the normalised coordinate system.
     *
     * @param position: the position of the entity
     * @param entity_height: the width of the entity
@@ -69,9 +69,9 @@ public:
     float toGamewidth(const float &position, const float &entity_width);
 
     /**
-    * @brief fully resets the camera
+    * @brief Fully resets the camera.
     *
-    * This function resets the camera to the state it was in when it was first initialized
+    * This function resets the camera to the state it was in when it was first initialized.
     *
     */
     void CameraReset();

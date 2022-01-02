@@ -9,7 +9,7 @@ class View::Spring : public View::Bonus {
 public:
     /**
      * Spring constructor.
-     * constructs the spring whit
+     * constructs the spring with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     Spring(const float &Width, const float &Height, const shared_ptr<Camera> &camera);

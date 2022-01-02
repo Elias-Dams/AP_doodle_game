@@ -9,7 +9,7 @@ class View::Green_Platform : public View::Platform {
 public:
     /**
      * Green_Platform constructor.
-     * constructs the green_Platform whit
+     * constructs the green_Platform with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     Green_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);

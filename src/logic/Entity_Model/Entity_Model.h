@@ -24,34 +24,34 @@ public:
     Entity_Model();
 
     /**
-    * @brief gives the width of the entity.
+    * @brief Gives the width of the entity.
     *
     * This function gives the width of the entity.
     *
-    * @return width of the entity.
+    * @return Width of the entity.
     */
     virtual float getWidth() const = 0;
 
     /**
-    * @brief gives the height of the entity.
+    * @brief Gives the height of the entity.
     *
     * This function gives the height of the entity.
     *
-    * @return height of the entity.
+    * @return Height of the entity.
     */
     virtual float getHeight() const = 0;
 
     /**
-    * @brief gives the x and y coordinate of the entity.
+    * @brief Gives the x and y coordinate of the entity.
     *
-    * This function gives the position  of the entity in a normalised world.
+    * This function gives the position of the entity in a normalised world.
     *
-    * @return a pair consisting of the x and y coordinates  of the entity.
+    * @return A pair consisting of the x and y coordinates of the entity.
     */
     virtual const pair<float, float> &getPosition() const = 0;
 
     /**
-    * @brief sets the position of the entity.
+    * @brief Sets the position of the entity.
     *
     * This function updates the position of the entity with the given coordinates.
     *

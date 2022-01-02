@@ -10,7 +10,7 @@
 
 using namespace std;
 
-// i used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern
+// I used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern
 
 class Stopwatch {
 
@@ -28,7 +28,7 @@ public:
     void operator=(const Stopwatch &) = delete;
 
     /**
-    * @brief creates unique instance of Stopwatch.
+    * @brief Creates unique instance of Stopwatch.
     *
     * This function creates unique instance of Stopwatch.
     *
@@ -37,10 +37,10 @@ public:
     static shared_ptr<Stopwatch> GetInstance();
 
     /**
-    * @brief creates unique instance of Stopwatch.
+    * @brief Creates unique instance of Stopwatch.
     *
     * This function marks the time.
-    * It also calculates the differance between the prev mark ant now.
+    * It also calculates the differance between the prev mark and now.
     * It is returned under the name delta time.
     *
     * @return delta time

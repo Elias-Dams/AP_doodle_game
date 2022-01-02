@@ -247,11 +247,11 @@ void World::update(const float &dt, const char &key) {
         player->move(5.f * dt * 60.f, 0.f * dt * 60.f);
     }
 
-    // if player goes out of the screen to the left it wil go to the right.
+    // if player goes out of the screen to the left it will go to the right.
     if (player->getPosition().first <= -player->getWidth()) {
         player->setPosition(WIDTH - player->getWidth(), player->getPosition().second);
     }
-    // if player goes out of the screen to the right it wil go to the left.
+    // if player goes out of the screen to the right it will go to the left.
     if (player->getPosition().first >= WIDTH) {
         player->setPosition(0, player->getPosition().second);
     }
@@ -314,11 +314,11 @@ void World::update(const float &dt, const char &key) {
         }
     }
 
-    // if we het higher there need to be less platforms
-    // because of the way draw my platforms the constant has to be smaller or equil to
+    // If we get higher there are less platforms needed
+    // Because of the way I draw my platforms the constant has to be smaller or equal to
     // the height if the world * 2 /100 <= platforms per 2 views - constant
     // |---------600 * 2 / 100--------| <= |--------20 - constant------------| ==> 12 <= 20 - constant
-    // if the constant becomes more than it is almost impossible to draw platforms that are reachable bij the player
+    // if the constant becomes more, it is almost impossible to draw platforms that are reachable by the player
     if ((int) camera->getNomalisedHeight() >= 3000 * constant && constant <= 16) {
         constant += 1;
         platforms_per_view -= 1;

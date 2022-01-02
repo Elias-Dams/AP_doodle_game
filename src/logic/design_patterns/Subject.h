@@ -19,40 +19,36 @@ public:
     void Attach(std::shared_ptr<IObserver> observer) override;
     void Detach(std::shared_ptr<IObserver> observer) override;
 
-    /// notifies all entity's to change their position
+    /// Notifies all entity's to change their position
     void NotifyPosition(float xpos, float ypos) override;
 
-    /// notifies the score if a new max height has been reached
+    /// Notifies the score if a new max height has been reached
     void NewMaxHeigh(float ypos) override;
 
-    /// notifies the entity's who have to reset
+    /// Notifies the entity's who have to reset
     void NotifyReset() override;
 
-    /// notifies the view of the player to reset it als the normal texture
+    /// Notifies the view of the player to reset it als the normal texture
     void NotifyNormal() override;
 
-    /// notifies the view of the player if a spring is collected
+    /// Notifies the view of the player if a spring is collected
     void NotifyMedium() override;
 
-    /// notifies the view of the player if a jetpack is collected
+    /// Notifies the view of the player if a jetpack is collected
     void NotifyHigh() override;
 
-    ///  notifies the observers to increase the score
+    /// Notifies the observers to increase the score
     void NotifyIncreaseScore(const int &points) override;
 
-    ///  notifies the observers to decrease the score
+    /// Notifies the observers to decrease the score
     void NotifyDecreaseScore(const int &points) override;
-
 
     const std::list<std::shared_ptr<IObserver>> getListObserver() const;
 
 private:
-    /// shared pointer becouse the Subject gets full controll over the observer
+    /// Shared pointer because the Subject gets full control over the observer
     std::list<std::shared_ptr<IObserver>> list_observer_;
 
 };
-
-
-
 
 #endif //AP_DOODLE_GAME_SUBJECT_H

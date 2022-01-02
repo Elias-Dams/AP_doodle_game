@@ -18,15 +18,15 @@ class Model::Player : public Entity_Model {
 public:
     /**
      * Player constructor.
-     * constructs the Player whit a certain width and height.
+     * Constructs the Player whit a certain width and height.
      */
     Player(const float &player_width, const float &player_height);
 
     /**
-    * @brief moves a player to a new position.
+    * @brief Moves a player to a new position.
     *
-    * This function updates the position of the player bye adding.
-    * the the distance travelled on the x axis and the y axis to the current position.
+    * This function updates the position of the player by adding the 
+    * distance travelled on the x axis and the y axis to the current position.
     *
     * @param x: the distance travelled on the x axis.
     * @param y: the distance travelled on the y axis.
@@ -34,9 +34,9 @@ public:
     void move(const float &x, const float &y);
 
     /**
-    * @brief makes the player jump.
+    * @brief Makes the player jump.
     *
-    * This function makes the player jump bye adding a certain gravity to player.
+    * This function makes the player jump bye adding a certain gravity to this player.
     * If a platorm is hit this gravity constant is reset and the player jumps up.
     *
     * @param dt: delta time (time it takes to render a frame)
@@ -46,16 +46,16 @@ public:
     void jump(const float &dt, const bool &hit,const int &height_modifier);
 
     /**
-    * @brief checks if the player is falling.
+    * @brief Checks if the player is falling.
     *
-    * This function is used to check if the player is falling so it can collide whit an other entity.
+    * This function is used to check if the player is falling so it can collide with another entity.
     *
-    * @return true if the player is falling. False if the player is going up.
+    * @return True if the player is falling. False if the player is going up.
     */
     bool isfalling() const;
 
     /**
-    * @brief fully resets the player
+    * @brief Fully resets the player
     *
     * This function resets the player to the state it was in when it was first initialized.
     *
@@ -65,24 +65,24 @@ public:
     void PlayerReset(const float &startposx, const float &startposy);
 
     /**
-    * @brief sets the platform last touched by the player.
+    * @brief Sets the platform last touched by the player.
     *
     * This function sets the platform last touched by the player.
     *
-    * @param platfomTouched:  platform last touched by the player.
+    * @param platfomTouched: platform last touched by the player.
     */
     void setPlatfomTouched(const shared_ptr<Entity_Model> &platfomTouched);
 
-    // documentation in Enntity_model
+    // documentation in Entity_model
     float getWidth() const override;
 
-    // documentation in Enntity_model
+    // documentation in Entity_model
     float getHeight() const override;
 
-    // documentation in Enntity_model
+    // documentation in Entity_model
     const pair<float, float> &getPosition() const override;
 
-    // documentation in Enntity_model
+    // documentation in Entity_model
     void setPosition(const float &x, const float &y) override;
 
     virtual ~Player();

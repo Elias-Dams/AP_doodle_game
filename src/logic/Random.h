@@ -9,14 +9,14 @@
 #include <vector>
 #include <memory>
 
-// i used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern
+// I used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern
 
 using namespace std;
 
 /**
  * @class Random
  *
- * @brief generates random numbers.
+ * @brief Generates random numbers.
  */
 class Random {
 
@@ -33,7 +33,7 @@ public:
     void operator=(const Random &) = delete;
 
     /**
-    * @brief creates unique instance of Random.
+    * @brief Creates unique instance of Random.
     *
     * This function creates unique instance of Random.
     *
@@ -42,12 +42,12 @@ public:
     static shared_ptr<Random> GetInstance();
 
     /**
-    * @brief generates a float number between a given range.
+    * @brief Generates a float number between a given range.
     *
     * This function generates a float number between a given range.
     *
     * @param min: minimum of the range.
-    * @param max: mqximum of the range.
+    * @param max: maximum of the range.
     * @return random float number.
     */
     float generate_between(const float &min, const float &max);

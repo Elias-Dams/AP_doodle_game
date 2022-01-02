@@ -15,7 +15,7 @@ class Model::Platform : public Entity_Model {
 public:
 
     /**
-    * @brief updates the position of the platform if it can move.
+    * @brief Updates the position of the platform if it can move.
     *
     * This function makes the platform move.
     *
@@ -24,12 +24,12 @@ public:
     virtual void update(const float &d) = 0;
 
     /**
-    * @brief gives the color of the platform.
+    * @brief Gives the color of the platform.
     *
     * This function gives the color of the platform.
-    * this is important because there are different types of platforms with various properties.
+    * It is important because there are different types of platforms with various properties.
     *
-    * @return color of the platform.
+    * @return Color of the platform.
     */
     virtual const string &getColor() const = 0;
 

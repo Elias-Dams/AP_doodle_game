@@ -16,28 +16,28 @@ public:
 
     virtual ~Observer();
 
-    /// updates the position of every entity
+    /// Updates the position of every entity
     virtual void UpdatePosition(const float &xpos, const float &ypos) override;
 
-    /// updates the score if a new max height is reached
+    /// Updates the score if a new max height is reached
     virtual void NewMaxheightReached(const float &ypos) override;
 
-    /// updates te score when a bonus is collected
+    /// Updates te score when a bonus is collected
     virtual void UpdateBonusScore(const int &points) override;
 
-    /// reduces the score
+    /// Reduces the score
     virtual void UpdateReduceScore(const int &points) override;
 
-    /// resets the score
+    /// Resets the score
     virtual void Resetscore() override;
 
-    /// resets te texture of the player
+    /// Resets te texture of the player
     virtual void ResetTexture() override;
 
-    /// updates te texture of the player if a spring is collected
+    /// Updates te texture of the player if a spring is collected
     virtual void UpdateMediumJump() override;
 
-    /// updates te texture of the player if a jetpack is collected
+    /// Updates te texture of the player if a jetpack is collected
     virtual void UpdateHighJump() override;
 
     void RemoveMeFromTheList();

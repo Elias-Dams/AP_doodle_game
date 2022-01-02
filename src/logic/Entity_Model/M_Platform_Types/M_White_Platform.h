@@ -15,7 +15,7 @@ class Model::White_Platform : public Model::Platform {
 public:
     /**
      * White_Platform constructor.
-     * constructs a White_Platform whit a certain width and height.
+     * constructs a White_Platform with a certain width and height.
      */
     White_Platform(float platformWidth, float platformHeight);
 

@@ -9,7 +9,7 @@ class View::White_Platform : public View::Platform {
 public:
     /**
      * White_Platform constructor.
-     * constructs the white_Platform whit
+     * Constructs the white_Platform with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     White_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);

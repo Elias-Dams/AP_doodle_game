@@ -29,56 +29,56 @@ class Game {
 public:
     /**
      * Game constructor.
-     * constructs the game
+     * Constructs the game.
      */
     Game();
 
     /**
-    * @brief main game loop
+    * @brief Main game loop.
     *
-    * this function contains the main game loop
+    * This function contains the main game loop.
     */
     void run();
 
     /**
-    * @brief updates the main game loop
+    * @brief Updates the main game loop.
     *
-    * this function updates the main game loop
+    * This function updates the main game loop.
     *
     * @param dt: delta time (time it takes to render a frame)
     */
     void update(const float &dt);
 
     /**
-    * @brief draws the entities
+    * @brief Draws the entities.
     *
-    * this function draws the entities on the screen
+    * This function draws the entities on the screen.
     */
     void drawGame();
 
     /**
-    * @brief game start
+    * @brief Game start.
     *
-    * this function handles the game start state
+    * This function handles the game start state.
     *
     * @param dt: delta time (time it takes to render a frame)
     */
     void gameStart(const float &dt);
 
     /**
-    * @brief game loop
+    * @brief Game loop.
     *
-    * this function handles the game loop
+    * This function handles the game loop.
     *
     * @param dt: delta time (time it takes to render a frame)
     */
     void gameLoop(const float &dt);
 
     /**
-    * @brief game over
+    * @brief Game over
     *
-    * this function handles the game over state
-    * This function resets the game to the state it was in when it was first initialized
+    * Ghis function handles the game over state.
+    * This function resets the game to the state it was in when it was first initialized.
     *
     * @param dt: delta time (time it takes to render a frame)
     */
@@ -88,14 +88,14 @@ public:
 
 private:
 
-    /// check if the mouse in on the button
+    /// Check if the mouse in on the button
     bool MouseOnButton(const sf::Sprite& Button) const;
 
-    /// loads the textures
+    /// Loads the textures
     void LoadTextures();
 
-    /// game
-    unique_ptr<sf::RenderWindow> window; ///< winsow
+    /// Game
+    unique_ptr<sf::RenderWindow> window; ///< window
     shared_ptr<Concrete_Factory> ConcreteFactory; ///< ConcreteFactory
     unique_ptr<World> world; ///< world
 
@@ -108,7 +108,7 @@ private:
     /// menu
     sf::Font font; ///< sfml font
     sf::Text score_text; ///< text to show the score on screen
-    sf::Text highscore_text; ///< text to show the highscorescore on screen
+    sf::Text highscore_text; ///< text to show the highscore on screen
     sf::Sprite Button; ///< sfml startbutton
     sf::Texture ButtonTexture; ///< sfml texture of startbutton
     sf::Texture ButtonTexture_pressed; ///< sfml texture of startbutton pressed

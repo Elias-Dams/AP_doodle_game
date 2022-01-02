@@ -14,7 +14,7 @@ class Model::Spring : public Model::Bonus {
 public:
     /**
      * Spring constructor.
-     * constructs a Spring whit a certain width and height
+     * constructs a Spring with a certain width and height
      */
     Spring(float Width, float Height);
 

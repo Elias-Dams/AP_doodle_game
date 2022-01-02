@@ -8,7 +8,7 @@
 #include <memory>
 #include "IObserver.h"
 
-// for this design pattern i user https://refactoring.guru/design-patterns/observer/cpp/example as a reference
+// For this design pattern I used https://refactoring.guru/design-patterns/observer/cpp/example as a reference.
 
 class ISubject {
 public:
@@ -17,7 +17,7 @@ public:
     * @brief Attach an observer to the subject
     *
     * This function attaches a pointer to an observer to the subject.
-    * This is a shared pointer because i the subject has full control over the deletion of the observer.
+    * Because the subject has full control over the deletion of the observer this is a shared pointer.
     * e.g. if the platform disappears the view also gets destroyed.
     *
     * @param observer: pointer to an observer
@@ -34,7 +34,7 @@ public:
     virtual void Detach(std::shared_ptr<IObserver> observer) = 0;
 
     /**
-    * @brief gets the list of observers.
+    * @brief Gets the list of observers.
     *
     * This function gets the list of observers attached to this subject.
     *
@@ -43,7 +43,7 @@ public:
     virtual const std::list<std::shared_ptr<IObserver>> getListObserver() const = 0;
 
     /**
-    * @brief notifies the observers to change the position.
+    * @brief Notifies the observers to change the position.
     *
     * This function notifies the observers to change the position.
     *
@@ -53,7 +53,7 @@ public:
     virtual void NotifyPosition(float xpos, float ypos) = 0;
 
     /**
-    * @brief notifies the observers that a new maxheight is reached.
+    * @brief Notifies the observers that a new maxheight is reached.
     *
     * This function notifies the observers that a new maxheight is reached so it can update the score.
     *
@@ -62,52 +62,52 @@ public:
     virtual void NewMaxHeigh(float ypos) = 0;
 
     /**
-    * @brief notifies the observers to reset
+    * @brief Notifies the observers to reset
     *
     * This function notifies the observers to reset themselves.
-    * (go back to the state you were in when you where first initialised)
+    * (go back to the state they were in when they where first initialised)
     *
     */
     virtual void NotifyReset() = 0;
 
     /**
-    * @brief notifies the observers to change texture to normal
+    * @brief Notifies the observers to change texture to normal
     *
-    * This function notifies the observers to change their texture back to normal
-    * this texture is used for a normal jump height of up to 500 units
+    * This function notifies the observers to change their texture back to normal.
+    * This texture is used for a normal jump height of up to 500 units
     *
     */
     virtual void NotifyNormal() = 0;
 
     /**
-    * @brief notifies the observers to change texture to medium
+    * @brief Notifies the observers to change texture to medium
     *
-    * This function notifies the observers to change their texture to the medium jump texture
-    * this texture is used for a medial jump height of up to 1500 units
+    * This function notifies the observers to change their texture to the medium jump texture.
+    * This texture is used for a medium jump height of up to 1500 units.
     *
     */
     virtual void NotifyMedium() = 0;
 
     /**
-    * @brief notifies the observers to change texture to high
+    * @brief Notifies the observers to change texture to high
     *
-    * This function notifies the observers to change their texture to the high jump texture
-    * this texture is used for a high jump of more than 1500 units
+    * This function notifies the observers to change their texture to the high jump texture.
+    * This texture is used for a high jump of more than 1500 units.
     *
     */
     virtual void NotifyHigh() = 0;
 
     /**
-    * @brief notifies the observers to increase the score
+    * @brief Notifies the observers to increase the score
     *
-    * This function notifies the observers to increase the score
+    * This function notifies the observers to increase the score.
     *
     * @param points: that need to be added from the score
     */
     virtual void NotifyIncreaseScore(const int &points) = 0;
 
     /**
-    * @brief notifies the observers to decrease the score
+    * @brief Notifies the observers to decrease the score
     *
     * This function notifies the observers to decrease the score
     *

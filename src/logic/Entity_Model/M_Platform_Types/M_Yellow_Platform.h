@@ -16,7 +16,7 @@ class Model::Yellow_Platform : public Model::Platform {
 public:
     /**
      * Yellow_Platform constructor.
-     * constructs a Yellow_Platform whit a certain width and height and moveheight.
+     * constructs a Yellow_Platform with a certain width and height and moveheight.
      */
     Yellow_Platform(float platformWidth, float platformHeight, float moveheight);
 

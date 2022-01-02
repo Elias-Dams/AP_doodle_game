@@ -15,7 +15,6 @@ Game::Game() {
     highscore = 0;
 
     // when the game starts the game state is start
-
     GameState = start;
 
     // Load the menu textures
@@ -33,7 +32,6 @@ Game::Game() {
     highscore_text.setFillColor(sf::Color::Black);
 
     // make button
-
     Button.setTexture(ButtonTexture);
     Button.setPosition(world->getWidth() / 2 - Button.getLocalBounds().width / 2,
                        world->getHeight() / 2 - Button.getLocalBounds().height / 2);

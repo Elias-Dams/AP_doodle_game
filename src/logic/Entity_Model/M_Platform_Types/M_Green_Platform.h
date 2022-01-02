@@ -8,14 +8,14 @@
  * @class White_Platform
  *
  * @brief An entity with which the Player can come into contact in order to move up in the World.
- * The Green platform is the most basic platform,it has no special feature.
+ * The Green platform is the most basic platform, it has no special feature.
  */
 class Model::Green_Platform : public Model::Platform {
 
 public:
     /**
      * Green_Platform constructor.
-     * constructs a Green_Platform whit a certain width and height.
+     * constructs a Green_Platform with a certain width and height.
      */
     Green_Platform(float platformWidth, float platformHeight);
 

@@ -13,9 +13,14 @@ jumping player move from platform to platform. You can achieve this by using the
 or the arrow keys to move the player from side to side.
 
 ![preview project](Textures/doodle_readme.png)
-## Documenation
+## Documentation
 
 - [Doxygen documentation (index.html)](../AP_doodle_game/docs/html/index.html)
+
+## Project report
+
+- [project report](report.pdf)
+
 ## References
 
 - [https://en.wikipedia.org/wiki/Doodle_Jump](https://en.wikipedia.org/wiki/Doodle_Jump) 
@@ -25,5 +30,5 @@ or the arrow keys to move the player from side to side.
 ## Author 
 **Elias Dams**
 
-- [github Profile](https://github.com/Elias-Dams "Elias-Dams"): Elias-Dams
+- GitHub Profile: [Elias-Dams](https://github.com/Elias-Dams "Elias-Dams")
 - Email: elias.dams@student.uantwerpen.be

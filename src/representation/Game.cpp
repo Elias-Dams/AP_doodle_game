@@ -12,7 +12,7 @@ Game::Game() {
 
     view = make_unique<sf::View>(sf::FloatRect(0, 0, world->getWidth(), world->getHeight()));
 
-    highscore = 0;
+    highscore = this->readHighScore("../Textures/highscore.txt");
 
     // when the game starts the game state is start
     GameState = start;
@@ -77,6 +77,9 @@ void Game::run() {
     while (window->isOpen()) {
         dt = clock.lock()->mark_time();
 
+        // when the delta time is bigger than 0.25 it indicates that the drawing of a frame took way to long
+        // if this is not corrected te player will make a far too large movement as dt is its speed parameter.
+        // this is countered by setting the dt equal al 0.001
         if ( dt > 0.25 )
             dt = 0.001;
 
@@ -103,6 +106,7 @@ void Game::update(float dt) {
 
     sf::Event event;
 
+    //We check for events that might happen during the game
     while (window->pollEvent(event)) {
         switch (event.type) {
             case sf::Event::Closed:
@@ -110,8 +114,10 @@ void Game::update(float dt) {
                 break;
 
             case sf::Event::Resized:
+                // correctly resize the window
                 sf::Vector2<float> visibleArea(((float)event.size.width/(float)event.size.height) * (float)world->getHeight(), world->getHeight());
                 view->setSize(visibleArea);
+                // when resizing we don't want the player to move
                 dt = 0.001;
                 break;
         }
@@ -191,6 +197,7 @@ void Game::gameOver(const float &dt) {
         // update the highscore
         if (highscore <= ConcreteFactory->get_score().lock()->getscore()) {
             highscore = ConcreteFactory->get_score().lock()->getscore();
+            this->writeHighScore("../Textures/highscore.txt");
         }
 
         // set the highscore for the endgame screen;
@@ -207,6 +214,7 @@ void Game::gameOver(const float &dt) {
 
 void Game::drawGame() {
     window->clear(sf::Color::Black);
+    // Each gamestage should have different elements appearing on the screen.
 
     // start draws
     if (GameState == start) {
@@ -266,7 +274,7 @@ void Game::drawGame() {
 
 bool Game::MouseOnButton(const sf::Sprite &_button) const{
 
-    //found at: https://www.sfml-dev.org/tutorials/2.1/graphics-view.php#coordinates-conversions
+    //following conversion found at: https://www.sfml-dev.org/tutorials/2.1/graphics-view.php#coordinates-conversions
 
     // get the current mouse position in the window
     sf::Vector2i pixelPos = sf::Mouse::getPosition(*window);
@@ -281,5 +289,53 @@ bool Game::MouseOnButton(const sf::Sprite &_button) const{
     return mouseInButton;
 }
 
+
+int Game::readHighScore(const std::string &filename){
+    const string& filename_(filename);
+    int number = 0;
+
+    ifstream input_file(filename_);
+
+    try {
+        if (!input_file.is_open()) {
+            string error = "Could not open the file - '" + filename + "'";
+            throw error;
+        }
+        // read number
+        input_file >> number;
+
+        input_file.close();
+
+        return number;
+
+    } catch (string &a) {
+        cerr << a << endl;
+        // if the file wasn't found we return 0
+        return 0;
+    }
+}
+
+
+void Game::writeHighScore(const std::string &filename){
+    const string& filename_(filename);
+
+    ofstream input_file(filename_);
+
+    try {
+        if (!input_file.is_open()) {
+            string error = "Could not open the file - '" + filename + "'";
+            throw error;
+        }
+        // write highscore
+        input_file << highscore;
+
+        input_file.close();
+    } catch (string &a) {
+        cerr << a << endl;
+        // if the file wasn't found we return 0
+    }
+}
+
 Game::~Game() {
+
 }

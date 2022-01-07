@@ -10,6 +10,7 @@
 #include <iostream>
 #include <list>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -93,6 +94,12 @@ private:
 
     /// Loads the textures
     void LoadTextures();
+
+    /// reads the Highscore from file
+    int readHighScore(const std::string &filename);
+
+    /// writes the Highscore to file
+    void writeHighScore(const std::string &filename);
 
     /// Game
     unique_ptr<sf::RenderWindow> window; ///< window

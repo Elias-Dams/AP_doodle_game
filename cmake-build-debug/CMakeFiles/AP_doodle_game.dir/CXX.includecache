@@ -8,6 +8,14 @@
 
 ../src/logic/Namespaces.cpp
 
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/main.cpp
+src/representation/Game.h
+/mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/Game.h
+iostream
+-
+string
+-
+
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/logic/Camera.h
 iostream
 -
@@ -316,6 +324,8 @@ iostream
 list
 -
 string
+-
+fstream
 -
 
 /mnt/c/Users/legod/CLionProjects/AP_doodle_game/src/representation/design_patterns/Concrete_Factory.h

@@ -1,8 +1,7 @@
 
 #include "World.h"
 
-World::World(const shared_ptr<Abstract_Factory> &factory) :
-    factory(factory) {
+World::World(const shared_ptr<Abstract_Factory> &factory) : factory(factory) {
     WIDTH = 400;
     HEIGHT = 600;
     platforms_per_view = 20;
@@ -10,7 +9,7 @@ World::World(const shared_ptr<Abstract_Factory> &factory) :
     height_of_the_last_platform = 0;
     exeption_width = {0.0f,0.0f};
     exeption_height = 0;
-    camera = factory->createCamera(WIDTH, HEIGHT);
+    camera = factory->createCamera((float)WIDTH, (float)HEIGHT);
     player = factory->createPlayer((float) WIDTH / 8.0f, (float) HEIGHT / 12.0f, 150.0f, 300.0f, camera);
     background.first = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, 0.0f, camera);
     background.second = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, (float) HEIGHT + 0.0f, camera);
@@ -21,7 +20,7 @@ World::World(const shared_ptr<Abstract_Factory> &factory) :
 
 void World::create_start_platform() {
 
-    shared_ptr<Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
+    shared_ptr<Green_Platform> platform = factory->createGreenPlatform((float)WIDTH / 5.5f, (float)HEIGHT / 32.0f, camera);
     platform->setPosition(45.0f, 100.0f);
     platforms.push_back(platform);
 }
@@ -30,16 +29,17 @@ void World::create_platforms() {
     int radius_per_platform = (HEIGHT * 2) / platforms_per_view;
     weak_ptr<Random> random = Random::GetInstance();
 
+    // at the start of the game we create green platforms
     for (int i = 0; i < platforms_per_view; i++) {
 
         int from = last_max_of_radius;
         int to = last_max_of_radius + radius_per_platform;
-        shared_ptr<Green_Platform> platform = factory->createGreenPlatform(WIDTH / 5.5f, HEIGHT / 32.0f, camera);
+        shared_ptr<Green_Platform> platform = factory->createGreenPlatform((float)WIDTH / 5.5f, (float)HEIGHT / 32.0f, camera);
         platform->setPosition(random.lock()->generate_between(0, (float) WIDTH - platform->getWidth()),
                               random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
         platforms.push_back(platform);
         last_max_of_radius = last_max_of_radius + radius_per_platform;
-        height_of_the_last_platform = platform->getPosition().second;
+        height_of_the_last_platform = (int)platform->getPosition().second;
     }
 }
 
@@ -52,7 +52,7 @@ void World::add_platforms() {
         weak_ptr<Random> random = Random::GetInstance();
 
         // radius in witch a platform can generate
-        int radius_per_platform = (float) 2 * HEIGHT / platforms_per_view;
+        int radius_per_platform = 2.0f * (float)HEIGHT / (float)platforms_per_view;
 
         for (int i = 0; i < platforms_to_add; i++) {
 
@@ -68,7 +68,7 @@ void World::add_platforms() {
 
             // green platform
             // the constant is used to reduce the platform_chances of a green platform at a big height
-            if (platform_chance <= (7.0f - (0.4375f) * (constant - 1))) {
+            if (platform_chance <= (7.0f - (0.4375f) * (float)(constant - 1))) {
                 platform = factory->createGreenPlatform((float) WIDTH / 5.5f, (float) HEIGHT / 32.0f, camera);
 
                 // determine whether the platform has a bonus
@@ -367,8 +367,8 @@ void World::update(const float &dt, const char &key) {
         }
     }
 
-    
-    // If we get higher there are less platforms needed
+
+    // If we get higher there are fewer platforms needed
     // Because of the way I draw my platforms the constant has to be smaller or equal to
     // the height if the world * 2 /100 <= platforms per 2 views - constant
     // |---------600 * 2 / 100--------| <= |--------20 - constant------------| ==> 12 <= 20 - constant

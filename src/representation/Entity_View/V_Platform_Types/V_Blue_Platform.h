@@ -9,7 +9,7 @@ class View::Blue_Platform : public View::Platform {
 public:
     /**
      * Blue_Platform constructor.
-     * constructs the blue_Platform whit
+     * Constructs the blue_Platform with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     Blue_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);

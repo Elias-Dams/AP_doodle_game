@@ -10,12 +10,12 @@ class View::Bonus : public Entity_View {
 public:
     /**
      * Bonus constructor.
-     * constructs the bonus
+     * Constructs the bonus
      */
     Bonus();
 
     /**
-    * @brief gets the sfml sprite
+    * @brief Gets the sfml sprite
     *
     * This function gets the sfml sprite of the bonus
     *

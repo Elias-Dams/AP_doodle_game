@@ -28,7 +28,7 @@ class Abstract_Factory {
 public:
     /**
      * Player constructor.
-     * constructs the Player whit a certain
+     * Constructs the Player with a certain
      * - width
      * - height
      * - startposition
@@ -38,7 +38,7 @@ public:
 
     /**
      * Background_Tile constructor.
-     * constructs a Background_Tile whit a certain
+     * Constructs a Background_Tile with a certain
      * - width
      * - height
      * - startposition
@@ -48,7 +48,7 @@ public:
 
     /**
      * Green_Platform constructor.
-     * constructs a Green_Platform whit a certain
+     * Constructs a Green_Platform with a certain
      * - width
      * - height
      * - camera
@@ -57,7 +57,7 @@ public:
 
     /**
      * Blue_Platform constructor.
-     * constructs a Blue_Platform whit a certain
+     * Constructs a Blue_Platform with a certain
      * - width
      * - height
      * - move width
@@ -67,7 +67,7 @@ public:
 
     /**
      * White_Platform constructor.
-     * constructs a White_Platform whit a certain
+     * Constructs a White_Platform with a certain
      * - width
      * - height
      * - camera
@@ -76,7 +76,7 @@ public:
 
     /**
      * Yellow_Platform constructor.
-     * constructs a Yellow_Platform whit a certain
+     * Constructs a Yellow_Platform with a certain
      * - width
      * - height
      * - move height
@@ -86,7 +86,7 @@ public:
 
     /**
      * Spring constructor.
-     * constructs the Spring whit a certain
+     * Constructs the Spring with a certain
      * - width
      * - height
      * - camera
@@ -95,7 +95,7 @@ public:
 
     /**
      * Jetpack constructor.
-     * constructs the Jetpack whit a certain
+     * Constructs the Jetpack with a certain
      * - width
      * - height
      * - camera
@@ -104,27 +104,27 @@ public:
 
     /**
      * Camera constructor.
-     * constructs the Camera
+     * Constructs the Camera.
      */
     virtual shared_ptr<Camera> createCamera(float camera_width, float camera_height) = 0;
 
     /**
-     * @brief deletes a platform
+     * @brief Deletes a platform
      *
      * This function deletes a platform from the map of platforms.
-     * In this map the view are being saved.
+     * In this map the view is being saved.
      *
-     * @param platform weak pointer to the platform that must be deleted
+     * @param platform: weak pointer to the platform that must be deleted
      */
     virtual void delete_platform(weak_ptr<Model::Platform> platform) = 0;
 
     /**
-     * @brief deletes a bonus
+     * @brief Deletes a bonus
      *
      * This function deletes a bonus from the map of bonuses.
-     * In this map the view are being saved.
+     * In this map the view is being saved.
      *
-     * @param platform weak pointer to the bonus that must be deleted
+     * @param platform: weak pointer to the bonus that must be deleted
      */
     virtual void delete_bonus(weak_ptr<Model::Bonus> bonus) = 0;
 };

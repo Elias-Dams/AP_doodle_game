@@ -23,14 +23,14 @@ class World {
 public:
     /**
      * World constructor.
-     * constructs the World whit a pointer to the Abstract factory
+     * vonstructs the World with a pointer to the Abstract factory.
      */
     World(const shared_ptr<Abstract_Factory> &factory);
 
     /**
-    * @brief handles the start state and gameover state of the game.
+    * @brief Handles the start state and game-over state of the game.
     *
-    * This function handles the start state gameover state of the game.
+    * This function handles the start state game-over state of the game.
     * It makes a platform and lets the player jump in place.
     * The player can't move in this state so there is no need for a key variable.
     *
@@ -39,12 +39,12 @@ public:
     void startstate(const float &dt);
 
     /**
-    * @brief updates the world in teh actual game state.
+    * @brief Updates the world in the actual game state.
     *
-    * This function updates the world in teh actual game state.
+    * This function updates the world in the actual game state.
     * - updates the camera position
     * - updates the background
-    * - move the player (whit given key)
+    * - move the player (with given key)
     * - check collision
     * - destroys and adds platforms
     *
@@ -54,7 +54,7 @@ public:
     void update(const float & dt, const char &key);
 
     /**
-    * @brief returns the player.
+    * @brief Returns the player.
     *
     * This function returns shared pointer of the player.
     *
@@ -63,7 +63,7 @@ public:
     shared_ptr<Player> getPlayer() const;
 
     /**
-    * @brief returns the game width.
+    * @brief Returns the game width.
     *
     * This function returns the game width.
     *
@@ -72,7 +72,7 @@ public:
     int getWidth() const;
 
     /**
-    * @brief returns the game height.
+    * @brief Returns the game height.
     *
     * This function returns the game height.
     *
@@ -81,7 +81,7 @@ public:
     int getHeight() const;
 
     /**
-    * @brief returns the background.
+    * @brief Returns the background.
     *
     * This function returns the background.
     * It is a pair of 2 tiles that updates when the player moves up in the world.
@@ -91,7 +91,7 @@ public:
     const pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> &getBackground() const;
 
     /**
-    * @brief returns the camera.
+    * @brief Returns the camera.
     *
     * This function returns shared pointer of the camera.
     *
@@ -100,7 +100,7 @@ public:
     shared_ptr<Camera> getCamera() const;
 
     /**
-    * @brief returns the platforms.
+    * @brief Returns the platforms.
     *
     * This function returns a vector of shared pointers of platforms.
     *
@@ -109,9 +109,9 @@ public:
     const vector<shared_ptr<Platform>> &getPlatforms() const;
 
     /**
-    * @brief returns the bonusses.
+    * @brief Returns the bonusses.
     *
-    * This function returns a map whit
+    * This function returns a map with:
     * - key a shared pointer to a platform
     * - van a shared pointer to a bonus
     *
@@ -120,13 +120,13 @@ public:
     const map<shared_ptr<Platform>, shared_ptr<Bonus>> &getBonuses() const;
 
     /**
-    * @brief resets the world.
+    * @brief Resets the world.
     *
     * This function resets the world to the state it was in when it was first initialized.
-    * it handles:
+    * It handles:
     * - reset of the player
     * - reset of the camera
-    * - reset of all the members of the wordl
+    * - reset of all the members of the world
     * - clears the vector of platforms
     * - clears the map of bonuses
     *
@@ -134,7 +134,7 @@ public:
     void Reset();
 
     /**
-    * @brief checks if the game is over.
+    * @brief Checks if the game is over.
     *
     * This function checks if the game is over.
     *
@@ -171,8 +171,8 @@ private:
     pair<shared_ptr<BG_Tile>, shared_ptr<BG_Tile>> background; ///< the backgrounds
     shared_ptr<Camera> camera; ///< the camera
 
-    bool GameOver; ///< game over check
-    int constant; ///< constant that is used to change de difficulty (less platforms and differant types of platforms)
+    bool GameOver; ///< game-over check
+    int constant; ///< constant that is used to change de difficulty (less platforms and different types of platforms)
 
 
     pair<float,float> exeption_width; ///< Width where no other platforms can occur
@@ -180,8 +180,8 @@ private:
     int last_max_of_radius; ///< last max of radius the radius a platform could spawn in
     int height_of_the_last_platform; ///< height of the last platform that was created
     int platforms_per_view; ///< the amount of platforms in a view
-    int WIDTH; ///< width of the wordl
-    int HEIGHT; ///< height of the wordl
+    int WIDTH; ///< width of the world
+    int HEIGHT; ///< height of the world
 };
 
 

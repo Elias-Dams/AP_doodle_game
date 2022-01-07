@@ -9,7 +9,7 @@
  * @class Background_Tile
  *
  * @brief This is the background of the game.
- * It moves whit the World to make it seem that is stays static whit the platforms.
+ * It moves with the World to make it seem that is stays static with the platforms.
  */
 
 class Model::BG_Tile : public Entity_Model {

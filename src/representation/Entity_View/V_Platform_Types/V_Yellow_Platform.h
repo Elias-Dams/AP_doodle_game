@@ -10,7 +10,7 @@ class View::Yellow_Platform : public View::Platform {
 public:
     /**
      * Yellow_Platform constructor.
-     * constructs the yellow_Platform whit
+     * Constructs the yellow_Platform with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     Yellow_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);

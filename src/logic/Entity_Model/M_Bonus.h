@@ -21,7 +21,7 @@ public:
     virtual void setPosition(const float &x, const float &y) = 0;
 
     /**
-    * @brief updates the position of the bonus if it can move.
+    * @brief Updates the position of the bonus if it can move.
     *
     * This function updates the position of the bonus if it can move.
     * This is the case if it is on a moving platform.
@@ -32,12 +32,12 @@ public:
     virtual void update(const float &x, const float &y) = 0;
 
     /**
-    * @brief get the bonuspower.
+    * @brief Get the bonuspower.
     *
     * This function gets the power of a certain bonus.
-    * e.g. the spring makes the player jump x5 higher.
+    * E.g. the spring makes the player jump x5 higher.
     *
-    * @return gets the type of the bonus
+    * @return Gets the type of the bonus
     */
     virtual int getBonuspower() const = 0;
 

@@ -23,7 +23,7 @@ public:
     virtual ~Entity_View();
 
     /**
-    * @brief updates the position of the entity views
+    * @brief Updates the position of the entity view
     *
     * This function updates the position of the view when the player has moved
     *

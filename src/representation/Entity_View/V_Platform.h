@@ -15,7 +15,7 @@ class View::Platform : public Entity_View {
 public:
     /**
      * Platform constructor.
-     * constructs the platform
+     * Constructs the platform.
      */
     Platform();
 

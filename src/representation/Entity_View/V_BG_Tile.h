@@ -9,7 +9,7 @@ class View::BG_Tile : public Entity_View {
 public:
     /**
      * Background tile constructor.
-     * constructs the background whit
+     * Constructs the background with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
     BG_Tile(const float &width, const float &height, const shared_ptr<Camera> &camera_);

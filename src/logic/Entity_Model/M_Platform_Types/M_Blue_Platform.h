@@ -14,8 +14,8 @@ class Model::Blue_Platform : public Model::Platform {
 
 public:
     /**
-     *  Blue_Platform constructor.
-     * constructs a  Blue_Platform whit a certain width and height and movewidth.
+     * Blue_Platform constructor.
+     * constructs a Blue_Platform with a certain width and height and movewidth.
      */
     Blue_Platform(float platformWidth, float platformHeight, int world_Width);
 

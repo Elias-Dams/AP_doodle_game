@@ -142,6 +142,13 @@ public:
     */
     bool isGameOver() const;
 
+    /**
+    * @brief deletes the platforms.
+    *
+    * This function deletes the platforms.
+    */
+    void deletePlatforms();
+
     virtual ~World();
 
 
@@ -154,6 +161,8 @@ private:
 
     bool colisionCheck(shared_ptr<Entity_Model> entity, const bool &can_update_score);
 
+    float getFreeSpace();
+
     shared_ptr<Abstract_Factory> factory; ///< abstract factory
 
     shared_ptr<Player> player; ///< the player
@@ -165,6 +174,9 @@ private:
     bool GameOver; ///< game over check
     int constant; ///< constant that is used to change de difficulty (less platforms and differant types of platforms)
 
+
+    pair<float,float> exeption_width; ///< Width where no other platforms can occur
+    int exeption_height; ///< height for which the exception applies
     int last_max_of_radius; ///< last max of radius the radius a platform could spawn in
     int height_of_the_last_platform; ///< height of the last platform that was created
     int platforms_per_view; ///< the amount of platforms in a view

@@ -8,6 +8,8 @@ World::World(const shared_ptr<Abstract_Factory> &factory) :
     platforms_per_view = 20;
     last_max_of_radius = 0;
     height_of_the_last_platform = 0;
+    exeption_width = {0.0f,0.0f};
+    exeption_height = 0;
     camera = factory->createCamera(WIDTH, HEIGHT);
     player = factory->createPlayer((float) WIDTH / 8.0f, (float) HEIGHT / 12.0f, 150.0f, 300.0f, camera);
     background.first = factory->createBackground((float) WIDTH, (float) HEIGHT, 0.0f, 0.0f, camera);
@@ -49,13 +51,13 @@ void World::add_platforms() {
 
         weak_ptr<Random> random = Random::GetInstance();
 
+        // radius in witch a platform can generate
         int radius_per_platform = (float) 2 * HEIGHT / platforms_per_view;
 
         for (int i = 0; i < platforms_to_add; i++) {
 
             int from = last_max_of_radius;
             int to = last_max_of_radius + radius_per_platform;
-
 
             shared_ptr<Platform> platform;
             shared_ptr<Bonus> bonus;
@@ -101,7 +103,7 @@ void World::add_platforms() {
             }
             // yellow platform
             // the constant is used to reduce the platform_chances of a green platform at a big height
-            else if (platform_chance <= 10.0f) {
+            else if (platform_chance <= 10.0f and exeption_height <= 0) {
                 platform = factory->createYellowPlatform((float) WIDTH / 5.5f, (float) HEIGHT / 32.0f, 200.0f, camera);
 
                 // determine whether the platform has a bonus
@@ -113,9 +115,29 @@ void World::add_platforms() {
                     has_bonus = true;
                 }
             }
+            else{
+                platform = factory->createGreenPlatform((float) WIDTH / 5.5f, (float) HEIGHT / 32.0f, camera);
+            }
 
-            platform->setPosition(random.lock()->generate_between(0, (float) WIDTH - platform->getWidth()),
-                                  random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
+
+            if(exeption_height <= 0){
+                platform->setPosition(random.lock()->generate_between(0, (float) WIDTH - platform->getWidth()),
+                                      random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
+
+            }
+            else{
+                platform->setPosition(random.lock()->generate_between_exeption(0, (float) WIDTH - platform->getWidth(), exeption_width.first - platform->getWidth(), exeption_width.second),
+                                      random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
+                exeption_height -= radius_per_platform;
+            }
+
+            // yellow platform exeption:
+            if(platform->getColor() == "Yellow"){
+                platform->setPosition(this->getFreeSpace(),random.lock()->generate_between((float) from + platform->getHeight(), (float) to));
+                exeption_width.first = platform->getPosition().first;
+                exeption_width.second = platform->getPosition().first + platform->getWidth();
+                exeption_height = 100.0f + platform->getHeight();
+            }
 
             if (height_of_the_last_platform + 200.0f < platform->getPosition().second) {
                 // we have to correct the height of the platform, so it is reachable
@@ -193,6 +215,40 @@ bool World::colisionCheck(shared_ptr<Entity_Model> entity, const bool & can_upda
     return false;
 }
 
+float World::getFreeSpace(){
+    weak_ptr<Platform> platform1 = platforms.end()[-1];
+    weak_ptr<Platform> platform2 = platforms.end()[-2];
+    if(platform1.lock()->getPosition().first > platform2.lock()->getPosition().first){
+        platform1 = platforms.end()[-2];
+        platform2 = platforms.end()[-1];
+    }
+    weak_ptr<Random> random = Random::GetInstance();
+
+    float freeSpace1 = 0.0f;
+    float freeSpace2 = 0.0f;
+    float freeSpace3 = 0.0f;
+    if(0 < platform1.lock()->getPosition().first - platform1.lock()->getWidth()){
+        freeSpace1 = random.lock()->generate_between(0, platform1.lock()->getPosition().first - platform1.lock()->getWidth());
+    }
+    if(platform1.lock()->getPosition().first + platform1.lock()->getWidth() < platform2.lock()->getPosition().first - platform2.lock()->getWidth()){
+        freeSpace2 = random.lock()->generate_between(platform1.lock()->getPosition().first + platform1.lock()->getWidth(), platform2.lock()->getPosition().first - platform2.lock()->getWidth());
+    }
+    if(platform2.lock()->getPosition().first + platform2.lock()->getWidth() < WIDTH -  platform2.lock()->getWidth()){
+        freeSpace3 = random.lock()->generate_between(platform2.lock()->getPosition().first + platform2.lock()->getWidth(), WIDTH -  platform2.lock()->getWidth());
+    }
+    float choice = random.lock()->generate_between(0.0f,3.0f);
+
+    if(choice <= 1.0f and freeSpace1 != 0.0f){
+        return freeSpace1;
+    }
+    else if(choice <= 2.0f and freeSpace2 != 0.0f){
+        return freeSpace2;
+    }
+    else if(choice <= 3.0f and freeSpace3 != 0.0f){
+        return freeSpace3;
+    }
+}
+
 void World::startstate(const float & dt) {
     if (platforms.empty()) {
         this->create_start_platform();
@@ -216,17 +272,12 @@ void World::startstate(const float & dt) {
 }
 
 void World::update(const float &dt, const char &key) {
-    if (platforms.size() == 1) {
+    if (platforms.empty()) {
         this->create_platforms();
     }
     // game over;
     if (player->getPosition().second < (camera->getNomalisedHeight() - HEIGHT / 2)) {
         GameOver = true;
-    }
-
-    // update the camera pos
-    if (player->getPosition().second >= camera->getNomalisedHeight()) {
-        camera->setHeight(player->getPosition().second);
     }
 
     // update the background
@@ -268,6 +319,7 @@ void World::update(const float &dt, const char &key) {
 
         (*it)->update(dt);
 
+        // if the platform has a bonus we update the bonuses position.
         if (bonusses.count((*it))) {
             bonusses[(*it)]->update(
                     (*it)->getPosition().first + (*it)->getWidth() / 2 - bonusses[(*it)]->getWidth() / 2,
@@ -285,7 +337,7 @@ void World::update(const float &dt, const char &key) {
             hit = true;
             current_hit = true;
         }
-
+        // if the platform goes out of the view we delete it.
         if ((*it)->getPosition().second < (camera->getNomalisedHeight() - HEIGHT / 2) - (*it)->getHeight()) {
             if (bonusses.count((*it))) {
                 factory->delete_bonus(bonusses[(*it)]);
@@ -300,6 +352,7 @@ void World::update(const float &dt, const char &key) {
             factory->delete_platform((*it));
             (*it).reset();
             platforms.erase(it);
+
         } else if (current_hit and bonus_hit and bonusses.count((*it))) {
             // make the jetpack disappear
             if (bonusses[(*it)]->getBonuspower() == 12) {
@@ -314,7 +367,7 @@ void World::update(const float &dt, const char &key) {
         }
     }
 
-    // if we het higher there need to be less platforms
+    // if we go higher there need to be fewer platforms
     // because of the way draw my platforms the constant has to be smaller or equil to
     // the height if the world * 2 /100 <= platforms per 2 views - constant
     // |---------600 * 2 / 100--------| <= |--------20 - constant------------| ==> 12 <= 20 - constant
@@ -329,7 +382,10 @@ void World::update(const float &dt, const char &key) {
 
     player->jump(dt, hit, height_modification);
 
-    //cout << player->getPosition().second << endl;
+    // update the camera pos
+    if (player->getPosition().second >= camera->getNomalisedHeight()) {
+        camera->setHeight(player->getPosition().second);
+    }
 }
 
 shared_ptr<Player> World::getPlayer() const {
@@ -356,13 +412,7 @@ bool World::isGameOver() const {
     return GameOver;
 }
 
-void World::Reset() {
-    player->PlayerReset(50.0f, 300.0f);
-    camera->CameraReset();
-    last_max_of_radius = 0;
-    height_of_the_last_platform = 0;
-    platforms_per_view = 20;
-
+void World::deletePlatforms(){
     for (shared_ptr<Platform> platform : platforms) {
         if (bonusses.count(platform)) {
             factory->delete_bonus(bonusses[platform]);
@@ -373,6 +423,18 @@ void World::Reset() {
         platform.reset();
     }
     platforms.clear();
+}
+
+void World::Reset() {
+    player->PlayerReset(50.0f, 300.0f);
+    camera->CameraReset();
+    last_max_of_radius = 0;
+    height_of_the_last_platform = 0;
+    platforms_per_view = 20;
+    exeption_width = {0.0f,0.0f};
+    exeption_height = 0;
+
+    this->deletePlatforms();
 
     GameOver = false;
 

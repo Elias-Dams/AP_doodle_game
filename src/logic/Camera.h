@@ -76,7 +76,28 @@ public:
     */
     void CameraReset();
 
+    /**
+    * @brief returns the camera width
+    *
+    * This function returns the camera width
+    *
+    * @return camera width
+    */
+    float getCameraWidth() const;
+
+    /**
+    * @brief returns the camera height
+    *
+    * This function returns the camera height
+    *
+    * @return camera height
+    */
+    float getCameraHeight() const;
+
     virtual ~Camera();
+
+
+
 
 private:
     float CameraWidth; ///< the width of the camera (dimension)

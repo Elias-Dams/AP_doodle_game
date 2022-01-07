@@ -3,7 +3,7 @@
 
 Camera::Camera(const float &cameraWidth, const float &cameraHeight) :
     CameraWidth(cameraWidth), CameraHeight(cameraHeight) {
-    height = cameraHeight / 2;
+    height = cameraHeight / 2.0f;
 }
 
 float Camera::getNomalisedHeight() const {
@@ -29,9 +29,17 @@ float Camera::toGamewidth(const float &position, const float &entity_height) {
 }
 
 void Camera::CameraReset() {
-    height = CameraHeight / 2;
+    height = CameraHeight / 2.0f;
 }
 
 Camera::~Camera() {
 
 }
+float Camera::getCameraWidth() const {
+    return CameraWidth;
+}
+
+float Camera::getCameraHeight() const {
+    return CameraHeight;
+}
+

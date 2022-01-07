@@ -10,7 +10,7 @@ Game::Game() {
 
     weak_ptr<Stopwatch>clock = Stopwatch::GetInstance(); // initialise the singleton
 
-    view = make_shared<sf::View>(sf::FloatRect(0, 0, world->getWidth(), world->getHeight()));
+    view = make_unique<sf::View>(sf::FloatRect(0, 0, world->getWidth(), world->getHeight()));
 
     highscore = 0;
 
@@ -75,11 +75,12 @@ void Game::run() {
     window->setFramerateLimit(120);
     weak_ptr<Stopwatch> clock = Stopwatch::GetInstance();
 
+    // the game loop
     while (window->isOpen()) {
         dt = clock.lock()->mark_time();
 
         if ( dt > 0.25 )
-            dt = 0.25;
+            dt = 0.001;
 
         accumulator += dt;
 
@@ -100,7 +101,7 @@ void Game::run() {
 }
 
 
-void Game::update(const float &dt) {
+void Game::update(float dt) {
 
     sf::Event event;
 
@@ -113,9 +114,10 @@ void Game::update(const float &dt) {
             case sf::Event::Resized:
                 sf::Vector2<float> visibleArea(((float)event.size.width/(float)event.size.height) * (float)world->getHeight(), world->getHeight());
                 view->setSize(visibleArea);
+                dt = 0.001;
                 break;
         }
-        
+
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
             window->close();
         }
@@ -129,6 +131,7 @@ void Game::update(const float &dt) {
             // when the restart button is clicked the game starts
             if (event.type == sf::Event::MouseButtonPressed && MouseOnButton(Button)) {
                 GameState = gameloop;
+                world->deletePlatforms();
             }
         }
     }
@@ -265,18 +268,20 @@ void Game::drawGame() {
 
 bool Game::MouseOnButton(const sf::Sprite &_button) const{
 
-    sf::Vector2i mousePosition = sf::Mouse::getPosition(*window);
+    //found at: https://www.sfml-dev.org/tutorials/2.1/graphics-view.php#coordinates-conversions
 
-    bool mouseInButton = (float) mousePosition.x >= _button.getPosition().x
-                         && (float) mousePosition.x <= _button.getPosition().x + _button.getGlobalBounds().width
-                         && (float) mousePosition.y >= _button.getPosition().y
-                         && (float) mousePosition.y <= _button.getPosition().y + _button.getGlobalBounds().height;
+    // get the current mouse position in the window
+    sf::Vector2i pixelPos = sf::Mouse::getPosition(*window);
+
+    // convert it to world coordinates
+    sf::Vector2f worldPos = window->mapPixelToCoords(pixelPos);
+
+    bool mouseInButton = (float) worldPos.x >= _button.getPosition().x
+                         && (float) worldPos.x <= _button.getPosition().x + _button.getGlobalBounds().width
+                         && (float) worldPos.y >= _button.getPosition().y
+                         && (float) worldPos.y <= _button.getPosition().y + _button.getGlobalBounds().height;
     return mouseInButton;
 }
 
 Game::~Game() {
-    world.reset();
-    ConcreteFactory.reset();
-    view.reset();
-    window.reset();
 }

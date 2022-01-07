@@ -47,7 +47,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    void update(const float &dt);
+    void update(float dt);
 
     /**
     * @brief draws the entities
@@ -99,7 +99,7 @@ private:
     shared_ptr<Concrete_Factory> ConcreteFactory; ///< ConcreteFactory
     unique_ptr<World> world; ///< world
 
-    shared_ptr<sf::View> view; ///< view
+    unique_ptr<sf::View> view; ///< view
 
     gamestates GameState; ///< gamestate enum
     bool can_reset{}; ///< check if game can reset

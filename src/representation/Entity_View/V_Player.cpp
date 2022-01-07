@@ -48,11 +48,11 @@ View::Player::Player(const float &playerWidth_, const float &playerHeight_, cons
 
 void View::Player::UpdatePosition(const float &xpos, const float &ypos) {
     sf::Vector2f prev_coordiantes = player.getPosition();
-    if (prev_coordiantes.x > xpos) {
+    if (prev_coordiantes.x > xpos and prev_coordiantes.x < camera->getCameraWidth()) {
         player.setTexture(current_left_texture);
         left = true;
         right = false;
-    } else if (prev_coordiantes.x < xpos) {
+    } else if (prev_coordiantes.x < xpos and prev_coordiantes.x > 0) {
         player.setTexture(current_right_texture);
         left = false;
         right = true;

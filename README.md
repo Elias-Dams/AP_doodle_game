@@ -15,7 +15,7 @@ or the arrow keys to move the player from side to side.
 ![preview project](Textures/doodle_readme.png)
 ## Documenation
 
-- [Doxygen documentation](docs/html/index.html)
+- [Doxygen documentation (index.html)](../AP_doodle_game/docs/html/index.html)
 ## References
 
 - [https://en.wikipedia.org/wiki/Doodle_Jump](https://en.wikipedia.org/wiki/Doodle_Jump) 
@@ -26,4 +26,4 @@ or the arrow keys to move the player from side to side.
 **Elias Dams**
 
 - [github Profile](https://github.com/Elias-Dams "Elias-Dams"): Elias-Dams
-- [Email](elias.dams@student.uantwerpen.be): elias.dams@student.uantwerpen.be
+- Email: elias.dams@student.uantwerpen.be

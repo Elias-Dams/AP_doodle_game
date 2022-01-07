@@ -47,10 +47,24 @@ public:
     * This function generates a float number between a given range.
     *
     * @param min: minimum of the range.
-    * @param max: mqximum of the range.
+    * @param max: maximum of the range.
     * @return random float number.
     */
     float generate_between(const float &min, const float &max);
+
+    /**
+    * @brief generates a float number between a given range whit an exception range.
+    *
+    * This function generates a float number between a given range whit an exception range.
+    * This means it wil generate a number between the given range but outside the exeption range.
+    *
+    * @param min: minimum of the range.
+    * @param max: maximum of the range.
+    * @param exeptionmin: min of the exception range.
+    * @param exeptionmax: max of the exception range.
+    * @return random float number.
+    */
+    float generate_between_exeption(const float &min, const float &max, const float &exeptionmin,  const float &exeptionmax);
 
     Random();
 

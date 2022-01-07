@@ -7,7 +7,7 @@
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00003}00003 }
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <utility>}}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00006}\mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{00006}} \mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{View::Player::Player}}(\textcolor{keywordtype}{float} playerWidth\_, \textcolor{keywordtype}{float} playerHeight\_, shared\_ptr<Camera> camera\_) :}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00006}\mbox{\hyperlink{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}{00006}} \mbox{\hyperlink{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}{View::Player::Player}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} playerWidth\_, \textcolor{keyword}{const} \textcolor{keywordtype}{float} playerHeight\_, \textcolor{keyword}{const} shared\_ptr<Camera> \&camera\_) :}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00007}00007     camera(camera\_), playerWidth(playerWidth\_), playerHeight(playerHeight\_) \{}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00008}00008     \textcolor{comment}{// we initiaize a new player}}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00009}00009 }
@@ -50,13 +50,13 @@
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00046}00046     player.setScale(playerWidth / right\_texture.getSize().x, playerHeight / right\_texture.getSize().y);}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00047}00047 \}}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00048}00048 }
-\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00049}\mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{View::Player::UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00049}\mbox{\hyperlink{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}{View::Player::UpdatePosition}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} xpos, \textcolor{keyword}{const} \textcolor{keywordtype}{float} ypos) \{}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00050}00050     sf::Vector2f prev\_coordiantes = player.getPosition();}
-\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00051}00051     \textcolor{keywordflow}{if} (prev\_coordiantes.x > xpos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00051}00051     \textcolor{keywordflow}{if} (prev\_coordiantes.x > xpos and prev\_coordiantes.x < camera-\/>getCameraWidth()) \{}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00052}00052         player.setTexture(current\_left\_texture);}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00053}00053         left = \textcolor{keyword}{true};}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00054}00054         right = \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00055}00055     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (prev\_coordiantes.x < xpos) \{}
+\DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00055}00055     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (prev\_coordiantes.x < xpos and prev\_coordiantes.x > 0) \{}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00056}00056         player.setTexture(current\_right\_texture);}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00057}00057         left = \textcolor{keyword}{false};}
 \DoxyCodeLine{\Hypertarget{V__Player_8cpp_source_l00058}00058         right = \textcolor{keyword}{true};}

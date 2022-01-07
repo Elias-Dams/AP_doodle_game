@@ -9,18 +9,18 @@ Inheritance diagram for Model\+::Platform\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classModel_1_1Platform_aa9912ed5c52f73b616bb670e21f7d97c}{update}} (float dt)=0
-\begin{DoxyCompactList}\small\item\em updates the position of the platform if it can move. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Platform_a93b9b5357809a804f44475002ac26e2f}{update}} (const float d)=0
+\begin{DoxyCompactList}\small\item\em Updates the position of the platform if it can move. \end{DoxyCompactList}\item 
 virtual const string \& \mbox{\hyperlink{classModel_1_1Platform_a157f674d7e94d15ab793eac1d35c4973}{get\+Color}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the color of the platform. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the color of the platform. \end{DoxyCompactList}\item 
 virtual const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Platform_ad323b93f2f2413bd415d02078b454669}{get\+Position}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classModel_1_1Platform_ae36aec9d47c8e4a3df3c09f83894199b}{get\+Width}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classModel_1_1Platform_a831e83607e33e3b785db56f405dbcc28}{get\+Height}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classModel_1_1Platform_a3b4240495d55a75c9acd6f93f2d16acb}{set\+Position}} (const float \&x, const float \&y)=0
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Platform_a78b320af965536d465d054e2943134f5}{set\+Position}} (const float x, const float y)=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -52,12 +52,12 @@ Definition at line \mbox{\hyperlink{M__Platform_8cpp_source_l00004}{4}} of file 
 
 
 
-gives the color of the platform. 
+Gives the color of the platform. 
 
-This function gives the color of the platform. this is important because there are different types of platforms with various properties.
+This function gives the color of the platform. It is important because there are different types of platforms with various properties.
 
 \begin{DoxyReturn}{Returns}
-color of the platform. 
+Color of the platform. 
 \end{DoxyReturn}
 
 
@@ -71,12 +71,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_a6cfd5a19bef3d9cc26
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -94,12 +94,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_a9def6112f35c1b4dc6
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -117,12 +117,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_a8103dcf33bbcd6bfc4
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
@@ -132,15 +132,15 @@ Implements \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9
 
 Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_a5b48db5d84969b990f8209dbc0eddcfa}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a8c042daa9815abb6f1600163aea3c316}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_a2bde9b87065fd87a5a5a42af550afffb}{Model\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Yellow__Platform_a365ca9597b57d1c862fd8c60575af9c0}{Model\+::\+Yellow\+\_\+\+Platform}}.
 
-\mbox{\Hypertarget{classModel_1_1Platform_a3b4240495d55a75c9acd6f93f2d16acb}\label{classModel_1_1Platform_a3b4240495d55a75c9acd6f93f2d16acb}} 
+\mbox{\Hypertarget{classModel_1_1Platform_a78b320af965536d465d054e2943134f5}\label{classModel_1_1Platform_a78b320af965536d465d054e2943134f5}} 
 \index{Model::Platform@{Model::Platform}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Model::Platform@{Model::Platform}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily virtual void Model\+::\+Platform\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::\+Platform\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -153,21 +153,21 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{Entity\+\_\+\+Model}}.
+Implements \mbox{\hyperlink{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}{Entity\+\_\+\+Model}}.
 
 
 
-Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_afb0901415ef473edea4295288cef6cd6}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a06b5d0d48a8e6dc6503b737913145e50}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_ab014b3021861a37c626236d4febf4f10}{Model\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Yellow__Platform_a8fa71250f7b1a6dd9797b58e69dc4049}{Model\+::\+Yellow\+\_\+\+Platform}}.
+Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_ab9859ed07409f8128ed98a3310a868f4}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a834198fad289f5f79a743b6e12069beb}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_a4e68c69153a429a1f890dcd06c062875}{Model\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Yellow__Platform_ac31a25b3185b0b80c40c156f94c6db6c}{Model\+::\+Yellow\+\_\+\+Platform}}.
 
-\mbox{\Hypertarget{classModel_1_1Platform_aa9912ed5c52f73b616bb670e21f7d97c}\label{classModel_1_1Platform_aa9912ed5c52f73b616bb670e21f7d97c}} 
+\mbox{\Hypertarget{classModel_1_1Platform_a93b9b5357809a804f44475002ac26e2f}\label{classModel_1_1Platform_a93b9b5357809a804f44475002ac26e2f}} 
 \index{Model::Platform@{Model::Platform}!update@{update}}
 \index{update@{update}!Model::Platform@{Model::Platform}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily virtual void Model\+::\+Platform\+::update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::\+Platform\+::update (\begin{DoxyParamCaption}\item[{const float}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-updates the position of the platform if it can move. 
+Updates the position of the platform if it can move. 
 
 This function makes the platform move.
 
@@ -178,7 +178,7 @@ This function makes the platform move.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_a5560e1f9b3b722008d9343ef58541b8c}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a703e98bae94a3766019339fc26043907}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_aabe4c4671b4c57ff1e838f6f1bf2c1d5}{Model\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Yellow__Platform_ad3a8455084870eb78dded4114b88383a}{Model\+::\+Yellow\+\_\+\+Platform}}.
+Implemented in \mbox{\hyperlink{classModel_1_1Blue__Platform_aad635f1c67c319095379c0a36494f8ec}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a67d3ff7c498aad458ee134441537ff05}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_a17569cf3ebde02682fd17a5e56b2dd83}{Model\+::\+White\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Yellow__Platform_acbb37d1c1e74d48bb71c8a0f3beb07f8}{Model\+::\+Yellow\+\_\+\+Platform}}.
 
 
 

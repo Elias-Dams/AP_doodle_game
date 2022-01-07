@@ -12,9 +12,9 @@ public:
      * constructs the spring with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Spring(const float &Width, const float &Height, const shared_ptr<Camera> &camera);
+    Spring(const float Width, const float Height, const shared_ptr<Camera> &camera);
 
-    void UpdatePosition(const float &xpos, const float &ypos) override;
+    void UpdatePosition(const float xpos, const float ypos) override;
 
     sf::Sprite getBonus() const override;
 

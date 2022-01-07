@@ -58,7 +58,7 @@ public:
     * @param x: a position on the x axis.
     * @param y: a position on the y axis.
     */
-    virtual void setPosition(const float &x, const float &y) = 0;
+    virtual void setPosition(const float x, const float y) = 0;
 
     virtual ~Entity_Model();
 };

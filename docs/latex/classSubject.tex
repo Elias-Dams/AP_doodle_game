@@ -14,23 +14,23 @@ void \mbox{\hyperlink{classSubject_a1ad7c3dfa77e8b4d06601f3c22510cb2}{Attach}} (
 void \mbox{\hyperlink{classSubject_ac36c9756a9df9b4b0f787b744b1cd477}{Detach}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ observer) override
 \begin{DoxyCompactList}\small\item\em Detach an observer from the subject. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_afd4f37bbbeb10f0efe507b5c0208c541}{Notify\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em notifies all entity\textquotesingle{}s to change their position \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies all entity\textquotesingle{}s to change their position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_a24d556223c680a2c8f6b063247629b9f}{New\+Max\+Heigh}} (float ypos) override
-\begin{DoxyCompactList}\small\item\em notifies the score if a new max height has been reached \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the score if a new max height has been reached. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_a642b22ced9861b924054166530067ef8}{Notify\+Reset}} () override
-\begin{DoxyCompactList}\small\item\em notifies the entity\textquotesingle{}s who have to reset \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the entity\textquotesingle{}s who have to reset. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}{Notify\+Normal}} () override
-\begin{DoxyCompactList}\small\item\em notifies the view of the player to reset it als the normal texture \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the view of the player to reset it als the normal texture. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_a48fe200839cc8546b0adf250595c7d96}{Notify\+Medium}} () override
-\begin{DoxyCompactList}\small\item\em notifies the view of the player if a spring is collected \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the view of the player if a spring is collected. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSubject_aa1c003f315ccd4a6f2e8c96d5552911d}{Notify\+High}} () override
-\begin{DoxyCompactList}\small\item\em notifies the view of the player if a jetpack is collected \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSubject_acc94f8affd220fed30818b98fc0d630c}{Notify\+Increase\+Score}} (const int \&points) override
-\begin{DoxyCompactList}\small\item\em notifies the observers to increase the score \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSubject_a2046cc5d8190b82eb609256dd70b9926}{Notify\+Decrease\+Score}} (const int \&points) override
-\begin{DoxyCompactList}\small\item\em notifies the observers to decrease the score \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the view of the player if a jetpack is collected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_ae7f679afcb5bff769b3d95313612b1e6}{Notify\+Increase\+Score}} (const int points) override
+\begin{DoxyCompactList}\small\item\em Notifies the observers to increase the score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSubject_a09b4f4ff10631fda62b08aaaf056e356}{Notify\+Decrease\+Score}} (const int points) override
+\begin{DoxyCompactList}\small\item\em Notifies the observers to decrease the score. \end{DoxyCompactList}\item 
 const std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ $>$ \mbox{\hyperlink{classSubject_acf67f533761c143ea79c35501ab8e052}{get\+List\+Observer}} () const
-\begin{DoxyCompactList}\small\item\em gets the list of observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the list of observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -101,7 +101,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00017}{17}} of file \mb
 
 
 
-gets the list of observers. 
+Gets the list of observers. 
 
 This function gets the list of observers attached to this subject.
 
@@ -124,7 +124,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00086}{86}} of file \mb
 
 
 
-notifies the score if a new max height has been reached 
+Notifies the score if a new max height has been reached. 
 
 
 
@@ -134,19 +134,19 @@ Implements \mbox{\hyperlink{classISubject_a981a314b3eac969d5c436b19e5afd579}{ISu
 
 Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
 
-\mbox{\Hypertarget{classSubject_a2046cc5d8190b82eb609256dd70b9926}\label{classSubject_a2046cc5d8190b82eb609256dd70b9926}} 
+\mbox{\Hypertarget{classSubject_a09b4f4ff10631fda62b08aaaf056e356}\label{classSubject_a09b4f4ff10631fda62b08aaaf056e356}} 
 \index{Subject@{Subject}!NotifyDecreaseScore@{NotifyDecreaseScore}}
 \index{NotifyDecreaseScore@{NotifyDecreaseScore}!Subject@{Subject}}
 \doxysubsubsection{\texorpdfstring{NotifyDecreaseScore()}{NotifyDecreaseScore()}}
-{\footnotesize\ttfamily void Subject\+::\+Notify\+Decrease\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Decrease\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-notifies the observers to decrease the score 
+Notifies the observers to decrease the score. 
 
 
 
-Implements \mbox{\hyperlink{classISubject_a908f7358488186614334614dfb9a6856}{ISubject}}.
+Implements \mbox{\hyperlink{classISubject_a4b47228d5599e861e40dd40e84b88d7f}{ISubject}}.
 
 
 
@@ -160,7 +160,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00077}{77}} of file \mb
 
 
 
-notifies the view of the player if a jetpack is collected 
+Notifies the view of the player if a jetpack is collected. 
 
 
 
@@ -170,19 +170,19 @@ Implements \mbox{\hyperlink{classISubject_abf65305b44b86ee5ee828dde2feb5e74}{ISu
 
 Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{Subject_8cpp_source}{Subject.\+cpp}}.
 
-\mbox{\Hypertarget{classSubject_acc94f8affd220fed30818b98fc0d630c}\label{classSubject_acc94f8affd220fed30818b98fc0d630c}} 
+\mbox{\Hypertarget{classSubject_ae7f679afcb5bff769b3d95313612b1e6}\label{classSubject_ae7f679afcb5bff769b3d95313612b1e6}} 
 \index{Subject@{Subject}!NotifyIncreaseScore@{NotifyIncreaseScore}}
 \index{NotifyIncreaseScore@{NotifyIncreaseScore}!Subject@{Subject}}
 \doxysubsubsection{\texorpdfstring{NotifyIncreaseScore()}{NotifyIncreaseScore()}}
-{\footnotesize\ttfamily void Subject\+::\+Notify\+Increase\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Subject\+::\+Notify\+Increase\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-notifies the observers to increase the score 
+Notifies the observers to increase the score. 
 
 
 
-Implements \mbox{\hyperlink{classISubject_a425347e00840af8d54694a04e3aac7f9}{ISubject}}.
+Implements \mbox{\hyperlink{classISubject_a45530d3e185835c5787a1aa4b0b55bb8}{ISubject}}.
 
 
 
@@ -196,7 +196,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00069}{69}} of file \mb
 
 
 
-notifies the view of the player if a spring is collected 
+Notifies the view of the player if a spring is collected. 
 
 
 
@@ -214,7 +214,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00031}{31}} of file \mb
 
 
 
-notifies the view of the player to reset it als the normal texture 
+Notifies the view of the player to reset it als the normal texture. 
 
 
 
@@ -232,7 +232,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00053}{53}} of file \mb
 
 
 
-notifies all entity\textquotesingle{}s to change their position 
+Notifies all entity\textquotesingle{}s to change their position. 
 
 
 
@@ -250,7 +250,7 @@ Definition at line \mbox{\hyperlink{Subject_8cpp_source_l00021}{21}} of file \mb
 
 
 
-notifies the entity\textquotesingle{}s who have to reset 
+Notifies the entity\textquotesingle{}s who have to reset. 
 
 
 

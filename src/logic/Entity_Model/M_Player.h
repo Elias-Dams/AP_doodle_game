@@ -20,7 +20,7 @@ public:
      * Player constructor.
      * Constructs the Player whit a certain width and height.
      */
-    Player(const float &player_width, const float &player_height);
+    Player(const float player_width, const float player_height);
 
     /**
     * @brief Moves a player to a new position.
@@ -31,7 +31,7 @@ public:
     * @param x: the distance travelled on the x axis.
     * @param y: the distance travelled on the y axis.
     */
-    void move(const float &x, const float &y);
+    void move(const float x, const float y);
 
     /**
     * @brief Makes the player jump.
@@ -43,7 +43,7 @@ public:
     * @param hit: indication that a platform has been hit.
     * @param height_modifier: the height modification of the bonus;
     */
-    void jump(const float &dt, const bool &hit,const int &height_modifier);
+    void jump(const float dt, const bool hit,const int height_modifier);
 
     /**
     * @brief Checks if the player is falling.
@@ -62,7 +62,7 @@ public:
     * @param startposx: startposition of the player on the x axis.
     * @param startposy: startposition of the player on the y axis.
     */
-    void PlayerReset(const float &startposx, const float &startposy);
+    void PlayerReset(const float startposx, const float startposy);
 
     /**
     * @brief Sets the platform last touched by the player.
@@ -83,7 +83,7 @@ public:
     const pair<float, float> &getPosition() const override;
 
     // documentation in Entity_model
-    void setPosition(const float &x, const float &y) override;
+    void setPosition(const float x, const float y) override;
 
     virtual ~Player();
 

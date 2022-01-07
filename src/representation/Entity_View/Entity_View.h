@@ -30,7 +30,7 @@ public:
     * @param x: position of the entity in the game
     * @param y: position of the entity in the game
     */
-    virtual void UpdatePosition(const float &xpos, const float &ypos);
+    virtual void UpdatePosition(const float xpos, const float ypos);
 };
 
 

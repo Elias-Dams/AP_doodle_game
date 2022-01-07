@@ -104,7 +104,7 @@ public:
     *
     * @param points: that need to be added from the score
     */
-    virtual void NotifyIncreaseScore(const int &points) = 0;
+    virtual void NotifyIncreaseScore(const int points) = 0;
 
     /**
     * @brief Notifies the observers to decrease the score
@@ -113,7 +113,7 @@ public:
     *
     * @param points: that need to be subtracted from the score
     */
-    virtual void NotifyDecreaseScore(const int &points) = 0;
+    virtual void NotifyDecreaseScore(const int points) = 0;
 
     virtual ~ISubject(){};
 };

@@ -31,7 +31,7 @@ public:
     *
     * @param y: position on the y axis.
     */
-    void NewMaxheightReached(const float &y) override;
+    void NewMaxheightReached(const float y) override;
 
     /**
     * @brief updates the score.
@@ -40,7 +40,7 @@ public:
     *
     * @param points: that need to be added to the score.
     */
-    void UpdateBonusScore(const int &points) override;
+    void UpdateBonusScore(const int points) override;
 
     /**
     * @brief reduces the score.
@@ -49,7 +49,7 @@ public:
     *
     * @param points: that need to be subtracted from the score.
     */
-    void UpdateReduceScore(const int &points) override;
+    void UpdateReduceScore(const int points) override;
 
     /**
     * @brief fully resets the score.

@@ -18,7 +18,7 @@ public:
 
     virtual float getHeight() const = 0;
 
-    virtual void setPosition(const float &x, const float &y) = 0;
+    virtual void setPosition(const float x, const float y) = 0;
 
     /**
     * @brief Updates the position of the bonus if it can move.
@@ -29,7 +29,7 @@ public:
     * @param x: position of the platform the bonus is on.
     * @param y: position of the platform the bonus is on.
     */
-    virtual void update(const float &x, const float &y) = 0;
+    virtual void update(const float x, const float y) = 0;
 
     /**
     * @brief Get the bonuspower.

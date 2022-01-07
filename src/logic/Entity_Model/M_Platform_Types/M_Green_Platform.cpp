@@ -12,12 +12,12 @@ const pair<float, float> &Model::Green_Platform::getPosition() const {
     return position;
 }
 
-void Model::Green_Platform::setPosition(const float &x, const float &y) {
+void Model::Green_Platform::setPosition(const float x, const float y) {
     Green_Platform::position = make_pair(x, y);
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Green_Platform::update(const float &dt) {
+void Model::Green_Platform::update(const float dt) {
     // the platform doesn't move
     NotifyPosition(position.first, position.second);
 }

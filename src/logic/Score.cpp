@@ -10,15 +10,15 @@ Score::~Score() {
 
 }
 
-void Score::NewMaxheightReached(const float &y) {
+void Score::NewMaxheightReached(const float y) {
     score += (int)y;
 }
 
-void Score::UpdateBonusScore(const int &points) {
+void Score::UpdateBonusScore(const int points) {
     score += points;
 }
 
-void Score::UpdateReduceScore(const int &points) {
+void Score::UpdateReduceScore(const int points) {
     score -= points;
 }
 

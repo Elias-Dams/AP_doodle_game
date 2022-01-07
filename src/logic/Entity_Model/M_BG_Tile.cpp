@@ -11,7 +11,7 @@ const pair<float, float> &Model::BG_Tile::getPosition() const {
     return position;
 }
 
-void Model::BG_Tile::setPosition(const float &posx, const float &posy) {
+void Model::BG_Tile::setPosition(const float posx, const float posy) {
     position.first = posx;
     position.second = posy;
     NotifyPosition(posx, posy);

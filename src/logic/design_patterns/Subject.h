@@ -38,10 +38,10 @@ public:
     void NotifyHigh() override;
 
     /// Notifies the observers to increase the score
-    void NotifyIncreaseScore(const int &points) override;
+    void NotifyIncreaseScore(const int points) override;
 
     /// Notifies the observers to decrease the score
-    void NotifyDecreaseScore(const int &points) override;
+    void NotifyDecreaseScore(const int points) override;
 
     const std::list<std::shared_ptr<IObserver>> getListObserver() const;
 

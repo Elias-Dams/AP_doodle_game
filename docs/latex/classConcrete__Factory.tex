@@ -40,9 +40,9 @@ weak\+\_\+ptr$<$ \mbox{\hyperlink{classScore}{Score}} $>$ \mbox{\hyperlink{class
 const vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classView_1_1BG__Tile}{View\+::\+BG\+\_\+\+Tile}} $>$ $>$ \& \mbox{\hyperlink{classConcrete__Factory_a131365184cf31a07241e8ed4be9acbf3}{get\+Backgrounds}} () const
 \begin{DoxyCompactList}\small\item\em returns the vector of background tiles \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classConcrete__Factory_a9c845d407f348ff61b46cac254fc7594}{delete\+\_\+platform}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Model\+::\+Platform}} $>$ platform) override
-\begin{DoxyCompactList}\small\item\em deletes a platform \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Deletes a platform. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classConcrete__Factory_ad9661510319ab97ec440a5b8460052fe}{delete\+\_\+bonus}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Model\+::\+Bonus}} $>$ bonus) override
-\begin{DoxyCompactList}\small\item\em deletes a bonus \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Deletes a bonus. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -82,7 +82,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00159}{159}} 
 \doxysubsubsection{\texorpdfstring{createBackground()}{createBackground()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{Model\+::\+BG\+\_\+\+Tile}} $>$ Concrete\+\_\+\+Factory\+::create\+Background (\begin{DoxyParamCaption}\item[{float}]{background\+\_\+width,  }\item[{float}]{background\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} constructor. constructs a \mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} whit a certain
+\mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} constructor. Constructs a \mbox{\hyperlink{classBackground__Tile}{Background\+\_\+\+Tile}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -102,7 +102,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00111}{111}} 
 \doxysubsubsection{\texorpdfstring{createBluePlatform()}{createBluePlatform()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Blue__Platform}{Model\+::\+Blue\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Blue\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+width,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} whit a certain
+\mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} constructor. Constructs a \mbox{\hyperlink{classBlue__Platform}{Blue\+\_\+\+Platform}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -122,7 +122,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00049}{49}} o
 \doxysubsubsection{\texorpdfstring{createCamera()}{createCamera()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ Concrete\+\_\+\+Factory\+::create\+Camera (\begin{DoxyParamCaption}\item[{float}]{camera\+\_\+width,  }\item[{float}]{camera\+\_\+height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classCamera}{Camera}} constructor. constructs the \mbox{\hyperlink{classCamera}{Camera}} 
+\mbox{\hyperlink{classCamera}{Camera}} constructor. Constructs the \mbox{\hyperlink{classCamera}{Camera}}. 
 
 Implements \mbox{\hyperlink{classAbstract__Factory_aac9beef9805345f0129cdf3b70dc973f}{Abstract\+\_\+\+Factory}}.
 
@@ -136,7 +136,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00006}{6}} of
 \doxysubsubsection{\texorpdfstring{createGreenPlatform()}{createGreenPlatform()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Green__Platform}{Model\+::\+Green\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Green\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Green\+\_\+\+Platform constructor. constructs a Green\+\_\+\+Platform whit a certain
+Green\+\_\+\+Platform constructor. Constructs a Green\+\_\+\+Platform with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -155,7 +155,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00036}{36}} o
 \doxysubsubsection{\texorpdfstring{createJetpack()}{createJetpack()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Jetpack}{Model\+::\+Jetpack}} $>$ Concrete\+\_\+\+Factory\+::create\+Jetpack (\begin{DoxyParamCaption}\item[{float}]{jetpack\+\_\+width,  }\item[{float}]{jetpack\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classJetpack}{Jetpack}} constructor. constructs the \mbox{\hyperlink{classJetpack}{Jetpack}} whit a certain
+\mbox{\hyperlink{classJetpack}{Jetpack}} constructor. Constructs the \mbox{\hyperlink{classJetpack}{Jetpack}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -174,7 +174,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00099}{99}} o
 \doxysubsubsection{\texorpdfstring{createPlayer()}{createPlayer()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Model\+::\+Player}} $>$ Concrete\+\_\+\+Factory\+::create\+Player (\begin{DoxyParamCaption}\item[{float}]{player\+\_\+width,  }\item[{float}]{player\+\_\+height,  }\item[{float}]{startposx,  }\item[{float}]{startposy,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classPlayer}{Player}} constructor. constructs the \mbox{\hyperlink{classPlayer}{Player}} whit a certain
+\mbox{\hyperlink{classPlayer}{Player}} constructor. Constructs the \mbox{\hyperlink{classPlayer}{Player}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -194,7 +194,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00019}{19}} o
 \doxysubsubsection{\texorpdfstring{createSpring()}{createSpring()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Spring}{Model\+::\+Spring}} $>$ Concrete\+\_\+\+Factory\+::create\+Spring (\begin{DoxyParamCaption}\item[{float}]{spring\+\_\+width,  }\item[{float}]{spring\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classSpring}{Spring}} constructor. constructs the \mbox{\hyperlink{classSpring}{Spring}} whit a certain
+\mbox{\hyperlink{classSpring}{Spring}} constructor. Constructs the \mbox{\hyperlink{classSpring}{Spring}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -213,7 +213,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00088}{88}} o
 \doxysubsubsection{\texorpdfstring{createWhitePlatform()}{createWhitePlatform()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1White__Platform}{Model\+::\+White\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+White\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} whit a certain
+\mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} constructor. Constructs a \mbox{\hyperlink{classWhite__Platform}{White\+\_\+\+Platform}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -232,7 +232,7 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00075}{75}} o
 \doxysubsubsection{\texorpdfstring{createYellowPlatform()}{createYellowPlatform()}}
 {\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Yellow__Platform}{Model\+::\+Yellow\+\_\+\+Platform}} $>$ Concrete\+\_\+\+Factory\+::create\+Yellow\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+\_\+width,  }\item[{float}]{platform\+\_\+height,  }\item[{float}]{move\+\_\+height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-\mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} constructor. constructs a \mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} whit a certain
+\mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} constructor. Constructs a \mbox{\hyperlink{classYellow__Platform}{Yellow\+\_\+\+Platform}} with a certain
 \begin{DoxyItemize}
 \item width
 \item height
@@ -254,9 +254,9 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00062}{62}} o
 
 
 
-deletes a bonus 
+Deletes a bonus. 
 
-This function deletes a bonus from the map of bonuses. In this map the view are being saved.
+This function deletes a bonus from the map of bonuses. In this map the view is being saved.
 
 
 \begin{DoxyParams}{Parameters}
@@ -279,9 +279,9 @@ Definition at line \mbox{\hyperlink{Concrete__Factory_8cpp_source_l00154}{154}} 
 
 
 
-deletes a platform 
+Deletes a platform. 
 
-This function deletes a platform from the map of platforms. In this map the view are being saved.
+This function deletes a platform from the map of platforms. In this map the view is being saved.
 
 
 \begin{DoxyParams}{Parameters}

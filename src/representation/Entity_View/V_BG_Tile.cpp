@@ -1,7 +1,7 @@
 
 #include "V_BG_Tile.h"
 
-View::BG_Tile::BG_Tile(const float &width, const float &height, const shared_ptr<Camera> &camera_) : camera(camera_), width(width),
+View::BG_Tile::BG_Tile(const float width, const float height, const shared_ptr<Camera> &camera_) : camera(camera_), width(width),
     height(height) {
 
     try {
@@ -19,7 +19,7 @@ View::BG_Tile::BG_Tile(const float &width, const float &height, const shared_ptr
     background.setScale(width / texture.getSize().x, height / texture.getSize().y);
 }
 
-void View::BG_Tile::UpdatePosition(const float &xpos, const float &ypos) {
+void View::BG_Tile::UpdatePosition(const float xpos, const float ypos) {
     background.setPosition(camera->toGamewidth(xpos, width), camera->toGameheight(ypos, height));
 }
 

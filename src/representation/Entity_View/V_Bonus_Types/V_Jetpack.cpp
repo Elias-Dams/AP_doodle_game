@@ -1,7 +1,7 @@
 
 #include "V_Jetpack.h"
 
-View::Jetpack::Jetpack(const float &Width, const float &Height, const shared_ptr<Camera> &camera_) :
+View::Jetpack::Jetpack(const float Width, const float Height, const shared_ptr<Camera> &camera_) :
     camera(camera_), jetpack_Width(Width), jetpack_Height(Height) {
     // we initiaize a new platform
 
@@ -24,7 +24,7 @@ View::Jetpack::Jetpack(const float &Width, const float &Height, const shared_ptr
     jetpack->setColor(sf::Color(82, 170, 228));
 }
 
-void View::Jetpack::UpdatePosition(const float &xpos, const float &ypos) {
+void View::Jetpack::UpdatePosition(const float xpos, const float ypos) {
     jetpack->setPosition(camera->toGamewidth(xpos, jetpack_Width), camera->toGameheight(ypos, jetpack_Height));
 }
 

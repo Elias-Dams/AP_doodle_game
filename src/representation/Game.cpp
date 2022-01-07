@@ -154,11 +154,11 @@ void Game::update(float dt) {
     }
 }
 
-void Game::gameStart(const float &dt) {
+void Game::gameStart(const float dt) {
     world->startstate(dt);
 }
 
-void Game::gameLoop(const float &dt) {
+void Game::gameLoop(const float dt) {
     // update the pressed key
     char key = 'X';
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
@@ -185,7 +185,7 @@ void Game::gameLoop(const float &dt) {
     }
 }
 
-void Game::gameOver(const float &dt) {
+void Game::gameOver(const float dt) {
 
     // resetting the world
     if (can_reset) {

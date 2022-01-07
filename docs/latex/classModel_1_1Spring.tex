@@ -12,17 +12,17 @@ Inheritance diagram for Model\+::Spring\+:\begin{figure}[H]
 \mbox{\hyperlink{classModel_1_1Spring_ac39861cdd4e6cd7fe1d0abd23eee3be2}{Spring}} (float Width, float Height)
 \item 
 const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Spring_add4a5748531614051b2849c285aecc34}{get\+Position}} () const override
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}{set\+Position}} (const float \&x, const float \&y) override
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classModel_1_1Spring_ade4f01eb083c813483dbf8007e59c729}{update}} (float x, float y) override
-\begin{DoxyCompactList}\small\item\em updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Spring_aa5f89d70930e92ac2dc4c6420afec76d}{set\+Position}} (const float x, const float y) override
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Spring_acafd1ef51956f15dc7e9122634109557}{update}} (const float x, const float y) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classModel_1_1Spring_a041ee7f3723b5c25eaa01bd11ac29a78}{get\+Width}} () const override
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classModel_1_1Spring_a45f7937da30ed55ba9368809a7b9b8b2}{get\+Height}} () const override
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classModel_1_1Spring_a1dfb30ca6c93cf9659c2c34361e86368}{get\+Bonuspower}} () const override
-\begin{DoxyCompactList}\small\item\em get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -39,7 +39,7 @@ Definition at line \mbox{\hyperlink{M__Spring_8h_source_l00013}{13}} of file \mb
 \doxysubsubsection{\texorpdfstring{Spring()}{Spring()}}
 {\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{float}]{Width,  }\item[{float}]{Height }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classModel_1_1Spring}{Spring}} constructor. constructs a \mbox{\hyperlink{classModel_1_1Spring}{Spring}} whit a certain width and height 
+\mbox{\hyperlink{classModel_1_1Spring}{Spring}} constructor. constructs a \mbox{\hyperlink{classModel_1_1Spring}{Spring}} with a certain width and height 
 
 Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{M__Spring_8cpp_source}{M\+\_\+\+Spring.\+cpp}}.
 
@@ -47,7 +47,7 @@ Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00004}{4}} of file \m
 \index{Model::Spring@{Model::Spring}!````~Spring@{$\sim$Spring}}
 \index{````~Spring@{$\sim$Spring}!Model::Spring@{Model::Spring}}
 \doxysubsubsection{\texorpdfstring{$\sim$Spring()}{~Spring()}}
-{\footnotesize\ttfamily Spring\+::$\sim$\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Spring\+::$\sim$\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -64,12 +64,12 @@ Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00037}{37}} of file \
 
 
 
-get the bonuspower. 
+Get the bonuspower. 
 
-This function gets the power of a certain bonus. e.\+g. the spring makes the player jump x5 higher.
+This function gets the power of a certain bonus. E.\+g. the spring makes the player jump x5 higher.
 
 \begin{DoxyReturn}{Returns}
-gets the type of the bonus 
+Gets the type of the bonus 
 \end{DoxyReturn}
 
 
@@ -87,12 +87,12 @@ Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00033}{33}} of file \
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -110,12 +110,12 @@ Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00029}{29}} of file \
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -133,12 +133,12 @@ Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00010}{10}} of file \
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
@@ -148,15 +148,15 @@ Implements \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c
 
 Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{M__Spring_8cpp_source}{M\+\_\+\+Spring.\+cpp}}.
 
-\mbox{\Hypertarget{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}\label{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}} 
+\mbox{\Hypertarget{classModel_1_1Spring_aa5f89d70930e92ac2dc4c6420afec76d}\label{classModel_1_1Spring_aa5f89d70930e92ac2dc4c6420afec76d}} 
 \index{Model::Spring@{Model::Spring}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Model::Spring@{Model::Spring}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Spring\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Spring\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -169,21 +169,21 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{Model\+::\+Bonus}}.
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}{Model\+::\+Bonus}}.
 
 
 
 Definition at line \mbox{\hyperlink{M__Spring_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{M__Spring_8cpp_source}{M\+\_\+\+Spring.\+cpp}}.
 
-\mbox{\Hypertarget{classModel_1_1Spring_ade4f01eb083c813483dbf8007e59c729}\label{classModel_1_1Spring_ade4f01eb083c813483dbf8007e59c729}} 
+\mbox{\Hypertarget{classModel_1_1Spring_acafd1ef51956f15dc7e9122634109557}\label{classModel_1_1Spring_acafd1ef51956f15dc7e9122634109557}} 
 \index{Model::Spring@{Model::Spring}!update@{update}}
 \index{update@{update}!Model::Spring@{Model::Spring}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Spring\+::update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Spring\+::update (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the bonus if it can move. 
+Updates the position of the bonus if it can move. 
 
 This function updates the position of the bonus if it can move. This is the case if it is on a moving platform.
 
@@ -196,7 +196,7 @@ This function updates the position of the bonus if it can move. This is the case
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}{Model\+::\+Bonus}}.
+Implements \mbox{\hyperlink{classModel_1_1Bonus_abc621aa4ec2cccb77a2f91ac9af44d7b}{Model\+::\+Bonus}}.
 
 
 

@@ -21,13 +21,13 @@ Inheritance diagram for Entity\+\_\+\+Model\+:\begin{figure}[H]
 \mbox{\hyperlink{classEntity__Model_a57878c36159279af01b80eef68efea4d}{Entity\+\_\+\+Model}} ()
 \item 
 virtual float \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9}{get\+Width}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classEntity__Model_a40552727045a45dd4616217e5c799052}{get\+Height}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
 virtual const pair$<$ float, float $>$ \& \mbox{\hyperlink{classEntity__Model_a2fd42342d82e9e214a051b205eea2066}{get\+Position}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{set\+Position}} (const float \&x, const float \&y)=0
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}{set\+Position}} (const float x, const float y)=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -69,12 +69,12 @@ Definition at line \mbox{\hyperlink{Entity__Model_8cpp_source_l00006}{6}} of fil
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -88,12 +88,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1BG__Tile_ac183ce3db260fb3e35bea955
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -107,26 +107,26 @@ Implemented in \mbox{\hyperlink{classModel_1_1BG__Tile_aff246acb4af626fb24158a5d
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classModel_1_1BG__Tile_a0948871fac6fed89c0ebd330e10fe34c}{Model\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}{Model\+::\+Bonus}}, \mbox{\hyperlink{classModel_1_1Platform_ae36aec9d47c8e4a3df3c09f83894199b}{Model\+::\+Platform}}, \mbox{\hyperlink{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}{Model\+::\+Jetpack}}, \mbox{\hyperlink{classModel_1_1Spring_a041ee7f3723b5c25eaa01bd11ac29a78}{Model\+::\+Spring}}, \mbox{\hyperlink{classModel_1_1Blue__Platform_a5b48db5d84969b990f8209dbc0eddcfa}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a8c042daa9815abb6f1600163aea3c316}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_a2bde9b87065fd87a5a5a42af550afffb}{Model\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Yellow__Platform_a365ca9597b57d1c862fd8c60575af9c0}{Model\+::\+Yellow\+\_\+\+Platform}}, and \mbox{\hyperlink{classModel_1_1Player_a7c02bd2a85b24fe1f53fb8fca89c8aa6}{Model\+::\+Player}}.
 
-\mbox{\Hypertarget{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}\label{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}} 
+\mbox{\Hypertarget{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}\label{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}} 
 \index{Entity\_Model@{Entity\_Model}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Entity\_Model@{Entity\_Model}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily virtual void Entity\+\_\+\+Model\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Entity\+\_\+\+Model\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -139,7 +139,7 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModel_1_1BG__Tile_a9cfeb19d56e3bc30f0943b607b2bb7f2}{Model\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}{Model\+::\+Jetpack}}, \mbox{\hyperlink{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}{Model\+::\+Spring}}, \mbox{\hyperlink{classModel_1_1Blue__Platform_afb0901415ef473edea4295288cef6cd6}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a06b5d0d48a8e6dc6503b737913145e50}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_ab014b3021861a37c626236d4febf4f10}{Model\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Yellow__Platform_a8fa71250f7b1a6dd9797b58e69dc4049}{Model\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Player_adee8e610c0354aad29613843274219fd}{Model\+::\+Player}}, \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{Model\+::\+Bonus}}, and \mbox{\hyperlink{classModel_1_1Platform_a3b4240495d55a75c9acd6f93f2d16acb}{Model\+::\+Platform}}.
+Implemented in \mbox{\hyperlink{classModel_1_1BG__Tile_a564198d590b637056c84662ec0c3a69f}{Model\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classModel_1_1Jetpack_a5c2526db2e6864b9cbcf2d0ea0ff871d}{Model\+::\+Jetpack}}, \mbox{\hyperlink{classModel_1_1Spring_aa5f89d70930e92ac2dc4c6420afec76d}{Model\+::\+Spring}}, \mbox{\hyperlink{classModel_1_1Blue__Platform_ab9859ed07409f8128ed98a3310a868f4}{Model\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Green__Platform_a834198fad289f5f79a743b6e12069beb}{Model\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1White__Platform_a4e68c69153a429a1f890dcd06c062875}{Model\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Yellow__Platform_ac31a25b3185b0b80c40c156f94c6db6c}{Model\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classModel_1_1Player_a0594573c9631120624887a2cf49b9a74}{Model\+::\+Player}}, \mbox{\hyperlink{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}{Model\+::\+Bonus}}, and \mbox{\hyperlink{classModel_1_1Platform_a78b320af965536d465d054e2943134f5}{Model\+::\+Platform}}.
 
 
 

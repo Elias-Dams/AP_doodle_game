@@ -21,7 +21,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    virtual void update(const float &d) = 0;
+    virtual void update(const float d) = 0;
 
     /**
     * @brief Gives the color of the platform.
@@ -43,7 +43,7 @@ public:
     virtual float getHeight() const = 0;
 
     // documentation in Enntity_model
-    virtual void setPosition(const float &x, const float &y) = 0;
+    virtual void setPosition(const float x, const float y) = 0;
 
     virtual ~Platform();
 };

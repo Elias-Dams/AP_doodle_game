@@ -10,17 +10,17 @@ Inheritance diagram for Model\+::Bonus\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Bonus_adcdb8ab1389dcc6a3a1046feb7ca0edd}{get\+Position}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c7}{get\+Width}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classModel_1_1Bonus_a043e3ca71efcebbbc4a62881fd73885b}{get\+Height}} () const =0
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{set\+Position}} (const float \&x, const float \&y)=0
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}{update}} (float x, float y)=0
-\begin{DoxyCompactList}\small\item\em updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}{set\+Position}} (const float x, const float y)=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModel_1_1Bonus_abc621aa4ec2cccb77a2f91ac9af44d7b}{update}} (const float x, const float y)=0
+\begin{DoxyCompactList}\small\item\em Updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{classModel_1_1Bonus_a6a2d5ec96bbcd37ef5d1a37f49e7a3a3}{get\+Bonuspower}} () const =0
-\begin{DoxyCompactList}\small\item\em get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -52,12 +52,12 @@ Definition at line \mbox{\hyperlink{M__Bonus_8cpp_source_l00004}{4}} of file \mb
 
 
 
-get the bonuspower. 
+Get the bonuspower. 
 
-This function gets the power of a certain bonus. e.\+g. the spring makes the player jump x5 higher.
+This function gets the power of a certain bonus. E.\+g. the spring makes the player jump x5 higher.
 
 \begin{DoxyReturn}{Returns}
-gets the type of the bonus 
+Gets the type of the bonus 
 \end{DoxyReturn}
 
 
@@ -71,12 +71,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a42d42ead15aa743e3babd67eb
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -94,12 +94,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a761260794e06aa609ef302220
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -117,12 +117,12 @@ Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
@@ -132,15 +132,15 @@ Implements \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9
 
 Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_a041ee7f3723b5c25eaa01bd11ac29a78}{Model\+::\+Spring}}.
 
-\mbox{\Hypertarget{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}\label{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}} 
+\mbox{\Hypertarget{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}\label{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}} 
 \index{Model::Bonus@{Model::Bonus}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Model::Bonus@{Model::Bonus}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -153,21 +153,21 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{Entity\+\_\+\+Model}}.
+Implements \mbox{\hyperlink{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}{Entity\+\_\+\+Model}}.
 
 
 
-Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_afdb0dcf6fe9ac86d2281302af087b428}{Model\+::\+Spring}}.
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a5c2526db2e6864b9cbcf2d0ea0ff871d}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_aa5f89d70930e92ac2dc4c6420afec76d}{Model\+::\+Spring}}.
 
-\mbox{\Hypertarget{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}\label{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}} 
+\mbox{\Hypertarget{classModel_1_1Bonus_abc621aa4ec2cccb77a2f91ac9af44d7b}\label{classModel_1_1Bonus_abc621aa4ec2cccb77a2f91ac9af44d7b}} 
 \index{Model::Bonus@{Model::Bonus}!update@{update}}
 \index{update@{update}!Model::Bonus@{Model::Bonus}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::\+Bonus\+::update (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-updates the position of the bonus if it can move. 
+Updates the position of the bonus if it can move. 
 
 This function updates the position of the bonus if it can move. This is the case if it is on a moving platform.
 
@@ -180,7 +180,7 @@ This function updates the position of the bonus if it can move. This is the case
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_ade4f01eb083c813483dbf8007e59c729}{Model\+::\+Spring}}.
+Implemented in \mbox{\hyperlink{classModel_1_1Jetpack_afdbffaf6515cb579c5174c83da859131}{Model\+::\+Jetpack}}, and \mbox{\hyperlink{classModel_1_1Spring_acafd1ef51956f15dc7e9122634109557}{Model\+::\+Spring}}.
 
 
 

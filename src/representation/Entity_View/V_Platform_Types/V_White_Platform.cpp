@@ -3,7 +3,7 @@
 
 #include <memory>
 
-View::White_Platform::White_Platform(const float &platformWidth_, const float &platformHeight_, const shared_ptr<Camera> &camera_) :
+View::White_Platform::White_Platform(const float platformWidth_, const float platformHeight_, const shared_ptr<Camera> &camera_) :
      camera(camera_), platformWidth(platformWidth_), platformHeight(platformHeight_) {
     // we initiaize a new platform
 
@@ -26,7 +26,7 @@ View::White_Platform::White_Platform(const float &platformWidth_, const float &p
     platform->setColor(sf::Color::White);
 }
 
-void View::White_Platform::UpdatePosition(const float &xpos, const float &ypos) {
+void View::White_Platform::UpdatePosition(const float xpos, const float ypos) {
     platform->setPosition(camera->toGamewidth(xpos, platformWidth), camera->toGameheight(ypos, platformHeight));
 }
 

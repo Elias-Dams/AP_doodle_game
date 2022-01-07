@@ -17,16 +17,16 @@ public:
     virtual ~Observer();
 
     /// Updates the position of every entity
-    virtual void UpdatePosition(const float &xpos, const float &ypos) override;
+    virtual void UpdatePosition(const float xpos, const float ypos) override;
 
     /// Updates the score if a new max height is reached
-    virtual void NewMaxheightReached(const float &ypos) override;
+    virtual void NewMaxheightReached(const float ypos) override;
 
     /// Updates te score when a bonus is collected
-    virtual void UpdateBonusScore(const int &points) override;
+    virtual void UpdateBonusScore(const int points) override;
 
     /// Reduces the score
-    virtual void UpdateReduceScore(const int &points) override;
+    virtual void UpdateReduceScore(const int points) override;
 
     /// Resets the score
     virtual void Resetscore() override;

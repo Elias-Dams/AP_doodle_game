@@ -9,12 +9,12 @@ Inheritance diagram for View\+::Spring\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classView_1_1Spring_abac7c4841223c3e01e73ce6fcd7219d8}{Spring}} (float Width, float Height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)
+\mbox{\hyperlink{classView_1_1Spring_ae79f73fb300db1cf3621d41d00bd1f53}{Spring}} (const float Width, const float Height, const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&camera)
 \item 
-void \mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{Update\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classView_1_1Spring_a45cb0773894c2aea82cb654221c6dfc7}{Update\+Position}} (const float xpos, const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity view. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classView_1_1Spring_aa238412ff89f29df77649dd0011986fd}{get\+Bonus}} () const override
-\begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the sfml sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -25,25 +25,25 @@ Definition at line \mbox{\hyperlink{V__Spring_8h_source_l00008}{8}} of file \mbo
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classView_1_1Spring_abac7c4841223c3e01e73ce6fcd7219d8}\label{classView_1_1Spring_abac7c4841223c3e01e73ce6fcd7219d8}} 
+\mbox{\Hypertarget{classView_1_1Spring_ae79f73fb300db1cf3621d41d00bd1f53}\label{classView_1_1Spring_ae79f73fb300db1cf3621d41d00bd1f53}} 
 \index{View::Spring@{View::Spring}!Spring@{Spring}}
 \index{Spring@{Spring}!View::Spring@{View::Spring}}
 \doxysubsubsection{\texorpdfstring{Spring()}{Spring()}}
-{\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{float}]{Width,  }\item[{float}]{Height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{const float}]{Width,  }\item[{const float}]{Height,  }\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&}]{camera }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classView_1_1Spring}{Spring}} constructor. constructs the spring whit a given width and height and the camera to convert the coordinates to sfml coordinates 
+\mbox{\hyperlink{classView_1_1Spring}{Spring}} constructor. constructs the spring with a given width and height and the camera to convert the coordinates to sfml coordinates 
 
 Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{V__Spring_8cpp_source}{V\+\_\+\+Spring.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Spring_aa0a8af7d2956cbb403e6fcdf2cdc448b}\label{classView_1_1Spring_aa0a8af7d2956cbb403e6fcdf2cdc448b}} 
+\mbox{\Hypertarget{classView_1_1Spring_a8b5c6088814c8e343be53682f33866f1}\label{classView_1_1Spring_a8b5c6088814c8e343be53682f33866f1}} 
 \index{View::Spring@{View::Spring}!````~Spring@{$\sim$Spring}}
 \index{````~Spring@{$\sim$Spring}!View::Spring@{View::Spring}}
 \doxysubsubsection{\texorpdfstring{$\sim$Spring()}{~Spring()}}
-{\footnotesize\ttfamily Spring\+::$\sim$\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily Spring\+::$\sim$\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{V__Spring_8cpp_source}{V\+\_\+\+Spring.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{V__Spring_8cpp_source}{V\+\_\+\+Spring.\+cpp}}.
 
 
 
@@ -56,7 +56,7 @@ Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00038}{38}} of file \
 
 
 
-gets the sfml sprite 
+Gets the sfml sprite. 
 
 This function gets the sfml sprite of the bonus
 
@@ -69,17 +69,17 @@ Implements \mbox{\hyperlink{classView_1_1Bonus_a42f1978091096bd97be14cf6905389d5
 
 
 
-Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{V__Spring_8cpp_source}{V\+\_\+\+Spring.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Spring_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{V__Spring_8cpp_source}{V\+\_\+\+Spring.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}\label{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}} 
+\mbox{\Hypertarget{classView_1_1Spring_a45cb0773894c2aea82cb654221c6dfc7}\label{classView_1_1Spring_a45cb0773894c2aea82cb654221c6dfc7}} 
 \index{View::Spring@{View::Spring}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!View::Spring@{View::Spring}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily void Spring\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Spring\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const float}]{xpos,  }\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the entity views 
+Updates the position of the entity view. 
 
 This function updates the position of the view when the player has moved
 
@@ -92,7 +92,7 @@ This function updates the position of the view when the player has moved
 \end{DoxyParams}
 
 
-Reimplemented from \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}.
+Reimplemented from \mbox{\hyperlink{classEntity__View_adc2616953e30bde1fb38dd496b74d2ae}{Entity\+\_\+\+View}}.
 
 
 

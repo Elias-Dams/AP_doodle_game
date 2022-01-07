@@ -80,7 +80,7 @@ $(function() {
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// i used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// I used https://refactoring.guru/design-patterns/singleton/cpp/example as inspiration for the singleton design pattern</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
@@ -100,18 +100,21 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">static</span> shared_ptr&lt;Random&gt; <a class="code hl_function" href="classRandom.html#a7f0df440d5f1d4f9a097952169beb6fc">GetInstance</a>();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classRandom.html#af6ecf678ff659916787cc33bab141eae">generate_between</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;min, <span class="keyword">const</span> <span class="keywordtype">float</span> &amp;max);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classRandom.html#a9876e27968552717114d3adbe4ddb107">generate_between</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> min, <span class="keyword">const</span> <span class="keywordtype">float</span> max);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="classRandom.html">Random</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classRandom.html">~Random</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span><span class="comment">//AP_DOODLE_GAME_RANDOM_H</span></div>
-<div class="ttc" id="aclassRandom_html"><div class="ttname"><a href="classRandom.html">Random</a></div><div class="ttdoc">generates random numbers.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8h_source.html#l00021">Random.h:21</a></div></div>
-<div class="ttc" id="aclassRandom_html_a7f0df440d5f1d4f9a097952169beb6fc"><div class="ttname"><a href="classRandom.html#a7f0df440d5f1d4f9a097952169beb6fc">Random::GetInstance</a></div><div class="ttdeci">static shared_ptr&lt; Random &gt; GetInstance()</div><div class="ttdoc">creates unique instance of Random.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00009">Random.cpp:9</a></div></div>
-<div class="ttc" id="aclassRandom_html_af6ecf678ff659916787cc33bab141eae"><div class="ttname"><a href="classRandom.html#af6ecf678ff659916787cc33bab141eae">Random::generate_between</a></div><div class="ttdeci">float generate_between(const float &amp;min, const float &amp;max)</div><div class="ttdoc">generates a float number between a given range.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00016">Random.cpp:16</a></div></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classRandom.html#a6fbe60fff884d9f0abef83a4a640d960">generate_between_exeption</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> min, <span class="keyword">const</span> <span class="keywordtype">float</span> max, <span class="keyword">const</span> <span class="keywordtype">float</span> exeptionmin,  <span class="keyword">const</span> <span class="keywordtype">float</span> exeptionmax);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="classRandom.html">Random</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classRandom.html">~Random</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif</span><span class="comment">//AP_DOODLE_GAME_RANDOM_H</span></div>
+<div class="ttc" id="aclassRandom_html"><div class="ttname"><a href="classRandom.html">Random</a></div><div class="ttdoc">Generates random numbers.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8h_source.html#l00021">Random.h:21</a></div></div>
+<div class="ttc" id="aclassRandom_html_a6fbe60fff884d9f0abef83a4a640d960"><div class="ttname"><a href="classRandom.html#a6fbe60fff884d9f0abef83a4a640d960">Random::generate_between_exeption</a></div><div class="ttdeci">float generate_between_exeption(const float min, const float max, const float exeptionmin, const float exeptionmax)</div><div class="ttdoc">generates a float number between a given range whit an exception range.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00024">Random.cpp:24</a></div></div>
+<div class="ttc" id="aclassRandom_html_a7f0df440d5f1d4f9a097952169beb6fc"><div class="ttname"><a href="classRandom.html#a7f0df440d5f1d4f9a097952169beb6fc">Random::GetInstance</a></div><div class="ttdeci">static shared_ptr&lt; Random &gt; GetInstance()</div><div class="ttdoc">Creates unique instance of Random.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00009">Random.cpp:9</a></div></div>
+<div class="ttc" id="aclassRandom_html_a9876e27968552717114d3adbe4ddb107"><div class="ttname"><a href="classRandom.html#a9876e27968552717114d3adbe4ddb107">Random::generate_between</a></div><div class="ttdeci">float generate_between(const float min, const float max)</div><div class="ttdoc">Generates a float number between a given range.</div><div class="ttdef"><b>Definition:</b> <a href="Random_8cpp_source.html#l00016">Random.cpp:16</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -13,11 +13,11 @@
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00015}\mbox{\hyperlink{classView_1_1Player}{00015}} \textcolor{keyword}{class }\mbox{\hyperlink{classView_1_1Player}{View::Player}} : \textcolor{keyword}{public} \mbox{\hyperlink{classEntity__View}{Entity\_View}} \{}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00016}00016 }
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00017}00017 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00022}00022     \mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{Player}}(\textcolor{keywordtype}{float} playerWidth, \textcolor{keywordtype}{float} playerHeight, shared\_ptr<Camera> camera);}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00022}00022     \mbox{\hyperlink{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}{Player}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} playerWidth,\textcolor{keyword}{const} \textcolor{keywordtype}{float} playerHeight, \textcolor{keyword}{const} shared\_ptr<Camera> \&camera);}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00023}00023 }
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00031}00031     sf::Sprite \mbox{\hyperlink{classView_1_1Player_a0be85261d62c37271d871e0f871b992f}{getPlayer}}() \textcolor{keyword}{const};}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00032}00032 }
-\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00033}00033     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00033}00033     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}{UpdatePosition}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} xpos, \textcolor{keyword}{const} \textcolor{keywordtype}{float} ypos) \textcolor{keyword}{override};}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00034}00034 }
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00035}00035     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{UpdateMediumJump}}() \textcolor{keyword}{override};}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00036}00036 }
@@ -25,7 +25,7 @@
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00038}00038 }
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00039}00039     \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{ResetTexture}}() \textcolor{keyword}{override};}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00040}00040 }
-\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00041}00041     \mbox{\hyperlink{classView_1_1Player}{\string~Player}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00041}00041     \textcolor{keyword}{virtual} \mbox{\hyperlink{classView_1_1Player}{\string~Player}}();}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00042}00042 }
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00043}00043 \textcolor{keyword}{private}:}
 \DoxyCodeLine{\Hypertarget{V__Player_8h_source_l00044}00044     \textcolor{keywordtype}{void} setTexture();}

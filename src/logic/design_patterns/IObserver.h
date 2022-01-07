@@ -20,7 +20,7 @@ public:
     * @param xpos: position of the subject.
     * @param ypos: position of the subject.
     */
-    virtual void UpdatePosition(const float &xpos, const float &ypos) = 0;
+    virtual void UpdatePosition(const float xpos, const float ypos) = 0;
 
     /**
     * @brief Updates the observers because a new maxheight is reached.
@@ -29,7 +29,7 @@ public:
     *
     * @param ypos: new height of the subject.
     */
-    virtual void NewMaxheightReached(const float &ypos) = 0;
+    virtual void NewMaxheightReached(const float ypos) = 0;
 
     /**
     * @brief Updates the observers to reset
@@ -74,7 +74,7 @@ public:
     *
     * @param points: that need to be added to the score
     */
-    virtual void UpdateBonusScore(const int &points) = 0;
+    virtual void UpdateBonusScore(const int points) = 0;
 
     /**
     * @brief Reduces the score
@@ -83,7 +83,7 @@ public:
     *
     * @param points: that need to be subtracted from the score
     */
-    virtual void UpdateReduceScore(const int &points) = 0;
+    virtual void UpdateReduceScore(const int points) = 0;
 
     virtual ~IObserver(){};
 };

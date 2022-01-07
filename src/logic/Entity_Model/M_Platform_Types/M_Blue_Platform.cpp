@@ -16,12 +16,12 @@ const pair<float, float> &Model::Blue_Platform::getPosition() const {
     return position;
 }
 
-void Model::Blue_Platform::setPosition(const float &x, const float &y) {
+void Model::Blue_Platform::setPosition(const float x, const float y) {
     Blue_Platform::position = make_pair(x, y);
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Blue_Platform::update(const float &dt) {
+void Model::Blue_Platform::update(const float dt) {
     if (!left and position.first >= max - platform_width) {
         left = true;
     } else if (left and position.first <= min) {

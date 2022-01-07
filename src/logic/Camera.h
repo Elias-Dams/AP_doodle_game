@@ -16,7 +16,7 @@ public:
      * Camera constructor.
      * Constructs the camera with a certain width and height.
      */
-    Camera(const float &cameraWidth, const float &cameraHeight);
+    Camera(const float cameraWidth, const float cameraHeight);
 
     /**
     * @brief Gives the normalized height
@@ -44,7 +44,7 @@ public:
     *
     * @param height: the hight the camera needs to be on
     */
-    void setHeight(const float &height);
+    void setHeight(const float height);
 
     /**
     * @brief Converts the height to game height
@@ -55,7 +55,7 @@ public:
     * @param position: the position of the entity
     * @param entity_height: the height of the entity
     */
-    float toGameheight(const float &position, const float &entity_height);
+    float toGameheight(const float position, const float entity_height);
 
     /**
     * @brief Converts the height to game width
@@ -66,7 +66,7 @@ public:
     * @param position: the position of the entity
     * @param entity_height: the width of the entity
     */
-    float toGamewidth(const float &position, const float &entity_width);
+    float toGamewidth(const float position, const float entity_width);
 
     /**
     * @brief Fully resets the camera.

@@ -1,7 +1,7 @@
 
 #include "V_Spring.h"
 
-View::Spring::Spring(const float &Width, const float &Height, const shared_ptr<Camera> &camera_) :
+View::Spring::Spring(const float Width, const float Height, const shared_ptr<Camera> &camera_) :
     camera(camera_), spring_Width(Width), spring_Height(Height) {
     // we initiaize a new platform
 
@@ -24,7 +24,7 @@ View::Spring::Spring(const float &Width, const float &Height, const shared_ptr<C
     spring->setColor(sf::Color(82, 170, 228));
 }
 
-void View::Spring::UpdatePosition(const float &xpos, const float &ypos) {
+void View::Spring::UpdatePosition(const float xpos, const float ypos) {
     spring->setPosition(camera->toGamewidth(xpos, spring_Width), camera->toGameheight(ypos, spring_Height));
 }
 

@@ -28,7 +28,7 @@ public:
     */
     virtual sf::Sprite getPlatform() const = 0;
 
-    virtual void UpdatePosition(const float &xpos, const float &ypos) = 0;
+    virtual void UpdatePosition(const float xpos, const float ypos) = 0;
 
     virtual ~Platform();
 };

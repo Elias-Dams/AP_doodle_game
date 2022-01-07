@@ -7,7 +7,7 @@
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00003}00003 }
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <memory>}}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00006}\mbox{\hyperlink{classView_1_1Yellow__Platform_aef1970645700203b3fa88d9af18753d5}{00006}} \mbox{\hyperlink{classView_1_1Yellow__Platform_aef1970645700203b3fa88d9af18753d5}{View::Yellow\_Platform::Yellow\_Platform}}(\textcolor{keywordtype}{float} platformWidth\_, \textcolor{keywordtype}{float} platformHeight\_, shared\_ptr<Camera> camera\_) :}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00006}\mbox{\hyperlink{classView_1_1Yellow__Platform_a7134a652458196517b66372a12ce61cf}{00006}} \mbox{\hyperlink{classView_1_1Yellow__Platform_a7134a652458196517b66372a12ce61cf}{View::Yellow\_Platform::Yellow\_Platform}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} platformWidth\_, \textcolor{keyword}{const} \textcolor{keywordtype}{float} platformHeight\_, \textcolor{keyword}{const} shared\_ptr<Camera> \&camera\_) :}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00007}00007     camera(camera\_), platformWidth(platformWidth\_), platformHeight(platformHeight\_) \{}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00008}00008     \textcolor{comment}{// we initiaize a new platform}}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00009}00009 }
@@ -30,17 +30,16 @@
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00026}00026     platform-\/>setColor(sf::Color::Yellow);}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00027}00027 \}}
 \DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00029}\mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{View::Yellow\_Platform::UpdatePosition}}(\textcolor{keywordtype}{float} xpos, \textcolor{keywordtype}{float} ypos) \{}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00030}00030     \textcolor{comment}{//cout << "{}jeej we get updates"{} << endl;}}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00031}00031     platform-\/>setPosition(camera-\/>toGamewidth(xpos, platformWidth), camera-\/>toGameheight(ypos, platformHeight));}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00032}00032 \}}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00033}00033 }
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00034}\mbox{\hyperlink{classView_1_1Yellow__Platform_afcd1a8565975f93f5e5d2194f8734800}{00034}} sf::Sprite \mbox{\hyperlink{classView_1_1Yellow__Platform_afcd1a8565975f93f5e5d2194f8734800}{View::Yellow\_Platform::getPlatform}}()\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00035}00035     \textcolor{keywordflow}{return} *platform;}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00036}00036 \}}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00037}00037 }
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00038}00038 View::Yellow\_Platform::\string~Yellow\_Platform() \{}
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00039}00039 }
-\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00029}\mbox{\hyperlink{classView_1_1Yellow__Platform_a6ce545bcffeb3d087fb58b20524d16ad}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classView_1_1Yellow__Platform_a6ce545bcffeb3d087fb58b20524d16ad}{View::Yellow\_Platform::UpdatePosition}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} xpos, \textcolor{keyword}{const} \textcolor{keywordtype}{float} ypos) \{}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00030}00030     platform-\/>setPosition(camera-\/>toGamewidth(xpos, platformWidth), camera-\/>toGameheight(ypos, platformHeight));}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00033}\mbox{\hyperlink{classView_1_1Yellow__Platform_afcd1a8565975f93f5e5d2194f8734800}{00033}} sf::Sprite \mbox{\hyperlink{classView_1_1Yellow__Platform_afcd1a8565975f93f5e5d2194f8734800}{View::Yellow\_Platform::getPlatform}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00034}00034     \textcolor{keywordflow}{return} *platform;}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00037}00037 View::Yellow\_Platform::\string~Yellow\_Platform() \{}
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{V__Yellow__Platform_8cpp_source_l00039}00039 \}}
 
 \end{DoxyCode}

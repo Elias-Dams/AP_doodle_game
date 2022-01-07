@@ -2,7 +2,7 @@
 \label{classCamera}\index{Camera@{Camera}}
 
 
-Explicitly modelles the view of the \mbox{\hyperlink{classPlayer}{Player}}.  
+Explicitly models the view of the \mbox{\hyperlink{classPlayer}{Player}}.  
 
 
 
@@ -18,37 +18,41 @@ Inheritance diagram for Camera\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classCamera_ac80797da921cf4fc93014236f5e7207d}{Camera}} (float camera\+Width, float camera\+Height)
+\mbox{\hyperlink{classCamera_a84565af954d814cb0b4e8596aacf5509}{Camera}} (const float camera\+Width, const float camera\+Height)
 \item 
 float \mbox{\hyperlink{classCamera_a99f3012f7ef158e024f39f92f4dfeba6}{get\+Nomalised\+Height}} () const
-\begin{DoxyCompactList}\small\item\em gives the normalised height \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the normalized height. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classCamera_ae48046e96d3f9ef82dc7d57855d79065}{get\+Converted\+Height}} () const
-\begin{DoxyCompactList}\small\item\em gives the converted height \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCamera_a9aac75a052dcac20e925db9b36b8243c}{set\+Height}} (float height)
-\begin{DoxyCompactList}\small\item\em sets the height \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classCamera_a98170bb3ca3fe65650df5b6d0dd43e06}{to\+Gameheight}} (float position, float entity\+\_\+height)
-\begin{DoxyCompactList}\small\item\em converts the height to game height \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classCamera_a04f1b81e7b22c1eb4c79d4d0477c28c7}{to\+Gamewidth}} (float position, float entity\+\_\+width)
-\begin{DoxyCompactList}\small\item\em converts the height to game width \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the converted height. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a7a8b45284c090b768643b32d7559d875}{set\+Height}} (const float height)
+\begin{DoxyCompactList}\small\item\em Sets the height. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCamera_a5e6a7b0f7d618c7a50af4bcec3d50eba}{to\+Gameheight}} (const float position, const float entity\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Converts the height to game height. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCamera_ab2b0a8e1fcd99871b126682d0257d4c0}{to\+Gamewidth}} (const float position, const float entity\+\_\+width)
+\begin{DoxyCompactList}\small\item\em Converts the height to game width. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCamera_a2382ed49d6204f39db3b435c5fe22dac}{Camera\+Reset}} ()
-\begin{DoxyCompactList}\small\item\em fully resets the camera \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Fully resets the camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCamera_a5fae81ccc2edd1924586ea567a53bfeb}{get\+Camera\+Width}} () const
+\begin{DoxyCompactList}\small\item\em returns the camera width \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCamera_aee6db01b8582f3292c4ed70a7b780ca6}{get\+Camera\+Height}} () const
+\begin{DoxyCompactList}\small\item\em returns the camera height \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Explicitly modelles the view of the \mbox{\hyperlink{classPlayer}{Player}}. 
+Explicitly models the view of the \mbox{\hyperlink{classPlayer}{Player}}. 
 
 Definition at line \mbox{\hyperlink{Camera_8h_source_l00013}{13}} of file \mbox{\hyperlink{Camera_8h_source}{Camera.\+h}}.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCamera_ac80797da921cf4fc93014236f5e7207d}\label{classCamera_ac80797da921cf4fc93014236f5e7207d}} 
+\mbox{\Hypertarget{classCamera_a84565af954d814cb0b4e8596aacf5509}\label{classCamera_a84565af954d814cb0b4e8596aacf5509}} 
 \index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{camera\+Width,  }\item[{float}]{camera\+Height }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const float}]{camera\+Width,  }\item[{const float}]{camera\+Height }\end{DoxyParamCaption})}
 
-camera constructor. constructs the camera whit a certain width and height 
+\mbox{\hyperlink{classCamera}{Camera}} constructor. Constructs the camera with a certain width and height. 
 
 Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
 
@@ -73,11 +77,49 @@ Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00035}{35}} of file \mbo
 
 
 
-fully resets the camera 
+Fully resets the camera. 
 
-This function resets the camera to the state it was in when it was first initialized 
+This function resets the camera to the state it was in when it was first initialized. 
 
 Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
+
+\mbox{\Hypertarget{classCamera_aee6db01b8582f3292c4ed70a7b780ca6}\label{classCamera_aee6db01b8582f3292c4ed70a7b780ca6}} 
+\index{Camera@{Camera}!getCameraHeight@{getCameraHeight}}
+\index{getCameraHeight@{getCameraHeight}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getCameraHeight()}{getCameraHeight()}}
+{\footnotesize\ttfamily float Camera\+::get\+Camera\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the camera height 
+
+This function returns the camera height
+
+\begin{DoxyReturn}{Returns}
+camera height 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00042}{42}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
+
+\mbox{\Hypertarget{classCamera_a5fae81ccc2edd1924586ea567a53bfeb}\label{classCamera_a5fae81ccc2edd1924586ea567a53bfeb}} 
+\index{Camera@{Camera}!getCameraWidth@{getCameraWidth}}
+\index{getCameraWidth@{getCameraWidth}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getCameraWidth()}{getCameraWidth()}}
+{\footnotesize\ttfamily float Camera\+::get\+Camera\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+returns the camera width 
+
+This function returns the camera width
+
+\begin{DoxyReturn}{Returns}
+camera width 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
 
 \mbox{\Hypertarget{classCamera_ae48046e96d3f9ef82dc7d57855d79065}\label{classCamera_ae48046e96d3f9ef82dc7d57855d79065}} 
 \index{Camera@{Camera}!getConvertedHeight@{getConvertedHeight}}
@@ -87,9 +129,9 @@ Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00031}{31}} of file \mbo
 
 
 
-gives the converted height 
+Gives the converted height. 
 
-This function gives the converted height of a coordinates system in this case the sfml coordinate system
+This function gives the converted height of a coordinates system. In this case the sfml coordinate system.
 
 \begin{DoxyReturn}{Returns}
 converted height 
@@ -106,49 +148,49 @@ Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00013}{13}} of file \mbo
 
 
 
-gives the normalised height 
+Gives the normalized height. 
 
-This function gives the normalised height of a normalised coordinate system
+This function gives the normalized height of a normalized coordinate system.
 
 \begin{DoxyReturn}{Returns}
-normalised height 
+normalized height 
 \end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
 
-\mbox{\Hypertarget{classCamera_a9aac75a052dcac20e925db9b36b8243c}\label{classCamera_a9aac75a052dcac20e925db9b36b8243c}} 
+\mbox{\Hypertarget{classCamera_a7a8b45284c090b768643b32d7559d875}\label{classCamera_a7a8b45284c090b768643b32d7559d875}} 
 \index{Camera@{Camera}!setHeight@{setHeight}}
 \index{setHeight@{setHeight}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
-{\footnotesize\ttfamily void Camera\+::set\+Height (\begin{DoxyParamCaption}\item[{float}]{height }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Camera\+::set\+Height (\begin{DoxyParamCaption}\item[{const float}]{height }\end{DoxyParamCaption})}
 
 
 
-sets the height 
+Sets the height. 
 
-This function sets the height of the camera
+This function sets the height of the camera.
 
 
 \begin{DoxyParams}{Parameters}
-{\em height} & the hight the camera needt to be on \\
+{\em height} & the hight the camera needs to be on \\
 \hline
 \end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
 
-\mbox{\Hypertarget{classCamera_a98170bb3ca3fe65650df5b6d0dd43e06}\label{classCamera_a98170bb3ca3fe65650df5b6d0dd43e06}} 
+\mbox{\Hypertarget{classCamera_a5e6a7b0f7d618c7a50af4bcec3d50eba}\label{classCamera_a5e6a7b0f7d618c7a50af4bcec3d50eba}} 
 \index{Camera@{Camera}!toGameheight@{toGameheight}}
 \index{toGameheight@{toGameheight}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{toGameheight()}{toGameheight()}}
-{\footnotesize\ttfamily float Camera\+::to\+Gameheight (\begin{DoxyParamCaption}\item[{float}]{position,  }\item[{float}]{entity\+\_\+height }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Camera\+::to\+Gameheight (\begin{DoxyParamCaption}\item[{const float}]{position,  }\item[{const float}]{entity\+\_\+height }\end{DoxyParamCaption})}
 
 
 
-converts the height to game height 
+Converts the height to game height. 
 
-This function converts the height to game height it is the height in the normalised coordinate stelsel
+This function converts the height to game height. It is the height in the normalised coordinate system.
 
 
 \begin{DoxyParams}{Parameters}
@@ -161,17 +203,17 @@ This function converts the height to game height it is the height in the normali
 
 Definition at line \mbox{\hyperlink{Camera_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{Camera_8cpp_source}{Camera.\+cpp}}.
 
-\mbox{\Hypertarget{classCamera_a04f1b81e7b22c1eb4c79d4d0477c28c7}\label{classCamera_a04f1b81e7b22c1eb4c79d4d0477c28c7}} 
+\mbox{\Hypertarget{classCamera_ab2b0a8e1fcd99871b126682d0257d4c0}\label{classCamera_ab2b0a8e1fcd99871b126682d0257d4c0}} 
 \index{Camera@{Camera}!toGamewidth@{toGamewidth}}
 \index{toGamewidth@{toGamewidth}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{toGamewidth()}{toGamewidth()}}
-{\footnotesize\ttfamily float Camera\+::to\+Gamewidth (\begin{DoxyParamCaption}\item[{float}]{position,  }\item[{float}]{entity\+\_\+width }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Camera\+::to\+Gamewidth (\begin{DoxyParamCaption}\item[{const float}]{position,  }\item[{const float}]{entity\+\_\+width }\end{DoxyParamCaption})}
 
 
 
-converts the height to game width 
+Converts the height to game width. 
 
-This function converts the width to game width it is the width in the normalised coordinate stelsel
+This function converts the width to game width. It is the width in the normalised coordinate system.
 
 
 \begin{DoxyParams}{Parameters}

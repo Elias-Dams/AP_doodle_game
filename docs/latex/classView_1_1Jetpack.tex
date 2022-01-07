@@ -9,12 +9,12 @@ Inheritance diagram for View\+::Jetpack\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classView_1_1Jetpack_a9a79c0bd1dd86d1f1d9d0499beedc2d0}{Jetpack}} (float Width, float Height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)
+\mbox{\hyperlink{classView_1_1Jetpack_a7f00ea9425eb269b1763a21b179d99f8}{Jetpack}} (const float Width, const float Height, const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&camera)
 \item 
-void \mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{Update\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classView_1_1Jetpack_a8058730403642e763099c534c9729bef}{Update\+Position}} (const float xpos, const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity view. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classView_1_1Jetpack_a2cee29cbf772b797bdea7074833a4167}{get\+Bonus}} () const override
-\begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the sfml sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -25,25 +25,25 @@ Definition at line \mbox{\hyperlink{V__Jetpack_8h_source_l00008}{8}} of file \mb
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classView_1_1Jetpack_a9a79c0bd1dd86d1f1d9d0499beedc2d0}\label{classView_1_1Jetpack_a9a79c0bd1dd86d1f1d9d0499beedc2d0}} 
+\mbox{\Hypertarget{classView_1_1Jetpack_a7f00ea9425eb269b1763a21b179d99f8}\label{classView_1_1Jetpack_a7f00ea9425eb269b1763a21b179d99f8}} 
 \index{View::Jetpack@{View::Jetpack}!Jetpack@{Jetpack}}
 \index{Jetpack@{Jetpack}!View::Jetpack@{View::Jetpack}}
 \doxysubsubsection{\texorpdfstring{Jetpack()}{Jetpack()}}
-{\footnotesize\ttfamily Jetpack\+::\+Jetpack (\begin{DoxyParamCaption}\item[{float}]{Width,  }\item[{float}]{Height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Jetpack\+::\+Jetpack (\begin{DoxyParamCaption}\item[{const float}]{Width,  }\item[{const float}]{Height,  }\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&}]{camera }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classView_1_1Jetpack}{Jetpack}} constructor. constructs the jetpack whit a given width and height and the camera to convert the coordinates to sfml coordinates 
+\mbox{\hyperlink{classView_1_1Jetpack}{Jetpack}} constructor. Constructs the jetpack with a given width and height and the camera to convert the coordinates to sfml coordinates 
 
 Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{V__Jetpack_8cpp_source}{V\+\_\+\+Jetpack.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Jetpack_ad321208979132c8a1bee2c1b81cc7385}\label{classView_1_1Jetpack_ad321208979132c8a1bee2c1b81cc7385}} 
+\mbox{\Hypertarget{classView_1_1Jetpack_a10e905b5fcb38032f427dec22cae94a6}\label{classView_1_1Jetpack_a10e905b5fcb38032f427dec22cae94a6}} 
 \index{View::Jetpack@{View::Jetpack}!````~Jetpack@{$\sim$Jetpack}}
 \index{````~Jetpack@{$\sim$Jetpack}!View::Jetpack@{View::Jetpack}}
 \doxysubsubsection{\texorpdfstring{$\sim$Jetpack()}{~Jetpack()}}
-{\footnotesize\ttfamily Jetpack\+::$\sim$\+Jetpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily Jetpack\+::$\sim$\+Jetpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{V__Jetpack_8cpp_source}{V\+\_\+\+Jetpack.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{V__Jetpack_8cpp_source}{V\+\_\+\+Jetpack.\+cpp}}.
 
 
 
@@ -56,7 +56,7 @@ Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00037}{37}} of file 
 
 
 
-gets the sfml sprite 
+Gets the sfml sprite. 
 
 This function gets the sfml sprite of the bonus
 
@@ -69,17 +69,17 @@ Implements \mbox{\hyperlink{classView_1_1Bonus_a42f1978091096bd97be14cf6905389d5
 
 
 
-Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{V__Jetpack_8cpp_source}{V\+\_\+\+Jetpack.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Jetpack_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{V__Jetpack_8cpp_source}{V\+\_\+\+Jetpack.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}\label{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}} 
+\mbox{\Hypertarget{classView_1_1Jetpack_a8058730403642e763099c534c9729bef}\label{classView_1_1Jetpack_a8058730403642e763099c534c9729bef}} 
 \index{View::Jetpack@{View::Jetpack}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!View::Jetpack@{View::Jetpack}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily void Jetpack\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Jetpack\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const float}]{xpos,  }\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the entity views 
+Updates the position of the entity view. 
 
 This function updates the position of the view when the player has moved
 
@@ -92,7 +92,7 @@ This function updates the position of the view when the player has moved
 \end{DoxyParams}
 
 
-Reimplemented from \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}.
+Reimplemented from \mbox{\hyperlink{classEntity__View_adc2616953e30bde1fb38dd496b74d2ae}{Entity\+\_\+\+View}}.
 
 
 

@@ -12,9 +12,9 @@ public:
      * Constructs the blue_Platform with
      * a given width and height and the camera to convert the coordinates to sfml coordinates
      */
-    Blue_Platform(const float &platformWidth, const float &platformHeight, const shared_ptr<Camera> &camera);
+    Blue_Platform(const float platformWidth, const float platformHeight, const shared_ptr<Camera> &camera);
 
-    void UpdatePosition(const float & xpos, const float & ypos) override;
+    void UpdatePosition(const float xpos, const float ypos) override;
 
     sf::Sprite getPlatform() const override;
 

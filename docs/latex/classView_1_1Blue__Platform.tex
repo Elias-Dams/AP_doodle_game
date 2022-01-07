@@ -9,10 +9,10 @@ Inheritance diagram for View\+::Blue\+\_\+\+Platform\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classView_1_1Blue__Platform_a98cc2a40396312627e62d7264815fb4f}{Blue\+\_\+\+Platform}} (float platform\+Width, float platform\+Height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)
+\mbox{\hyperlink{classView_1_1Blue__Platform_a7dcbd94a0e31b9edf35ce90098ceb439}{Blue\+\_\+\+Platform}} (const float platform\+Width, const float platform\+Height, const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&camera)
 \item 
-void \mbox{\hyperlink{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}{Update\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classView_1_1Blue__Platform_a2c974188995ea744cfa0129d5b729a6f}{Update\+Position}} (const float xpos, const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity view. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{classView_1_1Blue__Platform_a0ceda9f57107d02c245e2566911c0609}{get\+Platform}} () const override
 \begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -25,13 +25,13 @@ Definition at line \mbox{\hyperlink{V__Blue__Platform_8h_source_l00008}{8}} of f
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classView_1_1Blue__Platform_a98cc2a40396312627e62d7264815fb4f}\label{classView_1_1Blue__Platform_a98cc2a40396312627e62d7264815fb4f}} 
+\mbox{\Hypertarget{classView_1_1Blue__Platform_a7dcbd94a0e31b9edf35ce90098ceb439}\label{classView_1_1Blue__Platform_a7dcbd94a0e31b9edf35ce90098ceb439}} 
 \index{View::Blue\_Platform@{View::Blue\_Platform}!Blue\_Platform@{Blue\_Platform}}
 \index{Blue\_Platform@{Blue\_Platform}!View::Blue\_Platform@{View::Blue\_Platform}}
 \doxysubsubsection{\texorpdfstring{Blue\_Platform()}{Blue\_Platform()}}
-{\footnotesize\ttfamily Blue\+\_\+\+Platform\+::\+Blue\+\_\+\+Platform (\begin{DoxyParamCaption}\item[{float}]{platform\+Width,  }\item[{float}]{platform\+Height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Blue\+\_\+\+Platform\+::\+Blue\+\_\+\+Platform (\begin{DoxyParamCaption}\item[{const float}]{platform\+Width,  }\item[{const float}]{platform\+Height,  }\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&}]{camera }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classView_1_1Blue__Platform}{Blue\+\_\+\+Platform}} constructor. constructs the blue\+\_\+\+Platform whit a given width and height and the camera to convert the coordinates to sfml coordinates 
+\mbox{\hyperlink{classView_1_1Blue__Platform}{Blue\+\_\+\+Platform}} constructor. Constructs the blue\+\_\+\+Platform with a given width and height and the camera to convert the coordinates to sfml coordinates 
 
 Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{V__Blue__Platform_8cpp_source}{V\+\_\+\+Blue\+\_\+\+Platform.\+cpp}}.
 
@@ -43,7 +43,7 @@ Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00006}{6}} of
 
 
 
-Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{V__Blue__Platform_8cpp_source}{V\+\_\+\+Blue\+\_\+\+Platform.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{V__Blue__Platform_8cpp_source}{V\+\_\+\+Blue\+\_\+\+Platform.\+cpp}}.
 
 
 
@@ -69,17 +69,17 @@ Implements \mbox{\hyperlink{classView_1_1Platform_a0e59383e15b1c57bf57c0aa649749
 
 
 
-Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{V__Blue__Platform_8cpp_source}{V\+\_\+\+Blue\+\_\+\+Platform.\+cpp}}.
+Definition at line \mbox{\hyperlink{V__Blue__Platform_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{V__Blue__Platform_8cpp_source}{V\+\_\+\+Blue\+\_\+\+Platform.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}\label{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}} 
+\mbox{\Hypertarget{classView_1_1Blue__Platform_a2c974188995ea744cfa0129d5b729a6f}\label{classView_1_1Blue__Platform_a2c974188995ea744cfa0129d5b729a6f}} 
 \index{View::Blue\_Platform@{View::Blue\_Platform}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!View::Blue\_Platform@{View::Blue\_Platform}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily void Blue\+\_\+\+Platform\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Blue\+\_\+\+Platform\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const float}]{xpos,  }\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the entity views 
+Updates the position of the entity view. 
 
 This function updates the position of the view when the player has moved
 
@@ -92,7 +92,7 @@ This function updates the position of the view when the player has moved
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}{View\+::\+Platform}}.
+Implements \mbox{\hyperlink{classView_1_1Platform_a6e11d48b1b4aa828634d5abb4aacef2f}{View\+::\+Platform}}.
 
 
 

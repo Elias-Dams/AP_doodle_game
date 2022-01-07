@@ -32,7 +32,7 @@ public:
     const pair<float, float> &getPosition() const;
 
     // documentation in Enntity_model
-    void setPosition(const float &posx, const float &posy);
+    void setPosition(const float posx, const float posy);
 
 private:
     pair<float, float> position; ///< position of the background

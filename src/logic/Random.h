@@ -50,7 +50,7 @@ public:
     * @param max: maximum of the range.
     * @return random float number.
     */
-    float generate_between(const float &min, const float &max);
+    float generate_between(const float min, const float max);
 
     /**
     * @brief generates a float number between a given range whit an exception range.
@@ -64,7 +64,7 @@ public:
     * @param exeptionmax: max of the exception range.
     * @return random float number.
     */
-    float generate_between_exeption(const float &min, const float &max, const float &exeptionmin,  const float &exeptionmax);
+    float generate_between_exeption(const float min, const float max, const float exeptionmin,  const float exeptionmax);
 
     Random();
 

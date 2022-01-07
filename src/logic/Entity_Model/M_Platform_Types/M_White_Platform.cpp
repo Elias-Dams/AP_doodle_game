@@ -13,12 +13,12 @@ const pair<float, float> &Model::White_Platform::getPosition() const {
     return position;
 }
 
-void Model::White_Platform::setPosition(const float &x, const float &y) {
+void Model::White_Platform::setPosition(const float x, const float y) {
     White_Platform::position = make_pair(x, y);
     NotifyPosition(position.first, position.second);
 }
 
-void Model::White_Platform::update(const float &dt) {
+void Model::White_Platform::update(const float dt) {
     // the platform doesn't move
     NotifyPosition(position.first, position.second);
 }

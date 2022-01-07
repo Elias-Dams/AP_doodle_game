@@ -64,7 +64,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    void gameStart(const float &dt);
+    void gameStart(const float dt);
 
     /**
     * @brief Game loop.
@@ -73,7 +73,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    void gameLoop(const float &dt);
+    void gameLoop(const float dt);
 
     /**
     * @brief Game over
@@ -83,7 +83,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame)
     */
-    void gameOver(const float &dt);
+    void gameOver(const float dt);
 
     ~Game();
 

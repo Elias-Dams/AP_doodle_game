@@ -12,17 +12,17 @@ Inheritance diagram for Model\+::Jetpack\+:\begin{figure}[H]
 \mbox{\hyperlink{classModel_1_1Jetpack_a91bf79ffd86067c66b5f3133cef62367}{Jetpack}} (float Width, float Height)
 \item 
 const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1Jetpack_a217b653e0e1ee829fa3e17753d20be93}{get\+Position}} () const override
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}{set\+Position}} (const float \&x, const float \&y) override
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}{update}} (float x, float y) override
-\begin{DoxyCompactList}\small\item\em updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Jetpack_a5c2526db2e6864b9cbcf2d0ea0ff871d}{set\+Position}} (const float x, const float y) override
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1Jetpack_afdbffaf6515cb579c5174c83da859131}{update}} (const float x, const float y) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the bonus if it can move. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classModel_1_1Jetpack_a1ae416ec4567e8f57d88047699f42d8b}{get\+Width}} () const override
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classModel_1_1Jetpack_a761260794e06aa609ef30222071df6fc}{get\+Height}} () const override
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classModel_1_1Jetpack_a42d42ead15aa743e3babd67ebb2796d7}{get\+Bonuspower}} () const override
-\begin{DoxyCompactList}\small\item\em get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the bonuspower. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -47,7 +47,7 @@ Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00004}{4}} of file \
 \index{Model::Jetpack@{Model::Jetpack}!````~Jetpack@{$\sim$Jetpack}}
 \index{````~Jetpack@{$\sim$Jetpack}!Model::Jetpack@{Model::Jetpack}}
 \doxysubsubsection{\texorpdfstring{$\sim$Jetpack()}{~Jetpack()}}
-{\footnotesize\ttfamily Jetpack\+::$\sim$\+Jetpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Jetpack\+::$\sim$\+Jetpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -64,12 +64,12 @@ Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00036}{36}} of file 
 
 
 
-get the bonuspower. 
+Get the bonuspower. 
 
-This function gets the power of a certain bonus. e.\+g. the spring makes the player jump x5 higher.
+This function gets the power of a certain bonus. E.\+g. the spring makes the player jump x5 higher.
 
 \begin{DoxyReturn}{Returns}
-gets the type of the bonus 
+Gets the type of the bonus 
 \end{DoxyReturn}
 
 
@@ -87,12 +87,12 @@ Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00032}{32}} of file 
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -110,12 +110,12 @@ Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00028}{28}} of file 
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -133,12 +133,12 @@ Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00009}{9}} of file \
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
@@ -148,15 +148,15 @@ Implements \mbox{\hyperlink{classModel_1_1Bonus_a0c9f67a0874e16a7e234461b171b18c
 
 Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
 
-\mbox{\Hypertarget{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}\label{classModel_1_1Jetpack_a061bf303fab5c4dfa13e590d00178fe9}} 
+\mbox{\Hypertarget{classModel_1_1Jetpack_a5c2526db2e6864b9cbcf2d0ea0ff871d}\label{classModel_1_1Jetpack_a5c2526db2e6864b9cbcf2d0ea0ff871d}} 
 \index{Model::Jetpack@{Model::Jetpack}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Model::Jetpack@{Model::Jetpack}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Jetpack\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Jetpack\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -169,21 +169,21 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classModel_1_1Bonus_ad11b712a7722d595e4d56c9433c64e78}{Model\+::\+Bonus}}.
+Implements \mbox{\hyperlink{classModel_1_1Bonus_a5a30d7d1942f8aef4b5c9a78030d0a47}{Model\+::\+Bonus}}.
 
 
 
 Definition at line \mbox{\hyperlink{M__Jetpack_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{M__Jetpack_8cpp_source}{M\+\_\+\+Jetpack.\+cpp}}.
 
-\mbox{\Hypertarget{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}\label{classModel_1_1Jetpack_a1697b22fb898df0095bc2268fe9235ba}} 
+\mbox{\Hypertarget{classModel_1_1Jetpack_afdbffaf6515cb579c5174c83da859131}\label{classModel_1_1Jetpack_afdbffaf6515cb579c5174c83da859131}} 
 \index{Model::Jetpack@{Model::Jetpack}!update@{update}}
 \index{update@{update}!Model::Jetpack@{Model::Jetpack}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Jetpack\+::update (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Jetpack\+::update (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the bonus if it can move. 
+Updates the position of the bonus if it can move. 
 
 This function updates the position of the bonus if it can move. This is the case if it is on a moving platform.
 
@@ -196,7 +196,7 @@ This function updates the position of the bonus if it can move. This is the case
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classModel_1_1Bonus_a5bd8df438aecd36739a0e21cb5e9685f}{Model\+::\+Bonus}}.
+Implements \mbox{\hyperlink{classModel_1_1Bonus_abc621aa4ec2cccb77a2f91ac9af44d7b}{Model\+::\+Bonus}}.
 
 
 

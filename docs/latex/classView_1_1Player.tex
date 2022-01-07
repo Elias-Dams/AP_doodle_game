@@ -9,18 +9,18 @@ Inheritance diagram for View\+::Player\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}{Player}} (float player\+Width, float player\+Height, shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ camera)
+\mbox{\hyperlink{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}{Player}} (const float player\+Width, const float player\+Height, const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&camera)
 \item 
 sf\+::\+Sprite \mbox{\hyperlink{classView_1_1Player_a0be85261d62c37271d871e0f871b992f}{get\+Player}} () const
-\begin{DoxyCompactList}\small\item\em gets the sfml sprite \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{Update\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em updates the position of the entity views \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the sfml sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}{Update\+Position}} (const float xpos, const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the position of the entity view. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b5504b6bf1f}{Update\+Medium\+Jump}} () override
-\begin{DoxyCompactList}\small\item\em updates te texture of the player if a spring is collected \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Updates te texture of the player if a spring is collected. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classView_1_1Player_a82d86a086ed382564afb0093011615f2}{Update\+High\+Jump}} () override
-\begin{DoxyCompactList}\small\item\em updates te texture of the player if a jetpack is collected \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Updates te texture of the player if a jetpack is collected. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd41e457e0}{Reset\+Texture}} () override
-\begin{DoxyCompactList}\small\item\em resets te texture of the player \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resets te texture of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -31,21 +31,21 @@ Definition at line \mbox{\hyperlink{V__Player_8h_source_l00015}{15}} of file \mb
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}\label{classView_1_1Player_a1baf8b66ee5c90d0918eeac5eedf7f3f}} 
+\mbox{\Hypertarget{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}\label{classView_1_1Player_a129d9954256ad3d978bc2828b4886ce4}} 
 \index{View::Player@{View::Player}!Player@{Player}}
 \index{Player@{Player}!View::Player@{View::Player}}
 \doxysubsubsection{\texorpdfstring{Player()}{Player()}}
-{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{player\+Width,  }\item[{float}]{player\+Height,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$}]{camera }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{const float}]{player\+Width,  }\item[{const float}]{player\+Height,  }\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \&}]{camera }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classView_1_1Player}{Player}} constructor. constructs the \mbox{\hyperlink{classView_1_1Player}{Player}} 
+\mbox{\hyperlink{classView_1_1Player}{Player}} constructor. Constructs the \mbox{\hyperlink{classView_1_1Player}{Player}}. 
 
 Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{V__Player_8cpp_source}{V\+\_\+\+Player.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Player_a8ed544987af18de0e6b2932206bf1186}\label{classView_1_1Player_a8ed544987af18de0e6b2932206bf1186}} 
+\mbox{\Hypertarget{classView_1_1Player_a749d2c00e1fe0f5c2746f7505a58c062}\label{classView_1_1Player_a749d2c00e1fe0f5c2746f7505a58c062}} 
 \index{View::Player@{View::Player}!````~Player@{$\sim$Player}}
 \index{````~Player@{$\sim$Player}!View::Player@{View::Player}}
 \doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
-{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -62,9 +62,9 @@ Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00095}{95}} of file \
 
 
 
-gets the sfml sprite 
+Gets the sfml sprite. 
 
-This function gets the sfml sprite of the player
+This function gets the sfml sprite of the player.
 
 \begin{DoxyReturn}{Returns}
 the sfml sprite of the player 
@@ -81,7 +81,7 @@ Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00065}{65}} of file \
 
 
 
-resets te texture of the player 
+Resets te texture of the player. 
 
 
 
@@ -99,7 +99,7 @@ Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00089}{89}} of file \
 
 
 
-updates te texture of the player if a jetpack is collected 
+Updates te texture of the player if a jetpack is collected. 
 
 
 
@@ -117,7 +117,7 @@ Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00083}{83}} of file \
 
 
 
-updates te texture of the player if a spring is collected 
+Updates te texture of the player if a spring is collected. 
 
 
 
@@ -127,15 +127,15 @@ Reimplemented from \mbox{\hyperlink{classObserver_add3f66baf416ac09661e375b05d54
 
 Definition at line \mbox{\hyperlink{V__Player_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{V__Player_8cpp_source}{V\+\_\+\+Player.\+cpp}}.
 
-\mbox{\Hypertarget{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}\label{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}} 
+\mbox{\Hypertarget{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}\label{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}} 
 \index{View::Player@{View::Player}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!View::Player@{View::Player}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily void Player\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Player\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const float}]{xpos,  }\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of the entity views 
+Updates the position of the entity view. 
 
 This function updates the position of the view when the player has moved
 
@@ -148,7 +148,7 @@ This function updates the position of the view when the player has moved
 \end{DoxyParams}
 
 
-Reimplemented from \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}.
+Reimplemented from \mbox{\hyperlink{classEntity__View_adc2616953e30bde1fb38dd496b74d2ae}{Entity\+\_\+\+View}}.
 
 
 

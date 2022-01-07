@@ -20,9 +20,9 @@ public:
 
     const pair<float, float> &getPosition() const override;
 
-    void setPosition(const float &x, const float &y) override;
+    void setPosition(const float x, const float y) override;
 
-    void update(const float &x, const float &y) override;
+    void update(const float x, const float y) override;
 
     float getWidth() const override;
 

@@ -36,7 +36,7 @@ public:
     *
     * @param dt: delta time (time it takes to render a frame).
     */
-    void startstate(const float &dt);
+    void startstate(const float dt);
 
     /**
     * @brief Updates the world in the actual game state.
@@ -51,7 +51,7 @@ public:
     * @param dt: delta time (time it takes to render a frame).
     * @param key: key that is pressed.
     */
-    void update(const float & dt, const char &key);
+    void update(const float dt, const char key);
 
     /**
     * @brief Returns the player.
@@ -159,7 +159,7 @@ private:
 
     void add_platforms();
 
-    bool colisionCheck(shared_ptr<Entity_Model> entity, const bool &can_update_score);
+    bool colisionCheck(shared_ptr<Entity_Model> entity, const bool can_update_score);
 
     float getFreeSpace();
 

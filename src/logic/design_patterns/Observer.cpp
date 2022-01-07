@@ -9,7 +9,7 @@ Observer::~Observer() {
 
 }
 
-void Observer::UpdatePosition(const float &xpos, const float &ypos) {
+void Observer::UpdatePosition(const float xpos, const float ypos) {
     // do nothing
 }
 
@@ -21,15 +21,15 @@ void Observer::ResetTexture() {
     // do nothing
 }
 
-void Observer::NewMaxheightReached(const float &ypos){
+void Observer::NewMaxheightReached(const float ypos){
     // do nothing
 }
 
-void Observer::UpdateBonusScore(const int &points) {
+void Observer::UpdateBonusScore(const int points) {
     // do nothing
 }
 
-void Observer::UpdateReduceScore(const int &points) {
+void Observer::UpdateReduceScore(const int points) {
     // do nothing
 }
 

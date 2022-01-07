@@ -1,14 +1,14 @@
 
 #include "M_Player.h"
 
-Model::Player::Player(const float &player_width_, const float &player_height_) :
+Model::Player::Player(const float player_width_, const float player_height_) :
     player_width(player_width_), player_height(player_height_) {
     gravity = 0.20f;
     falling = true;
     jumpheigt = 250.0f;
 }
 
-void Model::Player::move(const float &x, const float &y) {
+void Model::Player::move(const float x, const float y) {
     position.first += x;
     position.second += y;
 
@@ -16,7 +16,7 @@ void Model::Player::move(const float &x, const float &y) {
 }
 
 
-void Model::Player::jump(const float &dt, const bool &hit,const int &height_modifier) {
+void Model::Player::jump(const float dt, const bool hit,const int height_modifier) {
 
     if (position.second >= 0) {
 
@@ -75,7 +75,7 @@ const pair<float, float> &Model::Player::getPosition() const {
     return position;
 }
 
-void Model::Player::setPosition(const float &x, const float &y) {
+void Model::Player::setPosition(const float x, const float y) {
     Player::position = make_pair(x, y);
     NotifyPosition(x, y);
 }
@@ -84,7 +84,7 @@ bool Model::Player::isfalling() const {
     return falling;
 }
 
-void Model::Player::PlayerReset(const float &startposx, const float &startposy) {
+void Model::Player::PlayerReset(const float startposx, const float startposy) {
     position.first = startposx;
     position.second = startposy;
     gravity = 0.20f;

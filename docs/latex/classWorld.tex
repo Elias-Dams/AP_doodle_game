@@ -14,28 +14,30 @@ Responsible for orchestrating the overall game logic and the interactions betwee
 \item 
 \mbox{\hyperlink{classWorld_a4e61e0c1d6e5ad0f65ede0e0b6d4b904}{World}} (const shared\+\_\+ptr$<$ \mbox{\hyperlink{classAbstract__Factory}{Abstract\+\_\+\+Factory}} $>$ \&factory)
 \item 
-void \mbox{\hyperlink{classWorld_a832d4738e2abc0317d10775d59accb8a}{startstate}} (float dt)
-\begin{DoxyCompactList}\small\item\em handles the start state and gameover state of the game. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}{update}} (float dt, const char \&key)
-\begin{DoxyCompactList}\small\item\em updates the world in teh actual game state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a57146f0f26a2d5c2d55d954388c427d3}{startstate}} (const float dt)
+\begin{DoxyCompactList}\small\item\em Handles the start state and game-\/over state of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a77d15813d34243e6184eaa233d290345}{update}} (const float dt, const char key)
+\begin{DoxyCompactList}\small\item\em Updates the world in the actual game state. \end{DoxyCompactList}\item 
 shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Player}{Player}} $>$ \mbox{\hyperlink{classWorld_a6d710b085f1a8f195f18f9d6b124c327}{get\+Player}} () const
-\begin{DoxyCompactList}\small\item\em returns the player. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the player. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classWorld_a2a7614f0f862c86de97e7696406d2693}{get\+Width}} () const
-\begin{DoxyCompactList}\small\item\em returns the game width. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the game width. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}{get\+Height}} () const
-\begin{DoxyCompactList}\small\item\em returns the game height. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the game height. \end{DoxyCompactList}\item 
 const pair$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{BG\+\_\+\+Tile}} $>$, shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1BG__Tile}{BG\+\_\+\+Tile}} $>$ $>$ \& \mbox{\hyperlink{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}{get\+Background}} () const
-\begin{DoxyCompactList}\small\item\em returns the background. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the background. \end{DoxyCompactList}\item 
 shared\+\_\+ptr$<$ \mbox{\hyperlink{classCamera}{Camera}} $>$ \mbox{\hyperlink{classWorld_a385d14afa06604151529325b8736bcd7}{get\+Camera}} () const
-\begin{DoxyCompactList}\small\item\em returns the camera. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the camera. \end{DoxyCompactList}\item 
 const vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Platform}} $>$ $>$ \& \mbox{\hyperlink{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}{get\+Platforms}} () const
-\begin{DoxyCompactList}\small\item\em returns the platforms. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the platforms. \end{DoxyCompactList}\item 
 const map$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Platform}{Platform}} $>$, shared\+\_\+ptr$<$ \mbox{\hyperlink{classModel_1_1Bonus}{Bonus}} $>$ $>$ \& \mbox{\hyperlink{classWorld_a5475c4f46f2711d97339c541a92ba3cc}{get\+Bonuses}} () const
-\begin{DoxyCompactList}\small\item\em returns the bonusses. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Returns the bonusses. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWorld_abd1528dd5557dbfc40283542e5edfabf}{Reset}} ()
-\begin{DoxyCompactList}\small\item\em resets the world. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Resets the world. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classWorld_a0ccb7137db33414179c4bdc1609331bd}{is\+Game\+Over}} () const
-\begin{DoxyCompactList}\small\item\em checks if the game is over. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks if the game is over. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWorld_a096a027315a838218bf563e8cf5d52b9}{delete\+Platforms}} ()
+\begin{DoxyCompactList}\small\item\em deletes the platforms. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -52,7 +54,7 @@ Definition at line \mbox{\hyperlink{World_8h_source_l00022}{22}} of file \mbox{\
 \doxysubsubsection{\texorpdfstring{World()}{World()}}
 {\footnotesize\ttfamily World\+::\+World (\begin{DoxyParamCaption}\item[{const shared\+\_\+ptr$<$ \mbox{\hyperlink{classAbstract__Factory}{Abstract\+\_\+\+Factory}} $>$ \&}]{factory }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{classWorld}{World}} constructor. constructs the \mbox{\hyperlink{classWorld}{World}} whit a pointer to the Abstract factory 
+\mbox{\hyperlink{classWorld}{World}} constructor. vonstructs the \mbox{\hyperlink{classWorld}{World}} with a pointer to the Abstract factory. 
 
 Definition at line \mbox{\hyperlink{World_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
@@ -64,11 +66,25 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00004}{4}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00388}{388}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00452}{452}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWorld_a096a027315a838218bf563e8cf5d52b9}\label{classWorld_a096a027315a838218bf563e8cf5d52b9}} 
+\index{World@{World}!deletePlatforms@{deletePlatforms}}
+\index{deletePlatforms@{deletePlatforms}!World@{World}}
+\doxysubsubsection{\texorpdfstring{deletePlatforms()}{deletePlatforms()}}
+{\footnotesize\ttfamily void World\+::delete\+Platforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deletes the platforms. 
+
+This function deletes the platforms. 
+
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00417}{417}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+
 \mbox{\Hypertarget{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}\label{classWorld_a68957ff5d4b8f76cd6c7c4e25ec162f9}} 
 \index{World@{World}!getBackground@{getBackground}}
 \index{getBackground@{getBackground}!World@{World}}
@@ -77,7 +93,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00388}{388}} of file \mbo
 
 
 
-returns the background. 
+Returns the background. 
 
 This function returns the background. It is a pair of 2 tiles that updates when the player moves up in the world.
 
@@ -86,7 +102,7 @@ pair of background Tiles.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00409}{409}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00473}{473}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a5475c4f46f2711d97339c541a92ba3cc}\label{classWorld_a5475c4f46f2711d97339c541a92ba3cc}} 
 \index{World@{World}!getBonuses@{getBonuses}}
@@ -96,9 +112,9 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00409}{409}} of file \mbo
 
 
 
-returns the bonusses. 
+Returns the bonusses. 
 
-This function returns a map whit
+This function returns a map with\+:
 \begin{DoxyItemize}
 \item key a shared pointer to a platform
 \item van a shared pointer to a bonus
@@ -109,7 +125,7 @@ a map of bonuses.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00413}{413}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00477}{477}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a385d14afa06604151529325b8736bcd7}\label{classWorld_a385d14afa06604151529325b8736bcd7}} 
 \index{World@{World}!getCamera@{getCamera}}
@@ -119,7 +135,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00413}{413}} of file \mbo
 
 
 
-returns the camera. 
+Returns the camera. 
 
 This function returns shared pointer of the camera.
 
@@ -128,7 +144,7 @@ shared pointer of the camera.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00351}{351}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00409}{409}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}\label{classWorld_a6a796e995f5b9d2455cbae8beb8b963b}} 
 \index{World@{World}!getHeight@{getHeight}}
@@ -138,7 +154,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00351}{351}} of file \mbo
 
 
 
-returns the game height. 
+Returns the game height. 
 
 This function returns the game height.
 
@@ -147,7 +163,7 @@ the game height.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00343}{343}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00401}{401}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}\label{classWorld_a7dfb4910fd1aed0883af9c656d1a7996}} 
 \index{World@{World}!getPlatforms@{getPlatforms}}
@@ -157,7 +173,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00343}{343}} of file \mbo
 
 
 
-returns the platforms. 
+Returns the platforms. 
 
 This function returns a vector of shared pointers of platforms.
 
@@ -166,7 +182,7 @@ a vector of shared pointers of platforms.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00347}{347}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00405}{405}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a6d710b085f1a8f195f18f9d6b124c327}\label{classWorld_a6d710b085f1a8f195f18f9d6b124c327}} 
 \index{World@{World}!getPlayer@{getPlayer}}
@@ -176,7 +192,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00347}{347}} of file \mbo
 
 
 
-returns the player. 
+Returns the player. 
 
 This function returns shared pointer of the player.
 
@@ -185,7 +201,7 @@ shared pointer of the player.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00335}{335}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00393}{393}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a2a7614f0f862c86de97e7696406d2693}\label{classWorld_a2a7614f0f862c86de97e7696406d2693}} 
 \index{World@{World}!getWidth@{getWidth}}
@@ -195,7 +211,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00335}{335}} of file \mbo
 
 
 
-returns the game width. 
+Returns the game width. 
 
 This function returns the game width.
 
@@ -204,7 +220,7 @@ the game width.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00339}{339}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00397}{397}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_a0ccb7137db33414179c4bdc1609331bd}\label{classWorld_a0ccb7137db33414179c4bdc1609331bd}} 
 \index{World@{World}!isGameOver@{isGameOver}}
@@ -214,7 +230,7 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00339}{339}} of file \mbo
 
 
 
-checks if the game is over. 
+Checks if the game is over. 
 
 This function checks if the game is over.
 
@@ -223,7 +239,7 @@ True if the game is over. False if the game is not over.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00355}{355}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00413}{413}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 \mbox{\Hypertarget{classWorld_abd1528dd5557dbfc40283542e5edfabf}\label{classWorld_abd1528dd5557dbfc40283542e5edfabf}} 
 \index{World@{World}!Reset@{Reset}}
@@ -233,30 +249,30 @@ Definition at line \mbox{\hyperlink{World_8cpp_source_l00355}{355}} of file \mbo
 
 
 
-resets the world. 
+Resets the world. 
 
-This function resets the world to the state it was in when it was first initialized. it handles\+:
+This function resets the world to the state it was in when it was first initialized. It handles\+:
 \begin{DoxyItemize}
 \item reset of the player
 \item reset of the camera
-\item reset of all the members of the wordl
+\item reset of all the members of the world
 \item clears the vector of platforms
 \item clears the map of bonuses 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00359}{359}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00430}{430}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
-\mbox{\Hypertarget{classWorld_a832d4738e2abc0317d10775d59accb8a}\label{classWorld_a832d4738e2abc0317d10775d59accb8a}} 
+\mbox{\Hypertarget{classWorld_a57146f0f26a2d5c2d55d954388c427d3}\label{classWorld_a57146f0f26a2d5c2d55d954388c427d3}} 
 \index{World@{World}!startstate@{startstate}}
 \index{startstate@{startstate}!World@{World}}
 \doxysubsubsection{\texorpdfstring{startstate()}{startstate()}}
-{\footnotesize\ttfamily void World\+::startstate (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void World\+::startstate (\begin{DoxyParamCaption}\item[{const float}]{dt }\end{DoxyParamCaption})}
 
 
 
-handles the start state and gameover state of the game. 
+Handles the start state and game-\/over state of the game. 
 
-This function handles the start state gameover state of the game. It makes a platform and lets the player jump in place. The player can\textquotesingle{}t move in this state so there is no need for a key variable.
+This function handles the start state game-\/over state of the game. It makes a platform and lets the player jump in place. The player can\textquotesingle{}t move in this state so there is no need for a key variable.
 
 
 \begin{DoxyParams}{Parameters}
@@ -265,23 +281,23 @@ This function handles the start state gameover state of the game. It makes a pla
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00196}{196}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00253}{253}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
-\mbox{\Hypertarget{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}\label{classWorld_ab3621be07e3d5ee1eff1c99eb3509012}} 
+\mbox{\Hypertarget{classWorld_a77d15813d34243e6184eaa233d290345}\label{classWorld_a77d15813d34243e6184eaa233d290345}} 
 \index{World@{World}!update@{update}}
 \index{update@{update}!World@{World}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void World\+::update (\begin{DoxyParamCaption}\item[{float}]{dt,  }\item[{const char \&}]{key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void World\+::update (\begin{DoxyParamCaption}\item[{const float}]{dt,  }\item[{const char}]{key }\end{DoxyParamCaption})}
 
 
 
-updates the world in teh actual game state. 
+Updates the world in the actual game state. 
 
-This function updates the world in teh actual game state.
+This function updates the world in the actual game state.
 \begin{DoxyItemize}
 \item updates the camera position
 \item updates the background
-\item move the player (whit given key)
+\item move the player (with given key)
 \item check collision
 \item destroys and adds platforms
 \end{DoxyItemize}
@@ -295,7 +311,7 @@ This function updates the world in teh actual game state.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{World_8cpp_source_l00218}{218}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
+Definition at line \mbox{\hyperlink{World_8cpp_source_l00275}{275}} of file \mbox{\hyperlink{World_8cpp_source}{World.\+cpp}}.
 
 
 

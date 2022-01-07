@@ -12,13 +12,13 @@ Inheritance diagram for Model\+::BG\+\_\+\+Tile\+:\begin{figure}[H]
 \mbox{\hyperlink{classModel_1_1BG__Tile_a64934e6eb905067d9845ec0c9cc4f05e}{BG\+\_\+\+Tile}} (float width, float height)
 \item 
 float \mbox{\hyperlink{classModel_1_1BG__Tile_a0948871fac6fed89c0ebd330e10fe34c}{get\+Width}} () const
-\begin{DoxyCompactList}\small\item\em gives the width of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the width of the entity. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classModel_1_1BG__Tile_ac183ce3db260fb3e35bea9552cfaf1cb}{get\+Height}} () const
-\begin{DoxyCompactList}\small\item\em gives the height of the entity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gives the height of the entity. \end{DoxyCompactList}\item 
 const pair$<$ float, float $>$ \& \mbox{\hyperlink{classModel_1_1BG__Tile_aff246acb4af626fb24158a5db5171fa1}{get\+Position}} () const
-\begin{DoxyCompactList}\small\item\em gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classModel_1_1BG__Tile_a9cfeb19d56e3bc30f0943b607b2bb7f2}{set\+Position}} (const float \&posx, const float \&posy)
-\begin{DoxyCompactList}\small\item\em sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gives the x and y coordinate of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModel_1_1BG__Tile_a564198d590b637056c84662ec0c3a69f}{set\+Position}} (const float posx, const float posy)
+\begin{DoxyCompactList}\small\item\em Sets the position of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -43,7 +43,7 @@ Definition at line \mbox{\hyperlink{M__BG__Tile_8cpp_source_l00004}{4}} of file 
 \index{Model::BG\_Tile@{Model::BG\_Tile}!````~BG\_Tile@{$\sim$BG\_Tile}}
 \index{````~BG\_Tile@{$\sim$BG\_Tile}!Model::BG\_Tile@{Model::BG\_Tile}}
 \doxysubsubsection{\texorpdfstring{$\sim$BG\_Tile()}{~BG\_Tile()}}
-{\footnotesize\ttfamily Model\+::\+BG\+\_\+\+Tile\+::$\sim$\+BG\+\_\+\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Model\+::\+BG\+\_\+\+Tile\+::$\sim$\+BG\+\_\+\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -60,12 +60,12 @@ Definition at line \mbox{\hyperlink{M__BG__Tile_8cpp_source_l00028}{28}} of file
 
 
 
-gives the height of the entity. 
+Gives the height of the entity. 
 
 This function gives the height of the entity.
 
 \begin{DoxyReturn}{Returns}
-height of the entity. 
+Height of the entity. 
 \end{DoxyReturn}
 
 
@@ -83,12 +83,12 @@ Definition at line \mbox{\hyperlink{M__BG__Tile_8cpp_source_l00024}{24}} of file
 
 
 
-gives the x and y coordinate of the entity. 
+Gives the x and y coordinate of the entity. 
 
 This function gives the position of the entity in a normalised world.
 
 \begin{DoxyReturn}{Returns}
-a pair consisting of the x and y coordinates of the entity. 
+A pair consisting of the x and y coordinates of the entity. 
 \end{DoxyReturn}
 
 
@@ -106,12 +106,12 @@ Definition at line \mbox{\hyperlink{M__BG__Tile_8cpp_source_l00010}{10}} of file
 
 
 
-gives the width of the entity. 
+Gives the width of the entity. 
 
 This function gives the width of the entity.
 
 \begin{DoxyReturn}{Returns}
-width of the entity. 
+Width of the entity. 
 \end{DoxyReturn}
 
 
@@ -121,15 +121,15 @@ Implements \mbox{\hyperlink{classEntity__Model_acc4b538f594b69821f709101948abcb9
 
 Definition at line \mbox{\hyperlink{M__BG__Tile_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{M__BG__Tile_8cpp_source}{M\+\_\+\+BG\+\_\+\+Tile.\+cpp}}.
 
-\mbox{\Hypertarget{classModel_1_1BG__Tile_a9cfeb19d56e3bc30f0943b607b2bb7f2}\label{classModel_1_1BG__Tile_a9cfeb19d56e3bc30f0943b607b2bb7f2}} 
+\mbox{\Hypertarget{classModel_1_1BG__Tile_a564198d590b637056c84662ec0c3a69f}\label{classModel_1_1BG__Tile_a564198d590b637056c84662ec0c3a69f}} 
 \index{Model::BG\_Tile@{Model::BG\_Tile}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Model::BG\_Tile@{Model::BG\_Tile}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Model\+::\+BG\+\_\+\+Tile\+::set\+Position (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Model\+::\+BG\+\_\+\+Tile\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-sets the position of the entity. 
+Sets the position of the entity. 
 
 This function updates the position of the entity with the given coordinates.
 
@@ -142,7 +142,7 @@ This function updates the position of the entity with the given coordinates.
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classEntity__Model_a69f3ab873c03e9f3b704160a5a7aae88}{Entity\+\_\+\+Model}}.
+Implements \mbox{\hyperlink{classEntity__Model_a41d44e6b05819b958270d86f58d98bde}{Entity\+\_\+\+Model}}.
 
 
 

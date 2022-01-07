@@ -5,9 +5,9 @@
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00001}00001 }
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Camera.h"{}}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00004}\mbox{\hyperlink{classCamera_ac80797da921cf4fc93014236f5e7207d}{00004}} \mbox{\hyperlink{classCamera_ac80797da921cf4fc93014236f5e7207d}{Camera::Camera}}(\textcolor{keywordtype}{float} cameraWidth, \textcolor{keywordtype}{float} cameraHeight) :}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00004}\mbox{\hyperlink{classCamera_a84565af954d814cb0b4e8596aacf5509}{00004}} \mbox{\hyperlink{classCamera_a84565af954d814cb0b4e8596aacf5509}{Camera::Camera}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} cameraWidth, \textcolor{keyword}{const} \textcolor{keywordtype}{float} cameraHeight) :}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00005}00005     CameraWidth(cameraWidth), CameraHeight(cameraHeight) \{}
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00006}00006     height = cameraHeight / 2;}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00006}00006     height = cameraHeight / 2.0f;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00007}00007 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00008}00008 }
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00009}\mbox{\hyperlink{classCamera_a99f3012f7ef158e024f39f92f4dfeba6}{00009}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_a99f3012f7ef158e024f39f92f4dfeba6}{Camera::getNomalisedHeight}}()\textcolor{keyword}{ const }\{}
@@ -18,26 +18,34 @@
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} CameraHeight -\/ height;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00015}00015 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00016}00016 }
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00017}\mbox{\hyperlink{classCamera_a9aac75a052dcac20e925db9b36b8243c}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCamera_a9aac75a052dcac20e925db9b36b8243c}{Camera::setHeight}}(\textcolor{keywordtype}{float} height\_) \{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00017}\mbox{\hyperlink{classCamera_a7a8b45284c090b768643b32d7559d875}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCamera_a7a8b45284c090b768643b32d7559d875}{Camera::setHeight}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} height\_) \{}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00018}00018     \textcolor{keywordtype}{float} temp = height\_ -\/ height;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00019}00019     Camera::height = height\_;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00020}00020     \mbox{\hyperlink{classSubject_a24d556223c680a2c8f6b063247629b9f}{NewMaxHeigh}}(temp);}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00021}00021 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00022}00022 }
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00023}\mbox{\hyperlink{classCamera_a98170bb3ca3fe65650df5b6d0dd43e06}{00023}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_a98170bb3ca3fe65650df5b6d0dd43e06}{Camera::toGameheight}}(\textcolor{keywordtype}{float} position, \textcolor{keywordtype}{float} entity\_height) \{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00023}\mbox{\hyperlink{classCamera_a5e6a7b0f7d618c7a50af4bcec3d50eba}{00023}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_a5e6a7b0f7d618c7a50af4bcec3d50eba}{Camera::toGameheight}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} position, \textcolor{keyword}{const} \textcolor{keywordtype}{float} entity\_height) \{}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00024}00024     \textcolor{keywordflow}{return} CameraHeight -\/ position -\/ entity\_height;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00025}00025 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00027}\mbox{\hyperlink{classCamera_a04f1b81e7b22c1eb4c79d4d0477c28c7}{00027}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_a04f1b81e7b22c1eb4c79d4d0477c28c7}{Camera::toGamewidth}}(\textcolor{keywordtype}{float} position, \textcolor{keywordtype}{float} entity\_height) \{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00027}\mbox{\hyperlink{classCamera_ab2b0a8e1fcd99871b126682d0257d4c0}{00027}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_ab2b0a8e1fcd99871b126682d0257d4c0}{Camera::toGamewidth}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} position, \textcolor{keyword}{const} \textcolor{keywordtype}{float} entity\_height) \{}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00028}00028     \textcolor{keywordflow}{return} position;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00029}00029 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00030}00030 }
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00031}\mbox{\hyperlink{classCamera_a2382ed49d6204f39db3b435c5fe22dac}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCamera_a2382ed49d6204f39db3b435c5fe22dac}{Camera::CameraReset}}() \{}
-\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00032}00032     height = CameraHeight / 2;}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00032}00032     height = CameraHeight / 2.0f;}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00033}00033 \}}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00034}00034 }
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00035}00035 Camera::\string~Camera() \{}
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00036}00036 }
 \DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00038}\mbox{\hyperlink{classCamera_a5fae81ccc2edd1924586ea567a53bfeb}{00038}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_a5fae81ccc2edd1924586ea567a53bfeb}{Camera::getCameraWidth}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00039}00039     \textcolor{keywordflow}{return} CameraWidth;}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00042}\mbox{\hyperlink{classCamera_aee6db01b8582f3292c4ed70a7b780ca6}{00042}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classCamera_aee6db01b8582f3292c4ed70a7b780ca6}{Camera::getCameraHeight}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00043}00043     \textcolor{keywordflow}{return} CameraHeight;}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{Camera_8cpp_source_l00045}00045 }
 
 \end{DoxyCode}

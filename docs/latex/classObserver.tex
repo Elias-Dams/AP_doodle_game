@@ -9,22 +9,22 @@ Inheritance diagram for Observer\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}{Update\+Position}} (float xpos, float ypos) override
-\begin{DoxyCompactList}\small\item\em updates the position of every entity \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classObserver_a735a63bea519460306f1f7e517262c88}{New\+Maxheight\+Reached}} (const float \&ypos) override
-\begin{DoxyCompactList}\small\item\em updates the score if a new max height is reached \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classObserver_acea9e3d7751b775e395f53dc4292e359}{Update\+Bonus\+Score}} (const int \&points) override
-\begin{DoxyCompactList}\small\item\em updates te score when a bonus is collected \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classObserver_ac70e701beca3f587d8188f558bc2b835}{Update\+Reduce\+Score}} (const int \&points) override
-\begin{DoxyCompactList}\small\item\em reduces the score \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_ae0f5807c8c88f861e9ebebf0022d1e03}{Update\+Position}} (const float xpos, const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the position of every entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_a00640a6564373f4c8f7b79731ef59f03}{New\+Maxheight\+Reached}} (const float ypos) override
+\begin{DoxyCompactList}\small\item\em Updates the score if a new max height is reached. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_adb29dfb55b88bf4e69387ae4ee36fcdd}{Update\+Bonus\+Score}} (const int points) override
+\begin{DoxyCompactList}\small\item\em Updates te score when a bonus is collected. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classObserver_ad11cd8141fa4dc9751365dc5b1045b42}{Update\+Reduce\+Score}} (const int points) override
+\begin{DoxyCompactList}\small\item\em Reduces the score. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classObserver_a39770cb7bbfe046845d669473f9912db}{Resetscore}} () override
-\begin{DoxyCompactList}\small\item\em resets the score \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Resets the score. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classObserver_ab3cc8a82861a46aef4e09c092864af46}{Reset\+Texture}} () override
-\begin{DoxyCompactList}\small\item\em resets te texture of the player \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Resets te texture of the player. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classObserver_add3f66baf416ac09661e375b05d5484e}{Update\+Medium\+Jump}} () override
-\begin{DoxyCompactList}\small\item\em updates te texture of the player if a spring is collected \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Updates te texture of the player if a spring is collected. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classObserver_a370e898c6e07923062e32e2fbf8fbf85}{Update\+High\+Jump}} () override
-\begin{DoxyCompactList}\small\item\em updates te texture of the player if a jetpack is collected \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Updates te texture of the player if a jetpack is collected. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classObserver_add6dc712ca2df410b40dde7be83c1084}{Remove\+Me\+From\+The\+List}} ()
 \end{DoxyCompactItemize}
 
@@ -60,23 +60,23 @@ Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00008}{8}} of file \mb
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classObserver_a735a63bea519460306f1f7e517262c88}\label{classObserver_a735a63bea519460306f1f7e517262c88}} 
+\mbox{\Hypertarget{classObserver_a00640a6564373f4c8f7b79731ef59f03}\label{classObserver_a00640a6564373f4c8f7b79731ef59f03}} 
 \index{Observer@{Observer}!NewMaxheightReached@{NewMaxheightReached}}
 \index{NewMaxheightReached@{NewMaxheightReached}!Observer@{Observer}}
 \doxysubsubsection{\texorpdfstring{NewMaxheightReached()}{NewMaxheightReached()}}
-{\footnotesize\ttfamily void Observer\+::\+New\+Maxheight\+Reached (\begin{DoxyParamCaption}\item[{const float \&}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Observer\+::\+New\+Maxheight\+Reached (\begin{DoxyParamCaption}\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the score if a new max height is reached 
+Updates the score if a new max height is reached. 
 
 
 
-Implements \mbox{\hyperlink{classIObserver_a4b6ba09f71fc16fef5f284d7f3e08f09}{IObserver}}.
+Implements \mbox{\hyperlink{classIObserver_aedc3a6c1a45e8a85a9b0bcd68dfaddfd}{IObserver}}.
 
 
 
-Reimplemented in \mbox{\hyperlink{classScore_a4d5da81a947f243dc4cf737613cffbe8}{Score}}.
+Reimplemented in \mbox{\hyperlink{classScore_a274b736a923392ed8b7622dabf3ff5b1}{Score}}.
 
 
 
@@ -100,7 +100,7 @@ Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00044}{44}} of file \m
 
 
 
-resets the score 
+Resets the score. 
 
 
 
@@ -122,7 +122,7 @@ Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00016}{16}} of file \m
 
 
 
-resets te texture of the player 
+Resets te texture of the player. 
 
 
 
@@ -136,23 +136,23 @@ Reimplemented in \mbox{\hyperlink{classView_1_1Player_a74314dfddb093bdffaab0dbd4
 
 Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
 
-\mbox{\Hypertarget{classObserver_acea9e3d7751b775e395f53dc4292e359}\label{classObserver_acea9e3d7751b775e395f53dc4292e359}} 
+\mbox{\Hypertarget{classObserver_adb29dfb55b88bf4e69387ae4ee36fcdd}\label{classObserver_adb29dfb55b88bf4e69387ae4ee36fcdd}} 
 \index{Observer@{Observer}!UpdateBonusScore@{UpdateBonusScore}}
 \index{UpdateBonusScore@{UpdateBonusScore}!Observer@{Observer}}
 \doxysubsubsection{\texorpdfstring{UpdateBonusScore()}{UpdateBonusScore()}}
-{\footnotesize\ttfamily void Observer\+::\+Update\+Bonus\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Bonus\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates te score when a bonus is collected 
+Updates te score when a bonus is collected. 
 
 
 
-Implements \mbox{\hyperlink{classIObserver_a55bc848834b811f6cce73ecbdbae27cf}{IObserver}}.
+Implements \mbox{\hyperlink{classIObserver_aa74dabbfc76d847fa4f79ec11598dfe2}{IObserver}}.
 
 
 
-Reimplemented in \mbox{\hyperlink{classScore_a0c0742f5863a427aa8d5ae5fbd870932}{Score}}.
+Reimplemented in \mbox{\hyperlink{classScore_a02ea523bbdf1c836189c6a0063c5befb}{Score}}.
 
 
 
@@ -166,7 +166,7 @@ Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00028}{28}} of file \m
 
 
 
-updates te texture of the player if a jetpack is collected 
+Updates te texture of the player if a jetpack is collected. 
 
 
 
@@ -188,7 +188,7 @@ Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00040}{40}} of file \m
 
 
 
-updates te texture of the player if a spring is collected 
+Updates te texture of the player if a spring is collected. 
 
 
 
@@ -202,45 +202,45 @@ Reimplemented in \mbox{\hyperlink{classView_1_1Player_a313e47071d437f9039275b550
 
 Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
 
-\mbox{\Hypertarget{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}\label{classObserver_ac3dedf8c41457adcb342ff4c92bf520c}} 
+\mbox{\Hypertarget{classObserver_ae0f5807c8c88f861e9ebebf0022d1e03}\label{classObserver_ae0f5807c8c88f861e9ebebf0022d1e03}} 
 \index{Observer@{Observer}!UpdatePosition@{UpdatePosition}}
 \index{UpdatePosition@{UpdatePosition}!Observer@{Observer}}
 \doxysubsubsection{\texorpdfstring{UpdatePosition()}{UpdatePosition()}}
-{\footnotesize\ttfamily void Observer\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{const float}]{xpos,  }\item[{const float}]{ypos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-updates the position of every entity 
+Updates the position of every entity. 
 
 
 
-Implements \mbox{\hyperlink{classIObserver_a8f8f29d5d5bc8deba836319deb8d224f}{IObserver}}.
+Implements \mbox{\hyperlink{classIObserver_a07b8920238ab4bb926eb48582a2a81da}{IObserver}}.
 
 
 
-Reimplemented in \mbox{\hyperlink{classEntity__View_a1c4af8e5ee462fc13ef4d4b5477fed76}{Entity\+\_\+\+View}}, \mbox{\hyperlink{classView_1_1BG__Tile_af4c47f2a086d273cd461c0f01c940fe1}{View\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classView_1_1Jetpack_a89d55d9f6aace71256a469f557f82443}{View\+::\+Jetpack}}, \mbox{\hyperlink{classView_1_1Spring_a9a049ec181a6dc4340e48eb27c891354}{View\+::\+Spring}}, \mbox{\hyperlink{classView_1_1Blue__Platform_a5b9c89982dd8fa68dd7c50465524ad40}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a4d87dfdd07d02e83720c0077874eaf7c}{View\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1White__Platform_aa9147238d1f648413ac75a0ea4930190}{View\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Yellow__Platform_a8cf20d34baac5dc311b5c92e209327b7}{View\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Player_a4ebb7f613d019244956ab8bf57a56a45}{View\+::\+Player}}, and \mbox{\hyperlink{classView_1_1Platform_a036d0644b63d6bd78b60bbf546dbe84e}{View\+::\+Platform}}.
+Reimplemented in \mbox{\hyperlink{classEntity__View_adc2616953e30bde1fb38dd496b74d2ae}{Entity\+\_\+\+View}}, \mbox{\hyperlink{classView_1_1BG__Tile_a29845570083676375aa8b04a766507cb}{View\+::\+BG\+\_\+\+Tile}}, \mbox{\hyperlink{classView_1_1Jetpack_a8058730403642e763099c534c9729bef}{View\+::\+Jetpack}}, \mbox{\hyperlink{classView_1_1Spring_a45cb0773894c2aea82cb654221c6dfc7}{View\+::\+Spring}}, \mbox{\hyperlink{classView_1_1Blue__Platform_a2c974188995ea744cfa0129d5b729a6f}{View\+::\+Blue\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Green__Platform_a0c321acde0bc228f31409f6b88b7c943}{View\+::\+Green\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1White__Platform_a96e57db4c67f4a5eddbf506d3c025a4c}{View\+::\+White\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Yellow__Platform_a6ce545bcffeb3d087fb58b20524d16ad}{View\+::\+Yellow\+\_\+\+Platform}}, \mbox{\hyperlink{classView_1_1Player_ab076ebc3a66472ecc483f80b4fc162e6}{View\+::\+Player}}, and \mbox{\hyperlink{classView_1_1Platform_a6e11d48b1b4aa828634d5abb4aacef2f}{View\+::\+Platform}}.
 
 
 
 Definition at line \mbox{\hyperlink{Observer_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Observer_8cpp_source}{Observer.\+cpp}}.
 
-\mbox{\Hypertarget{classObserver_ac70e701beca3f587d8188f558bc2b835}\label{classObserver_ac70e701beca3f587d8188f558bc2b835}} 
+\mbox{\Hypertarget{classObserver_ad11cd8141fa4dc9751365dc5b1045b42}\label{classObserver_ad11cd8141fa4dc9751365dc5b1045b42}} 
 \index{Observer@{Observer}!UpdateReduceScore@{UpdateReduceScore}}
 \index{UpdateReduceScore@{UpdateReduceScore}!Observer@{Observer}}
 \doxysubsubsection{\texorpdfstring{UpdateReduceScore()}{UpdateReduceScore()}}
-{\footnotesize\ttfamily void Observer\+::\+Update\+Reduce\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Observer\+::\+Update\+Reduce\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-reduces the score 
+Reduces the score. 
 
 
 
-Implements \mbox{\hyperlink{classIObserver_a1eced45f1dd469e5a2992e52f2cbd775}{IObserver}}.
+Implements \mbox{\hyperlink{classIObserver_a20f6e4d0b6796b4d073a9374dc8f3262}{IObserver}}.
 
 
 
-Reimplemented in \mbox{\hyperlink{classScore_ade1d140e3dc8e9cce077cbaaaf245c85}{Score}}.
+Reimplemented in \mbox{\hyperlink{classScore_a95f26cf0e9bce480fe27e382d8fa9ee4}{Score}}.
 
 
 

@@ -14,23 +14,23 @@ virtual void \mbox{\hyperlink{classISubject_a49b5debdf1d06d9f9911d2369aa032b1}{A
 virtual void \mbox{\hyperlink{classISubject_a790eabbfafd693f9ac55173cc774c314}{Detach}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ observer)=0
 \begin{DoxyCompactList}\small\item\em Detach an observer from the subject. \end{DoxyCompactList}\item 
 virtual const std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIObserver}{IObserver}} $>$ $>$ \mbox{\hyperlink{classISubject_a243e9486c768ded6b1e31f3e916ae9d7}{get\+List\+Observer}} () const =0
-\begin{DoxyCompactList}\small\item\em gets the list of observers. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the list of observers. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_a018ce3555d6d750ab4f31d5dd33412f4}{Notify\+Position}} (float xpos, float ypos)=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to change the position. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the observers to change the position. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_a981a314b3eac969d5c436b19e5afd579}{New\+Max\+Heigh}} (float ypos)=0
-\begin{DoxyCompactList}\small\item\em notifies the observers that a new maxheight is reached. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the observers that a new maxheight is reached. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_aafef49ee27f01cf82073424432d420c4}{Notify\+Reset}} ()=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to reset \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the observers to reset. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_aef0249fb858deb8f3cacfa42d9037b0e}{Notify\+Normal}} ()=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to change texture to normal \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the observers to change texture to normal. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_a88bf55ad4ab119337b9343003d5e91d4}{Notify\+Medium}} ()=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to change texture to medium \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Notifies the observers to change texture to medium. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classISubject_abf65305b44b86ee5ee828dde2feb5e74}{Notify\+High}} ()=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to change texture to high \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classISubject_a425347e00840af8d54694a04e3aac7f9}{Notify\+Increase\+Score}} (const int \&points)=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to increase the score \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classISubject_a908f7358488186614334614dfb9a6856}{Notify\+Decrease\+Score}} (const int \&points)=0
-\begin{DoxyCompactList}\small\item\em notifies the observers to decrease the score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Notifies the observers to change texture to high. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classISubject_a45530d3e185835c5787a1aa4b0b55bb8}{Notify\+Increase\+Score}} (const int points)=0
+\begin{DoxyCompactList}\small\item\em Notifies the observers to increase the score. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classISubject_a4b47228d5599e861e40dd40e84b88d7f}{Notify\+Decrease\+Score}} (const int points)=0
+\begin{DoxyCompactList}\small\item\em Notifies the observers to decrease the score. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -64,7 +64,7 @@ Definition at line \mbox{\hyperlink{ISubject_8h_source_l00118}{118}} of file \mb
 
 Attach an observer to the subject. 
 
-This function attaches a pointer to an observer to the subject. This is a shared pointer because i the subject has full control over the deletion of the observer. e.\+g. if the platform disappears the view also gets destroyed.
+This function attaches a pointer to an observer to the subject. Because the subject has full control over the deletion of the observer this is a shared pointer. e.\+g. if the platform disappears the view also gets destroyed.
 
 
 \begin{DoxyParams}{Parameters}
@@ -104,7 +104,7 @@ Implemented in \mbox{\hyperlink{classSubject_ac36c9756a9df9b4b0f787b744b1cd477}{
 
 
 
-gets the list of observers. 
+Gets the list of observers. 
 
 This function gets the list of observers attached to this subject.
 
@@ -123,7 +123,7 @@ Implemented in \mbox{\hyperlink{classSubject_acf67f533761c143ea79c35501ab8e052}{
 
 
 
-notifies the observers that a new maxheight is reached. 
+Notifies the observers that a new maxheight is reached. 
 
 This function notifies the observers that a new maxheight is reached so it can update the score.
 
@@ -136,15 +136,15 @@ This function notifies the observers that a new maxheight is reached so it can u
 
 Implemented in \mbox{\hyperlink{classSubject_a24d556223c680a2c8f6b063247629b9f}{Subject}}.
 
-\mbox{\Hypertarget{classISubject_a908f7358488186614334614dfb9a6856}\label{classISubject_a908f7358488186614334614dfb9a6856}} 
+\mbox{\Hypertarget{classISubject_a4b47228d5599e861e40dd40e84b88d7f}\label{classISubject_a4b47228d5599e861e40dd40e84b88d7f}} 
 \index{ISubject@{ISubject}!NotifyDecreaseScore@{NotifyDecreaseScore}}
 \index{NotifyDecreaseScore@{NotifyDecreaseScore}!ISubject@{ISubject}}
 \doxysubsubsection{\texorpdfstring{NotifyDecreaseScore()}{NotifyDecreaseScore()}}
-{\footnotesize\ttfamily virtual void ISubject\+::\+Notify\+Decrease\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void ISubject\+::\+Notify\+Decrease\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-notifies the observers to decrease the score 
+Notifies the observers to decrease the score. 
 
 This function notifies the observers to decrease the score
 
@@ -155,7 +155,7 @@ This function notifies the observers to decrease the score
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classSubject_a2046cc5d8190b82eb609256dd70b9926}{Subject}}.
+Implemented in \mbox{\hyperlink{classSubject_a09b4f4ff10631fda62b08aaaf056e356}{Subject}}.
 
 \mbox{\Hypertarget{classISubject_abf65305b44b86ee5ee828dde2feb5e74}\label{classISubject_abf65305b44b86ee5ee828dde2feb5e74}} 
 \index{ISubject@{ISubject}!NotifyHigh@{NotifyHigh}}
@@ -165,23 +165,23 @@ Implemented in \mbox{\hyperlink{classSubject_a2046cc5d8190b82eb609256dd70b9926}{
 
 
 
-notifies the observers to change texture to high 
+Notifies the observers to change texture to high. 
 
-This function notifies the observers to change their texture to the high jump texture this texture is used for a high jump of more than 1500 units 
+This function notifies the observers to change their texture to the high jump texture. This texture is used for a high jump of more than 1500 units. 
 
 Implemented in \mbox{\hyperlink{classSubject_aa1c003f315ccd4a6f2e8c96d5552911d}{Subject}}.
 
-\mbox{\Hypertarget{classISubject_a425347e00840af8d54694a04e3aac7f9}\label{classISubject_a425347e00840af8d54694a04e3aac7f9}} 
+\mbox{\Hypertarget{classISubject_a45530d3e185835c5787a1aa4b0b55bb8}\label{classISubject_a45530d3e185835c5787a1aa4b0b55bb8}} 
 \index{ISubject@{ISubject}!NotifyIncreaseScore@{NotifyIncreaseScore}}
 \index{NotifyIncreaseScore@{NotifyIncreaseScore}!ISubject@{ISubject}}
 \doxysubsubsection{\texorpdfstring{NotifyIncreaseScore()}{NotifyIncreaseScore()}}
-{\footnotesize\ttfamily virtual void ISubject\+::\+Notify\+Increase\+Score (\begin{DoxyParamCaption}\item[{const int \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void ISubject\+::\+Notify\+Increase\+Score (\begin{DoxyParamCaption}\item[{const int}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-notifies the observers to increase the score 
+Notifies the observers to increase the score. 
 
-This function notifies the observers to increase the score
+This function notifies the observers to increase the score.
 
 
 \begin{DoxyParams}{Parameters}
@@ -190,7 +190,7 @@ This function notifies the observers to increase the score
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classSubject_acc94f8affd220fed30818b98fc0d630c}{Subject}}.
+Implemented in \mbox{\hyperlink{classSubject_ae7f679afcb5bff769b3d95313612b1e6}{Subject}}.
 
 \mbox{\Hypertarget{classISubject_a88bf55ad4ab119337b9343003d5e91d4}\label{classISubject_a88bf55ad4ab119337b9343003d5e91d4}} 
 \index{ISubject@{ISubject}!NotifyMedium@{NotifyMedium}}
@@ -200,9 +200,9 @@ Implemented in \mbox{\hyperlink{classSubject_acc94f8affd220fed30818b98fc0d630c}{
 
 
 
-notifies the observers to change texture to medium 
+Notifies the observers to change texture to medium. 
 
-This function notifies the observers to change their texture to the medium jump texture this texture is used for a medial jump height of up to 1500 units 
+This function notifies the observers to change their texture to the medium jump texture. This texture is used for a medium jump height of up to 1500 units. 
 
 Implemented in \mbox{\hyperlink{classSubject_a48fe200839cc8546b0adf250595c7d96}{Subject}}.
 
@@ -214,9 +214,9 @@ Implemented in \mbox{\hyperlink{classSubject_a48fe200839cc8546b0adf250595c7d96}{
 
 
 
-notifies the observers to change texture to normal 
+Notifies the observers to change texture to normal. 
 
-This function notifies the observers to change their texture back to normal this texture is used for a normal jump height of up to 500 units 
+This function notifies the observers to change their texture back to normal. This texture is used for a normal jump height of up to 500 units 
 
 Implemented in \mbox{\hyperlink{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}{Subject}}.
 
@@ -228,7 +228,7 @@ Implemented in \mbox{\hyperlink{classSubject_a3b716f17cb5dd12cf5b8b74a15b77d15}{
 
 
 
-notifies the observers to change the position. 
+Notifies the observers to change the position. 
 
 This function notifies the observers to change the position.
 
@@ -251,9 +251,9 @@ Implemented in \mbox{\hyperlink{classSubject_afd4f37bbbeb10f0efe507b5c0208c541}{
 
 
 
-notifies the observers to reset 
+Notifies the observers to reset. 
 
-This function notifies the observers to reset themselves. (go back to the state you were in when you where first initialised) 
+This function notifies the observers to reset themselves. (go back to the state they were in when they where first initialised) 
 
 Implemented in \mbox{\hyperlink{classSubject_a642b22ced9861b924054166530067ef8}{Subject}}.
 

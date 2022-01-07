@@ -14,59 +14,64 @@
 \DoxyCodeLine{\Hypertarget{Game_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\Hypertarget{Game_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <list>}}
 \DoxyCodeLine{\Hypertarget{Game_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <string>}}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00013}00013 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00014}00014 \textcolor{keyword}{using namespace }std;}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00015}00015 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00016}00016 \textcolor{keyword}{enum} gamestates \{}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00017}00017     start,}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00018}00018     gameloop,}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00019}00019     gameover}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00020}00020 \};}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00021}00021 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00027}\mbox{\hyperlink{classGame}{00027}} \textcolor{keyword}{class }\mbox{\hyperlink{classGame}{Game}} \{}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00029}00029 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00034}00034     \mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}();}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00035}00035 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}}();}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00042}00042 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00050}00050     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_acc5022f7f8abcbab013f7f3195583a1e}{update}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt);}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00051}00051 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00057}00057     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{drawGame}}();}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00058}00058 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00066}00066     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a8cc8cf130eecb22147462e9a1523fb25}{gameStart}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt);}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00067}00067 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00075}00075     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_ab34f52913b751b1157e6a23b7483395a}{gameLoop}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt);}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00076}00076 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00085}00085     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a42349972c6f10087fcc56ed045725e05}{gameOver}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&dt);}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00086}00086 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00087}00087     \mbox{\hyperlink{classGame}{\string~Game}}();}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00088}00088 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00089}00089 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00090}00090 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00092}00092     \textcolor{keywordtype}{bool} MouseOnButton(\textcolor{keyword}{const} sf::Sprite\& Button);}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00093}00093 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00095}00095     \textcolor{keywordtype}{void} LoadTextures();}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00096}00096 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00098}00098     unique\_ptr<sf::RenderWindow> window; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00099}00099     shared\_ptr<Concrete\_Factory> ConcreteFactory; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00100}00100     unique\_ptr<World> world; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00101}00101 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00102}00102     shared\_ptr<sf::View> view; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00015}00015 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00017}00017 \textcolor{keyword}{enum} gamestates \{}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00018}00018     start,}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00019}00019     gameloop,}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00020}00020     gameover}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00021}00021 \};}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00028}\mbox{\hyperlink{classGame}{00028}} \textcolor{keyword}{class }\mbox{\hyperlink{classGame}{Game}} \{}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00030}00030 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00035}00035     \mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00042}00042     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}}();}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00051}00051     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a2648dc91da0dd1424d5b7c45510515a0}{update}}(\textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00058}00058     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_ae53fceba1d9bb2aeeaffb4d636ba90e6}{drawGame}}();}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00067}00067     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a4f48bb51b84b0775366c4ce7e7db0d76}{gameStart}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00076}00076     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_a480c614601988965a5de597ba9ef3f3e}{gameLoop}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00086}00086     \textcolor{keywordtype}{void} \mbox{\hyperlink{classGame_acc3f4236e51712ba72c418c161c0dc0a}{gameOver}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} dt);}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00088}00088     \mbox{\hyperlink{classGame}{\string~Game}}();}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00090}00090 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00093}00093     \textcolor{keywordtype}{bool} MouseOnButton(\textcolor{keyword}{const} sf::Sprite\& Button) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00096}00096     \textcolor{keywordtype}{void} LoadTextures();}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00099}00099     \textcolor{keywordtype}{int} readHighScore(\textcolor{keyword}{const} std::string \&filename);}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00102}00102     \textcolor{keywordtype}{void} writeHighScore(\textcolor{keyword}{const} std::string \&filename);}
 \DoxyCodeLine{\Hypertarget{Game_8h_source_l00103}00103 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00104}00104     gamestates GameState; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00105}00105     \textcolor{keywordtype}{bool} can\_reset\{\}; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00106}00106     \textcolor{keywordtype}{int} highscore; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00107}00107 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00109}00109     sf::Font font; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00110}00110     sf::Text score\_text; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00111}00111     sf::Text highscore\_text; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00112}00112     sf::Sprite Button; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00113}00113     sf::Texture ButtonTexture; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00114}00114     sf::Texture ButtonTexture\_pressed; }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00115}00115 \};}
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00116}00116 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00117}00117 }
-\DoxyCodeLine{\Hypertarget{Game_8h_source_l00118}00118 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_GAME\_H}}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00105}00105     unique\_ptr<sf::RenderWindow> window; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00106}00106     shared\_ptr<Concrete\_Factory> ConcreteFactory; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00107}00107     unique\_ptr<World> world; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00109}00109     unique\_ptr<sf::View> view; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00111}00111     gamestates GameState; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00112}00112     \textcolor{keywordtype}{bool} can\_reset\{\}; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00113}00113     \textcolor{keywordtype}{int} highscore; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00116}00116     sf::Font font; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00117}00117     sf::Text score\_text; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00118}00118     sf::Text highscore\_text; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00119}00119     sf::Sprite Button; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00120}00120     sf::Texture ButtonTexture; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00121}00121     sf::Texture ButtonTexture\_pressed; }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00122}00122 \};}
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{Game_8h_source_l00125}00125 \textcolor{preprocessor}{\#endif}\textcolor{comment}{//AP\_DOODLE\_GAME\_GAME\_H}}
 
 \end{DoxyCode}

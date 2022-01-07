@@ -11,12 +11,12 @@ const pair<float, float> &Model::Spring::getPosition() const {
     return position;
 }
 
-void Model::Spring::setPosition(const float &x, const float &y) {
+void Model::Spring::setPosition(const float x, const float y) {
     Spring::position = make_pair(x, y);
     NotifyPosition(position.first, position.second);
 }
 
-void Model::Spring::update(const float &x, const float &y) {
+void Model::Spring::update(const float x, const float y) {
     position.first = x;
     position.second = y;
     NotifyPosition(position.first, position.second);

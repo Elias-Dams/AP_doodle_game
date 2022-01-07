@@ -72,7 +72,7 @@ $(function() {
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;V_Spring.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#abac7c4841223c3e01e73ce6fcd7219d8">    4</a></span><a class="code hl_function" href="classView_1_1Spring.html#abac7c4841223c3e01e73ce6fcd7219d8">View::Spring::Spring</a>(<span class="keywordtype">float</span> Width, <span class="keywordtype">float</span> Height, shared_ptr&lt;Camera&gt; camera_) :</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#ae79f73fb300db1cf3621d41d00bd1f53">    4</a></span><a class="code hl_function" href="classView_1_1Spring.html#ae79f73fb300db1cf3621d41d00bd1f53">View::Spring::Spring</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> Width, <span class="keyword">const</span> <span class="keywordtype">float</span> Height, <span class="keyword">const</span> shared_ptr&lt;Camera&gt; &amp;camera_) :</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    camera(camera_), spring_Width(Width), spring_Height(Height) {</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// we initiaize a new platform</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
@@ -95,23 +95,20 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    spring-&gt;setColor(sf::Color(82, 170, 228));</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#a9a049ec181a6dc4340e48eb27c891354">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classView_1_1Spring.html#a9a049ec181a6dc4340e48eb27c891354">View::Spring::UpdatePosition</a>(<span class="keywordtype">float</span> xpos, <span class="keywordtype">float</span> ypos) {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//cout &lt;&lt; &quot;jeej we get updates&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#a45cb0773894c2aea82cb654221c6dfc7">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classView_1_1Spring.html#a45cb0773894c2aea82cb654221c6dfc7">View::Spring::UpdatePosition</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> xpos, <span class="keyword">const</span> <span class="keywordtype">float</span> ypos) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    spring-&gt;setPosition(camera-&gt;toGamewidth(xpos, spring_Width), camera-&gt;toGameheight(ypos, spring_Height));</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    spring-&gt;setPosition(camera-&gt;toGamewidth(xpos, spring_Width), camera-&gt;toGameheight(ypos, spring_Height));</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">   34</a></span>sf::Sprite <a class="code hl_function" href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">View::Spring::getBonus</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> *spring;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>View::Spring::~Spring() {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
-<div class="ttc" id="aclassView_1_1Spring_html_a9a049ec181a6dc4340e48eb27c891354"><div class="ttname"><a href="classView_1_1Spring.html#a9a049ec181a6dc4340e48eb27c891354">View::Spring::UpdatePosition</a></div><div class="ttdeci">void UpdatePosition(float xpos, float ypos) override</div><div class="ttdoc">updates the position of the entity views</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00027">V_Spring.cpp:27</a></div></div>
-<div class="ttc" id="aclassView_1_1Spring_html_aa238412ff89f29df77649dd0011986fd"><div class="ttname"><a href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">View::Spring::getBonus</a></div><div class="ttdeci">sf::Sprite getBonus() const override</div><div class="ttdoc">gets the sfml sprite</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00034">V_Spring.cpp:34</a></div></div>
-<div class="ttc" id="aclassView_1_1Spring_html_abac7c4841223c3e01e73ce6fcd7219d8"><div class="ttname"><a href="classView_1_1Spring.html#abac7c4841223c3e01e73ce6fcd7219d8">View::Spring::Spring</a></div><div class="ttdeci">Spring(float Width, float Height, shared_ptr&lt; Camera &gt; camera)</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00004">V_Spring.cpp:4</a></div></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">   31</a></span>sf::Sprite <a class="code hl_function" href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">View::Spring::getBonus</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> *spring;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>View::Spring::~Spring() {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclassView_1_1Spring_html_a45cb0773894c2aea82cb654221c6dfc7"><div class="ttname"><a href="classView_1_1Spring.html#a45cb0773894c2aea82cb654221c6dfc7">View::Spring::UpdatePosition</a></div><div class="ttdeci">void UpdatePosition(const float xpos, const float ypos) override</div><div class="ttdoc">Updates the position of the entity view.</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00027">V_Spring.cpp:27</a></div></div>
+<div class="ttc" id="aclassView_1_1Spring_html_aa238412ff89f29df77649dd0011986fd"><div class="ttname"><a href="classView_1_1Spring.html#aa238412ff89f29df77649dd0011986fd">View::Spring::getBonus</a></div><div class="ttdeci">sf::Sprite getBonus() const override</div><div class="ttdoc">Gets the sfml sprite.</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00031">V_Spring.cpp:31</a></div></div>
+<div class="ttc" id="aclassView_1_1Spring_html_ae79f73fb300db1cf3621d41d00bd1f53"><div class="ttname"><a href="classView_1_1Spring.html#ae79f73fb300db1cf3621d41d00bd1f53">View::Spring::Spring</a></div><div class="ttdeci">Spring(const float Width, const float Height, const shared_ptr&lt; Camera &gt; &amp;camera)</div><div class="ttdef"><b>Definition:</b> <a href="V__Spring_8cpp_source.html#l00004">V_Spring.cpp:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

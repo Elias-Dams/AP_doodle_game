@@ -168,7 +168,7 @@ void World::add_platforms() {
 }
 
 
-bool World::colisionCheck(shared_ptr<Entity_Model> entity, const bool & can_update_score) {
+bool World::colisionCheck(shared_ptr<Entity_Model> entity, const bool can_update_score) {
     // the left side of the player
     if (entity->getPosition().first <= player->getPosition().first and
         player->getPosition().first <= entity->getPosition().first + entity->getWidth()) {
@@ -244,12 +244,13 @@ float World::getFreeSpace(){
     else if(choice <= 2.0f and freeSpace2 != 0.0f){
         return freeSpace2;
     }
-    else if(choice <= 3.0f and freeSpace3 != 0.0f){
+    else{
         return freeSpace3;
     }
+
 }
 
-void World::startstate(const float & dt) {
+void World::startstate(const float dt) {
     if (platforms.empty()) {
         this->create_start_platform();
         player->PlayerReset(50.0f, 300.0f);
@@ -271,7 +272,7 @@ void World::startstate(const float & dt) {
     player->jump(dt, hit, 1);
 }
 
-void World::update(const float &dt, const char &key) {
+void World::update(const float dt, const char key) {
     if (platforms.empty()) {
         this->create_platforms();
     }

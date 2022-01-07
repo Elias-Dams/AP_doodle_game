@@ -17,17 +17,36 @@
 \DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00013}00013     \textcolor{keywordflow}{return} singleton\_;}
 \DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00014}00014 \}}
 \DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00015}00015 }
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00016}\mbox{\hyperlink{classRandom_af6ecf678ff659916787cc33bab141eae}{00016}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classRandom_af6ecf678ff659916787cc33bab141eae}{Random::generate\_between}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&min, \textcolor{keyword}{const} \textcolor{keywordtype}{float} \&max) \{}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00017}00017 }
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00018}00018     std::uniform\_real\_distribution<double> distribution(min, max);}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00019}00019     std::random\_device rd;}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00020}00020     std::default\_random\_engine generator(rd());}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00021}00021 }
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00022}00022     \textcolor{keywordflow}{return} distribution(generator);}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00023}00023 \}}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00025}00025 Random::\string~Random() \{}
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00016}\mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{00016}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{Random::generate\_between}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} min, \textcolor{keyword}{const} \textcolor{keywordtype}{float} max) \{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00017}00017     std::uniform\_real\_distribution<double> distribution(min, max);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00018}00018     std::random\_device rd;}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00019}00019     std::default\_random\_engine generator(rd());}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00021}00021     \textcolor{keywordflow}{return} distribution(generator);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00024}\mbox{\hyperlink{classRandom_a6fbe60fff884d9f0abef83a4a640d960}{00024}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classRandom_a6fbe60fff884d9f0abef83a4a640d960}{Random::generate\_between\_exeption}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} min, \textcolor{keyword}{const} \textcolor{keywordtype}{float} max, \textcolor{keyword}{const} \textcolor{keywordtype}{float} exeptionmin,  \textcolor{keyword}{const} \textcolor{keywordtype}{float} exeptionmax)\{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00025}00025     std::uniform\_int\_distribution<int> distribution(1,2);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00026}00026     std::random\_device rd;}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00027}00027     std::default\_random\_engine generator(rd());}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00028}00028     \textcolor{keywordflow}{if}(exeptionmin < 0 )\{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00029}00029         \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{generate\_between}}(exeptionmax, max);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00031}00031     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(exeptionmax > max )\{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00032}00032         \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{generate\_between}}(0, exeptionmin);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00033}00033     \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00034}00034     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00035}00035         \textcolor{keywordflow}{switch} (distribution(generator)) \{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00036}00036             \textcolor{keywordflow}{case}(1):}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00037}00037                 \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{generate\_between}}(min, exeptionmin);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00038}00038             \textcolor{keywordflow}{case}(2):}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00039}00039                 \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classRandom_a9876e27968552717114d3adbe4ddb107}{generate\_between}}(exeptionmax, max);}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00044}00044 Random::\string~Random() \{}
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{Random_8cpp_source_l00046}00046 \}}
 
 \end{DoxyCode}

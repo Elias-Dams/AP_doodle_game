@@ -66,7 +66,7 @@ void Subject::NotifyReset() {
     }
 }
 
-void Subject::NotifyIncreaseScore(const int &points){
+void Subject::NotifyIncreaseScore(const int points){
     for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
 
         Subject_->UpdateBonusScore(points);
@@ -74,7 +74,7 @@ void Subject::NotifyIncreaseScore(const int &points){
     }
 }
 
-void Subject::NotifyDecreaseScore(const int &points){
+void Subject::NotifyDecreaseScore(const int points){
     for(const std::shared_ptr<IObserver>& Subject_ : list_observer_){
 
         Subject_->UpdateReduceScore(points);

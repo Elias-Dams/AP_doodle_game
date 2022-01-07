@@ -7,5 +7,5 @@ Entity_View::~Entity_View() {
 
 }
 
-void Entity_View::UpdatePosition(const float &xpos, const float &ypos) {
+void Entity_View::UpdatePosition(const float xpos, const float ypos) {
 }
